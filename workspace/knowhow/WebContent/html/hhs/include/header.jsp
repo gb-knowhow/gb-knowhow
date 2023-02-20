@@ -140,5 +140,5 @@
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="${pageContext.request.contextPath}/js/hhs/header.js"></script>
+  <script src="${pageContext.request.contextPath}/js/hhs/include/header.js"></script>
 </html>

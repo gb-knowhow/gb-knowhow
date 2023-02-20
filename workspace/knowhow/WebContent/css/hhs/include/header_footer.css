@@ -157,7 +157,7 @@ button {
     display: inline-block;
     width: 65px;
     height: 57px;
-    background-image: url("../image/knowhow_icon.png");
+    background-image: url("/image/knowhow_icon.png");
     background-size: cover;
 
     /* background: url('/image/knowhow_title.PNG') no-repeat;
@@ -263,7 +263,7 @@ button {
     float: left;
     width: 65px;
     height: 57px;
-    background-image: url("../image/knowhow_icon.png");
+    background-image: url("/image/knowhow_icon.png");
     display: inline-block;
     background-size: cover;
 
@@ -302,7 +302,7 @@ button {
     display: inline-flex;
     height: 57px;
     width: 120px;
-    background-image: url("../image/knowhow_title.png");
+    background-image: url("/image/knowhow_title.png");
     background-size: contain;
     background-repeat: no-repeat;
     top: 20px;
