@@ -148,9 +148,9 @@ html{
 
 .user-list-contents{
     border-radius: 10px;
-    width: 82vh;
-    height: 42vh;
-    margin: 15px;
+    width: 83.8vh;
+    height: 43vh;
+    margin: 10px;
     background-color: #fff;
     font-size: 0.8rem;
 }
@@ -175,6 +175,8 @@ html{
     border-bottom: 2px solid #EEEEEE;
 
 }
+
+/* 신규 회원 대시보드 */
 
 .user-num{
     text-align: center;
@@ -217,3 +219,85 @@ html{
     margin-left: 1rem;
     font-size: 0.9rem;
 }
+
+/* 문의사항 대시보드 */
+
+.qna-num{
+    text-align: center;
+    width: 10%;
+}
+
+.qna-title{
+    text-align: center;
+    width: 35%;
+}
+
+.qna-writer{
+    text-align: center;
+    width: 20%;
+}
+
+.qna-category{
+    text-align: center;
+    width: 20%;
+}
+
+.qna-write-day{
+    text-align: center;
+    width: 15%;
+}
+
+/* 최근 멘티 질문글 */
+
+.ask-num{
+    text-align: center;
+    width: 10%;
+}
+
+.specialization{
+    text-align: center;
+    width: 20%;
+}
+
+.ask-title{
+    text-align: center;
+    width: 30%;
+}
+
+.writer{
+    text-align: center;
+    width: 15%;
+}
+
+.answer{
+    text-align: center;
+    width: 5%;
+}
+
+.ask-write-day{
+    text-align: center;
+    width: 20%;
+}
+
+/* 최근 멘토 답변글 */
+
+.answer-num{
+    text-align: center;
+    width: 10%;
+}
+
+.answer-title{
+    text-align: center;
+    width: 30%;
+}
+
+.like-count{
+    text-align: center;
+    width: 10%;
+}
+
+.answer-write-day{
+    text-align: center;
+    width: 15%;
+}
+

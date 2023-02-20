@@ -100,6 +100,21 @@ html{
     padding-right: 5%;
 }
 
+#search-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.search-border{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
 .side-bar{
     display: flex;
     align-items: center;
@@ -165,7 +180,10 @@ html{
 .member-search{
     width: 40vh;
     height: 4vh;
+    border: none;
+    outline: none;
 }
+
 
 .member-delete-button{
     background-color: #F1416C;

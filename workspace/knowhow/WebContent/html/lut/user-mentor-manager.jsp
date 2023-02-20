@@ -9,7 +9,7 @@
 <title>know-how</title>
 <link rel="icon" href="https://kr.accounts.ikea.com/resources/kr/favicon-16x16.png " type="image/x-icon">
 <link rel="shortcut icon" type="image/x-icon" href="./images/logo-favicon.ico" />
-<link rel="stylesheet" href="../../css/lut/user-mentor-manager.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/user-mentor-manager.css"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -81,7 +81,8 @@
         <div id="right-side" class="container">
             <div class="right-header">
                 <div class="letter-space"></div>
-                멘토 관리
+                멘토 관리 
+                <i class="fas fa-search" style="font-size:15px;"></i>
             </div>
             <div class="right-body">
                 <div class="user-list-letter">
@@ -91,7 +92,10 @@
                 <div class="user-list-contents">
                     <div class="member-input-wrap">
                         <div class="member-search-wrap">
-                            <input class="member-search" type="text" placeholder="멘토 검색">
+                            <div class="search-border">
+                                <img id="search-icon" alt="search" src="./images/search-icon.png">
+                                <input class="member-search" type="text" placeholder="멘토 검색">
+                            </div>
                         </div>
         
                         <div class="member-delete-button-wrap">
