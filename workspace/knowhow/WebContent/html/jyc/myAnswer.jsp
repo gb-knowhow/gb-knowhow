@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href=${pageContext.request.contextPath}/css/jyc/myQuestion.css >
+<title>나의 답변</title>
+<link rel="stylesheet" href=${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
 </head>
 <body>
 	<div class="nav">
@@ -111,9 +111,9 @@
 		<div class="content">
 		<dl class="my_question_info">
 			<dt>
-				<img src="https://ssl.pstatic.net/static/kin/09renewal/tx_all_question.gif" width="50" height="13" alt="총 질문수">
+				<img src="https://ssl.pstatic.net/static/kin/09renewal/tx_all_answer.gif" width="50" height="13" alt="총 답변수">
 			</dt>
-			<dd>1</dd>
+			<dd>2</dd>
 		</dl>
 		
 			<table class="my_question_content" width="100%">
@@ -133,7 +133,7 @@
 						<td class="qna">
 							<dl>
 								<dt>
-									<a href="#">나의 첫 질문</a>
+									<a href="#">나의 첫 답변</a>
 								</dt>
 							
 							</dl>
