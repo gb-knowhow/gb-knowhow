@@ -9,7 +9,7 @@
     <title>질문 수정 페이지</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/image/logo.ico">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionModify.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionModify.css"/>
   </head>
   <body>
     <div class="input_help_ask_home_end">
@@ -64,7 +64,9 @@
                     <dt><em class="blind"></em><label for="mocustomerMemberID">아이디</label></dt>
                     <dd>
                       <div class="InquiryInput_input_box">
-                        <a class="InquiryInput_login_link">로그인하기</a>
+                        <span class="InquiryInput_id_text">
+                          로그인 한 아이디 나오게 하기
+                        </span>
                       </div>
                     </dd>
                   </dl>

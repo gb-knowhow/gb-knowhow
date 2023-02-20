@@ -151,7 +151,7 @@ img {
   text-align: right;
   font-size: 14px;
   letter-spacing: -0.35px;
-  color: #03c75a;
+  color: blue;
 }
 
 .InquiryInput_field_set_downContent > div[class*='_box'] {
@@ -206,17 +206,17 @@ em {
 .InquiryInput_ask_form dl dd .InquiryInput_login_link {
   display: inline-block;
   line-height: 35px;
-  color: #03c75a;
+  color: blue;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .InquiryInput_ask_form dl dt.InquiryInput_essential {
-  color: #03c75a;
+  color: blue;
 }
 
 .InquiryInput_ask_form dl dt.InquiryInput_essential {
-  color: #03c75a;
+  color: blue;
 }
 
 .InquiryInput_ask_form dl dd .InquiryInput_input_text {
@@ -324,8 +324,8 @@ textarea {
 
 .CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn.CommonBtn_on {
   color: #fff;
-  border-color: #03c75a;
-  background-color: #03c75a;
+  border-color: blue;
+  background-color: blue;
 }
 .CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn {
   display: inline-block;
@@ -339,4 +339,16 @@ textarea {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_id_text {
+  display: inline-block;
+  line-height: 35px;
+  color: rgba(34,34,34,.8);
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_check_box input:checked {
+  background: url("https://ssl.pstatic.net/static/help/new_help/checkbox_btn_on.svg") no-repeat;
+  background-size: 22px 22px;
+  -webkit-background-size: 22px 22px;
 }

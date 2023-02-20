@@ -9,7 +9,7 @@
     <title>이용방법 및 유의사항 페이지</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/image/logo.ico">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
 </head>
 <body class="body">
     <header></header>

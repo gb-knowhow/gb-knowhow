@@ -9,7 +9,7 @@
     <title>질문 목록</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/image/logo.ico">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionList.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionList.css"/>
   </head>
 
   <body class="body">
@@ -31,172 +31,6 @@
               >
                 <em>홈</em>
               </a>
-            </li>
-            <li class="menu on" role="presentation">
-              <a
-                href="/qna/list.naver"
-                role="menuitem"
-                class="item"
-                aria-haspopup="true"
-                aria-expanded="false"
-                tabindex="-1"
-                onclick="nhn.Kin.Utility.nClicks('LNB.qna', '', '', event);"
-                aria-current="page"
-              >
-                <em>Q&amp;A</em>
-              </a>
-              <ul class="nav_sub_list _lnbSubMenu" role="menu" style="display: none">
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=11"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '11', '1', event);"
-                    >교육, 학문</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=1"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '1', '2', event);"
-                    >컴퓨터통신</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=2"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '2', '3', event);"
-                    >게임</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=3"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '3', '4', event);"
-                    >엔터테인먼트, 예술</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=8"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '8', '5', event);"
-                    >생활</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=7"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '7', '6', event);"
-                    >건강</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=6"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '6', '7', event);"
-                    >사회, 정치</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=4"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '4', '8', event);"
-                    >경제</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=9"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '9', '9', event);"
-                    >여행</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=10"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '10', '10', event);"
-                    >스포츠, 레저</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=5"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.kinlayer', '5', '11', event);"
-                    >쇼핑</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=13"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.jun', '', '', event);"
-                    >쥬니버Q&amp;A</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=12"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.loc', '', '', event);"
-                    >지역&amp;플레이스</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/qna/list.naver?dirId=20"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.talk', '', '', event);"
-                    >고민Q&amp;A</a
-                  >
-                </li>
-                <li role="presentation" class="sub_menu">
-                  <a
-                    href="/opendic/index.naver"
-                    role="menuitem"
-                    class="item"
-                    tabindex="-1"
-                    onclick="nhn.Kin.Utility.nClicks('LNB.open', '', '', event);"
-                    >오픈사전</a
-                  >
-                </li>
-              </ul>
             </li>
             <li class="menu" role="presentation">
               <a
@@ -982,14 +816,6 @@
                     <input type="hidden" name="cs" value="utf8" />
                     <fieldset>
                       <legend>검색영역</legend>
-
-                      <label for="svc_type" class="blind">지식 분류 선택</label>
-                      <select name="section" id="svc_type">
-                        <option value="qna" selected="">Q&amp;A</option>
-                        <option value="junior">쥬니버Q&amp;A</option>
-                        <option value="worry">고민Q&amp;A</option>
-                        <option value="local">지역&amp;플레이스</option>
-                      </select>
 
                       <input
                         type="text"
