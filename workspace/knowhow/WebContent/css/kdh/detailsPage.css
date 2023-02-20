@@ -135,7 +135,7 @@ li {
   padding: 0 18px;
   line-height: 50px;
   border: 1px solid #00bd39;
-  background-color: #00c73c;
+  background-color: blue;
   color: #fff;
   font-size: 15px;
 }
@@ -384,7 +384,8 @@ button .text, button .icon {
     position: relative;
 }
 
-.icon_compose_opinion:before {
+/* 댓글달기 이미지 */
+/* .icon_compose_opinion:before {
     font-family: "kin_iconfont";
     font-style: normal;
     font-variant: normal;
@@ -392,7 +393,7 @@ button .text, button .icon {
     text-decoration: none;
     text-transform: none;
     content: "";
-}
+} */
 
 
 .button_compose_count {
@@ -419,7 +420,10 @@ button .text, button .icon {
 .is_disabled .icon_compose_wonder {
     color: #ccc;
 }
-.icon_compose_wonder:before {
+
+/* 답글달기 이미지 넣기 */
+/* before 대신에 이미지를 직접 넣었다. */
+/* .icon_compose_wonder:before {
     font-family: "kin_iconfont";
     font-style: normal;
     font-variant: normal;
@@ -427,7 +431,7 @@ button .text, button .icon {
     text-decoration: none;
     text-transform: none;
     content: "";
-}
+} */
 
 .c-userinfo__button-siren {
     display: inline-block;
@@ -586,6 +590,7 @@ button .text, button .icon {
 .answer-content__item .c-heading-answer, .answer-content__item .c-heading-answer__content {
     margin: 0 49px;
 }
+
 .answer-content__item .c-heading-answer__content {
     padding-bottom: 30px;
 }
@@ -684,6 +689,10 @@ button .text, button .icon {
     margin-top: 30px;
 }
 
+.se-fs-.se-ff- {
+    display: inline-flex;
+}
+
 .c-guideline__title {
     display: block;
     margin-bottom: 4px;
@@ -745,7 +754,7 @@ button .text, button .icon {
 
 
 /* 답글에 댓글달기 이미지 넣기 */
-.icon_compose_opinion::before {
+/* .icon_compose_opinion::before {
     font-family: kin_iconfont;
     font-style: normal;
     font-weight: normal;
@@ -753,7 +762,7 @@ button .text, button .icon {
     content: "";
     font-variant: normal;
     text-decoration: none;
-}
+} */
 
 .c-userinfo-answer:after {
     display: table;
@@ -761,3 +770,190 @@ button .text, button .icon {
     clear: both;
     content: '';
 }
+
+.question-content .c-userinfo+.c-opinion {
+    margin-top: 40px;
+}
+.c-opinion {
+    position: relative;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.c-opinion__write {
+    position: relative;
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+}
+.c-opinion__write-textarea.placeholder {
+    color: black;
+}
+.c-opinion__write-textarea {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 85px;
+    margin: 0;
+    padding: 20px;
+    border: 0;
+    background-color: transparent;
+    background-color: rgba(255,255,255,0.001);
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: top;
+    resize: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+
+.c-opinion__write-upload {
+    position: relative;
+    height: 43px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.c-opinion__write-count {
+    float: left;
+    padding: 11px 0 0 20px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: right;
+    color: #8c8c8c;
+}
+
+.c-opinion__write-count__num {
+    color: #4c4c4c;
+}
+
+.c-opinion {
+    position: relative;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.c-opinion__write-count__total {
+    color: #8c8c8c;
+}
+
+.c-opinion__write-upload .button_register {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 68px;
+    height: 45px;
+    border: 1px solid #00b336;
+    background: blue;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #fff;
+}
+.c-opinion__write-upload:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.c-opinion__list {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.c-opinion__item {
+    position: relative;
+    padding: 22px 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.c-opinion__list-nickname {
+    max-width: 640px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.c-opinion__list-text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.c-opinion__list-date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+.c-opinion__item .button_more {
+    position: absolute;
+    top: 22px;
+    right: -5px;
+}
+.c-opinion__item .button_more>a {
+    padding: 6px 5px;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.c-opinion .paginator {
+    margin-top: 25px;
+}
+.paginator {
+    text-align: center;
+}
+.paginatorNumber .paginator__num_item.is-active {
+    border-color: #e5e5e5;
+    font-weight: bold;
+    color: #f54;
+}
+.paginatorNumber .paginator__num_item {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.paginatorNumber .paginator__next {
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #8c8c8c;
+}
+
+.paginatorNumber .icon_paginator_next {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 5px;
+    height: 10px;
+    margin-left: 4px;
+}
+
+.paginatorNumber .icon_paginator_next:before {
+    width: 5px;
+    height: 5px;
+    -ms-transform: translate(-50%,-50%) scale(1,1) rotate(45deg);
+    transform: translate(-50%,-50%) scale(1,1) rotate(45deg);
+    margin-left: -2px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+}
+.paginatorNumber .icon_paginator_next:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.answer-content .c-opinion {
+    padding: 0 49px 42px;
+}
+
+.c-opinion__write-textarea:focus::placeholder{
+    opacity: 0;
+}
+
