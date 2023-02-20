@@ -1,0 +1,455 @@
+@charset "utf-8";
+.body {
+  font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', 'NanumGothic', '맑은 고딕',
+    'Malgun Gothic', '돋움', 'Dotum,sans-serif';
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', 'NanumGothic', '맑은 고딕',
+    'Malgun Gothic', '돋움', 'Dotum,sans-serif';
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  position: relative;
+  min-width: 980px;
+}
+
+.nav {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.nav_inner {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.blind,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.nav_list .menu {
+  float: left;
+  position: relative;
+  height: 50px;
+}
+
+.nav_list .menu > .item em {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 17px 0;
+  vertical-align: top;
+}
+
+.nav_list .menu:first-child > .item {
+  margin-left: -15px;
+}
+.nav_list .menu > .item {
+  display: block;
+  float: left;
+  padding: 0 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.nav_list .menu:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+.nav__button_question {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  bottom: -1px;
+  height: 50px;
+  padding: 0 18px;
+  line-height: 50px;
+  border: 1px solid #00bd39;
+  background-color: #00c73c;
+  color: #fff;
+  font-size: 15px;
+}
+
+.nav__button_question .icon_pencil {
+  background-image: url('https://ssl.pstatic.net/static/kin/section/sprite/sp_gnb_230127.svg');
+  background-size: 85px 67px;
+  background-position: -15px -52px;
+  width: 15px;
+  height: 13px;
+  display: inline-block;
+  margin-right: 6px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav_list:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.nav_list .menu.on em {
+  position: relative;
+  border-bottom: 3px solid #4cc370;
+  color: #4cc370;
+  text-decoration: none;
+}
+
+em,
+address {
+  font-style: normal;
+}
+
+div {
+  display: block;
+}
+
+.container-fluid {
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrap_qna .container-fluid-content-inner {
+  padding-bottom: 62px;
+}
+
+.container-fluid-content-inner {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.location {
+  display: block;
+  position: relative;
+  padding: 12px 0 9px 10px;
+  line-height: 18px;
+  z-index: 22;
+  zoom: 1;
+}
+
+html > body .location li.last {
+  top: -1px;
+}
+
+.location li.last {
+  position: relative;
+  padding-right: 0;
+  font-weight: bold;
+  background: 0;
+}
+
+.location li {
+  position: relative;
+  float: left;
+  padding: 1px 11px 0 6px;
+  background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_arrow.gif) no-repeat 100% 5px;
+}
+
+.paginate {
+  width: 100%;
+  padding: 13px 0 22px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.location a {
+  color: #3b3b3b;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.location:after {
+  content: ' ';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.wrap_qna .container-fluid-content__left {
+  width: 681px;
+}
+
+.container-fluid-content__left {
+  position: relative;
+  float: left;
+}
+
+.kinqna_wp {
+  position: relative;
+  z-index: 20;
+  zoom: 1;
+}
+
+.tab1_box {
+  border: 1px solid #d3d3d3;
+  background: #f8f8f8;
+}
+.tab1 {
+  border-bottom: 1px solid #d3d3d3;
+  width: 677px;
+}
+
+.tab1 li {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.tab1 .on .item {
+  background: #fff;
+  color: #000;
+}
+
+.tab1_box .item {
+  padding: 10px 25px;
+  border-width: 0 1px;
+}
+
+.tab1 .item {
+  display: block;
+  padding: 10px 37px;
+  border: 1px solid #d3d3d3;
+  border-width: 1px 1px 0;
+  background: #efefef;
+  margin-left: -1px;
+  font-size: 12px;
+  line-height: 1;
+  color: #8c8c8c;
+  text-decoration: none !important;
+}
+
+.tab1:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.kinqna_wp ~ div .board_box,
+.kinqna_wp ~ div .board_box2,
+.kinqna_wp ~ div .board_box3 {
+  border-top: 0;
+}
+.board_box {
+  width: 629px;
+  padding: 0 25px 44px 25px;
+  background: url('https://ssl.pstatic.net/static/kin/09renewal/bg_table_top.gif') repeat-x top;
+}
+
+.boardtype2 {
+  clear: both;
+  position: relative;
+  z-index: 12;
+  border-collapse: collapse;
+}
+
+.boardtype2 thead th.title {
+  text-align: center;
+}
+
+.boardtype2 thead th {
+  padding: 14px 0 22px 0;
+  font-size: 11px;
+  color: #585858;
+  font-weight: normal;
+  text-align: left;
+}
+
+.boardtype2 tbody td.title {
+  padding: 8px 15px 6px 0;
+  font-size: 12px;
+  word-break: break-all;
+  white-space: normal;
+}
+.boardtype2 tbody td {
+  padding: 7px 0 6px;
+  border-bottom: 1px solid #f3f3f3;
+  font-size: 11px;
+  line-height: 18px;
+  color: #848484;
+}
+
+.boardtype2 tbody td.title a {
+  *display: inline-block;
+  padding-right: 2px;
+  border-right: 1px solid #fff;
+  color: #303030;
+  font-weight: bold;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.boardtype2 tbody td.field {
+  padding-top: 8px;
+}
+
+.boardtype2 tbody td.field a {
+  color: #969696;
+}
+
+.boardtype2 tbody td.t_num {
+  padding: 7px 1px 0px 7px;
+}
+
+.paginate a.next:after {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 1px;
+  height: 15px;
+  background: #efefef;
+  content: '';
+}
+
+.paginate a.prev,
+.paginate a.next {
+  position: relative;
+  margin: 0;
+  padding: 1px 11px 0 10px;
+  background: url('https://ssl.pstatic.net/static/kin/09renewal/ico_paginate.gif') no-repeat 0 -14px;
+  color: #565656;
+  font-weight: normal;
+}
+.paginate a {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 1px 0 2px;
+  padding: 0 8px;
+  color: #000;
+  font-size: 12px;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none !important;
+  vertical-align: top;
+}
+
+.paginate a.next {
+  background-position: 100% 10px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: none;
+}
+
+.search fieldset {
+  color: #c4c4c4;
+  text-align: center;
+}
+img,
+fieldset,
+button {
+  border: 0;
+}
+
+.search fieldset select,
+.search fieldset input {
+  margin: -1px 0 1px;
+  color: #373737;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.search fieldset .keyword {
+  width: 219px;
+  height: 15px;
+  margin-left: 1px;
+  padding: 3px 3px 1px;
+  border: 1px solid #b5b5b5;
+  border-color: #b5b5b5 #ddd #ddd #b5b5b5;
+  font-size: 12px;
+  line-height: 15px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.btn_area_shortcut {
+  padding: 40px 0 38px 25px;
+  zoom: 1;
+}
+
+.container-fluid-content__left:after {
+  display: table;
+  clear: both;
+  content: '';
+}

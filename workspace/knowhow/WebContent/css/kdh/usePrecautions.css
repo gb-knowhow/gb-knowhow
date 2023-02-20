@@ -1,0 +1,174 @@
+@charset "utf-8";
+#wrap.wrap_principle {
+    min-width: 900px;
+}
+#wrap {
+    position: relative;
+    min-width: 980px;
+}
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    position: relative;
+    margin: 0 auto;
+}
+
+.wrap_principle .container-fluid-content-inner {
+    width: 900px;
+}
+
+.container-fluid-content-inner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.wrap_principle #header {
+    border-bottom: 3px solid #5b5b5b;
+}
+
+.wrap_principle #snb_warp {
+    position: relative;
+    width: 900px;
+    height: 38px;
+    _height: 56px;
+    padding-top: 6px;
+    font-size: 12px;
+}
+
+.wrap_principle #snb_warp h1 {
+    _display: inline;
+    float: left;
+    font-size: 0;
+    margin: 0 15px 0 14px;
+    _margin: 0 12px 0 14px;
+}
+
+.wrap_principle #snb_warp * {
+    margin: 0 0 0 3px;
+    padding: 0;
+    line-height: 14px;
+}
+
+span.service-title {
+    font-size: 20px; 
+}
+
+.wrap_principle #snb_warp:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrap_principle #content {
+    width: 862px;
+    margin: 29px auto 60px;
+    color: #8c8c8c;
+}
+
+.wrap_principle #content .h2_info {
+    line-height: 18px;
+    font-size: 12px;
+    margin: 9px 0 10px;
+}
+.wrap_principle .principle {
+    border-right: 0;
+    background: url("https://ssl.pstatic.net/static/kin/09renewal/bg_tab_princip.gif") repeat-x left top;
+}
+.wrap_principle .tab {
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    margin: 27px 0 40px;
+    border-left: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+    background: url("https://ssl.pstatic.net/static/kin/09renewal/bg_tab.gif") repeat-x;
+    zoom: 1;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.tab li {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.tab .on .item {
+    background: #fff;
+    color: #000;
+}
+.principle .item {
+    padding: 10px 25px;
+    border-width: 0 1px;
+}
+.tab .item {
+    display: block;
+    padding: 10px 37px;
+    border: 1px solid #d3d3d3;
+    border-width: 1px 1px 0;
+    background: #efefef;
+    margin-left: -1px;
+    font-size: 12px;
+    line-height: 1;
+    color: #8c8c8c;
+    text-decoration: none !important;
+}
+
+.principle_info h3 {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+.principle_info {
+    width: 814px;
+    margin: 30px auto 0;
+}
+
+.principle_info h3 strong {
+    color: #259c00;
+}
+
+.principle_info .h3_info {
+    line-height: 18px;
+    margin-top: 6px;
+    padding-bottom: 10px;
+}
+
+.principle_info dl {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 25px;
+}
+
+.principle_info dt {
+    font-weight: bold;
+    color: #464646;
+    margin-top: 25px;
+    letter-spacing: -1px;
+}
+
+.principle_info dd {
+    line-height: 18px;
+    margin: 5px 0 0 16px;
+}
+
+.container-fluid-content-inner:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.container-fluid:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+#content h2 {
+    color: black;
+}
