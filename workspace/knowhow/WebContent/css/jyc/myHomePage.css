@@ -1,0 +1,889 @@
+@charset "UTF-8";
+
+
+body{
+	font-family: 'Helvetica Neue','Apple SD Gothic Neo','나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+a{
+	text-decoration : none;
+	color : black;
+}
+p{
+	margin:0;
+	padding:0;
+}
+li, ul {
+	list-style:none;
+}
+
+em{
+	font-style:normal;
+}
+
+table{
+	 margin: -2px 0 48px 0;
+	 width:760px;
+}
+
+.nav{
+	position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.nav_inner{
+	position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu{
+	float:left;
+	position: relative;
+    height: 50px;
+    margin-left: 15px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav_list .menu em{
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 17px 0;
+    vertical-align: top;
+}
+
+.ask{
+	position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    height: 50px;
+    padding: 0 18px;
+    line-height: 50px;
+    border: 1px solid #00bd39;
+    background-color: #00c73c;
+    color: #fff;
+    font-size: 15px;
+}
+.my_main_content{
+	width:980px;
+	margin: 0 auto;
+}
+.location{
+	display: block;
+    position: relative;
+    padding: 12px 0 9px 10px;
+    line-height: 18px;
+    z-index: 22;
+    zoom: 1;
+}
+
+.location li{
+	position: relative;
+    float: left;
+    padding: 1px 11px 0 6px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_arrow.gif) no-repeat 100% 5px;
+}
+.my_personal{
+	position: relative;
+    z-index: 110;
+    width: 980px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_mid_160808.png) repeat-y;
+}
+
+.my_personal_top{
+	height: 4px;
+    line-height: 0;
+    font-size: 0;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_top_160808.png) no-repeat;
+}
+
+.my_personal .my_personal_inner{
+	position: relative;
+    width: 1000px;
+    padding: 0 4px 22px 27px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_btm_160808.png) no-repeat left bottom;
+    zoom: 1;
+    height:470px;
+}
+
+.profile_section{
+	position: relative;
+    float: left;
+    width: 134px;
+    margin-right: 51px;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.profile_gruop{
+	width: 134px;
+    height: 134px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail{
+	width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+
+.thumbnail .img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+.edit_photo{
+	width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 79px;
+    right: 11px;
+    z-index: 2;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 100%;
+    background-color: #fff;
+    
+}
+
+.photo_btn{
+	width: 15px;
+    height: 15px;
+    display: block;
+    overflow: hidden;
+    background-position: -255px 0;
+    background-image: url(https://ssl.pstatic.net/static/kin/09renewal/sp_profile_161027.png);
+}
+
+
+.profile_info{
+	width: 100%;
+    clear: both;
+    margin: 12px 0 0;
+    zoom: 1;
+}
+.profile_name{
+	margin-bottom: 7px;
+}
+.profile_user{
+	display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.answer_date{
+	margin-bottom: -2px;
+    padding: 0;
+    color: #909090;
+    font-size:12px;
+}
+
+.cert_button_area{
+	position: relative;
+    clear: both;
+    margin-top: 6px;
+    z-index: 105;
+}
+
+.cert_button_area .certi_btn{
+	display: inline-block;
+    min-width: 132px;
+    height: 21px;
+    margin-top: 4px;
+    line-height: 21px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #0a9d01;
+    font-size: 11px;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+.profile_section2{
+	float: left;
+    width: 339px;
+    margin-right: 40px;
+}
+
+.my_intro{
+	position: relative;
+    z-index: 108;
+    padding: 20px 0 17px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.my_title{
+	padding-bottom:0;
+}
+
+
+.sum{
+	margin-bottom: 7px;
+    color: #2e2e2e;
+    letter-spacing: -1px;
+}
+
+
+.my_title .action{
+	margin-bottom: 7px;
+    padding-top: 1px;
+    color: #919190;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.modify_btn{
+	position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: right;
+}
+
+
+.certification{
+	position: relative;
+    z-index: 105;
+    width: 339px;
+    padding: 15px 0;
+    zoom: 1;
+}
+
+.certification .tooltip_title{
+	position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    z-index: 20;
+}
+
+.help_button{
+	vertical-align: top;
+}
+
+.certification .action_tit{
+	margin-bottom: 10px;
+    color: #000;
+}
+
+.certification .action{
+	color: #919190;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 4px;
+}
+
+.management_button{
+	display: inline-block;
+    margin: -2px -2px 0;
+    padding: 2px 0;
+    vertical-align: top;
+}
+
+.tit .tit_text{
+	margin-bottom: 10px;
+    color: #000;
+}
+
+.my_main{
+	border-top: 1px solid #e0e0e0;
+}
+
+
+.my_main .tit{
+	position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top : 15px;
+    z-index: 20;
+}
+
+
+.profile_section3{
+	float: left;
+    width: 395px;
+}
+
+.profile_section3 .level_area{
+	padding: 19px 30px 5px;
+	color: #fb9300;
+	
+}	
+
+.level_wrap{
+	position: relative;
+	padding-bottom: 26px;
+}
+.my_level{
+	position: absolute;
+    line-height: 16px;
+    overflow: hidden;
+}
+
+.level_number{
+	 background: #fb9300;
+}
+
+.guide{
+	display: inline-block;
+    position: relative;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/sp_grd2.gif) no-repeat 0 -20px;
+    text-indent: -999px;
+}
+
+.my_guage_info{
+	position: relative;
+    height: 16px;
+    background: #f1f1f1;
+    margin-top: 41px;
+}
+
+.my_guage_info .inner{
+	position: absolute;
+    left: 0;
+    display: block;
+    height: 16px;
+}
+
+.grd_action{
+	display: inline-block;
+    width: 100%;
+    height: 16px;
+}
+
+
+.grd_detail{
+	position: relative;
+    top: -57px;
+    right: 0;
+    height: 31px;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+
+.grd_bar, .detail_info {
+	  background: #fb9300;
+}
+
+.detail_box{
+	position: absolute;
+    right: 0;
+}
+
+.my_level .level_number{
+	background: #fb9300;
+}
+
+.detail_info{
+	min-width: 24px;
+    padding: 5px 6px 0;
+    position: relative;
+    right: -50%;
+    height: 31px;
+    
+}
+
+.my_guage_info .grd_detail .tit {
+    color: #fff;
+    font-weight: normal;
+}
+
+.my_guage_info .grd_detail .sum{
+	color: #fffc00;
+    white-space: nowrap;
+    
+}
+
+.my_level_up{
+	position: absolute;
+    right: 0;
+    bottom: -16px;
+    font-size: 11px;
+    color: #969696;
+}
+
+.level_number{
+	background: #dbdbdb;
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 13px;
+    margin-right: 4px;
+    font-family: Tahoma,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.lv_content{
+	overflow:hidden;
+}
+
+.lv_content .num{
+	 margin-top: -3px;
+    color: #df3f0d;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Tahoma,sans-serif;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+
+.lv_content li{
+	position: relative;
+    float: left;
+    width: 33.33%;
+    height: 36px;
+    text-align: center;
+}
+
+.lv_content .tit{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    color: #8c8c8c;
+}
+
+.lv_til{
+	margin: 12px 0 0;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.lv_til em {
+    display: inline-block;
+    min-width: 26px;
+    height: 13px;
+    padding: 1px;
+    margin-right: 3px;
+    color: #fff;
+    line-height: 13px;
+    background: #76d826;
+}
+
+.lv_til span{
+	color: #969696;
+}
+
+.my_spec{
+	zoom: 1;
+    clear: both;
+    padding: 10px 20px 11px;
+    color: #606060;
+    line-height: 22px;
+}
+
+.my_spec dt{
+	box-sizing: border-box;
+    float: left;
+    width: 20%;
+    padding-left: 10px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat 0 -10px;
+}
+
+.my_spec dd{
+	float: left;
+    width: 80%;
+    zoom: 1;
+    overflow: visible;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bu_personal_bar.gif) left 7px no-repeat;
+    text-indent: 10px;
+}
+
+.q_list{
+	display: inline-block;
+	width:55%;
+	float: left;
+    color: #606060;
+}
+
+.q_list{
+	float: left;
+    width: 45%;
+    color: #606060;
+}
+
+.my_spec .rec::before {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat 0 -20px;
+    vertical-align: 2px;
+    content: '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.helper_area .help_inner{
+	position: relative;
+    float: left;
+    width: 94%;
+    border-top: 1px solid #e0e0e0;
+}
+
+.help_inner .icon_area .icon_helper{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    width: 26px;
+    height: 23px;
+    margin-top: -11px;
+    background-position: 0 -235px;
+    display: block;
+    overflow: hidden;
+    background-image: url(https://ssl.pstatic.net/static/kin/section/sprite/sp_common_old_180806.png);
+    background-repeat: no-repeat;
+}
+
+.content_area{
+	margin-top : 7px;
+	height:30px;
+}
+
+.content_area .tit{
+	display: inline-block;
+    letter-spacing: -0.5px;
+    font-size: 11px;
+    position: absolute;
+    left:32px;
+}
+
+
+.content_area .help_button{
+	position:absolute;
+	left:112px;
+}
+.count{
+	position:relative;
+}
+.number{
+	font-weight: bold;
+    color: #2c2c2c;
+    position: absolute;
+    top: 15px;
+    left: 32px;
+}
+
+
+
+.left_nav{
+	position:relative;
+	float:left;
+	width: 180px;
+    padding: 28px 40px 100px 0;
+}
+
+.left_nav ul{
+	overflow: hidden;
+    margin-top: 10px;
+    margin-left:-37px;
+}
+
+.left_nav ul li{
+	border-top: 1px solid #e6e6e6;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.has_sub .sub li{
+	 border:0;
+}
+
+
+
+
+.main{
+	padding-top: 20px;
+}
+
+.interest_section{
+	position:relative;
+	float: left;
+    width: 368px;
+    margin: 0;
+    
+}
+
+.interest_area{
+	height:140px;
+}
+
+h4 img{
+	vertical-align: middle;
+}
+
+.tag{
+	float: none;
+    margin: 4px 0 0 0;
+    padding:0;
+}
+
+.tag li{
+	float: left;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    white-space: nowrap;
+    color: #8c8c8c;
+}
+
+.interest_add{
+	clear:both;
+}
+
+.interest_add .dsc{
+	margin-bottom: 4px;
+    font-size: 11px;
+    color: #707070;
+    letter-spacing: -1px;
+}
+
+.interest_add .interest_rcnt{
+	display: inline-block;
+    padding: 7px 12px;
+    border: 1px solid #f3f3f3;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.interest_rcnt span a{
+	display: inline-block;
+    margin-left: -1px;
+    padding: 0 3px 0 4px;
+    _padding-left: 10px;
+    font-size: 11px;
+    color: #32b108;
+    letter-spacing: -1px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/line_v12.gif) no-repeat 0 2px;
+}
+
+.interest_rcnt .add{
+	display:block;
+}
+
+.interest_keyword{
+	display:inline-block;
+	padding-left:29px;
+}
+
+.my_activity{
+	position: relative;
+    width: 758px;
+    min-height: 64px;
+    overflow: hidden;
+    margin-top: 30px;
+    background: #f4fbea;
+    border: 1px solid #e4ecd8;
+}
+
+.my_activity h3{
+	float: left;
+    padding: 0px 20px 2px;
+    color: #23ad01;
+}
+
+.my_activity .my_message{
+	float: left;
+    width: 638px;
+    padding: 0 0 0 20px;
+    margin: 14px 0;
+    border-left: 1px solid #e4ecd8;
+    box-sizing: border-box;
+    margin-bottom: -20px;
+}
+
+.my_info_area{
+	position:relative;
+}
+
+.my_info_area h4{
+	position: relative;
+    height: 20px;
+    margin-top: 48px;
+    padding: 2px 0 6px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    color: #787878;
+}
+
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
+
+dt .icon_q {
+	display: inline-block;
+    margin: 1px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -300px;
+    vertical-align: top;
+}
+
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:38px;
+}
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
+
+dt .icon_q {
+	display: inline-block;
+    margin: 1px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -300px;
+    vertical-align: top;
+}
+
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:38px;
+}
+
+
+dd .icon_a{
+	display: inline-block;
+    margin: 2px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -350px;
+    vertical-align: top;
+}
+
+tbody td{
+	padding: 7px 0 6px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 11px;
+    line-height: 18px;
+    color: #848484;
+}
+
+.category{
+	padding-top:8px;
+	text-align:center;
+}
+
+.category a{
+	color: #969696;
+}
+
+.face_expression{
+	position:relative;
+	
+}
+
+.face_expression .recommend{
+	display: block;
+    padding-left: 18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat left -1178px;
+    height: 18px;
+    position: absolute;
+    left: 19px;
+    bottom: 33px;
+}
+
+.first_write_date{
+	text-align:center;
+}
+
+.more{
+	position: absolute;
+    top: 2px;
+    right: 3px;
+    line-height: 20px;
+	font-weight: normal !important;
+    font-size: 12px !important;
+    color: #aeaeae !important;
+    text-decoration: underline !important;
+}
+
+
+thead th {
+    padding: 10px 0 8px 0;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    background: #fff;
+    text-align:center;
+}
+
+#open_dictionary h4{
+	position: relative;
+    height: 20px;
+    margin-top: 48px;
+    padding: 2px 0 6px;
+    border-bottom: 1px solid #c9c9c9;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    color: #787878;
+}
+
+#open_dictionary{
+	width: 78%;
+    margin-left: 220px;
+}
+
+.know_area dl dt{
+	display: inline;
+    margin-left: 4px;
+}
+
+.know_area dl dd{
+	display: inline;
+    margin-left: 4px;
+}
+
