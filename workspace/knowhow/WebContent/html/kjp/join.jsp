@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edges">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>노하우 : 회원가입</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/html/kjp/join.css"/>
-    <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="knohow-logo.jpeg">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/join.css"/>
+    <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="">
 </head>
 <body>
     <div id="wrap">
