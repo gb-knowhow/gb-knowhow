@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+@media (max-width: 1100px) {
+    #left-side {
+        display: none;
+    }
+
+    #first-box {
+        display: none;
+    }
+    
+    #second-box {
+        display: none;
+    }
+    
+    #third-box {
+        display: none;
+    }
+}
+
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#menu-side {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    background-color: #1A1D3D;
+}
+
+.menub-box {
+    height: 100%;
+}
+
+#right-side {
+    width: 85%;
+    height: auto;
+    position: relative;
+}
+
+#top-box {
+    display: flex;
+    border-bottom: 1px solid #fff;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#middle-box {
+    width: 100%;
+    height: 100%;
+
+}
+
+#bottom-box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+#knowhow-logo {
+    width: 80%;
+}
+
+
+.side-icons {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+}
+
+#wrap-middle-box{
+    height: 100%;
+}
+
+#middle-box-contents {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-gap{
+    padding-right: 5%;
+}
+
+.side-bar{
+    display: flex;
+    align-items: center;
+    height: 5%;
+    margin: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#bottom-box{
+    height: 0;
+}
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-header {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    height: 8vh;
+}
+
+.letter-space {
+    width: 3%;
+}
+
+
+
+.right-body{
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+.user-list-letter{
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.user-list-contents{
+    border-radius: 10px;
+    width: 160vh;
+    height: 70vh;
+    margin: 2% 5% 5% 5%;
+    background-color: #fff;
+}
+
+.member-input-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.member-search-wrap {
+    padding-left: 6%;
+}
+
+.member-search{
+    width: 40vh;
+    height: 4vh;
+}
+
+.member-delete-button{
+    background-color: #F1416C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.member-delete-button-wrap{
+    padding-right: 5%;
+}
+
+.mentor-list-header{
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+
+}
+
+.mentor-list-contents{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EEEEEE;
+
+}
+
+.checkbox-zip{
+    text-align: center;
+    width: 10%;
+}
+
+.checkbox-zip input[type=checkbox]{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.user-num{
+    text-align: center;
+    width: 10%;
+
+}
+
+.user-role{
+    text-align: center;
+    width: 11%;
+
+}
+
+.user-name{
+    text-align: center;
+    width: 11%;
+
+}
+
+.user-email{
+    text-align: center;
+    width: 20%;
+
+}
+
+.user-reply{
+    text-align: center;
+    width: 11%;
+
+}
+
+.user-comment{
+    text-align: center;
+    width: 11%;
+
+}
+
+.user-join-day{
+    text-align: center;
+    width: 15%;
+
+}
