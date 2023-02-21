@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>내가 쓴 글</title>
+<title>나의 좋아요 목록</title>
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css"/>
 </head>
@@ -130,7 +130,7 @@
 		<div class="content">
 		<dl class="my_question_info">
 			<dt>
-				<span>내가 쓴 글</span>
+				<span>좋아요 목록</span>
 			</dt>
 			<dd>2</dd>
 		</dl>
@@ -161,7 +161,7 @@
 						<td class="qna">
 							<dl>
 								<dt>
-									<a href="#">나의 첫 답변</a>
+									<a href="#"></a>
 								</dt>
 							
 							</dl>
@@ -204,3 +204,4 @@
 	</div>
 </div>
 </body>
+</html>

@@ -266,6 +266,7 @@ table{
 }
 
 
+
 .left_nav{
 	position:relative;
 	float:left;
@@ -285,37 +286,12 @@ table{
     font-weight: bold;
 }
 
+
 .content{
-    width: 747px;
-}
-
-.my_question_info{
-	margin-top:41px;
-}
-
-.my_question_info dd{
-    float: left;
-    display: inline;
-    margin-top: -2px;
-    padding-right: 22px;
-    color: #e93100;
-    font-family: Tahoma,sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    vertical-align: middle;
-    line-height: 16px;
-    margin-left:0;
-}
-
-.my_question_info dt{
 	float: left;
-    display: inline;
-    margin-left: 26px;
-    padding: 0 4px 0 12px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/line_v2.gif) no-repeat left 1px;
-    font-weight: bold;
+    width: 747px;
+    padding-top: 30px;
 }
-
 
 
 
@@ -327,61 +303,22 @@ tbody td{
     color: #848484;
 }
 
-.category{
-	padding-top:8px;
-	text-align:center;
-}
-
-.category a{
-	color: #969696;
-}
-
-.first_write_date{
-	text-align:center;
-}
-
-
-
 thead th {
-    padding: 10px 0 8px 0;
-    border-top: 1px solid #c9c9c9;
-    border-bottom: 1px solid #c9c9c9;
-    background: #fff;
-    text-align:center;
-}
-
-
-
-
-
-
-.page{
-	width: 100%;
-    padding: 13px 0 22px;
-    line-height: 24px;
-    text-align: center;
-    
-}
-
-.page a{
-    margin: -1px -1px 0 0;
-    border: 1px solid #e9e9e9;
-    color: #e85028;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0 1px 0 2px;
-    padding: 0 8px;
-    font-size: 12px;
-    font-family: Tahoma,sans-serif;
-    font-weight: bold;
-    text-decoration: none !important;
+	width: 129px;
+    padding: 19px 0 0 24px;
+    background: #fbfbfb;
+    border-top: 1px solid #fff;
+    color: #2e2e2e;
     vertical-align: top;
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: -1px;
 }
 
-.search{
-	margin-top: 26px;
-    padding-bottom: 0;
-}
+
+
+
+
 
 fieldset{
 	color: #c4c4c4;
@@ -389,11 +326,12 @@ fieldset{
     border : 0;
 }
 
-fieldset input[type="text"]{
+fieldset input[type="text"], input[type="password"], input[type="email"]{
 	width: 219px;
     height: 15px;
     margin-left: 1px;
-    padding: 3px 3px 1px;
+    padding: 7px;
+    border-radius: 4px;
     border: 1px solid #b5b5b5;
     border-color: #b5b5b5 #ddd #ddd #b5b5b5;
     font-size: 12px;
@@ -406,18 +344,139 @@ input[type="image"]{
     font-size: 12px;
     vertical-align: middle;
 }
-.question_button{
-	display: inline-block;
-	text-align: right;
-	position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
+
+tbody tr th{
+	width: 129px;
+    padding: 19px 0 0 24px;
+    background: #fbfbfb;
+    border-top: 1px solid #fff;
+    color: #2e2e2e;
+    vertical-align: top;
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: -1px;
 }
+
 
 form{
 	position:relative;
 }
+
+
+.agree_area{
+	margin-top:30px
+}
+
+.agree_checkbox{
+	position: relative;
+    line-height: 22px;
+    text-align:left;
+    margin: 15px;
+}
+
+.agree_checkbox label{
+	display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.agree_checkbox label input{
+	position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.agree_checkbox label em{
+	color:#666;
+	
+}
+.agree_right{
+	position: absolute;
+    top: 0;
+    right: 0;
+    font-size:12px;
+}
+
+.agree_list_area{
+	margin-top: 20px;
+    padding: 16px;
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+}
+
+.agree_checkbox .agree_for__privacy{
+	color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.agree_checkbox .privacy_discription{
+    margin-top: 7px;
+    padding-left: 32px;
+    color: #666;
+    font-size: 13px;
+}
+
+.agree_checkbox .privacy_discription .highlight{
+	font-size: 14px;
+    font-weight: 900;
+    color: #03cf5d;
+    
+}
+
+.agree_for__responsibilty{
+	color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.agree_checkbox{
+    position: relative;
+    line-height: 20px;
+}
+
+.agree_right{
+    color: #ff7070;
+}
+
+.button{
+	margin-top:30px;
+	text-align:center;
+}
+
+
+.save{
+	background-color: #0aca48;
+    color: #fff;
+    width: 60px;
+    height: 28px;
+    font-weight: 500;
+    border:0;
+}
+
+.cancel{
+	border: solid 1px #cfcfcf;
+	width: 60px;
+    height: 28px;
+    background-color: #fff;
+    color: #a4a4a4;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
 
 
 

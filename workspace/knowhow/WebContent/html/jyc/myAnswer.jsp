@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>나의 답변</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+<!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css"/>
 </head>
 <body>
 	<div class="nav">
@@ -96,8 +97,7 @@
 				
 			</div>
 				
-		</div>
-			
+		</div>	
 			
 
 		
@@ -105,31 +105,23 @@
 		<div class="left_nav">
 		<ul>
 			<li>
-				<a href="#">나의 답변</a>
+				<a href="#">나의 답글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">나의 질문</a>
+				<a href="#">내가쓴 글</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="#">나의 댓글목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
 				<a href="#">내가 좋아요한 목록</a>
 				<span class="num">(3)</span>
 			</li>
-			<li class="has_sub">
-				<a href="#">관리</a>
-				<ul class="sub">
-					<li>
-						<a href="#">프로필 수정 및 설정</a>
-					</li>
-					<li>
-						<a href="#">임시저장</a>
-						<span class="num">(3)</span>
-					</li>
-					<li>
-						<a href="#">내공</a>
-					</li>
-				</ul>
+			<li>
+				<a href="#">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
@@ -138,12 +130,20 @@
 		<div class="content">
 		<dl class="my_question_info">
 			<dt>
-				<span>좋아요 목록</span>
+				<span>답변 목록</span>
 			</dt>
 			<dd>2</dd>
 		</dl>
 		
 			<table class="my_question_content" width="100%">
+			<colgroup>
+				
+        			<col width="3000">
+        			<col width="500">
+					<col width="500">
+        			<col width="1200">
+    		</colgroup>
+			
 				<thead>
 					<tr>
 						<th>제목</th>
@@ -201,4 +201,4 @@
 	</div>
 </div>
 </body>
-</html>ml>
+</html>

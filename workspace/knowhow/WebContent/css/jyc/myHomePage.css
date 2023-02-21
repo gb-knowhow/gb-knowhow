@@ -12,7 +12,7 @@ a{
 	color : black;
 }
 p{
-	margin:0;
+	margin:9px;
 	padding:0;
 }
 li, ul {
@@ -73,21 +73,7 @@ table{
 	width:980px;
 	margin: 0 auto;
 }
-.location{
-	display: block;
-    position: relative;
-    padding: 12px 0 9px 10px;
-    line-height: 18px;
-    z-index: 22;
-    zoom: 1;
-}
 
-.location li{
-	position: relative;
-    float: left;
-    padding: 1px 11px 0 6px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_arrow.gif) no-repeat 100% 5px;
-}
 .my_personal{
 	position: relative;
     z-index: 110;
@@ -108,13 +94,13 @@ table{
     padding: 0 4px 22px 27px;
     background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_btm_160808.png) no-repeat left bottom;
     zoom: 1;
-    height:470px;
+    height:190px;
 }
 
 .profile_section{
 	position: relative;
     float: left;
-    width: 134px;
+    width: 119px;
     margin-right: 51px;
     padding-top: 28px;
     text-align: center;
@@ -153,7 +139,7 @@ table{
 	width: 15px;
     height: 15px;
     position: absolute;
-    bottom: 79px;
+    bottom: 35px;
     right: 11px;
     z-index: 2;
     padding: 5px;
@@ -206,23 +192,6 @@ table{
     z-index: 105;
 }
 
-.cert_button_area .certi_btn{
-	display: inline-block;
-    min-width: 132px;
-    height: 21px;
-    margin-top: 4px;
-    line-height: 21px;
-    border: 1px solid #ddd;
-    background: #fff;
-    color: #0a9d01;
-    font-size: 11px;
-    vertical-align: top;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-
 
 .profile_section2{
 	float: left;
@@ -234,7 +203,6 @@ table{
 	position: relative;
     z-index: 108;
     padding: 20px 0 17px;
-    border-bottom: 1px solid #e0e0e0;
 }
 
 
@@ -348,154 +316,19 @@ table{
 	 background: #fb9300;
 }
 
-.guide{
-	display: inline-block;
-    position: relative;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    margin-left: 2px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/sp_grd2.gif) no-repeat 0 -20px;
-    text-indent: -999px;
-}
 
-.my_guage_info{
-	position: relative;
-    height: 16px;
-    background: #f1f1f1;
-    margin-top: 41px;
-}
-
-.my_guage_info .inner{
-	position: absolute;
-    left: 0;
-    display: block;
-    height: 16px;
-}
-
-.grd_action{
-	display: inline-block;
-    width: 100%;
-    height: 16px;
-}
-
-
-.grd_detail{
-	position: relative;
-    top: -57px;
-    right: 0;
-    height: 31px;
-    font-size: 11px;
-    letter-spacing: 0;
-}
-
-.grd_bar, .detail_info {
-	  background: #fb9300;
-}
-
-.detail_box{
-	position: absolute;
-    right: 0;
-}
-
-.my_level .level_number{
-	background: #fb9300;
-}
-
-.detail_info{
-	min-width: 24px;
-    padding: 5px 6px 0;
-    position: relative;
-    right: -50%;
-    height: 31px;
-    
-}
-
-.my_guage_info .grd_detail .tit {
-    color: #fff;
-    font-weight: normal;
-}
-
-.my_guage_info .grd_detail .sum{
-	color: #fffc00;
-    white-space: nowrap;
-    
-}
-
-.my_level_up{
-	position: absolute;
-    right: 0;
-    bottom: -16px;
-    font-size: 11px;
-    color: #969696;
-}
-
-.level_number{
-	background: #dbdbdb;
-	display: inline-block;
-    width: 14px;
-    height: 14px;
-    line-height: 13px;
-    margin-right: 4px;
-    font-family: Tahoma,sans-serif;
-    font-size: 11px;
-    font-weight: normal;
-    text-align: center;
-    color: #fff;
-}
 
 .lv_content{
 	overflow:hidden;
+	text-align:center;
 }
 
-.lv_content .num{
-	 margin-top: -3px;
-    color: #df3f0d;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Tahoma,sans-serif;
-    line-height: 22px;
-    letter-spacing: -1px;
-}
 
 .lv_content li{
 	position: relative;
-    float: left;
-    width: 33.33%;
     height: 36px;
-    text-align: center;
 }
 
-.lv_content .tit{
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 11px;
-    color: #8c8c8c;
-}
-
-.lv_til{
-	margin: 12px 0 0;
-    font-size: 11px;
-    line-height: 13px;
-    text-align: center;
-}
-
-.lv_til em {
-    display: inline-block;
-    min-width: 26px;
-    height: 13px;
-    padding: 1px;
-    margin-right: 3px;
-    color: #fff;
-    line-height: 13px;
-    background: #76d826;
-}
-
-.lv_til span{
-	color: #969696;
-}
 
 .my_spec{
 	zoom: 1;
@@ -510,7 +343,6 @@ table{
     float: left;
     width: 20%;
     padding-left: 10px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat 0 -10px;
 }
 
 .my_spec dd{
@@ -529,11 +361,6 @@ table{
     color: #606060;
 }
 
-.q_list{
-	float: left;
-    width: 45%;
-    color: #606060;
-}
 
 .my_spec .rec::before {
     display: inline-block;
@@ -551,41 +378,6 @@ table{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.helper_area .help_inner{
-	position: relative;
-    float: left;
-    width: 94%;
-    border-top: 1px solid #e0e0e0;
-}
-
-.help_inner .icon_area .icon_helper{
-	position: absolute;
-    top: 50%;
-    left: 0;
-    width: 26px;
-    height: 23px;
-    margin-top: -11px;
-    background-position: 0 -235px;
-    display: block;
-    overflow: hidden;
-    background-image: url(https://ssl.pstatic.net/static/kin/section/sprite/sp_common_old_180806.png);
-    background-repeat: no-repeat;
-}
 
 .content_area{
 	margin-top : 7px;
@@ -605,9 +397,13 @@ table{
 	position:absolute;
 	left:112px;
 }
-.count{
-	position:relative;
+
+.body_content{
+	display:flex;
+	justify-content:center;
 }
+
+
 .number{
 	font-weight: bold;
     color: #2c2c2c;
@@ -826,15 +622,7 @@ tbody td{
 	
 }
 
-.face_expression .recommend{
-	display: block;
-    padding-left: 18px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat left -1178px;
-    height: 18px;
-    position: absolute;
-    left: 19px;
-    bottom: 33px;
-}
+
 
 .first_write_date{
 	text-align:center;
@@ -874,7 +662,6 @@ thead th {
 
 #open_dictionary{
 	width: 78%;
-    margin-left: 220px;
 }
 
 .know_area dl dt{
