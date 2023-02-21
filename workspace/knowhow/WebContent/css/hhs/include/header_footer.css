@@ -260,9 +260,9 @@ button {
 
 .headerLogo_wrapper .linkNaver {
     position: relative;
-    float: left;
     width: 65px;
     height: 57px;
+    float:left;
     background-image: url("/image/knowhow_icon.png");
     display: inline-block;
     background-size: cover;
