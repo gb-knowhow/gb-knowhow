@@ -1,21 +1,48 @@
-
 const $dropdownButton = $(".categoryListButton");
-const $dropdownSection = $(".dropdownSection");
+const $dropdownSection = $(".categoryLayerWrap");
+const $dropdownSearchButton = $(".searchListButton");
+const $dropdownSearchSection = $(".search_dropdown");
 
-globalThis.flag=1;
+let checkSlideDrop;
 
-$dropdownButton.on("click", function(){
+// console.log($dropdownButton);
 
-    // console.log($dropdownButton);
-    if(globalThis.flag==1){
-        $dropdownSection.load("header-dropdown.html");
-        flag++;
+$dropdownButton.on("click", function(e){
+    e.preventDefault();
+         
+    // console.log("클릭")
+
+    if(checkSlideDrop){
+       $dropdownSection.slideUp();
+       checkSlideDrop = false;
+    } else{
+       $dropdownSection.slideDown();
+       checkSlideDrop = true;
     }
-    console.log(flag);
 
-    if(flag ==2){
-        $(".categoryLayerWrap").remove();
-        flag =1;
-    }
-    console.log(flag);
+
 });
+
+$dropdownSection.slideToggle(500);
+
+
+
+let checkSlideDropSearch;
+
+$dropdownSearchButton.on("click", function(e){
+    e.preventDefault();
+         
+    // console.log("클릭");
+
+    if(checkSlideDropSearch){
+       $dropdownSearchSection.slideUp();
+       checkSlideDropSearch = false;
+    } else{
+       $dropdownSearchSection.slideDown();
+       checkSlideDropSearch = true;
+    }
+
+});
+
+$dropdownSearchSection.slideToggle(500);
+

@@ -28,6 +28,13 @@
                 >고객센터
               </a>
             </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                >오시는 길
+              </a>
+            </li>
           </ul>
             <em class="copy">Copyright</em>
             <em class="u_cri">©</em>
