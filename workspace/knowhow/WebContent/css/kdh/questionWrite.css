@@ -26,17 +26,20 @@ ul {
 }
 
 @media (min-width: 1025px) {
-  .EndTopTitle_title_content {
+  .firstTitle {
     font-family: NanumSquareB;
   }
 }
-.EndTopTitle_title_content {
+
+.firstTitle {
   line-height: 38px;
   font-size: 38px;
   letter-spacing: -1px;
   text-shadow: 0 0 2px rgb(0 0 0 / 10%);
   font-weight: 700;
 }
+
+
 button {
   -webkit-appearance: none;
   border: 0;
@@ -55,6 +58,10 @@ select,
 textarea {
   font-family: NanumSquareR, -apple-system, AppleSDGothicNeo, SFProDisplay, BlinkMacSystemFont,
     HelveticaNeue, Helvetica, arial, 'sans-serif';
+}
+
+.titleColor {
+  color: #388C57;
 }
 
 .EndTopTitle_bottom {
@@ -135,6 +142,7 @@ img {
   padding: 18px 0;
   font-size: 16px;
   letter-spacing: -0.5px;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .InquiryInput_add_text {
@@ -144,7 +152,7 @@ img {
   text-align: right;
   font-size: 14px;
   letter-spacing: -0.35px;
-  color: blue;
+  color: #388C57;
 }
 
 .InquiryInput_field_set_downContent > div[class*='_box'] {
@@ -199,17 +207,17 @@ em {
 .InquiryInput_ask_form dl dd .InquiryInput_login_link {
   display: inline-block;
   line-height: 35px;
-  color: blue;
+  color: #388C57;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .InquiryInput_ask_form dl dt.InquiryInput_essential {
-  color: blue;
+  color: #388C57;
 }
 
 .InquiryInput_ask_form dl dt.InquiryInput_essential {
-  color: blue;
+  color: #388C57;
 }
 
 .InquiryInput_ask_form dl dd .InquiryInput_input_text {
@@ -316,9 +324,13 @@ textarea {
 }
 
 .CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn.CommonBtn_on {
-  color: #fff;
-  border-color: blue;
-  background-color: blue;
+  /* color: #fff; */
+  border-color:#e0e0e0;;
+  /* background-color: blue; */
+/* 
+  color: #fff; */
+    /* border-color: blue; */
+    /* background-color: blue; */
 }
 .CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn {
   display: inline-block;
@@ -340,12 +352,13 @@ textarea {
   color: rgba(34,34,34,.8);
 }
 
-.InquiryInput_ask_form dl dd .InquiryInput_check_box input:checked {
-  background: url("https://ssl.pstatic.net/static/help/new_help/checkbox_btn_on.svg") no-repeat;
-  background-size: 22px 22px;
-  -webkit-background-size: 22px 22px;
+.input-agree{
+  cursor: pointer;
 }
 
+.lab{
+  cursor: pointer;
+}
 .CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn {
   display: inline-block;
   width: 196px;
@@ -358,4 +371,14 @@ textarea {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   border: 1px solid rgba(0,0,0,.1);
+}
+
+.arr {
+  margin-top: 11px;
+  font-size: 14px;
+}
+
+.err2 {
+  margin-top: 16px;
+  font-size: 14px;
 }
