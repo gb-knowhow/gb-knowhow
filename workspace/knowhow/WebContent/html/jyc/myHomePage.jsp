@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myHomePage.css" />
+<!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myHomePage.css"/>
 </head>
 <body>
 	<div class="nav">
@@ -102,68 +103,27 @@
 	<div class="left_nav">
 		<ul>
 			<li>
-				<a href="#">나의 답변</a>
+				<a href="#">나의 답글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">나의 질문</a>
+				<a href="#">내가쓴 글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">나의 친구</a>
+				<a href="#">나의 댓글목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">포인트로 감사 내역</a>
-			</li>
-			<li>
-				<a href="#">나의 오픈사전</a>
+				<a href="#">내가 좋아요한 목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">해피빈 기부함</a>
-			</li>
-			<li class="has_sub">
-				<a href="#">1:1질문</a>
-				<ul class="sub">
-					<li>
-						<a href="#">받은 질문</a>
-						<span class="num">(3)</span>
-					</li>
-					<li>
-						<a href="#">보낸 질문</a>
-						<span class="num">(3)</span>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">나의 표정/궁금/보관지식</a>
-			</li>
-			<li>
-				<a href="#">나의 관심질문</a>
-			</li>
-			<li>
-				<a href="#">나의 삭제 지식</a>
-				<span class="num">(3)</span>
-			</li>
-			<li class="has_sub">
-				<a href="#">관리</a>
-				<ul class="sub">
-					<li>
-						<a href="#">프로필 수정 및 설정</a>
-					</li>
-					<li>
-						<a href="#">임시저장</a>
-						<span class="num">(3)</span>
-					</li>
-					<li>
-						<a href="#">내공</a>
-					</li>
-				</ul>
+				<a href="#">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
-	</div>
+		</div>
 	
 	<div class="main">
 	
@@ -176,6 +136,11 @@
 			</h4>
 			
 			<table class="my_answer_content" width="100%">
+				<colgroup>
+        			<col width="3000">
+					<col width="500">
+        			<col width="1200">
+    		</colgroup>
 				<thead>
 					<tr>
 						<th>제목</th>
@@ -225,6 +190,12 @@
 			</h4>
 			
 			<table class="my_question_content" width="100%">
+			<colgroup>
+        			<col width="3000">
+					<col width="500">
+        			<col width="1200">
+    		</colgroup>
+			
 				<thead>
 					<tr>
 						<th>제목</th>
@@ -271,21 +242,7 @@
 			</table>
 			<a href="#" class="more">더보기</a>
 		</div>
-		
-		<div class="my_info_area" id="open_dictionary">
-			<h4>
-				<span class="text">오픈 사전</span>
-				<span class="count">(0)</span>
-			</h4>
-			
-			<div class="know_area">
-				<dl>
-					<dt><img src="https://ssl.pstatic.net/static/kin/09renewal/txt_write_know.gif" width="296" height="13" alt="작성된 집필지식이 없습니다. 오픈사전으로 지식을 공유해 보세요"></dt>
-					<dd><a href="/opendic/write.naver"><img src="https://ssl.pstatic.net/static/kin/09renewal/txt_write_know_1.gif" width="57" height="13" alt="집필하기"></a></dd>
-				</dl>
-			</div>
-		</div>
-	</div>
+	
 	</div>
 </div>	
 	
