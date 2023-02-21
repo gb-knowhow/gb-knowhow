@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Helvetica Neue','Apple SD Gothic Neo','나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+img, fieldset, button{
+	padding:0;
+}
+
+dd, dt{
+	display:inline;
+}
+
+a{
+	text-decoration : none;
+	color : black;
+}
+p{
+	margin:0;
+	padding:0;
+}
+li, ul {
+	list-style:none;
+}
+
+em{
+	font-style:normal;
+}
+
+table{
+	 margin: -2px 0 48px 0;
+	 width:768px;
+	 text-align:center;
+}
+
+.nav{
+	position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.nav_inner{
+	position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu{
+	float:left;
+	position: relative;
+    height: 50px;
+    margin-left: 15px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav_list .menu em{
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 17px 0;
+    vertical-align: top;
+}
+
+.ask{
+	position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    height: 50px;
+    padding: 0 18px;
+    line-height: 50px;
+    border: 1px solid #00bd39;
+    background-color: #00c73c;
+    color: #fff;
+    font-size: 15px;
+}
+
+.my_main_content{
+	width:980px;
+	margin: 0 auto;
+}
+.location{
+	display: block;
+    position: relative;
+    padding: 12px 0 9px 10px;
+    line-height: 18px;
+    z-index: 22;
+    zoom: 1;
+}
+
+.location li{
+	position: relative;
+    float: left;
+    padding: 1px 11px 0 6px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_arrow.gif) no-repeat 100% 5px;
+}
+
+.my_personal{
+	margin:0 auto;
+	position: relative;
+    z-index: 110;
+    width: 980px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_mid_160808.png) repeat-y;
+}
+
+.my_personal_top{
+	height: 4px;
+    line-height: 0;
+    font-size: 0;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_top_160808.png) no-repeat;
+}
+
+.my_personal .my_personal_inner{
+	position: relative;
+    width: 1000px;
+    padding: 0 4px 22px 27px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_btm_160808.png) no-repeat left bottom;
+    zoom: 1;
+    height:90px;
+    margin:0 auto;
+}
+
+.profile_section{
+	position: relative;
+    float: left;
+    width: 134px;
+    margin-right: 51px;
+    padding-top: 28px;
+    text-align: center;
+}
+
+
+.profile_section2{
+	float: left;
+    width: 339px;
+    margin-right: 40px;
+    text-align:center;
+}
+
+.body_contents{
+	margin: 0 auto;
+}
+
+.my_main{
+	position: relative;
+    z-index: 105;
+    width: 339px;
+    padding: 15px 0;
+    zoom: 1;
+}
+
+.my_main .tit{
+	margin-bottom: 8px;
+	position: relative;
+    width: 100%;
+    z-index: 20;
+    color: #919190;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 4px;
+}
+
+.tit img{
+	vertical-align: top;
+	margin-bottom:10px;
+}
+
+.tit p {
+	vertical-algin:left;
+}
+
+.profile_section3{
+	float: left;
+    width: 395px;
+}
+
+.my_spec{
+	zoom: 1;
+    clear: both;
+    padding: 12px 20px 11px;
+    color: #606060;
+    line-height: 22px;
+}
+
+
+.my_spec dt{
+	padding:5px;
+	text-align:center;
+}
+
+
+.left_nav{
+	position:relative;
+	float:left;
+	width: 180px;
+    padding: 28px 40px 100px 0;
+}
+
+.left_nav ul{
+	overflow: hidden;
+    margin-top: 10px;
+    margin-left:-37px;
+}
+
+.left_nav ul li{
+	border-top: 1px solid #e6e6e6;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.has_sub .sub li{
+	 border:0;
+}
+
+.table_list{
+	position: relative;
+    display:inline-block;
+}
+
+.table_list li a{
+	display: block;
+    padding: 10px 37px;
+    border: 1px solid #d3d3d3;
+    border-width: 1px 1px 0;
+    background: #efefef;
+    margin-left: -1px;
+    font-size: 12px;
+    line-height: 1;
+    color: #8c8c8c;
+    text-decoration: none !important;
+}
+
+
+.content{
+	float: left;
+    width: 747px;
+    padding-top: 30px;
+}
+
+.my_question_info{
+	margin-top:41px;
+}
+
+.my_question_info dd{
+    float: left;
+    display: inline;
+    margin-top: -2px;
+    padding-right: 22px;
+    color: #e93100;
+    font-family: Tahoma,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 16px;
+    margin-left:0;
+}
+
+.my_question_info dt{
+	float: left;
+    display: inline;
+    margin-left: 26px;
+    padding: 0 4px 0 12px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/line_v2.gif) no-repeat left 1px;
+    font-weight: bold;
+}
+
+
+.total_question{
+	 position:relative;
+}
+.total_question em{
+	font-size: 14px;
+	color: #e93100;
+	font-family: Tahoma,sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left:49px;
+    bottom:1px;
+}
+
+.my_info_area{
+	position:relative;
+}
+
+.my_info_area h4{
+	position: relative;
+    height: 20px;
+    margin-top: 48px;
+    padding: 2px 0 6px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    color: #787878;
+}
+
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
+
+dt .icon_q {
+	display: inline-block;
+    margin: 1px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -300px;
+    vertical-align: top;
+}
+
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:38px;
+}
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
+
+dt .icon_q {
+	display: inline-block;
+    margin: 1px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -300px;
+    vertical-align: top;
+}
+
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:38px;
+}
+
+
+dd .icon_a{
+	display: inline-block;
+    margin: 2px 0 0 -18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -350px;
+    vertical-align: top;
+}
+
+tbody td{
+	padding: 7px 0 6px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 11px;
+    line-height: 18px;
+    color: #848484;
+}
+
+.category{
+	padding-top:8px;
+	text-align:center;
+}
+
+.category a{
+	color: #969696;
+}
+
+.face_expression{
+	position:relative;
+	
+}
+
+.face_expression .recommend{
+	display: block;
+    padding-left: 18px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_ico_171013.png) no-repeat left -1178px;
+    height: 18px;
+    position: absolute;
+    left: 19px;
+    bottom: 19px;
+}
+
+.first_write_date{
+	text-align:center;
+}
+
+
+
+thead th {
+    padding: 10px 0 8px 0;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+    background: #fff;
+    text-align:center;
+}
+
+
+
+
+
+
+.page{
+	width: 100%;
+    padding: 13px 0 22px;
+    line-height: 24px;
+    text-align: center;
+    
+}
+
+.page a{
+    margin: -1px -1px 0 0;
+    border: 1px solid #e9e9e9;
+    color: #e85028;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 1px 0 2px;
+    padding: 0 8px;
+    font-size: 12px;
+    font-family: Tahoma,sans-serif;
+    font-weight: bold;
+    text-decoration: none !important;
+    vertical-align: top;
+}
+
+.search{
+	margin-top: 26px;
+    padding-bottom: 0;
+}
+
+fieldset{
+	color: #c4c4c4;
+    text-align: center;
+    border : 0;
+}
+
+fieldset input[type="text"]{
+	width: 219px;
+    height: 15px;
+    margin-left: 1px;
+    padding: 3px 3px 1px;
+    border: 1px solid #b5b5b5;
+    border-color: #b5b5b5 #ddd #ddd #b5b5b5;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+input[type="image"]{
+	margin: -6px 0 1px;
+    color: #373737;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.question_button{
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+form{
+	position:relative;
+}
+
+.agree_area{
+	margin-top:30px
+}
+
+
+.agree_checkbox{
+	display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    line-height: 20px;
+}
+
+.agree_right{
+    color: #ff7070;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
