@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>나의 답변</title>
-<link rel="stylesheet" href=${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
 </head>
 <body>
 	<div class="nav">
@@ -30,51 +30,78 @@
 		</div>
 	</div>
 		
-	<div class="my_main_content" style="margin-top:30px;">
-		
-		
+	<div class="my_main_content">
+	
 	<div class="my_personal">
 		<div class="my_personal_top"></div>
 		<div class="my_personal_inner">
 			<div class="profile_section">
-				<div class="profile_name">엄준식</div>
-				
-				<div class="info_button" style="margin-top:10px">
-					<a href="#"><img src="https://ssl.pstatic.net/static/kin/09renewal/btn_info_edit.gif" width="61" height="18" alt="정보관리"></a>
+			
+			
+				<div class="profile_group">
+					<span class="thumbnail">
+					<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png" width="100%" height="100%" />
+					</span>
+					
+					<a class="edit_photo">
+						<span class="photo_btn"></span>
+					</a>
 				</div>
-			</div>	
+				
+				<div class="profile_info">
+					<div class="profile_name">
+						<strong class="profile_user">엄준식</strong>
+					</div>
+					
+				</div>
+			</div>
 			
 			<div class="profile_section2">
-				<div class="my_main">
-					<div class="tit">
-						<!-- 주요활동분야 레이어 팝업 -->
-							<p>이름 :&nbsp;<em>정유찬</em></p>
-							<p>나이 :&nbsp;<em>25</em></p>
-							<p>닉네임 :&nbsp;<em>아차차</em></p>
-							<p>역할 :&nbsp;<em>멘티</em></p>
-						</div>
+				<div class="my_intro">
+					<div class="my_title">
+						<p class="sum">나의 정보</p>
+						<p class="action">
+							<p>이름 : <span>정유찬</span></p>
+							<p>나이 : <span>25</span></p>
+							<p>관심분야 : <span>IT</span></p>
+							<p>이메일 : <span>youchanj66@gmail.com</span></p>
+							<p>상태 : <span>멘티</span></p>
+						</p>
 					</div>
 				</div>
-				
-				<div class="profile_section3">
-					<dl class="my_spec">
-					<dt style="display:block">답변<strong>3</strong></dt>
 
-					<dt style="display:block">질문<strong>3</strong></dt>
-
-				</dl>
-			</div>	
-		</div>
-				
-				
 				
 				
 			</div>
 			
+			<div class="profile_section3">				
+				
+				<dl class="my_spec">
+					
+					<dt>질문</dt>
+					<dd>
+						<span class="q_list">전체질문 <strong>3건</strong></span>
+					</dd>
+					
+					<dt style="margin-left:16px">받은 추천</dt>
+					<dd>
+						<span class="q_list">좋아요 <strong>1</strong></span>
+					</dd>
+					
+				</dl>
+				
+						
+					</div>
+				</div>
+				
+			</div>
+				
+		</div>
+			
 			
 
 		
-	
+	<div class="body_content">
 		<div class="left_nav">
 		<ul>
 			<li>
@@ -107,11 +134,11 @@
 			
 		</ul>
 		</div>
-		</div>
+		
 		<div class="content">
 		<dl class="my_question_info">
 			<dt>
-				<img src="https://ssl.pstatic.net/static/kin/09renewal/tx_all_answer.gif" width="50" height="13" alt="총 답변수">
+				<span>좋아요 목록</span>
 			</dt>
 			<dd>2</dd>
 		</dl>
@@ -121,9 +148,7 @@
 					<tr>
 						<th>제목</th>
                			<th>디렉토리</th>
-   	         			<th>채택</th>
    	         			<th>답변</th>
-   	            		<th>표정</th>
                 		<th>작성</th>
                 	</tr>
 				</thead>
@@ -143,17 +168,11 @@
 							<a href="#">공군</a>
 						</td>
 						
-						<td>
-							<div class="adapted_icon"></div>
+						
+						<td class="answer_count" style="text-align:center">
+							답변
 						</td>
 						
-						<td class="answer_count">
-							""
-						</td>
-						
-						<td class="face_expression">
-							<span class="recommend">1</span>
-						</td>
 						
 						<td class="first_write_date">
 							2020.01.01.
@@ -180,6 +199,6 @@
 	</div>
 	
 	</div>
-		
+</div>
 </body>
-</html>
+</html>ml>
