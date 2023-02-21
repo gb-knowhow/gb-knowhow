@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용방법 및 유의사항 페이지</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/image/logo.ico">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/jspTeamProject/image/Favi.ico">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
 </head>
 <body class="body">
     <header></header>
@@ -19,19 +19,15 @@
             <div class="container-fluid-content-inner">
                 <div id="header">
                     <div id="snb_wrap">
-                        <h1>
-                            <a href="http://naver.com" target="_openNaver">
-                                <img src="/image/logo.PNG" width="85" height="60" alt="NAVER"></a>
-                            <span class="service-title">Know-How 서비스 운영 정책</span>
-                        </h1>
+                        <h2>
+                            <strong>Know-How</strong> 서비스 운영정책
+                        </h2>
                         <!-- after -->
                     </div>
                 </div> <!-- id = header 끝 -->
                 <!-- Content -->
                 <div id="content">
-                    <h2>
-                        Know-How 서비스 운영정책
-                    </h2>
+                    
                     <p class="h2_info">Know-How 서비스 이용에 관한 제반 사항은 'Know-How 서비스 운영정책'에서 별도의 언급이 없는 한 Know-How 이용약관을 따릅니다.<br>
                         Know-How 서비스 운영정책은 회원이 Know-How 서비스를 이용함에 있어서 유의사항과 부적절한 활동 및 이에 대한 Know-How의 조치를 규정하는 것을 목적으로 합니다.
                     </p>
@@ -90,9 +86,6 @@
         </div>
 
     </div>
-    <script type="text/javascript">
-		lcs_do();
-	</script>
     <footer></footer>
 </body>
 </html>

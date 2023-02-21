@@ -65,8 +65,7 @@ select {
   margin: 0 auto;
 }
 
-.blind,
-legend {
+.blind, legend {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -172,16 +171,16 @@ div {
   display: block;
 }
 
-.container-fluid {
+.container-full {
   position: relative;
   margin: 0 auto;
 }
 
-.wrap_qna .container-fluid-content-inner {
+.wrap_qna .container-inner {
   padding-bottom: 62px;
 }
 
-.container-fluid-content-inner {
+.container-inner {
   width: 980px;
   margin: 0 auto;
 }
@@ -237,16 +236,16 @@ a {
   visibility: hidden;
 }
 
-.wrap_qna .container-fluid-content__left {
+.wrap_qna .container-full-content__left {
   width: 681px;
 }
 
-.container-fluid-content__left {
+.container-full-content__left {
   position: relative;
   float: left;
 }
 
-.kinqna_wp {
+.tabWrap {
   position: relative;
   z-index: 20;
   zoom: 1;
@@ -254,7 +253,7 @@ a {
 
 .tab1_box {
   border: 1px solid #d3d3d3;
-  background: #f8f8f8;
+  background-color: rgb(56 140 87 / 20%);
 }
 .tab1 {
   border-bottom: 1px solid #d3d3d3;
@@ -267,8 +266,8 @@ a {
 }
 
 .tab1 .on .item {
-  background: #fff;
-  color: #000;
+  background-color: rgb(56 140 87);
+  color: #FFF;
 }
 
 .tab1_box .item {
@@ -295,9 +294,9 @@ a {
   content: '';
 }
 
-.kinqna_wp ~ div .board_box,
-.kinqna_wp ~ div .board_box2,
-.kinqna_wp ~ div .board_box3 {
+.tabWrap ~ div .board_box,
+.tabWrap ~ div .board_box2,
+.tabWrap ~ div .board_box3 {
   border-top: 0;
 }
 .board_box {
@@ -312,16 +311,12 @@ a {
   border-collapse: collapse;
 }
 
-.boardtype2 thead th.title {
-  text-align: center;
-}
-
 .boardtype2 thead th {
   padding: 14px 0 22px 0;
   font-size: 11px;
   color: #585858;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
 }
 
 .boardtype2 tbody td.title {
@@ -330,6 +325,15 @@ a {
   word-break: break-all;
   white-space: normal;
 }
+
+.boardtype2 thead th.title {
+  margin-left: 50%;
+}
+
+.title {
+  text-align: center;
+}
+
 .boardtype2 tbody td {
   padding: 7px 0 6px;
   border-bottom: 1px solid #f3f3f3;
@@ -351,6 +355,7 @@ a {
 
 .boardtype2 tbody td.field {
   padding-top: 8px;
+  text-align: center;
 }
 
 .boardtype2 tbody td.field a {
@@ -359,18 +364,11 @@ a {
 
 .boardtype2 tbody td.t_num {
   padding: 7px 1px 0px 7px;
+  text-align: center;
 }
 
-.paginate a.next:after {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  top: 6px;
-  left: 0;
-  width: 1px;
-  height: 15px;
-  background: #efefef;
-  content: '';
+.t_num{
+  width: 20%;
 }
 
 .paginate a.prev,
@@ -422,7 +420,6 @@ button {
 
 .search fieldset select,
 .search fieldset input {
-  margin: -1px 0 1px;
   color: #373737;
   font-size: 12px;
   vertical-align: middle;
@@ -446,8 +443,128 @@ button {
   zoom: 1;
 }
 
-.container-fluid-content__left:after {
+.container-full-content__left:after {
   display: table;
   clear: both;
   content: '';
+}
+
+.on {
+  text-align: center;
+}
+
+.paging-space {
+  margin-right: 19px;
+  overflow: hidden;
+  padding: 17px 0 26px;
+  clear: both;
+}
+
+.paginate a.prev, .paginate a.next {
+  position: relative;
+  margin: 0;
+  padding: 1px 11px 0 10px;
+  background: url('https://ssl.pstatic.net/static/kin/09renewal/ico_paginate.gif') no-repeat 0 -14px;
+  color: #565656;
+  font-weight: normal;
+}
+
+.paginate a.prev:after {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 1px;
+  height: 15px;
+  background: #efefef;
+  content: '';
+}
+
+.paginate a.next:after {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 1px;
+  height: 15px;
+  background: #efefef;
+  content: '';
+}
+
+.paginate a.next {
+  background-position: 100% 10px;
+}
+
+img, fieldset, button {
+  border: 0;
+}
+
+.search_area {
+  float: left;
+  position: relative;
+  width: 260px;
+  height: 31px;
+  margin: 0 0 0 18px;
+  border: 1px solid #00c73c;
+  background-color: #fff;
+}
+
+.search_input {
+  width: 216px;
+  height: 16px;
+  margin: 10px 20px 0 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #a9a9a9;
+}
+
+input[type=text] {
+  border-radius: 0;
+}
+
+.auto_complete_box.on {
+  display: block;
+}
+.auto_complete_box {
+  display: none;
+  position: absolute;
+  top: 31px;
+  left: -1px;
+  right: -1px;
+  z-index: 1;
+}
+
+.search_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 31px;
+}
+
+.icon_search {
+  background-image: url('https://ssl.pstatic.net/static/kin/section/sprite/sp_gnb_230127.svg');
+  background-size: 85px 67px;
+  background-position: -61px -24px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  margin: -8px 0 0 -8px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+/* 페이지 버튼 클릭 시 css 변경 */
+.clicked {
+  background-color: #388C57;
+  color: #FFF;
 }

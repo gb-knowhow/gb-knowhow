@@ -131,7 +131,7 @@ ul, li {
 }
 
 .principle_info h3 strong {
-    color: blue;
+    color: #388C57;
 }
 
 .principle_info .h3_info {
@@ -171,4 +171,8 @@ ul, li {
 
 #content h2 {
     color: black;
+}
+
+#snb_wrap strong {
+    color: #388C57;
 }
