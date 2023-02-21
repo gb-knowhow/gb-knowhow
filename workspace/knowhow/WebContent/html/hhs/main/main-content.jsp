@@ -271,99 +271,401 @@
             </div>
             <!-- //섹션 헤딩 -->
             <!-- 답변을 기다리는 질문 본문 -->
-                <div class="question_wrap">
-                    <!-- 카테고리 -->
-                    <div class="category_area">
-                        <!-- class 가 on 일 때 선택되어 있음 -->
-                        <ul class="category_list">
-                            <li dirid="0" class="on">
-                                <a href="#" onclick="">전체</a>
-                            </li>
-                            <li dirid="1">
-                                <a href="#" onclick="">법무/세무</a>
-                            </li>
-                            <li dirid="2">
-                                <a href="#" onclick="">운세/타로</a>
-                            </li>
-                            <li dirid="3">
-                                <a href="#" onclick="">심리/건강</a>
-                            </li>
-                            <li dirid="4">
-                                <a href="#" onclick="">IT/디자인</a>
-                            </li>
-                            <li dirid="5">
-                                <a href="#" onclick="">학습/진로</a>
-                            </li>
-                            <li dirid="6">
-                                <a href="#" onclick="">어학/번역</a>
-                            </li>
-                            <li dirid="7">
-                                <a href="#" onclick="">재테크/금융</a>
-                            </li>
-                            <li dirid="8">
-                                <a href="#" onclick="">비즈니스</a>
-                            </li>
-                            <li dirid="9">
-                                <a href="#" onclick="">라이프</a>
-                            </li>
-                            <li dirid="10">
-                                <a href="#" onclick="">취미/스포츠</a>
-                            </li>
-                            <li dirid="11">
-                                <a href="#" onclick="">자기계발</a>
-                            </li>
-                            <li dirid="12">
-                                <a href="#" onclick="">창업/부업</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 카테고리 -->
-                    <span class="border"></span>
-                    <!-- 질문목록 -->
-                    <div class="content_area">
-                        <!-- 분야 제목 -->
-                        <div class="heading_area">
-                            <h2 class="heading_title">
-                                <strong>전체</strong>
-                            </h2>
-                            <!-- 해당 분야내 검색창 -->
-                            <div class="search_area" onclick="">
-                                <input type="text" class="search_input" title="검색어 입력">
-                                <a href="#" class="search_icon"></a>
-                            </div>
-                            <!-- //해당 분야내 검색창 -->
-                        </div>
-                        <!-- // 분야 제목 -->
-                        <!-- 질문 목록 본문-->
-                        <div class="content_wrap">
-                            <div class="question_box first"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box"></div>
-                            <div class="question_box "></div>
-                            <div class="question_box last"></div>
-                        </div>
-                        <!-- // 질문 목록 본문-->
-                        <!-- 페이징 -->
-                        <div class="paginate" id="rankingPaging">
-                            <a
-                              href="#"
-                              class="on"
-                              title="선택됨"
-                              onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);"
-                              >1</a
-                            >
-            
-                            <a href="#" onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);">2</a>
-                          </div>
-                        <!-- // 페이징 -->
-                    </div>
-                    <!-- 질문목록 -->
+            <div class="question_wrap">
+              <!-- 카테고리 -->
+              <div class="category_area">
+                <!-- class 가 on 일 때 선택되어 있음 -->
+                <ul class="category_list">
+                  <li dirid="0" class="on">
+                    <a href="#" onclick="">전체</a>
+                  </li>
+                  <li dirid="1">
+                    <a href="#" onclick="">법무/세무</a>
+                  </li>
+                  <li dirid="2">
+                    <a href="#" onclick="">운세/타로</a>
+                  </li>
+                  <li dirid="3">
+                    <a href="#" onclick="">심리/건강</a>
+                  </li>
+                  <li dirid="4">
+                    <a href="#" onclick="">IT/디자인</a>
+                  </li>
+                  <li dirid="5">
+                    <a href="#" onclick="">학습/진로</a>
+                  </li>
+                  <li dirid="6">
+                    <a href="#" onclick="">어학/번역</a>
+                  </li>
+                  <li dirid="7">
+                    <a href="#" onclick="">재테크/금융</a>
+                  </li>
+                  <li dirid="8">
+                    <a href="#" onclick="">비즈니스</a>
+                  </li>
+                  <li dirid="9">
+                    <a href="#" onclick="">라이프</a>
+                  </li>
+                  <li dirid="10">
+                    <a href="#" onclick="">취미/스포츠</a>
+                  </li>
+                  <li dirid="11">
+                    <a href="#" onclick="">자기계발</a>
+                  </li>
+                  <li dirid="12">
+                    <a href="#" onclick="">창업/부업</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 카테고리 -->
+              <span class="border"></span>
+              <!-- 질문목록 -->
+              <div class="content_area">
+                <!-- 분야 제목 -->
+                <div class="heading_area">
+                  <h2 class="heading_title">
+                    <strong>전체</strong>
+                  </h2>
+                  <!-- 해당 분야내 검색창 -->
+                  <div class="search_area" onclick="">
+                    <input type="text" class="search_input" title="검색어 입력" />
+                    <a href="#" class="search_icon"></a>
+                  </div>
+                  <!-- //해당 분야내 검색창 -->
                 </div>
+                <!-- // 분야 제목 -->
+                <!-- 질문 목록 본문-->
+                <div class="content_wrap">
+                  <!-- 질문 한개 박스 -->
+                  <div class="question_box first">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">생활</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <!-- // 질문 한개 박스 -->
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">국장 취소하는 방법이 있을까요?</span>
+                        <p class="detail">
+                          이번에 어머니께서 돌아가셔서 국장을 지금껏 신청할필요가 없었다가 힌청하게
+                          됐을때 아버지혼자만 일을 하고계셔서 아마 이제 저희가족이 차상위등급 일거라
+                          말씀하셔서 차상위계층으로 신청했습니다. 그런데 제출서류에 차상위계층
+                          증명서도 올려야한다 되어있고 온라인으로 증명서를 뽑자니 조건이 안되는건지
+                          뽑히지 않더군요. 이런경우 그냥 장학금 신청을 취소하고 일반으로 다시
+                          신청해야 할 것 같은데 어떻게 해야하는지 알고싶습니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">일상</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title"
+                          >질문 빠른등기 우편 내일 (수요일)오전 10시에 보내면 목요일 5시 이전에
+                          도착할까요??</span
+                        >
+                        <p class="detail">
+                          목요일까지 우편을 보내야하는데 오늘은 보낼수가 없어서 내일 오전에
+                          빠른등기로 보내려 하는데요 내일 오전 10시에 보내면 그다음날 17시 이전에
+                          도착하나요??
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                  <div class="question_box last">
+                    <!-- 제목 + 내용-->
+                    <div class="title_wrap">
+                      <a href="#" class="link_to_q">
+                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
+                        <p class="detail">
+                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+                        </p>
+                      </a>
+                    </div>
+                    <!-- // 제목 +내용 -->
+                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
+                    <div class="update_info">
+                      <span class="num_answer">답변 <em>0</em></span>
+                      <span class="info category">
+                        <a href="#">영어</a>
+                      </span>
+                      <span class="info update_time"> 방금 </span>
+                    </div>
+                    <!-- //정보 -->
+                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
+                    <!-- 답변하러가기 버튼 -->
+                    <div class="link_to_answer_wrap">
+                      <a href="#" class="link_to_answer">
+                        답변하기
+                        <span class="answer_icon icon"></span>
+                      </a>
+                    </div>
+                    <!-- // 답변하러가기 버튼 -->
+                  </div>
+                </div>
+                <!-- // 질문 목록 본문-->
+                <!-- 페이징 -->
+                <div class="paginate" id="rankingPaging">
+                  <a
+                    href="#"
+                    class="on"
+                    title="선택됨"
+                    onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);"
+                    >1</a
+                  >
+
+                  <a href="#" onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);">2</a>
+                </div>
+                <!-- // 페이징 -->
+              </div>
+              <!-- 질문목록 -->
+            </div>
             <!-- //답변을 기다리는 질문 본문 -->
           </div>
           <!-- // 답변을 기다리는 질문 -->
