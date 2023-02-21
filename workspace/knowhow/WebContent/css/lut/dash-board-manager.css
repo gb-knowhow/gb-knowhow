@@ -9,24 +9,6 @@ body {
 html{
     height: 100%;
 }
-@media (max-width: 1100px) {
-    #left-side {
-        display: none;
-    }
-
-    #first-box {
-        display: none;
-    }
-    
-    #second-box {
-        display: none;
-    }
-    
-    #third-box {
-        display: none;
-    }
-}
-
 
 .wrap {
     width: 100%;
@@ -40,98 +22,167 @@ html{
     flex-direction: column;
     height: 100%;
     position: relative;
-    background-color: #1A1D3D;
+    background-color: #474E68;
 }
 
 .menub-box {
     height: 100%;
 }
 
-#right-side {
-    width: 85%;
-    height: auto;
-    position: relative;
+#knowhow-logo {
+    width: 60%;
 }
 
 #top-box {
     display: flex;
-    border-bottom: 1px solid #fff;
-    height: 8vh;
+    border-bottom: 2px dotted gray;
+    height: 7vh;
     align-items: center;
     justify-content: center;
-}
-
-
-
-#middle-box {
-    width: 100%;
-    height: 100%;
-
-}
-
-#bottom-box {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-
-}
-
-#knowhow-logo {
-    width: 80%;
-}
-
-
-.side-icons {
-    width: 30px;
-    height: 30px;
-    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+    background-color: #474E68;
 }
 
 #wrap-middle-box{
     height: 100%;
 }
 
+#middle-box {
+    width: 100%;
+    height: 100%;
+    
+}
+
 #middle-box-contents {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
 }
 
-.icon-gap{
-    padding-right: 5%;
+.side-top-margin{
+    margin-top: 20%;
+}
+
+.checkbox-group{
+    width: 100%;
+    height: 60%;
+}
+
+.mouseOnEffect:hover{
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+
+.side-icons {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
 }
 
 .side-bar{
     display: flex;
     align-items: center;
-    height: 5%;
-    margin: 20px;
+    width: 100%;
+    font-weight: 300;
+    margin: 5%;
     color: #fff;
     cursor: pointer;
 }
 
-
-#bottom-box{
-    height: 0;
+.icon-gap{
+    margin-right: 5%;
 }
 
-#right-side{
+.collapsible {
+    display: flex;
+    background-color: #474E68;
+    color: white;
+    cursor: pointer;
+    padding: 5%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1f2537;
+    color: #fff;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: auto;
+}
+.active:after {
+    content: "\2212";
+}
+
+/* 여기까지 사이드바 */
+
+#right-side {
     display: flex;
     flex-direction: column;
+    width: 85%;
+    height: auto;
+    position: relative;
 }
 
 .right-header {
     display: flex;
     font-size: 1rem;
     align-items: center;
-    height: 8vh;
+    height: 7vh;
+    box-shadow: 10px 10px 10px 10px gray;
 }
 
 .letter-space {
     width: 3%;
 }
 
+#clock{
+    margin-left: 65%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 
+.admin-profile{
+    width: 2.3%;
+    margin-left: 1%;
+}
+
+.admin-name{
+    font-size: 0.9rem;
+    margin-left: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.admin-logout{
+    background-color: #fff;
+    margin-top: 2.5px;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.name-logout-space{
+    font-weight: 300;
+}
 
 .right-body{
     display: flex;
@@ -141,6 +192,27 @@ html{
     background-color: #EEEEEE;
 }
 
+.dashboard-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    height: 5vh;
+}
+
+.detail-button{
+    width: 11%;
+    height: 1.7rem;
+    margin-right: 3%;
+    border: none;
+    background-color: #F1FAFF;
+}
+
+.detail-button:hover{
+    background-color:   #8bc2df;
+    transition: background-color 0.5s;
+}
+
 .user-list-letter{
     margin-left: 5%;
     font-size: 1.3rem;
@@ -148,15 +220,16 @@ html{
 
 .user-list-contents{
     border-radius: 10px;
-    width: 83.8vh;
+    width: 83vh;
     height: 43vh;
     margin: 10px;
     background-color: #fff;
     font-size: 0.8rem;
+    box-shadow: 5px 5px 5px 0 gray;
 }
 
 .mentor-list-header{
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 3%;
     margin-right: 3%;
     height: 5vh;
@@ -177,6 +250,11 @@ html{
 }
 
 /* 신규 회원 대시보드 */
+
+.new-user{
+    overflow-y: hidden;
+    height: 100%;
+}
 
 .user-num{
     text-align: center;

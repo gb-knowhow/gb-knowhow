@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
     margin: 0;
     height: 100%;
@@ -113,6 +114,7 @@ html{
 }
 .content {
     padding: 0 18px;
+    cursor: pointer;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -133,8 +135,11 @@ html{
 /* 여기까지 사이드바 */
 
 .letter-space {
-    width: 3%;
+    width: 69.8%;
+    padding-left: 3%;
 }
+
+
 .right-body{
     width: 100%;
     height: 100%;
@@ -147,10 +152,12 @@ html{
 }
 
 .right-header {
+    position: relative;
     display: flex;
     font-size: 1rem;
     align-items: center;
     height: 7vh;
+    width: 100%;
 }           
 
 .user-list-letter{
@@ -159,7 +166,6 @@ html{
 }
 
 #clock{
-    margin-left: 65%;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -291,7 +297,7 @@ html{
 
 .checkbox-zip{
     text-align: center;
-    width: 10%;
+    width: 7%;
 }
 
 .checkbox-zip input[type=checkbox]{
@@ -299,43 +305,43 @@ html{
     height: 1.2rem;
 }
 
-.user-num{
+.answer-num{
     text-align: center;
-    width: 10%;
+    width: 7%;
 
 }
 
-.user-role{
+.specialization{
     text-align: center;
-    width: 11%;
+    width: 12%;
 
 }
 
 .user-name{
     text-align: center;
-    width: 11%;
+    width: 8%;
 
 }
 
-.user-email{
+.answer-title{
     text-align: center;
     width: 20%;
 
 }
 
-.user-reply{
+.answer-contents{
     text-align: center;
-    width: 11%;
+    width: 30%;
 
 }
 
-.user-comment{
+.like-count{
     text-align: center;
-    width: 11%;
+    width: 8%;
 
 }
 
-.user-join-day{
+.user-answer-day{
     text-align: center;
     width: 15%;
 
@@ -355,4 +361,19 @@ bottom: 3%;
     border-radius: 5px;
     background-color: #81839C; 
     color: #fff;
+}
+
+.page-button2{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+.page-button2:hover{
+    background-color: #81839C;
+    color: #fff;
+    transition: background-color 0.5s;
 }
