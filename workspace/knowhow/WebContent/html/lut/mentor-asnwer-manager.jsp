@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>know-how</title>
 <link rel="shortcut icon" type="image/x-icon" href="./images/logo-favicon.ico" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/user-mentor-manager.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/mentor-answer-manager.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -98,8 +98,9 @@
                
         <div id="right-side" class="container">
             <div class="right-header">
-                <div class="letter-space"></div>
-                회원 관리 
+                <div class="letter-space">
+                질문 답변 관리 
+                </div>
                 <h1 id="clock" style="color:black;">clock</h1>
                 <img  class="admin-profile" src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/bart-.png"> 
                 <p class="admin-name">관리자</p>
@@ -108,26 +109,26 @@
             </div>
             <div class="right-body">
                 <div class="user-list-letter">
-                    <p>멘토 목록</p>
+                    <p>멘토 답변 목록</p>
                 </div>
 
                 <div class="user-list-contents">
                     <div class="member-input-wrap">
                         <div class="member-delete-button-wrap">
-                            <input class="member-delete-button" type="submit" value="회원 탈퇴">
+                            <input class="member-delete-button" type="submit" value="답변 삭제">
                         </div>
 
                         <div class="member-search-wrap">
                             <div class="search-border">
                                 <img id="search-icon" alt="search" src="./images/search-icon.png">
-                                <input class="member-search" type="text" placeholder="멘토 검색">
+                                <input class="member-search" type="text" placeholder="답변 검색">
                             </div>
                         </div>
                     </div>
 
                     <div class="total-mentor">
-                        <p>총 멘토 수</p>
-                        <p class="total-mentor-num">2</p>
+                        <p>총 답변 수</p>
+                        <p class="total-mentor-num">11</p>
                     </div>
 
                     <div class="checkbox-group">
@@ -135,52 +136,53 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check-all" class="all" value="all">
                             </div>
-                            <div class="user-num">
-                                회원 번호
+                            <div class="answer-num">
+                                답변 번호
                             </div>
-                            <div class="user-role">
-                                구분
+                            <div class="specialization">
+                                전문 분야
                             </div>
                             <div class="user-name">
-                                이름
+                                작성자
                             </div>
-                            <div class="user-email">
-                                이메일
+                            <div class="answer-title">
+                                제목
                             </div>
-                            <div class="user-reply">
-                                작성한 답변
+                            <div class="answer-contents">
+                                내용
                             </div>
-                            <div class="user-comment">
-                                댓글
+                            <div class="like-count">
+                                좋아요 수
                             </div>
-                            <div class="user-join-day">
-                                가입일
+                            <div class="user-answer-day">
+                                작성일시
                             </div>
                         </div>
 
+                        <!-- 여기부터 내용 -->
                         <div class="mentor-list-contents">
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check1" class="normal" value="">
                             </div>
-                            <div class="user-num">
-                                4
+                            <div class="answer-num">
+                                3
                             </div>
-                            <div class="user-role">
-                                멘토
+                            <div class="specialization">
+                                기술-디자인
                             </div>
                             <div class="user-name">
-                                정유찬
+                                포토샵마스터
                             </div>
-                            <div class="user-email">
-                                JeongYuchan2222@naver.com
+                            <div class="answer-title">
+                                실무 포토샵 사용방법
                             </div>
-                            <div class="user-reply">
+                            <div class="answer-contents">
+                                포토샵을 잘쓰고 싶나요?
+                            </div>
+                            <div class="like-count">
                                 0
                             </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
+                            <div class="user-answer-day">
                                 2023-02-20
                             </div>
                         </div>
@@ -189,26 +191,26 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check2" class="normal" value="">
                             </div>
-                            <div class="user-num">
-                                3
+                            <div class="answer-num">
+                                4
                             </div>
-                            <div class="user-role">
-                                탈퇴
+                            <div class="specialization">
+                                기술-마케팅
                             </div>
                             <div class="user-name">
-                                김정표
+                                마케팅의 여왕
                             </div>
-                            <div class="user-email">
-                                kimjeongpyo123@naver.com
+                            <div class="answer-title">
+                                문서 작업 활용법
                             </div>
-                            <div class="user-reply">
+                            <div class="answer-contents">
+                                문서작업이 중요합니다.
+                            </div>
+                            <div class="like-count">
                                 0
                             </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-19
+                            <div class="user-answer-day">
+                                2023-02-20
                             </div>
                         </div>
 
@@ -216,26 +218,26 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check3" class="normal" value="">
                             </div>
-                            <div class="user-num">
-                                2
+                            <div class="answer-num">
+                                1
                             </div>
-                            <div class="user-role">
-                                멘토
+                            <div class="specialization">
+                                기술-회계
                             </div>
                             <div class="user-name">
-                                황현수
+                                작성자
                             </div>
-                            <div class="user-email">
-                                HyunSoo3333@naver.com
+                            <div class="answer-title">
+                                회계사가 꼭 알아야하는 것
                             </div>
-                            <div class="user-reply">
+                            <div class="answer-contents">
+                                제무재표의 종류는 여러가지 있습니다.
+                            </div>
+                            <div class="like-count">
                                 0
                             </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-19
+                            <div class="user-answer-day">
+                                2023-02-20
                             </div>
                         </div>
 
@@ -243,31 +245,113 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check4" class="normal" value="">
                             </div>
-                            <div class="user-num">
-                                1
+                            <div class="answer-num">
+                               5
                             </div>
-                            <div class="user-role">
-                                탈퇴
+                            <div class="specialization">
+                                기술-웹 개발
                             </div>
                             <div class="user-name">
-                                김동한
+                                벅벅코딩
                             </div>
-                            <div class="user-email">
-                                donghan321@google.com
+                            <div class="answer-title">
+                                웹 개발 실무는?
                             </div>
-                            <div class="user-reply">
+                            <div class="answer-contents">
+                                따즈아 한동석~
+                            </div>
+                            <div class="like-count">
                                 0
                             </div>
-                            <div class="user-comment">
+                            <div class="user-answer-day">
+                                2023-02-20
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="answer-num">
+                               11
+                            </div>
+                            <div class="specialization">
+                                기술-웹 개발
+                            </div>
+                            <div class="user-name">
+                                벅벅코딩
+                            </div>
+                            <div class="answer-title">
+                                웹 개발 실무는?
+                            </div>
+                            <div class="answer-contents">
+                                따즈아 한동석~
+                            </div>
+                            <div class="like-count">
                                 0
                             </div>
-                            <div class="user-join-day">
-                                2023-02-18
+                            <div class="user-answer-day">
+                                2023-02-20
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="answer-num">
+                               8
+                            </div>
+                            <div class="specialization">
+                                기술-웹 개발
+                            </div>
+                            <div class="user-name">
+                                벅벅코딩
+                            </div>
+                            <div class="answer-title">
+                                웹 개발 실무는?
+                            </div>
+                            <div class="answer-contents">
+                                따즈아 한동석~
+                            </div>
+                            <div class="like-count">
+                                0
+                            </div>
+                            <div class="user-answer-day">
+                                2023-02-20
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="answer-num">
+                               9
+                            </div>
+                            <div class="specialization">
+                                기술-웹 개발
+                            </div>
+                            <div class="user-name">
+                                벅벅코딩
+                            </div>
+                            <div class="answer-title">
+                                웹 개발 실무는?
+                            </div>
+                            <div class="answer-contents">
+                                따즈아 한동석~
+                            </div>
+                            <div class="like-count">
+                                0
+                            </div>
+                            <div class="user-answer-day">
+                                2023-02-20
                             </div>
                         </div>
 
                         <div class="page-button-box">
                             <input class="page-button" type="submit" value="1">
+                            <input class="page-button2" type="submit" value="2">
                         </div>
                     </div>
                 </div>
