@@ -1,0 +1,181 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/knohow-join.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="content">
+                <div class="find-by-id">
+                    <strong>회원가입</strong>
+                    <div class="form_info">
+                        <div class="form-list">
+                            <p class="sub-title">
+                                <span class="span-text">회원정보 입력</span>
+                            </p>
+                            <p class="p-text"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수기제 사항입니다 모두 입력후 확인 버튼을 눌러주세요.</p>
+                            <div class="form-content">
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">아이디</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="text" id="id" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">비밀번호</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="password" id="password" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">비밀번호 확인</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="password" id="password-check" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">이메일</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="text" id="email" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">닉네임</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="text" id="nick-name" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">나이</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="email-box">
+                                                    <div class="email-input">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="text" id="age" placeholder="" class="input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 이력서 -->
+                <div class="resume">
+                    <div class="resume-info">
+                        <p class="sub-title">
+                            <span class="span-text">은퇴자 추가 기제사항</span>
+                        </p>
+                        <p class="p-text"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>은퇴자일 경우 이력서를 체출해 주세요.</p>
+                        
+                        <div class="form-resume">
+                            
+                            <div class="input-form-resume">
+                                
+                                <span class="absolute-resume">이력서</span>
+                                <div>
+                                    <div class="">
+                                        <div class="resume-box">
+                                            <div class="resume-input">
+                                                <div class="input-box">
+                                                    <label for="resume" class="input1">
+                                                    	첨부파일
+                                                    </label>
+                                                    <input type="file" id="resume" class="input" style="display: none">
+                                                </div>
+                                            </div>
+                                            <button class="resume-bt">발송</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="inquiry">
+                            <input type="checkbox" class="checkbox" id="ck">
+                            <label for="ck">
+                                <i class="icon-checkbox"></i>
+                                <span class="text-label">
+                                    입력하신 정보를 KONHOW 에게 제공하는 것을 동의 합니다.
+                                </span>
+                            </label>
+                        </span>
+                        <div class="bt">
+                            <button type="button" class="back-button">취소</button>
+                            <button type="button" class="complete-button">완료</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
