@@ -17,17 +17,8 @@
             <div class="header_inner">
               <div class="headerLogo_wrapper">
                 <a href="#" class="linkNaver">
-                  <span class="blind">know-how</span>      
+                  <span class="blind">know-how</span>
                 </a>
-                <div class="headerService">
-                  <h1 class="serviceItem">
-                    <a href="#" class="serviceLink">
-                      <span class="blind">know-how</span>
-                      
-                    </a>
-                  </h1>
-                  <!-- ::after -->
-                </div>
                 <!-- ::after -->
               </div>
               <div class="searchSection_wrapper">
@@ -43,7 +34,7 @@
               </div>
               <div class="buttonRight_wrapper">
                 <div class="buttonWrap headerButton shearchButton">
-                  <button class="listButton">
+                  <button class="listButton searchListButton">
                     <div class="icon_wrapper">
                       <span class="blind">검색</span>
                       <svg
@@ -55,13 +46,13 @@
                         <path
                           d="M9 3a9 9 0 0 1 7.405 14.117l4.308 3.51a1 1 0 0 1-1.161 1.624l-.102-.073-4.36-3.552A9 9 0 1 1 9 3Zm0 2a7 7 0 1 0 0 14A7 7 0 0 0 9 5Z"
                           fill="#000"
-                          fill-rule="nonzero">
-                        </path>
+                          fill-rule="nonzero"
+                        ></path>
                       </svg>
                     </div>
                   </button>
                 </div>
-                <div class="buttonWrap headerButton">
+                <!-- <div class="buttonWrap headerButton"> 
                   <button class="listButton">
                     <div class="icon_wrapper">
                       <span class="blind">대화목록 및 대기실</span>
@@ -92,7 +83,7 @@
                       </svg>
                     </div>
                   </button>
-                </div>
+                </div>-->
                 <div class="buttonWrap headerButton">
                   <button class="listButton categoryListButton">
                     <div class="icon_wrapper">
@@ -114,10 +105,108 @@
                     </div>
                   </button>
                   <!-- section for dropdown -->
-                  <section class="dropdownSection"></section>
+                  <section class="dropdownSection">
+                    <div>
+                      <div class="categoryLayerWrap">
+                          <div class="categoryLayer">
+                              <div class="mainCategoryArea">
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="flase">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_1_200716.png);">
+                                          </i>법무/세무
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_13_210208.png);">
+                                          </i>운세/타로
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_12_200716.png);">
+                                          </i>심리/건강
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_5.png);">
+                                          </i>IT/디자인
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_4.png);">
+                                          </i>학습/진로
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_17_210208.png);">
+                                          </i>어학/번역
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_14_221121.png);">
+                                          </i>재테크/금융
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_2.png);">
+                                          </i>비즈니스
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_3.png);">
+                                          </i>라이프
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_19.png);">
+                                          </i>취미/스포츠
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/09renewal/promotion/mobile/expert_category_1020201130121620.png?ver=20201130121621);">
+                                          </i>자기계발
+                                      </button>
+                                  </div>
+                                  <div class="categoryButtonWrap" role="button" aria-pressed="false">
+                                      <button type="button" class="categoryButton">
+                                          <i class="iconCategory" style="background-image: url(https://ssl.pstatic.net/static/kin/section/expert/introduction/iconCategory_18_221121.png);">
+                                          </i>창업/부업
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+                  </section>
+                  <!-- //section for dropdown -->
+                  <section class="search_dropdown_Section">
+                  <div class="search_dropdown">
+                    <div class="search_wrapper">
+                      <div class="search_inner">
+                        <i class="iconSearch_mini">
+                          <!-- ::before -->
+                          <span class="blind">검색</span>
+                          <!-- ::before -->
+                        </i>
+                        <input type="text" class="searchInput_mini" />
+                        <!-- ::after -->
+                      </div>
+                    </div>
+                  </div>
+                  </section>
+                  <!-- //section for search dropdown -->
                 </div>
                 <div class="buttonWrap headerButton">
-                  <button class="listButton">
+                  <button class="listButton ">
                     <div class="icon_wrapper">
                       <div
                         class="userThumbnail"
