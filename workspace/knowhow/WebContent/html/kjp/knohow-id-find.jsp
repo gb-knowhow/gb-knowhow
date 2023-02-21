@@ -24,7 +24,7 @@
             <div id="content-wrapper-inner">
                 <div id="content-top-wrapper">
                     <div id="content-top">
-                        <h2 id="title">찾으려는 아이디를 선택해주세요.</h2>
+                        <h2 id="title">찾으시려는 아이디 혹은 비밀번호를 선택해주세요.</h2>
                     </div>
                 </div>
                 <ul class="find-list">

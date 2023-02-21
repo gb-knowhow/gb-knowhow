@@ -38,7 +38,7 @@
                 </div>
                 <div style="line-height: 1.8" class="div-border-bottom">
                   <span>
-                    Knohow 에게 질문이 있으시면 자유롭게 질문이 해주시면 됩니다<br />
+                    Knohow 에게 자유롭게 문의 해주시면 됩니다<br />
                     문의 게시판에 글을 남겨주시면 최대한 신속하게 확인하고 조치해드리겠습니다.
                   </span>
                 </div>

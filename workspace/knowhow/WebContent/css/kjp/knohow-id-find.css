@@ -142,6 +142,10 @@ li {
     margin: 0;
 }
 
+.button-item:hover{
+	background-color: #0000ff1c;
+}
+
 /* .icon {
     
 } */
