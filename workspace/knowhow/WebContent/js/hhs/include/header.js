@@ -1,3 +1,4 @@
+
 const $dropdownButton = $(".categoryListButton");
 const $dropdownSection = $(".dropdownSection");
 

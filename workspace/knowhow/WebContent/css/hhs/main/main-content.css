@@ -29,6 +29,7 @@ h1 {
 
 input {
     border-radius: 0;
+    outline: none;
 }
 
 em {
