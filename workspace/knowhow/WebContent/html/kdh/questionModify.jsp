@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>질문 수정페이지</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/jspTeamProject/image/Favi.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionModify.css"/>
   </head>
   <body>

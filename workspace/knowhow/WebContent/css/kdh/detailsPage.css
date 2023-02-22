@@ -1133,3 +1133,12 @@ button .text, button .icon {
 .re-replySet {
     padding-left: 60px;
 }
+
+.answerLocation {
+  display: block;
+  position: relative;
+  padding: 12px 0 9px 10px;
+  line-height: 18px;
+  z-index: 22;
+  zoom: 1;
+}

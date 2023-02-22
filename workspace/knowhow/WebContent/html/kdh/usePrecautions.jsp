@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용방법 및 유의사항 페이지</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="/jspTeamProject/image/Favi.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
 </head>
 <body class="body">
