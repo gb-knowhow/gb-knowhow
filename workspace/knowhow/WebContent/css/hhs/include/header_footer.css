@@ -164,7 +164,7 @@ button {
     background-image: url('/image/logo_150.png');
     background-size: cover;
 
-    /* background: url('/image/knowhow_title.PNG') no-repeat;
+    /* background: url('/image/logo_150.png') no-repeat;
     background-size: 460px auto;
     background-position: -242px 0; */
     /* *top: 1px; */
@@ -268,9 +268,9 @@ button {
 .headerLogo_wrapper .linkNaver {
     position: relative;
     float: left;
-    width: 180px;
+    width: 205px;
     height: 57px;
-    background-image: url('/image/logo_longer_450_150.png');
+    background-image: url('/image/logo.png');
     display: inline-block;
     background-size: cover;
 
