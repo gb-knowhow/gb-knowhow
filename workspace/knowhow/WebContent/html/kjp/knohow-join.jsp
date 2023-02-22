@@ -17,10 +17,10 @@
                     <strong>회원가입</strong>
                     <div class="form_info">
                         <div class="form-list">
-                            <p class="sub-title">
-                                <span class="span-text">회원정보 입력</span>
+                            <p class="sub-title1">
+                                <span class="span-text1">회원정보 입력</span>
                             </p>
-                            <p class="p-text"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수기제 사항입니다 모두 입력후 확인 버튼을 눌러주세요.</p>
+                            <p class="p-text1"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수기제 사항입니다 모두 입력후 확인 버튼을 눌러주세요.</p>
                             <div class="form-content">
                                 <div class="form-email">
                                     <div class="input-form">
@@ -35,6 +35,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-id"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -49,9 +50,12 @@
                                                         <div class="input-box">
                                                             <label for=""></label>
                                                             <input type="password" id="password" class="input">
+                                                            <div class="password-eye1"></div>
+                                                            <div class="password-eye3" style="display: none;"></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-password"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -66,9 +70,12 @@
                                                         <div class="input-box">
                                                             <label for=""></label>
                                                             <input type="password" id="password-check" class="input">
+                                                            <div class="password-eye2"></div>
+                                                            <div class="password-eye4" style="display: none;"></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-password-check"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -86,6 +93,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-email"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -103,6 +111,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-nick"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -120,6 +129,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="err-age"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -146,13 +156,14 @@
                                         <div class="resume-box">
                                             <div class="resume-input">
                                                 <div class="input-box">
-                                                    <label for="resume" class="input1">
-                                                    	첨부파일
+                                                    <label for="attach">
+                                                        <div class="image"></div>
+                                                        <div class="file-name"></div>
                                                     </label>
-                                                    <input type="file" id="resume" class="input" style="display: none">
+                                                    <input type="file" id="attach" style="display: none" />
                                                 </div>
+                                                <span class="cancel">X</span>
                                             </div>
-                                            <button class="resume-bt">발송</button>
                                         </div>
                                     </div>
                                 </div>
@@ -160,7 +171,7 @@
                         </div>
                         <span class="inquiry">
                             <input type="checkbox" class="checkbox" id="ck">
-                            <label for="ck">
+                            <label for="ck" class="for-label">
                                 <i class="icon-checkbox"></i>
                                 <span class="text-label">
                                     입력하신 정보를 KONHOW 에게 제공하는 것을 동의 합니다.
@@ -169,7 +180,7 @@
                         </span>
                         <div class="bt">
                             <button type="button" class="back-button">취소</button>
-                            <button type="button" class="complete-button">완료</button>
+                            <button type="button" class="complete-button" >완료</button>
                         </div>
                     </div>
                     
@@ -178,4 +189,5 @@
         </div>
     </div>
 </body>
+<script src="${pageContext.request.contextPath}/js/kjp/knohow-join.js"></script>
 </html>
