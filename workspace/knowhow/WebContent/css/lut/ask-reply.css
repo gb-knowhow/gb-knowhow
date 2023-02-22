@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {
     margin: 0;
     height: 100%;
@@ -310,61 +309,53 @@ html{
     height: 1.2rem;
 }
 
-.answer-num{
-    text-align: center;
-    width: 7%;
-
-}
-
-.specialization{
+.ask-reply-num{
     text-align: center;
     width: 10%;
 
 }
 
+.ask-num{
+    text-align: center;
+    width: 10%;
+
+}
+
+.specialization{
+    text-align: center;
+    width: 15%;
+
+}
+
+.user-role{
+    text-align: center;
+    width: 10%;
+}
+
 .user-nick-name{
     text-align: center;
-    width: 12%;
+    width: 15%;
 
 }
 
-.answer-title{
+
+.ask-reply-contents{
     text-align: center;
-    width: 20%;
+    width: 40%;
 
 }
 
-.answer-contents{
+
+.user-ask-reply-day{
     text-align: center;
-    width: 30%;
+    width: 15%;
 
-}
-
-.answer-reply-count{
-    text-align: center;
-    width: 5%;
-}
-
-
-.like-count{
-    text-align: center;
-    width: 5%;
-
-}
-
-.user-answer-day{
-    text-align: center;
-    width: 12%;
 }
 
 .detail{
+    cursor: pointer;
     text-align: center;
-    width: 5%;
-}
-
-.ask-num{
-    text-align: center;
-    width: 7%;
+    width: 10%;
 }
 
 .detail-icon{

@@ -98,8 +98,9 @@
                
         <div id="right-side" class="container">
             <div class="right-header">
-                <div class="letter-space"></div>
+                <div class="letter-space">
                 대시보드 
+                </div>
                 <h1 id="clock" style="color:black;">clock</h1>
                 <img  class="admin-profile" src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/bart-.png"> 
                 <p class="admin-name">관리자</p>
