@@ -5,10 +5,15 @@ body{
     font-size: 12px;
     line-height: 1.2;
 }
+.all_content{
+	margin-top: 20px;
+	height:1.5 vh;
+}
 
-a{
-	text-decoration : none;
-	color : black;
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
 }
 p{
 	margin:9px;
@@ -72,8 +77,8 @@ table{
     height: 50px;
     padding: 0 18px;
     line-height: 50px;
-    border: 1px solid #00bd39;
-    background-color: #00c73c;
+    border: 1px solid #388C57;
+    background-color: #388C57;
     color: #fff;
     font-size: 15px;
 }
@@ -86,21 +91,22 @@ table{
 	position: relative;
     z-index: 110;
     width: 980px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_mid_160808.png) repeat-y;
+    background: url(/css/jyc/image/personal.png) repeat-y;
+    z-index:-1;
 }
 
 .my_personal_top{
 	height: 4px;
     line-height: 0;
     font-size: 0;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_top_160808.png) no-repeat;
+    background: url(/css/jyc/image/personal_top.png) no-repeat;
 }
 
 .my_personal .my_personal_inner{
 	position: relative;
     width: 1000px;
     padding: 0 4px 22px 27px;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bx_my_personal_btm_160808.png) no-repeat left bottom;
+    background: url(/css/jyc/image/personal_inner.png) no-repeat left bottom;
     zoom: 1;
     height:190px;
 }
@@ -197,6 +203,7 @@ table{
 	float: left;
     width: 339px;
     margin-right: 40px;
+    font-size: 13px;
 }
 
 .my_intro{
@@ -208,6 +215,7 @@ table{
 
 .my_title{
 	padding-bottom:0;
+	padding-left:50px;
 }
 
 .sum{
@@ -230,6 +238,7 @@ table{
 	float: left;
     width: 395px;
     margin-left:30px;
+    font-size:13px;
 }
 
 
@@ -239,6 +248,7 @@ table{
     padding: 12px 20px 11px;
     color: #606060;
     line-height: 22px;
+    margin-top:25px;
 }
 
 .my_spec dt{
@@ -251,11 +261,10 @@ table{
 
 .my_spec dd{
 	float: left;
-    width: 80%;
-    zoom: 1;
+    width: 81%;
     overflow: visible;
-    background: url(https://ssl.pstatic.net/static/kin/09renewal/bu_personal_bar.gif) left 7px no-repeat;
     text-indent: 10px;
+    padding-left: 40px
 }
 
 .q_list{
@@ -269,7 +278,7 @@ table{
 .left_nav{
 	position:relative;
 	float:left;
-	width: 180px;
+	width: 125px;
     padding: 28px 40px 100px 0;
 }
 
