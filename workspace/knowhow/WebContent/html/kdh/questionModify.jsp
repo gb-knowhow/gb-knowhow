@@ -13,10 +13,10 @@
   </head>
   <body>
     <div class="input_help_ask_home_end">
-      <header></header>
+      <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
       <div class="input_help_content_full">
         <div class="InquiryInput_ask_form">
-          <div class="inner">
+          <div class="innerFull">
             <div class="EndTopTitle_top_title">
               <div class="EndTopTitle_title_box">
                 <h2>
@@ -125,7 +125,7 @@
             </form>
           </div>
         </div>
-        <footer></footer>
+        <footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
         <!-- helpContent-full-div -->
       </div>
     </div>

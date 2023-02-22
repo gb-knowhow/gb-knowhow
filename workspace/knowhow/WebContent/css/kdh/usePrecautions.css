@@ -6,7 +6,9 @@
     position: relative;
     min-width: 980px;
 }
-body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, 
+td, form, fieldset, legend, input, textarea, button, select 
+{
     margin: 0;
     padding: 0;
 }
@@ -75,7 +77,6 @@ span.service-title {
 }
 .wrap_principle .principle {
     border-right: 0;
-    background: url("https://ssl.pstatic.net/static/kin/09renewal/bg_tab_princip.gif") repeat-x left top;
 }
 .wrap_principle .tab {
     clear: both;
@@ -84,7 +85,7 @@ span.service-title {
     margin: 27px 0 40px;
     border-left: 1px solid #bcbcbc;
     border-right: 1px solid #bcbcbc;
-    background: url("https://ssl.pstatic.net/static/kin/09renewal/bg_tab.gif") repeat-x;
+    background-color: rgb(56 140 87 / 20%);
     zoom: 1;
 }
 
@@ -98,8 +99,8 @@ ul, li {
     float: left;
 }
 .tab .on .item {
-    background: #fff;
-    color: #000;
+    background: #388C57;
+    color: #fff;
 }
 .principle .item {
     padding: 10px 25px;
@@ -175,4 +176,8 @@ ul, li {
 
 #snb_wrap strong {
     color: #388C57;
+}
+
+.topLocation {
+    padding-top: 50px;
 }

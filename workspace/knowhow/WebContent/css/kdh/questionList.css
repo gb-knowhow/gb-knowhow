@@ -6,43 +6,15 @@
   line-height: 1.2;
 }
 
-body,
-input,
-textarea,
-select,
-button,
-table {
+body, input, textarea, select, button, table {
   font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', 'NanumGothic', '맑은 고딕',
     'Malgun Gothic', '돋움', 'Dotum,sans-serif';
   font-size: 12px;
   line-height: 1.2;
 }
 
-body,
-div,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-table,
-th,
-td,
-form,
-fieldset,
-legend,
-input,
-textarea,
-button,
-select {
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd,
+table, th, td, form, fieldset, legend, input, textarea, button, select {
   margin: 0;
   padding: 0;
 }
@@ -294,11 +266,10 @@ a {
   content: '';
 }
 
-.tabWrap ~ div .board_box,
-.tabWrap ~ div .board_box2,
-.tabWrap ~ div .board_box3 {
+.tabWrap ~ div .board_box, .tabWrap ~ div .board_box2, .tabWrap ~ div .board_box3 {
   border-top: 0;
 }
+
 .board_box {
   padding: 0 25px 44px 25px;
   background: url('https://ssl.pstatic.net/static/kin/09renewal/bg_table_top.gif') repeat-x top;
@@ -371,8 +342,7 @@ a {
   width: 20%;
 }
 
-.paginate a.prev,
-.paginate a.next {
+.paginate a.prev, .paginate a.next {
   position: relative;
   margin: 0;
   padding: 1px 11px 0 10px;
@@ -380,6 +350,7 @@ a {
   color: #565656;
   font-weight: normal;
 }
+
 .paginate a {
   display: inline-block;
   overflow: hidden;
@@ -412,9 +383,7 @@ input {
   color: #c4c4c4;
   text-align: center;
 }
-img,
-fieldset,
-button {
+img, fieldset, button {
   border: 0;
 }
 
@@ -495,10 +464,6 @@ button {
 
 .paginate a.next {
   background-position: 100% 10px;
-}
-
-img, fieldset, button {
-  border: 0;
 }
 
 .search_area {

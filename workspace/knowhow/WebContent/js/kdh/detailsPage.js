@@ -3,10 +3,10 @@
 $('#wr_1').keyup(function(){
     var content = $(this).val();
     $('#counter').html(content.length);
-    if (content.length > 1000){
-      alert("최대 1000자까지 입력 가능합니다.");
-      $(this).val(content.substring(0, 1000));
-      $('#counter').html(1000);
+    if (content.length > 500){
+      alert("최대 500자까지 입력 가능합니다.");
+      $(this).val(content.substring(0, 500));
+      $('#counter').html(500);
     }
 });
 
@@ -14,12 +14,35 @@ $('#wr_1').keyup(function(){
 $('#wr_2').keyup(function(){
     var content = $(this).val();
     $('#counter2').html(content.length);
-    if (content.length > 1000){
-      alert("최대 1000자까지 입력 가능합니다.");
-      $(this).val(content.substring(0, 1000));
-      $('#counter2').html(1000);
+    if (content.length > 500){
+      alert("최대 500자까지 입력 가능합니다.");
+      $(this).val(content.substring(0, 500));
+      $('#counter2').html(500);
     }
 });
+
+/* 원글의 대댓글의 글자 수 제한을 줌. 현재 글자수도 카운팅 해줌 */
+$('#wr_re_reply').keyup(function(){
+    var content = $(this).val();
+    $('#counter-reply').html(content.length);
+    if (content.length > 200){
+      alert("최대 200자까지 입력 가능합니다.");
+      $(this).val(content.substring(0, 200));
+      $('#counter-reply').html(200);
+    }
+});
+
+/* 답글의 대댓글의 글자 수 제한을 줌. 현재 글자수도 카운팅 해줌 */
+$('#wr_reply_re_reply').keyup(function(){
+    var content = $(this).val();
+    $('#counter-reply-re-reply').html(content.length);
+    if (content.length > 200){
+      alert("최대 200자까지 입력 가능합니다.");
+      $(this).val(content.substring(0, 200));
+      $('#counter-reply-re-reply').html(200);
+    }
+});
+
 
 /* 
 $('#wr_2').keyup(function (e){
@@ -59,51 +82,29 @@ $(function() {
 });
 
 
-/* 본 질문의 댓글에 페이지 버튼을 클릭 했을 때 클릭 한 페이지를 알도록 그 버튼의 배경색과 글자 색을 변경 */
-var changePaginator = document.getElementsByClassName("_pagingBtn1");
-function handleClick(event) {
-  console.log(event.target.classList);
+/* 본 글에 대댓글 달기를 누르면 대댓글 다는 창과 목록이 나온다. */
+$(function() {
+    $('.re-replyWrite').click(function() {
+        let status = $('#questionCommentList3').css('display');
+      if (status == 'block') {
+          $('#questionCommentList3').hide();
+      } else {
+          $('#questionCommentList3').show();
+      }
+    })
+});
 
-  if (event.target.classList[1] === "clicked") {
-    event.target.classList.remove("clicked");
-  } else {
-    for (var i = 0; i < changePaginator.length; i++) {
-        changePaginator[i].classList.remove("clicked");
-    }
-
-    event.target.classList.add("clicked");
-  }
-}
-
-function init() {
-  for (var i = 0; i < changePaginator.length; i++) {
-    changePaginator[i].addEventListener("click", handleClick);
-  }
-}
-init();
+/* 답글에 대댓글 달기를 누르면 대댓글 다는 창과 목록이 나온다. */
+$(function() {
+    $('.reply-re-replyWrite').click(function() {
+        let status = $('#questionCommentList4').css('display');
+      if (status == 'block') {
+          $('#questionCommentList4').hide();
+      } else {
+          $('#questionCommentList4').show();
+      }
+    })
+});
 
 
-
-/* 답글의 댓글에 페이지 버튼을 클릭 했을 때 클릭 한 페이지를 알도록 그 버튼의 배경색과 글자 색을 변경 */
-var changePaginator = document.getElementsByClassName("_pagingBtn2");
-function handleClick(event) {
-  console.log(event.target.classList);
-
-  if (event.target.classList[1] === "clicked") {
-    event.target.classList.remove("clicked");
-  } else {
-    for (var i = 0; i < changePaginator.length; i++) {
-        changePaginator[i].classList.remove("clicked");
-    }
-
-    event.target.classList.add("clicked");
-  }
-}
-
-function init() {
-  for (var i = 0; i < changePaginator.length; i++) {
-    changePaginator[i].addEventListener("click", handleClick);
-  }
-}
-init();
 
