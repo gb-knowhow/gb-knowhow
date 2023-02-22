@@ -1,11 +1,21 @@
-@charset "UTF-8";
-body {
-    /* max-width: 1260px; */
-    /* border: 1px solid red; */
+/*banner.html*/
+
+.banner_background {
+    background-color: grey;
+    padding-bottom: 20px;
+    max-height: 440px;
+    min-width: 700px;
+    margin-bottom: 24px;
 }
 
-section.container {
+.banner_background_inner{
     position: relative;
+    width:650px;
+    margin: 0 auto;
+    top: 35px;
+}
+
+.banner_container {
     /* 컨테이너 width 만큼 보이고 나머지는 hidden */
     width: 420px;
     margin: 0 auto;
@@ -20,24 +30,111 @@ div.banner {
 div.banner div {
     width: 420px;
     height: 420px;
+
     float: left;
     background-size: cover;
     /* background-size: 100%; */
 }
 
+.banner_title {
+    position:absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    width: 300px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.banner_title p {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-height: 327px;
+    line-height: 60px;
+    font-size: 45px;
+    font-weight: 1000;
+}
+
+.move-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    margin-top: -56px;
+}
+
+.prev {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgb(126 150 255 / 10%);
+    border: 1px solid rgba(111,138,255,.15);
+    z-index: 2;
+    background-color: rgba(255,255,255,.1);
+    border: none;
+    box-shadow: none;
+    left: 50px;
+}
+
+.prev::after {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 8px;
+    height: 8px;
+    border: 0 solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    border-width: 0 0 3px 3px;
+    transform: rotate(45deg);
+    margin: -5px 0 0 -3px;
+}
+
+.next {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0 rgb(126 150 255 / 10%);
+    border: 1px solid rgba(111,138,255,.15);
+    z-index: 2;
+    background-color: rgba(255,255,255,.1);
+    border: none;
+    box-shadow: none;
+    right: 50px;
+}
+
+.next::after {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 8px;
+    height: 8px;
+    border: 0 solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    border-width: 3px 3px 0 0;
+    transform: rotate(45deg);
+    margin: -5px 0 0 -3px;
+}
 
 
+@media (max-width: 1025px){
 
+    .move-arrow {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
+}
 
 
 

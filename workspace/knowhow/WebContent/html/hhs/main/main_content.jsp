@@ -7,11 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main1</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main-content.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_content.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_banner.css" />
   </head>
   <body>
     <div id="container-main" class="container-fluid" role="main">
+	  <header>
+	  	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" flush="true"/>
+	  </header>
       <div class="container-fluid-content-inner _containerFluidContentInner">
+	    <section class="banner">
+	      <jsp:include page="${pageContext.request.contextPath}/html/hhs/main/main_banner.jsp" flush="true"/>
+	    </section>
         <div class="section_qna">
           <!-- 좋아요 많은 답글 -->
           <div class="stats_ranking_area" id="statsRankingArea">
@@ -672,5 +679,8 @@
         </div>
       </div>
     </div>
+   <footer>
+  	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" flush="true"/>
+  </footer>
   </body>
 </html>
