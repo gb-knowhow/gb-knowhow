@@ -6,30 +6,12 @@
 <meta charset="UTF-8">
 <title>나의 답변</title>
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css"/>
 </head>
 <body>
-	<div class="nav">
-		<div class="nav_inner">
 
-			<ul class="nav_list">
-				<li class="menu"><a href="#"><em>홈</em></a></li>
-				<li class="menu"><a href="#"><em>Q&amp;A</em></a>
-				<li class="menu"><a href="#"><em>답변하기</em></a></li>
-				<li class="menu"><a href="#"><em>지식기부</em></a></li>
-				<li class="menu"><a href="#"><em>사람들</em>
-				<li class="menu"><a href="#"><em>베스트</em></a></li>
-				<li class="menu"><a href="#"><em>명예의전당</em></a></li>
-				<li class="menu on"><em style="margin-left: 2px;">|&nbsp;&nbsp; 프로필</em></a></li>
-				<li class="menu"><a href="#"><em>파트너센터</em></a></li>
+<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
 
-				<li class="menu"><a href="#"><em>룰렛</em></a></li>
-
-
-			</ul>
-			<button class="ask">질문하기</button>
-		</div>
-	</div>
+<div class="all_content">
 		
 	<div class="my_main_content">
 	
@@ -43,10 +25,6 @@
 					<span class="thumbnail">
 					<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png" width="100%" height="100%" />
 					</span>
-					
-					<a class="edit_photo">
-						<span class="photo_btn"></span>
-					</a>
 				</div>
 				
 				<div class="profile_info">
@@ -64,8 +42,8 @@
 						<p class="action">
 							<p>이름 : <span>정유찬</span></p>
 							<p>나이 : <span>25</span></p>
-							<p>관심분야 : <span>IT</span></p>
-							<p>이메일 : <span>youchanj66@gmail.com</span></p>
+							<p>분야 : <span>IT</span></p>
+							<p>메일 : <span>youchanj66@gmail.com</span></p>
 							<p>상태 : <span>멘티</span></p>
 						</p>
 					</div>
@@ -81,12 +59,12 @@
 					
 					<dt>질문</dt>
 					<dd>
-						<span class="q_list">전체질문 <strong>3건</strong></span>
+						<span class="q_list">| 전체질문 <strong>3건</strong></span>
 					</dd>
 					
 					<dt style="margin-left:16px">받은 추천</dt>
 					<dd>
-						<span class="q_list">좋아요 <strong>1</strong></span>
+						<span class="q_list">| 좋아요 <strong>1</strong></span>
 					</dd>
 					
 				</dl>
@@ -191,7 +169,8 @@
 				<input type="text" name="" class="keyword" placeholder="키워드를 입력해주세요" />
 				<input type="image" src="https://ssl.pstatic.net/static/kin/09renewal/btn_search.gif">
 				<div class="question_button">
-					<a href="#" class= "question"><img src="https://ssl.pstatic.net/static/kin/09renewal/btn_question.gif" width="92" height="30" alt="질문하기"></a>
+					<a href="#" class= "question">
+					<img src="https://ssl.pstatic.net/static/kin/09renewal/btn_question.gif" width="92" height="30" alt="질문하기"></a>
 				</div>
 			</form>
 		</fieldset>
@@ -199,6 +178,10 @@
 	</div>
 	
 	</div>
+	</div>
+	
+	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </div>
 </body>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css"/>
 </html>
