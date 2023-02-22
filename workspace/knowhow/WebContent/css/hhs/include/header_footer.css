@@ -46,7 +46,7 @@ input {
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a {
@@ -193,12 +193,15 @@ button {
 
  /* !! */
  .container {
-     position: relative;
+     /* position: relative; */
+     /* border: red 1px solid; */
+     position: sticky;
+     top: 0;
  }
  
 .outer_wrapper{
-    position: sticky;
-    top: 0; /* 클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용 */
+    /* position: sticky;
+    top: 0; 클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용 */
     background: #8a4baf;
 }
 
@@ -215,7 +218,7 @@ button {
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 56px;
+    height: 68px;
     padding: 0 58px;
     box-sizing: border-box;
 
@@ -437,7 +440,8 @@ button {
     right: 0;
     z-index: 1000;
     border-radius: 10px;
-    box-shadow: 8px 0 8px 0 rgb(56 140 87 / 10%);
+    box-shadow: 8px 0 8px 0 rgba(18, 82, 40, 0.3);
+    border-bottom: 1px solid rgba(56, 140, 87);
     overflow: hidden;
 }
 /* 
@@ -462,8 +466,8 @@ button {
     flex: 0 0 179px;
     padding: 10px 0;
     margin-left: -2px;
-    background-color: rgba(56, 140, 87,.1);
-    border-right: 1px solid rgba(56, 140, 87,.15);
+    background-color: #d2efdd;
+    border-right: 1px solid rgba(56, 140, 87);
     height: 100%;
 }
 

@@ -7,11 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main1</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main-content.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_content.css" />
+  	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_banner.css" />
   </head>
   <body>
-    <div id="container-main" class="container-fluid" role="main">
+	  <header>
+	  	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" flush="true"/>
+	  </header>
+	<div id="container-main" class="container-fluid" role="main">
       <div class="container-fluid-content-inner _containerFluidContentInner">
+	    <section class="banner">
+	      <jsp:include page="${pageContext.request.contextPath}/html/hhs/main/main_banner.jsp" flush="true"/>
+	    </section>
         <div class="section_qna">
           <!-- 좋아요 많은 답글 -->
           <div class="stats_ranking_area" id="statsRankingArea">
@@ -26,6 +33,8 @@
               <!-- 랭킹 -->
               <div class="ranking_list_area" id="rankingChart">
                 <ul class="ranking_list">
+                  <!-- 랭킹 아이템 한개 div -->
+                  <!-- 백단에서 정보를 가지고 와서 js로 a태그에 링크 삽입 해 주어야함. -->
                   <li class="ranking_item _item_1">
                     <span class="no">1</span>
                     <a
@@ -46,7 +55,7 @@
                     <span class="recommend_num">좋아요 44</span
                     ><span class="reply_num">답변수 1</span>
                   </li>
-
+                  <!-- //랭킹 아이템 한개 div -->
                   <li class="ranking_item _item_2">
                     <span class="no">2</span>
                     <a
@@ -253,13 +262,13 @@
             <!-- // 좋아요 많은 답글 본문 -->
           </div>
           <!-- // 좋아요 많은 답글 -->
-          <script type="text/javascript">
+          <!-- <script type="text/javascript">
             $Fn(function () {
               if (naver.kin.main.StatRanking !== undefined) {
                 var oStatRanking = new naver.kin.main.StatRanking();
               }
             }, this).attach(window, 'load');
-          </script>
+          </script> -->
           <!-- 페이징 -->
 
           <!-- 답변을 기다리는 질문 -->
@@ -672,5 +681,8 @@
         </div>
       </div>
     </div>
+    <footer>
+  		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" flush="true"/>
+  	</footer>
   </body>
 </html>
