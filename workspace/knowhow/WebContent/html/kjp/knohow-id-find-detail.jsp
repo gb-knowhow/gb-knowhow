@@ -9,6 +9,7 @@
     <title>아이디 찾기</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/knohow-id-find-detail.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="section">
@@ -75,15 +76,6 @@
                             </div>
                         </div>
                     </div>
-                    <span class="inquiry">
-                        <input type="checkbox" class="checkbox" id="ck">
-                        <label for="ck">
-                            <i class="icon-checkbox"></i>
-                            <span class="text-label">
-                                입력한 정보는 엑스퍼트 및 네이버 서비스내 프로필 공개를 목적으로 하며,
-                            </span>
-                        </label>
-                    </span>
                     <div class="bt">
                         <button type="button" class="back-button">취소</button>
                         <button type="button" class="complete-button">완료</button>
@@ -93,4 +85,5 @@
         </div>
     </div>
 </body>
+</html>
 </html>
