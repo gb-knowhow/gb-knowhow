@@ -32,11 +32,11 @@
                                                         <div class="email-input">
                                                             <div class="input-box">
                                                                 <label for=""></label>
-                                                                <input type="text" id="email">
+                                                                <input type="text" id="id">
                                                             </div>
                                                         </div>
-                                                        <button class="email-bt" style="display: none;">추가</button>
                                                     </div>
+                                                    <div class="err-id"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -81,4 +81,5 @@
         </div>
     </div>
 </body>
+<script src="../../js/kjp/knohow-password-find-detail.js"></script>
 </html>

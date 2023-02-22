@@ -32,14 +32,14 @@ header{
 
 .logo {
     display: inline-block;
-    margin-top: 108px;
+    margin-top: 52px;
     vertical-align: top;
     background-position: 0 -51px;
     background-repeat: no-repeat;
-    width: 155px;
-    height: 30px;
-    background-image: url("https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png");
-    background-size: 244px 107px;
+    width: 303px;
+    height: 194px;
+    background-image: url(../../image/logo_450.png);
+    background-size: 100%;
     text-decoration: none;
     cursor: pointer;
     font-size: 0;
@@ -113,6 +113,8 @@ select {
     width: 460px;
     margin: 0 auto;
     font-size: 14px;
+    border: 1px solid #c6c6c6;
+    border-radius: 25px;
 }
 
 #menu-wrap {
@@ -138,13 +140,18 @@ select {
 
 .login-menu-a-tag {
     border-color: #c6c6c6;
-    background-color: #fff;
-    border-right: 0;
+    /* background-color: #fff; */
+    /* border-right: 0; */
+    /* border-radius: 6px 6px 0 0; */
+    /* border-radius: 6px 0 0 0; */
     display: block;
     position: relative;
     height: 54px;
+    /* height: 61px; */
     padding-top: 17px;
-    border: 1px solid #c6c6c6;
+    /* border: 1px solid #c6c6c6; */
+    /* border: 1px solid #e3e3e3; */
+    /* border-bottom: 0; */
     text-align: center;
     box-sizing: border-box;
     text-decoration: none;
@@ -222,13 +229,12 @@ select {
 }
 
 #login-menu1 {
-    /* border: 1px solid #c6c6c6; */
-    border-top-left-radius: 6px;
-    background-color: #fff;
+       /* border: 1px solid #c6c6c6; */
+    /* border-top-left-radius: 6px; */
+    /* background-color: #fff; */
     border-right: 0;
     z-index: 5;
     border-bottom: 0;
-    border-right: 1px solid #c6c6c6;
 }
 
 #login-menu2 {
@@ -294,19 +300,17 @@ select {
 }
 
 #login-box {
-    border: 1px solid #c6c6c6;
-    position: relative;
-    border-top: 0;
-    z-index: 3;
-    top: 0;
-    border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0 5px 8px 0 rgb(68 68 68 / 4%);
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+        /* border: 1px solid #c6c6c6; */
+        position: relative;
+        border-top: 0;
+        z-index: 3;
+        top: 0;
+        /* border-radius: 6px; */
+        /* background-color: #fff; */
+        box-shadow: 0 5px 8px 0 rgb(68 68 68 / 4%);
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
 #whole-box-wrapper {
@@ -376,14 +380,12 @@ select {
     letter-spacing: -.5px;
     color: #222;
     box-sizing: border-box;
-    /* z-index: 4; */
     border-radius: 0;
     border: none;
     background: 0 0;
     appearance: none;
     outline: 0;
     text-decoration: none;
-    cursor: pointer;
     margin: 0;
     padding: 0;
 }
@@ -793,21 +795,6 @@ a {
     font-size: 14px;
 }
 
-#footer-logo {
-    display: inline-block;
-    vertical-align: top;
-    background-position: -157px -51px;
-    background-repeat: no-repeat;
-    width: 70px;
-    height: 15px;
-    background-image: url("https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png");
-    background-size: 244px 107px;
-    background-repeat: no-repeat;
-    position: relative;
-    letter-spacing: -.5px;
-    margin: 0;
-    padding: 0;
-}
 
 #footer-text {
     line-height: 16px;
@@ -841,15 +828,3 @@ a {
     text-align: center;
 }
 
-#login-menu1::after {
-    content: '';
-    position: absolute;
-    top: -1px;
-    right: -9px;
-    background-position: 0 -139px;
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 62px;
-    background-image: url("https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png");
-    background-size: 255px 225px;
-}

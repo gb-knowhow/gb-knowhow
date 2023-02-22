@@ -42,7 +42,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item" style="display: none;">
                         <a href="#none" class="login-menu-a-tag" id="login-menu2">
                             <span class="menu-text-wrap" id="number-wrapper">
                                 <span class="menu-text" id="number">
@@ -51,7 +51,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="menu-item" id="menu3">
+                    <li class="menu-item" id="menu3" style="display: none;">
                         <a href="#none" class="login-menu-a-tag" id="login-menu3">
                             <span class="menu-text-wrap" id="qr-wrapper">
                                 <span class="menu-text" id="qr">
@@ -75,7 +75,7 @@
                                     <div class="icon-wrapper">
                                         <span id="icon-password"></span>
                                     </div>
-                                    <input type="text" id="input-password" placeholder="비밀번호">
+                                    <input type="password" id="input-password" placeholder="비밀번호">
                                 </div>
                             </div>
                             <!-- 아이디 패스워드 인풋 끝 -->
@@ -134,7 +134,7 @@
                         <span id="footer-logo"></span>
                     </a>
                     <span id="footer-text">Copyright</span>
-                    <span id="corp">© NAVER Corp.</span>
+                    <span id="corp">© KNOHOW Corp.</span>
                     <span id="text">All Rights Reserved.</span>
                 </div>
             </div>
@@ -142,6 +142,5 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js">
-
 </script>
 </html>
