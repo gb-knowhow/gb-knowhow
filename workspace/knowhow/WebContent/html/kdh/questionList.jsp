@@ -12,52 +12,29 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionList.css">
   </head>
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>질문 목록</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/image/greenV.ico">
+    <link rel="stylesheet" href="/Know-How/css/questionList.css">
+  </head>
+
   <body class="body">
-    <header></header>
-    <div id="wrap" class="wrap wrap_qna">
-      <div class="nav" role="navigation">
-        <div class="nav_inner">
-          <ul class="nav_list" id="au_lnb" role="menubar">
-            <li class="menu" role="presentation">
-              <a href="/index.naver" role="menuitem" class="item"
-                onclick="">
-                <em>홈</em>
-              </a>
-            </li>
-            <li class="menu" role="presentation">
-              <a href="/qna/questionList.naver" role="menuitem"
-                class="item" onclick="">
-                <em>이용방법 및 유의사항</em>
-              </a>
-            </li>
-            <li class="menu" role="presentation">
-              <a href="/volunteer/index.naver" role="menuitem"
-                class="item" onclick="">
-                <em>문의 게시판</em>
-              </a>
-            </li>
-          </ul>
-          <a href="#" class="nav__button_question _clickcode:LNB.q"
-            onclick="nhn.Kin.checkRosAndGoUrl(event, '/qna/question.naver', '');"
-            role="button"
-          >
-            <span class="btn_inner"> <i class="sp_gnb icon_pencil"></i>질문하기</span></a
-          >
-        </div>
-      </div>
+    <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
 
       <div id="container" class="container-full">
           <div class="container-inner _containerFluidContentInner">
             <ul class="location" id="au_location">
               <!-- after -->
             </ul>
-            <div id="content" class="container-full-content__left">
-              <!-- 카테고리 넣어주기 -->
-            </div>
 
             <div class="tabWrap">
               <ul class="tab1 tab1_box" role="tablist">
-                <!-- [KINSUS-31195] Q&A나 전문가답변 질문목록 Tab은 목록이 비어있는지 체크하지 않고 항상 노출한다. (성능 이슈) -->
                 <li role="presentation" class="on">
                   <a href="/qna/kinupList.naver"class="item _nclicks:kls.best"
                     tabindex="-1" aria-selected="" role="tab">
@@ -298,42 +275,6 @@
                     1
                   </a>
 
-                  <a href="" class="btnNums">
-                    2
-                  </a>
-
-                  <a href="" class="btnNums">
-                    3
-                  </a>
-
-                  <a href="" class="btnNums">
-                    4
-                  </a>
-
-                  <a href="" class="btnNums">
-                    5
-                  </a>
-
-                  <a href="" class="btnNums">
-                    6
-                  </a>
-
-                  <a href="" class="btnNums">
-                    7
-                  </a>
-
-                  <a href="" class="btnNums">
-                    8
-                  </a>
-
-                  <a href="" class="btnNums">
-                    9
-                  </a>
-
-                  <a href="" class="btnNums">
-                    10
-                  </a>
-
                   <!-- 11페이지로 href 걸어줘야 한다. -->
                   <a href="" class="next">
                     다음페이지
@@ -358,8 +299,10 @@
       </div>
     </div>
     <!-- <div id="wrap" class="wrap wrap_qna">의 div닫음 -->
-    <footer></footer>
+    <footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
   </body>
+  <script src="../js/questionList.js"></script>
+</html>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/kdh/questionList.js"></script>
 </html>

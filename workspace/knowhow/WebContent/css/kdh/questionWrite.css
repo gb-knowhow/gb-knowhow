@@ -4,23 +4,9 @@
   text-align: center;
 }
 
-body, button, dd, dl, dt, fieldset, form, h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-legend,
-li,
-ol,
-p,
-select,
-table,
-td,
-textarea,
-th,
-ul {
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend,
+li, ol, p, select, table, td, textarea, th, ul 
+{
   margin: 0;
   padding: 0;
 }
@@ -49,13 +35,7 @@ button {
   -webkit-tap-highlight-color: transparent;
   color: inherit;
 }
-#app,
-body,
-button,
-html,
-input,
-select,
-textarea {
+#app, body, button, html, input, select, textarea {
   font-family: NanumSquareR, -apple-system, AppleSDGothicNeo, SFProDisplay, BlinkMacSystemFont,
     HelveticaNeue, Helvetica, arial, 'sans-serif';
 }
@@ -95,8 +75,8 @@ textarea {
   overflow: hidden;
 }
 
-.input_help_ask_home_end a[class*='inner'],
-.input_help_ask_home_end div[class*='inner'] {
+.input_help_ask_home_end a[class*='innerFull'],
+.input_help_ask_home_end div[class*='innerFull'] {
   position: relative;
   padding: 0 40px;
   height: 100%;
@@ -104,7 +84,7 @@ textarea {
   margin: 0 auto;
 }
 
-.InquiryInput_ask_form div[class*='inner'] {
+.InquiryInput_ask_form div[class*='innerFull'] {
   padding-bottom: 120px !important;
 }
 
@@ -119,8 +99,7 @@ body {
   min-inline-size: 0;
 }
 
-fieldset,
-img {
+fieldset, img {
   border: 0;
   vertical-align: top;
 }
@@ -164,9 +143,8 @@ img {
   font-size: 16px;
 }
 
-dl,
-ol,
-ul {
+dl, ol, ul 
+{
   list-style: none;
 }
 .InquiryInput_ask_form dl {
@@ -193,8 +171,7 @@ ul {
   }
 }
 
-address,
-em {
+address, em {
   font-style: normal;
 }
 

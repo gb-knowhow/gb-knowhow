@@ -6,43 +6,15 @@
   line-height: 1.2;
 }
 
-body,
-input,
-textarea,
-select,
-button,
-table {
+body, input, textarea, select, button, table {
   font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', '나눔고딕', 'NanumGothic', '맑은 고딕',
     'Malgun Gothic', '돋움', 'Dotum,sans-serif';
   font-size: 12px;
   line-height: 1.2;
 }
 
-body,
-div,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-table,
-th,
-td,
-form,
-fieldset,
-legend,
-input,
-textarea,
-button,
-select {
+body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th,
+td, form, fieldset, legend, input, textarea, button, select {
   margin: 0;
   padding: 0;
 }
@@ -78,8 +50,7 @@ em, address {
   margin: 0 auto;
 }
 
-.blind,
-legend {
+.blind, legend {
   overflow: hidden;
   position: absolute;
   width: 1px;
@@ -114,8 +85,7 @@ legend {
   text-decoration: none;
 }
 
-ul,
-li {
+ul, li {
   list-style: none;
 }
 
@@ -149,6 +119,7 @@ li {
   display: inline-block;
   margin-right: 6px;
 }
+
 a {
   color: #000;
   text-decoration: none;
@@ -169,6 +140,7 @@ li {
     color: #4cc370;
     text-decoration: none;
 }
+
 .nav_list .menu > .item em {
     box-sizing: border-box;
     display: inline-block;
@@ -179,9 +151,11 @@ li {
 .wrap_end .container-full-content-inner {
     width: auto;
 }
+
 .wrap_end .container-full-content-inner {
     position: relative;
 }
+
 .container-full-content-inner {
     width: 980px;
     margin: 0 auto;
@@ -788,6 +762,7 @@ button .text, button .icon {
 .replyItem {
     position: relative;
     padding: 22px 0 20px;
+    /* 대댓글 쓰기에 선이 불편하면 이걸 지우자 */
     border-bottom: 1px solid #e2e2e2;
 }
 .question-commentList-nickname {
@@ -842,6 +817,7 @@ button .text, button .icon {
     font-size: 14px;
     line-height: 26px;
     text-decoration: none;
+    color: #8c8c8c;
 }
 
 .paginatorNumber .paginator__next {
@@ -1143,4 +1119,17 @@ button .text, button .icon {
 .clicked {
     background-color: #388C57;
     color: #FFF;
-  }
+}
+.reply-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-comment-textarea {
+    outline: none;
+}
+
+
+.re-replySet {
+    padding-left: 60px;
+}

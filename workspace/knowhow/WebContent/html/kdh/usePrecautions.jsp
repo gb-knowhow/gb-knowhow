@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
 </head>
 <body class="body">
-    <header></header>
+    <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+    <div class="topLocation"></div>
     <!-- Wrap -->
     <div id="wrap" class="wrap wrap_principle">
         <div id="container" class="container-fluid">
@@ -79,13 +80,10 @@
                                 단, 명예훼손 및 기타 권리침해의 경우 관리자 문의 게시판을 통해 신고하시면 됩니다.​</dd>
                         </dl>
                     </div>
-
                 </div>
-
             </div>
         </div>
-
     </div>
-    <footer></footer>
+    <footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
 </body>
 </html>

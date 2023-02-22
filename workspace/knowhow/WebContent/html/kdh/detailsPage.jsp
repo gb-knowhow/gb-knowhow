@@ -14,45 +14,7 @@
     <body>
         <div id="wrap" class="wrap wrap_end">
             <div class="header_wrap">
-                <header></header>
-                <!-- div class="header_gnb" 부분-->
-                <div id="wrap" class="wrap wrap_qna">
-                    <div class="nav" role="navigation">
-                        <div class="nav_inner">
-                            <ul class="nav_list" id="au_lnb" role="menubar">
-                                <li class="menu" role="presentation">
-                                    <a href="/index.naver" role="menuitem" class="item"
-                                        id="au_lnb_home" tabindex="0" onclick="">
-                                        <em>홈</em>
-                                    </a>
-                                </li>
-                                <li class="menu on" role="presentation">
-                                    <a href="/qna/list.naver" role="menuitem" class="item" tabindex="-1" onclick="">
-                                        <em>Q&amp;A</em>
-                                    </a>
-                                </li>
-                                <li class="menu" role="presentation">
-                                    <a href="/qna/questionList.naver" role="menuitem"
-                                        class="item" tabindex="-1" onclick="">
-                                        <em>이용방법 및 유의사항</em>
-                                    </a>
-                                </li>
-                                <li class="menu" role="presentation">
-                                    <a href="/volunteer/index.naver" role="menuitem"
-                                        class="item" tabindex="-1" onclick="">
-                                        <em>문의 게시판</em>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="nav__button_question">
-                                <span class="btn_inner">
-                                    <i class="icon_pencil"></i>
-                                    질문하기
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
             </div>
             <!-- div class="header_wrap부분" -->
             <div class="container-full">
@@ -66,12 +28,13 @@
                                 </div>
                                 <div class="question_title">
                                     <div class="title"><img src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png" style="margin-right: 3%;">
-                                        퍼블리싱은 언제 끝날까요?
+                                        욱성이는 공부 언제하나요?
                                     </div>
                                 </div>
                                 <!-- 질문 내용 -->
                                 <div class="question_content">
-                                    퍼블리싱의 끝이 보이질 않아요.. <br>해도해도 늘어나는 건 기분탓이겠죠?
+                                    질문 그대로 
+                                    <br>궁금합니다.
                                 </div>
                             </div>
 
@@ -80,7 +43,8 @@
                                     <div class="question-userinfo__profile">
                                         <div class="profile-default">
                                             <div class="profile-default--inner">
-                                                <span class="question_thumbnail"
+                                                <span
+                                                    class="question_thumbnail"
                                                     style="background-image: url(https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m_gray/public.png);"></span>
                                             </div>
                                         </div>
@@ -97,8 +61,7 @@
                                     <!-- 댓글달기 class 이름 button_comment로 쓰세요.-->
                                     <button type="button" class="button_compose button_comment" onclick="">
                                         <i class="icon icon_compose_opinion">
-                                          <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
-                                            style="width: 20px; height: 20px;"></i>
+                                            <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png" style="width: 20px; height: 20px;"></i>
                                         <span class="blind">댓글</span>
                                         <em class="questionButton_comment">댓글달기</em>
                                     </button>
@@ -106,16 +69,14 @@
                                     <!-- 답글달기 class 이름 button_reply로 쓰세요.-->
                                     <button type="button" class="button_compose button_reply" onclick="">
                                         <i class="icon icon_compose_opinion">
-                                          <img src="${pageContext.request.contextPath}/css/kdh/image/reply.png"
-                                            style="width: 20px; height: 20px;"></i>
+                                            <img src="${pageContext.request.contextPath}/css/kdh/image/reply.png" style="width: 20px; height: 20px;"></i>
                                         <em class="questionButton_reply">답글달기</em>
                                     </button>
 
                                     <!-- 신고하기 class 이름 button_siren으로 쓰세요.-->
                                     <button type="button" class="button_compose button_siren" onclick="">
                                         <i class="icon icon_compose_opinion">
-                                          <img src="${pageContext.request.contextPath}/css/kdh/image/siren.png"
-                                            style="width: 20px; height: 20px;"></i>
+                                            <img src="${pageContext.request.contextPath}/css/kdh/image/siren.png" style="width: 20px; height: 20px;"></i>
                                         <em class="questionButton_siren">신고하기</em>
                                     </button>
                                 </div>
@@ -128,8 +89,8 @@
                                         <legend>댓글 입력</legend>
                                         <div class="question-comment-form">
                                             <textarea class="question-comment-textarea placeholder"
-                                                id="wr_1" maxlength="1000"
-                                                title="댓글입력" placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
+                                                id="wr_1" maxlength="500" title="댓글입력"
+                                                placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
                                         </div>
                                         <div class="question-comment-upload">
                                             <div class="question-comment-count">
@@ -137,7 +98,7 @@
                                                 <span id="counter" class="question-comment-count__num">0</span>
                                                 /
                                                 <span class="blind">전체 입력 가능한 글자수</span>
-                                                <span class="question-comment-count__total">1000</span>
+                                                <span class="question-comment-count__total">500</span>
                                             </div>
                                             <button type="submit" class="button_register">등록</button>
                                         </div>
@@ -153,7 +114,19 @@
                                             <p>댓글 내용</p>
                                         </div>
                                         <!-- 본문의 댓글 등록날짜 -->
-                                        <p class="question-commentList-date">댓글 등록날짜</p>
+                                        <div class="reply-align">
+                                            <p class="question-commentList-date">
+                                                댓글 등록날짜
+                                            </p>
+                                            <span class="re-reply-img">
+                                                <button type="button" class="button_compose re-replyWrite" onclick="">
+                                                    <i class="icon icon_compose_opinion">
+                                                        <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png" style="width: 20px; height: 20px;"></i>
+                                                    <span class="blind">댓글</span>
+                                                    <em class="questionButton_comment">대댓글달기</em>
+                                                </button>
+                                            </span>
+                                        </div>
                                         <div class="button_more">
                                             <a href="javascript:void(0);" class="_reportBtn"
                                                 data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8B%98%EC%9D%98+%EC%9E%A5%EB%A5%B4%EB%B6%88%EB%AC%B8+%EB%85%B8%EB%9E%98%EC%8B%A4%EB%A0%A5%EC%97%90+%EC%99%84%EC%A0%84%EA%B9%9C%EC%A7%9D+%EB%86%80%EB%9E%AC%EB%8B%A4+%EA%B9%80%ED%98%B8%EC%A4%91%EB%8B%98%EC%9D%80+%EB%AA%85%EB%B6%88%ED%97%88%EC%A0%84+%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4">
@@ -161,10 +134,54 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <!-- 복붙 -->
+                                    <div class="c-opinion _commentListArea re-replySet" id="questionCommentList3" style="display: none;">
+                                        <h2 class="blind">대댓글영역</h2>
+                                        <div class="question-comment">
+                                            <fieldset>
+                                                <legend>대댓글 입력</legend>
+                                                <div class="question-comment-form">
+                                                    <textarea class="question-comment-textarea placeholder" id="wr_re_reply"
+                                                        maxlength="200" title="대댓글입력"
+                                                        placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
+                                                </div>
+                                                <div class="question-comment-upload">
+                                                    <div class="question-comment-count">
+                                                        <span class="blind">현재 입력한 글자수</span>
+                                                        <span id="counter-reply" class="question-comment-count__num">0</span>
+                                                        /
+                                                        <span class="blind">전체 입력 가능한 글자수</span>
+                                                        <span class="question-comment-count__total">200</span>
+                                                    </div>
+                                                    <button type="submit" class="button_register">등록</button>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <!-- 본문의 대댓글 목록들 -->
+                                        <div class="question-commentList">
+                                            <div class="replyItem">
+                                                <p class="question-commentList-nickname">
+                                                    <strong>대댓글 작성자 닉네임</strong>
+                                                </p>
+                                                <div class="question-commentList-text">
+                                                    <p>대댓글 내용</p>
+                                                </div>
+                                                <!-- 본문의 대댓글 등록날짜 -->
+                                                <p class="question-commentList-date">대댓글 등록날짜</p>
+                                                <div class="button_more">
+                                                    <a href="javascript:void(0);" class="_reportBtn">
+                                                        신고
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="replyItem">
                                         <p class="question-commentList-nickname">
-                                            <strong>
-                                                <a href="/profile/index.nhn?u=g4vQc5x28j%2BdHpEJiv63JNo58ZvPKqJ6F1hiTB55qfg%3D">유저아이디</a>
+                                        	<strong>
+                                            <!-- div가 아니라 원래 a href이다. 아이디를 클릭하면 그 아이디를 가진 사람의 정보를 볼 수 있는 페이지로 넘어가는듯. -->
+                                            	<div>유저아이디</div>
                                             </strong>
                                         </p>
                                         <div class="question-commentList-text">
@@ -181,7 +198,7 @@
                                     <!-- 본문의 댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
                                 </div>
                                 <!-- 본문의 댓글의 페이지 목록 -->
-                                
+
                                 <div class="paginator paginatorNumber">
 
                                     <a href="javascript:void(0);" class="paginator__prev _pagingBtn" data-page="10">
@@ -189,44 +206,8 @@
                                         <span class="paginator__text">이전</span>
                                     </a>
 
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="1">
+                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="2">
                                         <span class="paginator__num">1</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="2">
-                                        <span class="paginator__num">2</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="3">
-                                        <span class="paginator__num">3</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="4">
-                                        <span class="paginator__num">4</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="5">
-                                        <span class="paginator__num">5</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="6">
-                                        <span class="paginator__num">6</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="7">
-                                        <span class="paginator__num">7</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="8">
-                                        <span class="paginator__num">8</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="9">
-                                        <span class="paginator__num">9</span>
-                                    </a>
-
-                                    <a href="javascript:void(0);" class="paginator_num _pagingBtn1" data-page="10">
-                                        <span class="paginator__num">10</span>
                                     </a>
 
                                     <a href="javascript:void(0);" class="paginator__next _pagingBtn" data-page="11">
@@ -246,7 +227,8 @@
                                         <div class="card_inner">
                                             <div class="card_info">
                                                 <div class="profile_info">
-                                                    <a href="" class="name_area" onclick="">
+                                                <!-- name_area는 원래 a href이다. 아이디를 클릭하면 그 아이디를 가진 사람의 정보를 볼 수 있는 페이지로 넘어가는듯. -->
+                                                    <div class="name_area" onclick="">
                                                         <strong class="name">답글 단 사람 아이디</strong>
                                                     </a>
                                                     <div class="answerLikeArea">
@@ -273,7 +255,7 @@
                                                     <div class="answer-textFull">
                                                         <div class="answerOnlytext">
                                                             <p class="answerTextPtag">
-                                                                백엔드가 남았답니다?
+                                                                아무도 몰라요
                                                             </p>
                                                         </div>
                                                     </div>
@@ -288,30 +270,28 @@
                                                     위 답변은 답변작성자가 경험과 지식을 바탕으로 작성한 내용입니다.</p>
                                             </div>
                                             <p class="answer-date">작성 날짜</p>
-                                            
+
                                         </div>
                                         <div class="reply-comment-click">
                                             <!-- class이름 button_reply_comment로 쓰세요. -->
                                             <button type="button" class="button_compose button_reply_comment" onclick="">
                                                 <i class="icon icon_compose_opinion">
-                                                  <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
-                                                    style="width: 20px; height: 20px;"></i>
+                                                    <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png" style="width: 20px; height: 20px;"></i>
                                                 <span class="blind">댓글</span>
                                                 <em class="questionButton_comment">댓글달기</em>
                                             </button>
                                         </div>
-    
+
                                     </div>
                                     <div class="reply-Comment">
-                                        <div class="c-opinion _commentListArea" style="display: none;"
-                                            id="questionCommentList2">
+                                        <div class="c-opinion _commentListArea" id="questionCommentList2" style="display: none;">
                                             <h2 class="blind">댓글영역</h2>
                                             <div class="question-comment">
                                                 <fieldset>
                                                     <legend>댓글 입력</legend>
                                                     <div class="question-comment-form">
                                                         <textarea class="question-comment-textarea placeholder"
-                                                            id="wr_2" maxlength="1000" title="댓글입력"
+                                                            id="wr_2" maxlength="500" title="댓글입력"
                                                             placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
                                                     </div>
                                                     <div class="question-comment-upload">
@@ -320,12 +300,13 @@
                                                             <span id="counter2" class="question-comment-count__num">0</span>
                                                             /
                                                             <span class="blind">전체 입력 가능한 글자수</span>
-                                                            <span class="question-comment-count__total">1000</span>
+                                                            <span class="question-comment-count__total">500</span>
                                                         </div>
                                                         <button type="submit" class="button_register">등록</button>
                                                     </div>
                                                 </fieldset>
                                             </div>
+                                            
                                             <!-- 본문의 댓글 목록들 -->
                                             <div class="question-commentList">
                                                 <div class="replyItem">
@@ -336,17 +317,73 @@
                                                         <p>댓글 내용</p>
                                                     </div>
                                                     <!-- 본문의 댓글 등록날짜 -->
-                                                    <p class="question-commentList-date">댓글 등록날짜</p>
+                                                    <div class="reply-align">
+                                                        <p class="question-commentList-date">
+                                                            댓글 등록날짜
+                                                        </p>
+                                                        <span class="re-reply-img">
+                                                            <button type="button" class="button_compose reply-re-replyWrite" onclick="">
+                                                                <i class="icon icon_compose_opinion">
+                                                                    <img src="${pageContext.request.contextPath}/css/kdh/image/comment.png" style="width: 20px; height: 20px;"></i>
+                                                                <span class="blind">댓글</span>
+                                                                <em class="questionButton_comment">대댓글달기</em>
+                                                            </button>
+                                                        </span>
+                                                    </div>
                                                     <div class="button_more">
-                                                        <a href="javascript:void(0);" class="_reportBtn">
+                                                        <a href="javascript:void(0);" class="_reportBtn" data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8B%98%EC%9D%98+%EC%9E%A5%EB%A5%B4%EB%B6%88%EB%AC%B8+%EB%85%B8%EB%9E%98%EC%8B%A4%EB%A0%A5%EC%97%90+%EC%99%84%EC%A0%84%EA%B9%9C%EC%A7%9D+%EB%86%80%EB%9E%AC%EB%8B%A4+%EA%B9%80%ED%98%B8%EC%A4%91%EB%8B%98%EC%9D%80+%EB%AA%85%EB%B6%88%ED%97%88%EC%A0%84+%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4">
                                                             신고
                                                         </a>
                                                     </div>
                                                 </div>
+                                                <!-- 답글의 대댓글 복붙 -->
+                                                <div class="c-opinion _commentListArea re-replySet" id="questionCommentList4" style="display: none;">
+                                                    <h2 class="blind">답글의 대댓글영역</h2>
+                                                    <div class="question-comment">
+                                                        <fieldset>
+                                                            <legend>답글의 대댓글 입력</legend>
+                                                            <div class="question-comment-form">
+                                                                <textarea class="question-comment-textarea placeholder" id="wr_reply_re_reply" maxlength="200" title="댓글입력" placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
+                                                            </div>
+                                                            <div class="question-comment-upload">
+                                                                <div class="question-comment-count">
+                                                                    <span class="blind">현재 입력한 글자수</span>
+                                                                    <span id="counter-reply-re-reply" class="question-comment-count__num">0</span>
+                                                                    /
+                                                                    <span class="blind">전체 입력 가능한 글자수</span>
+                                                                    <span class="question-comment-count__total">200</span>
+                                                                </div>
+                                                                <button type="submit" class="button_register">등록</button>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                    <!-- 답글의 댓글 목록들 -->
+                                                    <div class="question-commentList">
+                                                        <div class="replyItem">
+                                                            <p class="question-commentList-nickname">
+                                                                <strong>대댓글 작성자 닉네임</strong>
+                                                            </p>
+                                                            <div class="question-commentList-text">
+                                                                <p>댓글 내용</p>
+                                                            </div>
+                                                            <!-- 답글의 댓글 등록날짜 -->
+                                                            <p class="question-commentList-date">댓글 등록날짜</p>
+                                                            <div class="button_more">
+                                                                <a href="javascript:void(0);" class="_reportBtn">
+                                                                    신고
+                                                                </a>
+                                                            </div>
+                                                        </div>
+            
+                                                        <!-- 본문의 대댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
+                                                    </div>
+                                                </div>
+            
                                                 <div class="replyItem">
                                                     <p class="question-commentList-nickname">
                                                         <strong>
-                                                            <a href="/profile/index.nhn?u=g4vQc5x28j%2BdHpEJiv63JNo58ZvPKqJ6F1hiTB55qfg%3D">유저아이디</a>
+                                                        <!-- div가 아니라 원래 a href이다. 아이디를 클릭하면 그 아이디를 가진 사람의 정보를 볼 수 있는 페이지로 넘어가는듯. -->
+                                                            <div>유저아이디</div>
                                                         </strong>
                                                     </p>
                                                     <div class="question-commentList-text">
@@ -354,7 +391,7 @@
                                                     </div>
                                                     <p class="question-commentList-date">작성 날짜</p>
                                                     <div class="button_more">
-                                                        <a href="javascript:void(0);" class="_reportBtn">
+                                                        <a href="javascript:void(0);" class="_reportBtn" data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9E%AC%EC%83%81%EC%97%90%EB%B9%9B%EB%82%98%EB%8A%94%EA%B5%AD%EB%B3%B4%EA%B8%89%ED%85%8C%EB%84%88%EB%85%B8%EB%9E%98%EC%99%80%EC%98%88%EB%8A%A5%EA%B0%90%EB%8F%84%EB%A7%8C%EC%A0%90%EC%9D%B4%EC%8B%9C%EB%84%A4%EC%9A%94">
                                                             신고
                                                         </a>
                                                     </div>
@@ -373,43 +410,10 @@
                                                     <span class="paginator__num">1</span>
                                                 </a>
 
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="2">
-                                                    <span class="paginator__num">2</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="3">
-                                                    <span class="paginator__num">3</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="4">
-                                                    <span class="paginator__num">4</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="5">
-                                                    <span class="paginator__num">5</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="6">
-                                                    <span class="paginator__num">6</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="7">
-                                                    <span class="paginator__num">7</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="8">
-                                                    <span class="paginator__num">8</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="9">
-                                                    <span class="paginator__num">9</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator_num _pagingBtn2" data-page="10">
-                                                    <span class="paginator__num">10</span>
-                                                </a>
-
-                                                <a href="javascript:void(0);" class="paginator__next _pagingBtn2" data-page="11">
+                                                <a
+                                                    href="javascript:void(0);"
+                                                    class="paginator__next _pagingBtn2"
+                                                    data-page="11">
                                                     <span class="paginator__text">다음</span>
                                                     <i class="icon_paginator_next"></i>
                                                 </a>
@@ -423,7 +427,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/kdh/detailsPage.js"></script>
