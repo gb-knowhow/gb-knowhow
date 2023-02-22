@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+    /* max-width: 1260px; */
+    /* border: 1px solid red; */
+}
+
+section.container {
+    position: relative;
+    /* 컨테이너 width 만큼 보이고 나머지는 hidden */
+    width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.banner {
+    width: 2520px;
+    transition: transform 0.3s;
+}
+
+div.banner div {
+    width: 420px;
+    height: 420px;
+    float: left;
+    background-size: cover;
+    /* background-size: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

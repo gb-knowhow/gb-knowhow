@@ -430,6 +430,7 @@ button {
 }
 
 .categoryLayerWrap {
+    display: none;
     position: absolute;
     top: 38px;
     height: 608px;
@@ -536,6 +537,7 @@ button {
 }
 
 .search_dropdown{
+    /* display: none; */
     position: absolute;
     top: 38px;
     height: 35px;
@@ -624,6 +626,10 @@ button {
     border: 1px solid #388C57;
     border-radius: 50%;
     content: "";
+}
+
+.search_dropdown{
+    display: none;
 }
 
 /* 
