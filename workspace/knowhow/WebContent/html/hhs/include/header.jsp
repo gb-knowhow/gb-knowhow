@@ -189,7 +189,7 @@
                   </section>
                   <!-- //section for dropdown -->
                   <section class="search_dropdown_Section">
-                  <div class="search_dropdown">
+                    <div class="search_dropdown">
                     <div class="search_wrapper">
                       <div class="search_inner">
                         <i class="iconSearch_mini">

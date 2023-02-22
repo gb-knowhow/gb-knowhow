@@ -18,7 +18,7 @@ var texts = ['새학기<br>학습전략<br>성공적으로<br>준비하기', '�
                 '새학기<br>학습전략<br>성공적으로<br>준비하기'];
 // var texts = ['1파랑셋', '2분홍하트', '3초록여자', '4노랑폰', '1파랑셋'];
 
-console.log(titles);
+/*console.log(titles);*/
 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
@@ -37,7 +37,7 @@ banner.style.transform = `translate(-420px)`;
 function autoSlide() {
   banner.style.transition = 'transform 0.3s';
   banner.style.transform = `translate(${-420 * ++count}px)`;
-  console.log(count);
+  /*console.log(count);*/
   if (count == 5) {
     count = 1;
     setTimeout(function () {

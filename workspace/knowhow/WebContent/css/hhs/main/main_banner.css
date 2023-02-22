@@ -1,11 +1,12 @@
-/*banner.html*/
 
 .banner_background {
+    position:relative;
     background-color: grey;
     padding-bottom: 20px;
     max-height: 440px;
     min-width: 700px;
     margin-bottom: 24px;
+    z-index: -1;
 }
 
 .banner_background_inner{
@@ -63,7 +64,7 @@ div.banner div {
 
 .move-arrow {
     position: absolute;
-    top: 50%;
+    top: 56%;
     display: block;
     width: 100%;
     margin-top: -56px;
@@ -135,75 +136,3 @@ div.banner div {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
