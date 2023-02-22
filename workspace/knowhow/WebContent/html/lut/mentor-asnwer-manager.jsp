@@ -67,20 +67,19 @@
                         </button>
                         <div class="content">
                             <p>멘티 질문글 목록</p>
+                            <p>- 질문글 댓글 목록</p>
                             <p>멘토 답변글 목록</p>
-                            <p>댓글 목록</p>
+                            <p>- 답변글 댓글 목록</p>
                         </div>
 
-                        <button type="button" class="collapsible" onclick="collapse(this);">
-                            <div class="icon-gap">
-                                <img class="side-icons" alt="ask-board" src="./images/ask-board-icon.png">
+                        <span class="mouseOnEffect">
+                            <div id="middle-box-dashBoard-bar" class="side-bar">
+                                <div class="icon-gap">
+                                    <img class="side-icons" alt="resume" src="./images/ask-board-icon.png">
+                                </div>
+                                문의 게시판 관리
                             </div>
-                            문의 게시판 관리
-                        </button>
-                        <div class="content">
-                            <p>문의 목록</p>
-                            <p>문의 처리</p>
-                        </div>
+                        </span>
 
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
@@ -127,7 +126,7 @@
                     </div>
 
                     <div class="total-mentor">
-                        <p>총 답변 수</p>
+                        <p>전체 답변</p>
                         <p class="total-mentor-num">11</p>
                     </div>
 
@@ -142,7 +141,7 @@
                             <div class="specialization">
                                 전문 분야
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 작성자
                             </div>
                             <div class="answer-title">
@@ -151,11 +150,19 @@
                             <div class="answer-contents">
                                 내용
                             </div>
+                            <div class="answer-reply-count">
+                                댓글
+                            </div>
                             <div class="like-count">
-                                좋아요 수
+                                좋아요
                             </div>
                             <div class="user-answer-day">
-                                작성일시
+                                작성일
+                            </div>
+                            <div class="ask-num">
+                                질문 번호
+                            </div>
+                            <div class="detail">
                             </div>
                         </div>
 
@@ -170,7 +177,7 @@
                             <div class="specialization">
                                 기술-디자인
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 포토샵마스터
                             </div>
                             <div class="answer-title">
@@ -179,11 +186,22 @@
                             <div class="answer-contents">
                                 포토샵을 잘쓰고 싶나요?
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                11
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -197,7 +215,7 @@
                             <div class="specialization">
                                 기술-마케팅
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 마케팅의 여왕
                             </div>
                             <div class="answer-title">
@@ -206,11 +224,22 @@
                             <div class="answer-contents">
                                 문서작업이 중요합니다.
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                12
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -224,8 +253,8 @@
                             <div class="specialization">
                                 기술-회계
                             </div>
-                            <div class="user-name">
-                                작성자
+                            <div class="user-nick-name">
+                                지나가는 회계사
                             </div>
                             <div class="answer-title">
                                 회계사가 꼭 알아야하는 것
@@ -233,11 +262,22 @@
                             <div class="answer-contents">
                                 제무재표의 종류는 여러가지 있습니다.
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                7
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -246,12 +286,12 @@
                                 <input type="checkbox" id="check4" class="normal" value="">
                             </div>
                             <div class="answer-num">
-                               5
+                            5
                             </div>
                             <div class="specialization">
                                 기술-웹 개발
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 벅벅코딩
                             </div>
                             <div class="answer-title">
@@ -260,11 +300,22 @@
                             <div class="answer-contents">
                                 따즈아 한동석~
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                9
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -273,12 +324,12 @@
                                 <input type="checkbox" id="check4" class="normal" value="">
                             </div>
                             <div class="answer-num">
-                               11
+                            11
                             </div>
                             <div class="specialization">
                                 기술-웹 개발
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 벅벅코딩
                             </div>
                             <div class="answer-title">
@@ -287,11 +338,22 @@
                             <div class="answer-contents">
                                 따즈아 한동석~
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                9
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -300,12 +362,12 @@
                                 <input type="checkbox" id="check4" class="normal" value="">
                             </div>
                             <div class="answer-num">
-                               8
+                            8
                             </div>
                             <div class="specialization">
                                 기술-웹 개발
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 벅벅코딩
                             </div>
                             <div class="answer-title">
@@ -314,11 +376,22 @@
                             <div class="answer-contents">
                                 따즈아 한동석~
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                9
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 
@@ -327,12 +400,12 @@
                                 <input type="checkbox" id="check4" class="normal" value="">
                             </div>
                             <div class="answer-num">
-                               9
+                            10
                             </div>
                             <div class="specialization">
                                 기술-웹 개발
                             </div>
-                            <div class="user-name">
+                            <div class="user-nick-name">
                                 벅벅코딩
                             </div>
                             <div class="answer-title">
@@ -341,11 +414,22 @@
                             <div class="answer-contents">
                                 따즈아 한동석~
                             </div>
+                            <div class="answer-reply-count">
+                                0
+                            </div>
                             <div class="like-count">
                                 0
                             </div>
                             <div class="user-answer-day">
                                 2023-02-20
+                            </div>
+                            <div class="ask-num">
+                                9
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
                             </div>
                         </div>
 

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {
     margin: 0;
     height: 100%;
@@ -310,7 +309,7 @@ html{
     height: 1.2rem;
 }
 
-.answer-num{
+.ask-num{
     text-align: center;
     width: 7%;
 
@@ -324,47 +323,43 @@ html{
 
 .user-nick-name{
     text-align: center;
-    width: 12%;
+    width: 10%;
 
 }
 
-.answer-title{
+.ask-title{
     text-align: center;
     width: 20%;
 
 }
 
-.answer-contents{
+.ask-contents{
     text-align: center;
     width: 30%;
 
 }
 
-.answer-reply-count{
-    text-align: center;
-    width: 5%;
-}
-
-
-.like-count{
+.answer-count{
     text-align: center;
     width: 5%;
 
 }
 
-.user-answer-day{
+.ask-reply-count{
+    text-align: center;
+    width: 5%;
+}
+
+.user-ask-day{
     text-align: center;
     width: 12%;
+
 }
 
 .detail{
+    cursor: pointer;
     text-align: center;
     width: 5%;
-}
-
-.ask-num{
-    text-align: center;
-    width: 7%;
 }
 
 .detail-icon{

@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>know-how</title>
 <link rel="shortcut icon" type="image/x-icon" href="./images/logo-favicon.ico" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/QnA-manager.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/ask-reply.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -98,7 +98,7 @@
         <div id="right-side" class="container">
             <div class="right-header">
                 <div class="letter-space">
-                문의 게시판 관리 
+                질문 답변 관리 
                 </div>
                 <h1 id="clock" style="color:black;">clock</h1>
                 <img  class="admin-profile" src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/bart-.png"> 
@@ -108,31 +108,25 @@
             </div>
             <div class="right-body">
                 <div class="user-list-letter">
-                    <p>문의 목록</p>
+                    <p>질문글 댓글 목록</p>
                 </div>
 
                 <div class="user-list-contents">
                     <div class="member-input-wrap">
-                        <div class="watch-all-ask">
-                            <input class="watch-all-ask-button" type="submit" value="전체보기">
-                        </div>
-                        <div class="watch-waiting-ask">
-                            <input class="watch-waiting-ask-button" type="submit" value="대기 문의 보기">
-                        </div>
                         <div class="member-delete-button-wrap">
-                            <input class="member-delete-button" type="submit" value="선택 삭제">
+                            <input class="member-delete-button" type="submit" value="댓글 삭제">
                         </div>
 
                         <div class="member-search-wrap">
                             <div class="search-border">
                                 <img id="search-icon" alt="search" src="./images/search-icon.png">
-                                <input class="member-search" type="text" placeholder="문의 검색">
+                                <input class="member-search" type="text" placeholder="댓글 검색">
                             </div>
                         </div>
                     </div>
 
                     <div class="total-mentor">
-                        <p>전체 문의</p>
+                        <p>전체 댓글</p>
                         <p class="total-mentor-num">15</p>
                     </div>
 
@@ -141,29 +135,28 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check-all" class="all" value="all">
                             </div>
-                            <div class="qna-num">
-                                문의 번호
+                            <div class="ask-reply-num">
+                                댓글 번호
                             </div>
-                            <div class="category">
-                                카테고리
+                            <div class="ask-num">
+                                질문 번호
                             </div>
-                            <div class="qna-title">
-                                제목
+                            <div class="specialization">
+                                전문 분야
+                            </div>
+                            <div class="user-role">
+                                구분
                             </div>
                             <div class="user-nick-name">
                                 작성자
                             </div>
-                            <div class="qna-ask-day">
-                                작성일시
+                            <div class="ask-reply-contents">
+                                댓글 내용
                             </div>
-                            <div class="qna-answer-day">
-                                답변일시
-                            </div>
-                            <div class="qna-status">
-                                진행 상태
+                            <div class="user-ask-reply-day">
+                                작성일
                             </div>
                             <div class="detail">
-                                답변하기
                             </div>
                         </div>
 
@@ -172,30 +165,30 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check1" class="normal" value="">
                             </div>
-                            <div class="qna-num">
-                                15
+                            <div class="ask-reply-num">
+                                9
                             </div>
-                            <div class="category">
-                                서비스 문의
+                            <div class="ask-num">
+                                3
                             </div>
-                            <div class="qna-title">
-                                메일이 안와요
+                            <div class="specialization">
+                                기술-웹개발
+                            </div>
+                            <div class="user-role">
+                                멘토
                             </div>
                             <div class="user-nick-name">
-                                룰루랄라
+                                벅벅코딩
                             </div>
-                            <div class="qna-ask-day">
-                                2023-02-22 16:42:39
+                            <div class="ask-reply-contents">
+                                웹 개발 수강은? 따즈아 한동석
                             </div>
-                            <div class="qna-answer-day">
-                                -
-                            </div>
-                            <div class="qna-status qna-status-false">
-                                답변 대기중
+                            <div class="user-ask-reply-day">
+                                2022-02-20
                             </div>
                             <div class="detail">
                                 <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
                             </div>
                         </div>
@@ -204,30 +197,30 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check2" class="normal" value="">
                             </div>
-                            <div class="qna-num">
-                                14
+                            <div class="ask-reply-num">
+                                8
                             </div>
-                            <div class="category">
-                                서비스 문의
+                            <div class="ask-num">
+                                5
                             </div>
-                            <div class="qna-title">
-                                회원가입이 안됩니다
+                            <div class="specialization">
+                                기술-포토샵
+                            </div>
+                            <div class="user-role">
+                                멘티
                             </div>
                             <div class="user-nick-name">
-                                벅벅코딩
+                                영업초보
                             </div>
-                            <div class="qna-ask-day">
-                                2023-02-22 10:28:31
+                            <div class="ask-reply-contents">
+                                답변 감사합니다!
                             </div>
-                            <div class="qna-answer-day">
-                                -
-                            </div>
-                            <div class="qna-status qna-status-false">
-                                답변 대기중
+                            <div class="user-ask-reply-day">
+                                2023-02-20
                             </div>
                             <div class="detail">
                                 <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
                             </div>
                         </div>
@@ -236,158 +229,157 @@
                             <div class="checkbox-zip">
                                 <input type="checkbox" id="check3" class="normal" value="">
                             </div>
-                            <div class="qna-num">
-                                13
+                            <div class="ask-reply-num">
+                                7
                             </div>
-                            <div class="category">
-                                배너 이용
-                            </div>
-                            <div class="qna-title">
-                                배너 광고 문의드립니다.
-                            </div>
-                            <div class="user-nick-name">
-                                네이버 마케팅팀
-                            </div>
-                            <div class="qna-ask-day">
-                                2023-02-23 14:54:21
-                            </div>
-                            <div class="qna-answer-day">
-                                2023-02-23 19:41:31
-                            </div>
-                            <div class="qna-status qna-status-true">
-                                답변완료
-                            </div>
-                            <div class="detail">
-                                <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check4" class="normal" value="">
-                            </div>
-                            <div class="qna-num">
-                                12
-                            </div>
-                            <div class="category">
-                                배너 이용
-                            </div>
-                            <div class="qna-title">
-                                배너 광고 문의드립니다.
-                            </div>
-                            <div class="user-nick-name">
-                                네이버 마케팅팀
-                            </div>
-                            <div class="qna-ask-day">
-                                2023-02-23 14:54:21
-                            </div>
-                            <div class="qna-answer-day">
-                                2023-02-23 19:41:31
-                            </div>
-                            <div class="qna-status qna-status-true">
-                                답변완료
-                            </div>
-                            <div class="detail">
-                                <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check4" class="normal" value="">
-                            </div>
-                            <div class="qna-num">
-                                11
-                            </div>
-                            <div class="category">
-                                배너 이용
-                            </div>
-                            <div class="qna-title">
-                                배너 광고 문의드립니다.
-                            </div>
-                            <div class="user-nick-name">
-                                네이버 마케팅팀
-                            </div>
-                            <div class="qna-ask-day">
-                                2023-02-23 14:54:21
-                            </div>
-                            <div class="qna-answer-day">
-                                2023-02-23 19:41:31
-                            </div>
-                            <div class="qna-status qna-status-true">
-                                답변완료
-                            </div>
-                            <div class="detail">
-                                <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check4" class="normal" value="">
-                            </div>
-                            <div class="qna-num">
-                                10
-                            </div>
-                            <div class="category">
-                                배너 이용
-                            </div>
-                            <div class="qna-title">
-                                배너 광고 문의드립니다.
-                            </div>
-                            <div class="user-nick-name">
-                                네이버 마케팅팀
-                            </div>
-                            <div class="qna-ask-day">
-                                2023-02-23 14:54:21
-                            </div>
-                            <div class="qna-answer-day">
-                                2023-02-23 19:41:31
-                            </div>
-                            <div class="qna-status qna-status-true">
-                                답변완료
-                            </div>
-                            <div class="detail">
-                                <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check4" class="normal" value="">
-                            </div>
-                            <div class="qna-num">
+                            <div class="ask-num">
                                 9
                             </div>
-                            <div class="category">
-                                배너 이용
+                            <div class="specialization">
+                                기술-마케팅
                             </div>
-                            <div class="qna-title">
-                                배너 광고 문의드립니다.
+                            <div class="user-role">
+                                멘티
                             </div>
                             <div class="user-nick-name">
-                                네이버 마케팅팀
+                                배우는자
                             </div>
-                            <div class="qna-ask-day">
-                                2023-02-23 14:54:21
+                            <div class="ask-reply-contents">
+                                너무 어렵네요 ㅠ
                             </div>
-                            <div class="qna-answer-day">
-                                2023-02-23 19:41:31
-                            </div>
-                            <div class="qna-status qna-status-true">
-                                답변완료
+                            <div class="user-ask-reply-day">
+                                2023-02-20
                             </div>
                             <div class="detail">
                                 <button class="detail-button" type="submit">
-                                    <img class="detail-icon" src="./images/edit-icon.png">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="ask-reply-num">
+                                6
+                            </div>
+                            <div class="ask-num">
+                                3
+                            </div>
+                            <div class="specialization">
+                                기술-회계
+                            </div>
+                            <div class="user-role">
+                                멘티
+                            </div>
+                            <div class="user-nick-name">
+                                회계새싹
+                            </div>
+                            <div class="ask-reply-contents">
+                                졸려요...
+                            </div>
+                            <div class="user-ask-reply-day">
+                                2023-02-20
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="ask-reply-num">
+                                5
+                            </div>
+                            <div class="ask-num">
+                                3
+                            </div>
+                            <div class="specialization">
+                                기술-웹개발
+                            </div>
+                            <div class="user-role">
+                                멘토
+                            </div>
+                            <div class="user-nick-name">
+                                벅벅코딩
+                            </div>
+                            <div class="ask-reply-contents">
+                                웹 개발 수강은? 따즈아 한동석
+                            </div>
+                            <div class="user-ask-reply-day">
+                                2022-02-20
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="ask-reply-num">
+                                4
+                            </div>
+                            <div class="ask-num">
+                                3
+                            </div>
+                            <div class="specialization">
+                                기술-웹개발
+                            </div><div class="user-role">
+                                멘토
+                            </div>
+                            <div class="user-nick-name">
+                                벅벅코딩
+                            </div>
+                            <div class="ask-reply-contents">
+                                웹 개발 수강은? 따즈아 한동석
+                            </div>
+                            <div class="user-ask-reply-day">
+                                2022-02-20
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="mentor-list-contents">
+                            <div class="checkbox-zip">
+                                <input type="checkbox" id="check4" class="normal" value="">
+                            </div>
+                            <div class="ask-reply-num">
+                                3
+                            </div>
+                            <div class="ask-num">
+                                12
+                            </div>
+                            <div class="specialization">
+                                기술-웹개발
+                            </div>
+                            <div class="user-role">
+                                멘토
+                            </div>
+                            <div class="user-nick-name">
+                                벅벅코딩
+                            </div>
+                            <div class="ask-reply-contents">
+                                웹 개발 수강은? 따즈아 한동석
+                            </div>
+                            <div class="user-ask-reply-day">
+                                2022-02-20
+                            </div>
+                            <div class="detail">
+                                <button class="detail-button" type="submit">
+                                    <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
                             </div>
                         </div>

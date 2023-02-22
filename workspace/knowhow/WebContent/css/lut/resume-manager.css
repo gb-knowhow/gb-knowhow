@@ -174,3 +174,8 @@ html{
   margin-right: 10%;
 }
 
+.member-delete-button:hover{
+  background-color:#ff0000;
+  transition: background-color 0.5s;
+}
+

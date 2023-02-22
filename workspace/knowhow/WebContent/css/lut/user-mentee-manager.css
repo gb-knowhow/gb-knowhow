@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
     margin: 0;
     height: 100%;
@@ -251,6 +252,11 @@ html{
     margin-top: 5%;
     margin-right: 15%;
 }
+
+.member-delete-button:hover{
+    background-color:#ff0000;
+    transition: background-color 0.5s;
+ }
 
 .member-delete-button-wrap{
     padding-left: 3%;
