@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <title>나의 댓글</title>
 
 </head>
 <body>
-<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
 
 <div class="all_content">
 		
@@ -22,7 +23,7 @@
 			
 				<div class="profile_group">
 					<span class="thumbnail">
-					<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png" width="100%" height="100%" />
+						<img src="${pageContext.request.contextPath}/html/jyc/image/mentor.png" width="100%" height="100%" />
 					</span>
 				</div>
 				

@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>나의 좋아요 목록</title>
+<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 </head>
 <body>
-	<jsp:include
-		page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
 	<div class="all_content">
 
 
@@ -23,7 +23,7 @@
 
 						<div class="profile_group">
 							<span class="thumbnail"> 
-								<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png" width="100%" height="100%" />
+								<img src="${pageContext.request.contextPath}/html/jyc/image/mentor.png" width="100%" height="100%" />
 							</span>
 						</div>
 

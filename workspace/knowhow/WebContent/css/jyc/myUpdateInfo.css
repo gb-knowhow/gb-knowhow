@@ -1,9 +1,18 @@
 @charset "UTF-8";
+.containter{
+	position:static;
+}
 
 body{
 	font-family: 'Helvetica Neue','Apple SD Gothic Neo','나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;
     font-size: 12px;
     line-height: 1.2;
+}
+
+#header{
+	position:sticky;
+	top:0;
+	z-index:2;
 }
 .all_content{
 	margin-top: 20px;
@@ -89,10 +98,9 @@ table{
 
 .my_personal{
 	position: relative;
-    z-index: 110;
     width: 980px;
     background: url(/css/jyc/image/personal.png) repeat-y;
-    z-index:-1;
+    z-index:0;
 }
 
 .my_personal_top{
@@ -149,19 +157,6 @@ table{
 }
 
 
-.edit_photo{
-	width: 15px;
-    height: 15px;
-    position: absolute;
-    bottom: 35px;
-    right: 11px;
-    z-index: 2;
-    padding: 5px;
-    border: 1px solid #e0e0e0;
-    border-radius: 100%;
-    background-color: #fff;
-    
-}
 
 .photo_btn{
 	width: 15px;
@@ -208,7 +203,6 @@ table{
 
 .my_intro{
 	position: relative;
-    z-index: 108;
     padding: 20px 0 17px;
 }
 
@@ -281,6 +275,7 @@ table{
 	float:left;
 	width: 125px;
     padding: 28px 40px 100px 0;
+    z-index:0;
 }
 
 .left_nav ul{
@@ -310,6 +305,10 @@ tbody td{
     font-size: 11px;
     line-height: 18px;
     color: #848484;
+}
+
+td p{
+    color:coral;
 }
 
 thead th {
@@ -347,11 +346,15 @@ fieldset input[type="text"], input[type="password"], input[type="email"]{
     line-height: 15px;
 }
 
+input[type="password"]{
+	padding-right:18px;
+}
+
 
 label[for='profile_upload'] {
 	text-align:center;
 	position:relative;
-	z-index: 1;
+	
 }
 
 
@@ -497,7 +500,7 @@ form{
 
 
 .save{
-	background-color: #388C57;
+	background-color:  #ddd;
     color: #fff;
     width: 60px;
     height: 28px;
