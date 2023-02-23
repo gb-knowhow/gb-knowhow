@@ -9,16 +9,19 @@
     <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="">
     <link rel="stylesheet" href="naver-find-id.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/knohow-id-find.css"/>
-    <title>아이디 찾기 : 네이버</title>
+    <title>찾기 : 네이버</title>
 </head>
 <body>
-    <header>
+	<header id="header">
+		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+	</header>
+    <div class="header1">
         <div class="header-logo">
             <a href="#" id="naver-logo">
-                <h1 id="naver-image"><span> <img src="${pageContext.request.contextPath}/css/kjp/knohow.jpeg" class="img1"> </span></h1>
+                <h1 id="naver-image"><span> <img src="${pageContext.request.contextPath}/image/logo.png" class="img1"> </span></h1>
             </a>
         </div>
-    </header>
+    </div>
     <content>
         <div id="content-wrapper">
             <div id="content-wrapper-inner">
@@ -36,13 +39,6 @@
             </div>
         </div>
     </content>
-    <footer>
-        <div id="footer-inner">
-            <ul id="footer-ul">
-                <li id="footer-li-1"><a href="https://www.navercorp.com/"><div id="footer-logo1"></div></a></li>
-                <li id="footer-li-2"><a href="https://help.naver.com/service/5640"><img src="${pageContext.request.contextPath}/css/kjp/knohow.jpeg"> <div id="footer-logo2">회원정보 고객센터</div></a></li>
-            </ul>
-        </div>
-    </footer>
+    <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
 </html>

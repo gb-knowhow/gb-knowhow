@@ -248,7 +248,7 @@ const closeSpan = document.querySelector('.cancel');
 const input = document.querySelector('#attach');
 const fileName = document.querySelector('.file-name');
 
-// x 버튼을 누르면, 기본 이미지로 변경!
+// x 버튼을 누르면, 기본 이미지로 변경
 closeSpan.addEventListener('click', function (e){
     e.preventDefault();
     input.value = "";
