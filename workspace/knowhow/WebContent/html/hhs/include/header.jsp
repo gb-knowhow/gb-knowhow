@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,38 +53,6 @@
                     </div>
                   </button>
                 </div>
-                <!-- <div class="buttonWrap headerButton"> 
-                  <button class="listButton">
-                    <div class="icon_wrapper">
-                      <span class="blind">대화목록 및 대기실</span>
-                      <i class="iconActive">
-                        <span class="blind">미확인 메세지</span>
-                      </i>
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.293 22.707a1 1 0 0 1 0-1.414l3-3A1 1 0 0 1 14 18h1a4 4 0 0 0 4-4V8c0-2.21-1.789-4-3.997-4H7.999A3.999 3.999 0 0 0 4 8v6a4 4 0 0 0 4 4h1a1 1 0 1 1 0 2H8a6 6 0 0 1-6-6V8a6 6 0 0 1 5.999-6h7.004A5.998 5.998 0 0 1 21 8v6a6 6 0 0 1-6 6h-.586l-2.707 2.707a1 1 0 0 1-1.414 0zM10 13a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1zm1-5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4zM7 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm1 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                          fill="#000"
-                        ></path>
-                        <path
-                          d="M10.293 22.707a1 1 0 0 1 0-1.414l3-3A1 1 0 0 1 14 18h1a4 4 0 0 0 4-4V8c0-2.21-1.789-4-3.997-4H7.999A3.999 3.999 0 0 0 4 8v6a4 4 0 0 0 4 4h1a1 1 0 1 1 0 2H8a6 6 0 0 1-6-6V8a6 6 0 0 1 5.999-6h7.004A5.998 5.998 0 0 1 21 8v6a6 6 0 0 1-6 6h-.586l-2.707 2.707a1 1 0 0 1-1.414 0z"
-                          fill="#000"
-                        ></path>
-                        <path
-                          d="M10 13a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1zm1-5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4zM7 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm1 3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                          fill="#000"
-                        ></path>
-                      </svg>
-                    </div>
-                  </button>
-                </div>-->
                 <div class="buttonWrap headerButton">
                   <button class="listButton categoryListButton">
                     <div class="icon_wrapper">
@@ -227,6 +196,24 @@
         <span class="blind">사용자 프로필 이미지</span>
       </div>
     </div>
+    <navigation id="navigation">
+      <div class="navigation_wrapper">
+        <div class="navigation_inner">
+          <button class="navigation_menu">
+            <span class="navigation_icon icon_knowhow" onclick=""></span>
+            <span class="navigation_text">노하우</span>
+          </button>
+          <button class="navigation_menu" onclick="">
+            <span class="navigation_icon icon_howto"></span>
+            <span class="navigation_text">이용방법</span>
+          </button>
+          <button class="navigation_menu" onclick="">
+            <span class="navigation_icon icon_ask"></span>
+            <span class="navigation_text">문의게시판</span>
+          </button>
+        </div>
+      </div>
+    </navigation>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="${pageContext.request.contextPath}/js/hhs/include/header.js"></script>
