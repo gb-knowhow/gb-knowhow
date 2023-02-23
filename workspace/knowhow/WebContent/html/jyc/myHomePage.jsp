@@ -5,12 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지</title>
+<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 
 </head>
 <body>
-
-<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
 
 <div class="all_content">
 	<div class="my_main_content">
@@ -22,7 +22,7 @@
 				
 					<div class="profile_group">
 						<span class="thumbnail">
-							<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png" width="100%" height="100%" />
+							<img src="${pageContext.request.contextPath}/image/mentor.png" width="100%" height="100%" />
 						</span>
 					</div>
 				
@@ -128,14 +128,14 @@
 							<dl>
 								<dt>
 									<span class="icon_q">
-										<img src="https://ssl.pstatic.net/static/kin/09renewal/blank.gif" width="18" height="14" alt="질문">
+										<img src="${pageContext.request.contextPath}/html/jyc/image/qicon.png" width="14" height="14" alt="질문">
 									</span>
 									<a href="#">나의 첫 답변</a>
 								</dt>
 							
 								<dd>
 									<span class="icon_a">
-										<img src="https://ssl.pstatic.net/static/kin/09renewal/blank.gif" width="18" height="14" alt="답변">
+										<img src="${pageContext.request.contextPath}/html/jyc/image/aicon.png" width="14" height="14" alt="답변">
 									</span>
 									<span>답변 내용</span>
 								</dd>
@@ -153,7 +153,6 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="#" class="more">더보기</a>
 		</div>
 		
 				<div class="my_info_area" id="my_question">
@@ -184,16 +183,16 @@
 							<dl>
 								<dt>
 									<span class="icon_q">
-										<img src="https://ssl.pstatic.net/static/kin/09renewal/blank.gif" width="18" height="14" alt="질문">
+										<img src="${pageContext.request.contextPath}/html/jyc/image/qicon.png" width="14" height="14" alt="질문">
 									</span>
-									<a href="#">나의 첫 질문</a>
+									<a href="#">나의 첫 답변</a>
 								</dt>
 							
 								<dd>
 									<span class="icon_a">
-										<img src="https://ssl.pstatic.net/static/kin/09renewal/blank.gif" width="18" height="14" alt="답변">
+										<img src="${pageContext.request.contextPath}/html/jyc/image/aicon.png" width="14" height="14" alt="답변">
 									</span>
-									<span>질문 내용</span>
+									<span>답변 내용</span>
 								</dd>
 							</dl>
 						</td>
@@ -202,8 +201,7 @@
 							<a href="#">공군</a>
 						</td>
 								
-						<td class="answer_count">
-							답변
+						<td class="answer">
 						</td>
 						
 						
@@ -213,7 +211,6 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="#" class="more">더보기</a>
 		</div>
 	
 	</div>

@@ -4,11 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <title>내 정보 업데이트</title>
-</head>
-<body>
 
-<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+</head>
+
+<body>
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+
 <div class="all_content">
 	<!-- 프로필 영역 전체 -->
 	<div class="my_main_content">
@@ -23,9 +26,8 @@
 
 					<!-- 썸네일 + 수정버튼 -->
 					<div class="profile_group">
-						<span class="thumbnail"> <img
-							src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200/3_3d.png"
-							width="100%" height="100%" />
+						<span class="thumbnail">
+							<img src="${pageContext.request.contextPath}/image/mentee.png" width="100%" height="100%" />
 						</span>
 					</div>
 
@@ -116,9 +118,8 @@
 							<tr>
 								<th>별명</th>
 								<td>
-									<input type="text" name="nickname" class="input_text" id="nickname" style="width: 229px; margin-left: 65px;" title="별명 입력" placeholder="별명"> 
+									<input type="text" id="nick_name" name="nickname" class="input_text"  maxlength='20' style="width: 229px; margin-left: 65px;" title="별명 입력" placeholder="별명"> 
 									<span class="bytes">0</span> <span>/20bytes</span>
-									<p>한글 1~10자, 영문 대소문자 2~20자, 숫자를 사용할 수 있습니다. (혼용가능)</p></td>
 							</tr>
 							<tr>
 								<th>프로필 사진</th>
@@ -139,29 +140,38 @@
 							<tr>
 								<th>이름</th>
 								<td>
-								<input type="text" value="" name="member_name" class="input_text" style="width: 229px;" placeholder="이름">
+								<input type="text" value="" id="name" name="member_name" class="input_text" style="width: 229px;" placeholder="이름">
 								</td>
 							</tr>
 
 							<tr>
 								<th>나이</th>
 								<td>
-									<input type="text" value="" name="member_name" class="input_text" style="width: 229px;" placeholder="나이" />
+									<input type="text" id="age" value="" name="member_age" class="input_text" style="width: 229px;" placeholder="나이" />
 								</td>
 							</tr>
 
 							<tr>
 								<th>이메일</th>
 								<td>
-									<input type="email" value="" name="password" class="input_text" style="width: 229px;" placeholder="이메일">
+									<input type="text" id ="email" value="" name="member_email" class="input_text" style="width: 229px;" placeholder="이메일">
+									<p class="help_email"></p>
 								</td>
 							</tr>
 
 
 							<tr>
-								<th>비밀번호</th>
+								<th>새로운 비밀번호</th>
 								<td>
-									<input type="password" value="" name="password" class="input_text" style="width: 229px;" placeholder="비밀번호">
+                                    <input type="password" id="password_input" placeholder="영어, 숫자, 특수문자 중 2가지 이상 10~20자">
+                                    <p class="help_password" style="color:coral"></p>
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호 확인</th>
+								<td>
+                                    <input type="password" id="password_check" placeholder="비밀번호 재입력">
+                                    <p class="help_password_confirm"></p>
 								</td>
 							</tr>
 						</tbody>
@@ -171,7 +181,7 @@
 
 				
 					<div class="button">
-						<button class="save">저장</button>
+						<button class="save" disabled="disabled">저장</button>
 						<button class="cancel">취소</button>
 					</div>
 				</fieldset>
@@ -181,9 +191,10 @@
 </div>
 <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
+
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<!-- <script src="../js/myUpdateInfo.js"></script> -->
 <script src="${pageContext.request.contextPath}/js/jyc/myUpdateInfo.js"></script>
+
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css"/>
 </html>
