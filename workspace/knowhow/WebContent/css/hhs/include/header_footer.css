@@ -91,6 +91,68 @@ button {
     cursor: pointer;
 }
 
+#navigation, 
+#navigation .navigation_wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navigation_inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navigation_menu {
+    /* display: block; */
+    width: 30%;
+    padding: 5px 10px;
+}
+
+.navigation_icon.icon_knowhow {
+    background-image: url("/image/navi/qna.png");
+}
+
+.navigation_icon.icon_howto{
+    background-image: url("/image/navi/howto.png");
+}
+
+.navigation_icon.icon_ask {
+    background-image: url("/image/navi/ask.png");
+}
+
+.navigation_icon{
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:55px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.navigation_text {
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #footer {
     clear: both;
     margin: 0 auto;
@@ -196,12 +258,6 @@ button {
      /* position: relative; */
      /* border: red 1px solid; */
  }
- 
-.header_outer_wrapper{
-    /* position: sticky;
-    top: 0; 클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용 */
-    background: #8a4baf;
-}
 
 .header_wrapper {
     position: relative;
@@ -209,7 +265,6 @@ button {
 }
 
 .header_inner {
-
     word-break: break-all;
     word-wrap: break-word;
     position: relative;
@@ -223,7 +278,8 @@ button {
 .header_wrapper .header_inner{
     padding: 0 62px;
     max-width: 1280px;
-    min-width: 708px;
+    /* min-width: 708px; */
+    min-width: 420px;
     margin: 0 auto;
 }
 
@@ -272,45 +328,6 @@ button {
     background-size: cover;
 
 }
-
-/* .headerLogo_wrapper .headerService {
-    float: left;
-    margin: 1px 0 0 10px;
-} */
-
-/* .headerLogo_wrapper :after {
-    content: "";
-    display: block;
-    clear: both;
-} */
-
-/* .headerLogo_wrapper .logoNaver {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -6px 0 0 -6.5px;
-} */
-
-/* .headerLogo_wrapper .serviceItem {
-    float: left;
-} */
-
-/* .headerLogo_wrapper .headerService:after {
-    content: "";
-    display: block;
-    clear: both;
-} */
-/* 
-.headerLogo_wrapper .serviceLink {
-    position: relative;
-    display: inline-flex;
-    height: 57px;
-    width: 120px;
-    background-image: url('');
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 20px;
-} */
 
 .searchSection_wrapper .searchSection_inner {
     display: inline-block;
@@ -440,19 +457,6 @@ button {
     border-bottom: 1px solid rgba(56, 140, 87);
     overflow: hidden;
 }
-/* 
-.categoryLayer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    box-sizing: border-box;
-    width: 360px;
-    height: 645px;
-    border-radius: 10px;
-    background: #fff;
-    border: 1px solid rgba(111,138,255,.15);
-} */
 
 .categoryLayer .mainCategoryArea {
     box-sizing: border-box;
@@ -595,7 +599,6 @@ button {
     caret-color: #50e3c2;
     line-height: 31px;
     font-size: 15px;
-    /* margin-left: 50px; */
 }
 
 .search_wrapper .search_inner:after {
@@ -723,5 +726,21 @@ button {
         font-weight: 400;
         color: #7e7e7e;
     }
+
+    
+    .navigation_text{
+        display:none;
+    }
+
+    .navigation_menu {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .navigation_wrapper {
+        background-color: #d2efdd;
+    }
+
+
 
 }
