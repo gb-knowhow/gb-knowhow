@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/knohow-join.css">
 </head>
 <body>
+	<header id="header">
+		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+	</header>
     <div class="wrapper">
         <div class="section">
             <div class="content">

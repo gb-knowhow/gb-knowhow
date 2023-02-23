@@ -14,7 +14,7 @@
 <body>
     <div id="wrap">
         <!-- 헤더 -->
-        <header>
+      <header>
             <div id="header-center">
                 <a href="www.naver.com" class="logo">
                     <h1 id="blind">NAVER</h1>
@@ -28,7 +28,7 @@
                     </select>
                 </div>
             </div>
-        </header>
+        </header> 
         <!-- 컨텐츠 -->
         <content>
             <div id="login-wrap">
@@ -38,24 +38,6 @@
                             <span class="menu-text-wrap" id="id-login-wrapper">
                                 <span class="menu-text" id="id-login">
                                     ID 로그인
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item" style="display: none;">
-                        <a href="#none" class="login-menu-a-tag" id="login-menu2">
-                            <span class="menu-text-wrap" id="number-wrapper">
-                                <span class="menu-text" id="number">
-                                    일회용 번호
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="menu-item" id="menu3" style="display: none;">
-                        <a href="#none" class="login-menu-a-tag" id="login-menu3">
-                            <span class="menu-text-wrap" id="qr-wrapper">
-                                <span class="menu-text" id="qr">
-                                    QR코드
                                 </span>
                             </span>
                         </a>

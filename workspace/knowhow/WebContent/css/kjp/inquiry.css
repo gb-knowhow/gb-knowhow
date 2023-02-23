@@ -1,8 +1,14 @@
 @charset "utf-8";
 .EndTopTitle_top_title {
-  padding: 45px 0 40px;
+  padding: 45px 0 0px;
   text-align: center;
 }
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
 
 body, button, dd, dl, dt, fieldset, form, h1,
 h2,
@@ -55,6 +61,11 @@ select,
 textarea {
   font-family: NanumSquareR, -apple-system, AppleSDGothicNeo, SFProDisplay, BlinkMacSystemFont,
     HelveticaNeue, Helvetica, arial, 'sans-serif';
+}
+
+
+img {
+    width: 43%;
 }
 
 .EndTopTitle_bottom {

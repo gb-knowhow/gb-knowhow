@@ -4,7 +4,6 @@ body{
 }
 
 .content {
-    background-color: #fafbfe;
     height: 1300px;
 }
 
@@ -12,6 +11,12 @@ body{
     width: 75%;
     margin: 0 auto;
 }
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
 
 .inner-content {
     display: flex;
@@ -244,7 +249,7 @@ button.back-button {
     margin-left: 15px;
     border-radius: 8px;
     border: 0;
-    background: #647dfb;
+    background: #388C57;
     cursor: pointer;
     color: white;
 }
@@ -257,7 +262,7 @@ button.complete-button {
     margin-left: 15px;
     border-radius: 8px;
     border: 0;
-    background: #647dfb;
+    background: #388C57;
     cursor: pointer;
     color: white;
 }
@@ -393,20 +398,21 @@ label {
 }
 
 .file-name {
-    text-align: center;
-    font-size: 18px;
+  	text-align: center;
+    font-size: 16px;
     position: absolute;
     top: 0;
     left: 22px;
     height: 40px;
-    margin-top: 9px;
+    margin-top: 15px;
 }
+
 
 label[for='attach'] .image {
     position: relative;
     width: 43%;
     height: 50px;
-    background-image: url(file2.png);
+    background-image: url(../../css/kjp/file2.png);
     background-image: 20px;
     background-size: 34%;
     cursor: pointer;
@@ -414,15 +420,14 @@ label[for='attach'] .image {
 }
 
 .cancel{
-    text-align: center;
+       text-align: center;
     display: none;
-    width: 25px;
-    height: 25px;
+    width: 29px;
+    height: 24px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 75px;
+    top: 12px;
     font-size: 20px;
     font-weight: bold;
-    color: white;
-    background-color: #00000094;
+    cursor: pointer;
 }

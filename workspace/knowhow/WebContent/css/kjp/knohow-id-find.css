@@ -9,8 +9,12 @@ body {
     padding: 0;
     display: block;
 }
-
-header {
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
+.header1 {
     position: relative;
     font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
     font-size: 1rem;
@@ -18,7 +22,7 @@ header {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    padding: 108px 0 20px;
+    padding: 110px 0 30px;
 }
 
 .header-logo {
@@ -49,7 +53,6 @@ h1 {
     background-size: 155px 89px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    width: 155px;
     height: 30px;
     display: inline-block;
     vertical-align: top;
@@ -117,7 +120,7 @@ li {
     display: block;
     border-radius: 8px;
     background-color: #fff;
-    border: 1px solid blue;
+    border: 1px solid #388C57;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -143,7 +146,7 @@ li {
 }
 
 .button-item:hover{
-	background-color: #0000ff1c;
+	background-color: #388C57;
 }
 
 /* .icon {
