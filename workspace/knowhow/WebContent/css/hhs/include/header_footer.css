@@ -96,6 +96,7 @@ button {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 .navigation_inner {
