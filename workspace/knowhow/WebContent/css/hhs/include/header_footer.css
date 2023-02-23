@@ -192,14 +192,12 @@ button {
  */
 
  /* !! */
- .container {
+ .header_container {
      /* position: relative; */
      /* border: red 1px solid; */
-     position: sticky;
-     top: 0;
  }
  
-.outer_wrapper{
+.header_outer_wrapper{
     /* position: sticky;
     top: 0; 클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용 */
     background: #8a4baf;
@@ -207,7 +205,6 @@ button {
 
 .header_wrapper {
     position: relative;
-    z-index: 200;
     background-color: #fff;
 }
 
@@ -216,7 +213,6 @@ button {
     word-break: break-all;
     word-wrap: break-word;
     position: relative;
-    z-index: 1;
     width: 100%;
     height: 68px;
     padding: 0 58px;
@@ -225,8 +221,9 @@ button {
 }
 
 .header_wrapper .header_inner{
-    padding: 0 62px 0 20px;
+    padding: 0 62px;
     max-width: 1280px;
+    min-width: 708px;
     margin: 0 auto;
 }
 
@@ -262,7 +259,7 @@ button {
 }
 
 .buttonRight_wrapper {
-    right: 15px;
+    right: 20px;
 }
 
 .headerLogo_wrapper .linkNaver {
@@ -438,7 +435,6 @@ button {
     top: 38px;
     height: 608px;
     right: 0;
-    z-index: 1000;
     border-radius: 10px;
     box-shadow: 8px 0 8px 0 rgba(18, 82, 40, 0.3);
     border-bottom: 1px solid rgba(56, 140, 87);
@@ -483,7 +479,6 @@ button {
     left: 20px;
     height: 1px;
     background-color: rgba(56, 140, 87,.15);
-    z-index: 1;
     content: "";
 }
 
@@ -546,7 +541,7 @@ button {
     top: 38px;
     height: 35px;
     right: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgb(56 140 87 / 10%);
     overflow: hidden;
@@ -658,7 +653,7 @@ button {
 @media (min-width: 768px){
 
     .header_wrapper .header_inner{
-        padding: 0 82px 0 40px;
+        padding: 0 82px;
     }
 
     .header_inner {
