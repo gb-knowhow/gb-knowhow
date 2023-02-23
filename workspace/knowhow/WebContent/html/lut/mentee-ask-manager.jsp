@@ -193,9 +193,28 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal7" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal7" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 비전공자의 개발자 도전</div>
+                                <div class="comment-detail">
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                    개발자 도전 무엇부터 시작해야할까요?개발자 도전 무엇부터 시작해야할까요?
+                                </div>
                             </div>
                         </div>
 
@@ -228,9 +247,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal6" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal6" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
@@ -263,9 +298,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal5" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal5" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
@@ -298,9 +349,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal4" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal4" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
@@ -333,9 +400,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal3" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal3" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
@@ -368,9 +451,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal2" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal2" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
@@ -403,9 +502,25 @@
                                 2023-02-20
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal1" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal1" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 영업초보</div>
+                                <div class="comment-title">제목: 마케팅 회사에서 요구하는 스펙</div>
+                                <div class="comment-detail">
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                    마케팅 회사에서 요구하는 스펙마케팅 회사에서 요구하는 스펙
+                                </div>
                             </div>
                         </div>
 
