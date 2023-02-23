@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/include/header_footer.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="outer_wrapper">
+    <div class="header_container">
+      <div class="header_outer_wrapper">
         <div>
           <div class="header_wrapper">
             <div class="header_inner">

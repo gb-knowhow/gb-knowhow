@@ -12,7 +12,7 @@
   	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_banner.css" />
   </head>
   <body>
-	  <header>
+	  <header id="header">
 	  	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" flush="true"/>
 	  </header>
 	<div id="container-main" class="container-fluid" role="main">
@@ -509,126 +509,6 @@
                     <!-- // 답변하러가기 버튼 -->
                   </div>
                   <div class="question_box">
-                    <!-- 제목 + 내용-->
-                    <div class="title_wrap">
-                      <a href="#" class="link_to_q">
-                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
-                        <p class="detail">
-                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
-                        </p>
-                      </a>
-                    </div>
-                    <!-- // 제목 +내용 -->
-                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
-                    <div class="update_info">
-                      <span class="num_answer">답변 <em>0</em></span>
-                      <span class="info category">
-                        <a href="#">영어</a>
-                      </span>
-                      <span class="info update_time"> 방금 </span>
-                    </div>
-                    <!-- //정보 -->
-                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
-                    <!-- 답변하러가기 버튼 -->
-                    <div class="link_to_answer_wrap">
-                      <a href="#" class="link_to_answer">
-                        답변하기
-                        <span class="answer_icon icon"></span>
-                      </a>
-                    </div>
-                    <!-- // 답변하러가기 버튼 -->
-                  </div>
-                  <div class="question_box">
-                    <!-- 제목 + 내용-->
-                    <div class="title_wrap">
-                      <a href="#" class="link_to_q">
-                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
-                        <p class="detail">
-                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
-                        </p>
-                      </a>
-                    </div>
-                    <!-- // 제목 +내용 -->
-                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
-                    <div class="update_info">
-                      <span class="num_answer">답변 <em>0</em></span>
-                      <span class="info category">
-                        <a href="#">영어</a>
-                      </span>
-                      <span class="info update_time"> 방금 </span>
-                    </div>
-                    <!-- //정보 -->
-                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
-                    <!-- 답변하러가기 버튼 -->
-                    <div class="link_to_answer_wrap">
-                      <a href="#" class="link_to_answer">
-                        답변하기
-                        <span class="answer_icon icon"></span>
-                      </a>
-                    </div>
-                    <!-- // 답변하러가기 버튼 -->
-                  </div>
-                  <div class="question_box">
-                    <!-- 제목 + 내용-->
-                    <div class="title_wrap">
-                      <a href="#" class="link_to_q">
-                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
-                        <p class="detail">
-                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
-                        </p>
-                      </a>
-                    </div>
-                    <!-- // 제목 +내용 -->
-                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
-                    <div class="update_info">
-                      <span class="num_answer">답변 <em>0</em></span>
-                      <span class="info category">
-                        <a href="#">영어</a>
-                      </span>
-                      <span class="info update_time"> 방금 </span>
-                    </div>
-                    <!-- //정보 -->
-                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
-                    <!-- 답변하러가기 버튼 -->
-                    <div class="link_to_answer_wrap">
-                      <a href="#" class="link_to_answer">
-                        답변하기
-                        <span class="answer_icon icon"></span>
-                      </a>
-                    </div>
-                    <!-- // 답변하러가기 버튼 -->
-                  </div>
-                  <div class="question_box">
-                    <!-- 제목 + 내용-->
-                    <div class="title_wrap">
-                      <a href="#" class="link_to_q">
-                        <span class="title">영어로 번역 좀 부탁드립니다.</span>
-                        <p class="detail">
-                          유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
-                        </p>
-                      </a>
-                    </div>
-                    <!-- // 제목 +내용 -->
-                    <!-- 정보(답변 개수, 카테고리, 업로드 시간) -->
-                    <div class="update_info">
-                      <span class="num_answer">답변 <em>0</em></span>
-                      <span class="info category">
-                        <a href="#">영어</a>
-                      </span>
-                      <span class="info update_time"> 방금 </span>
-                    </div>
-                    <!-- //정보 -->
-                    <!-- 질문 박스에 hover 시 답변하러 가는 링크 올라오기 -->
-                    <!-- 답변하러가기 버튼 -->
-                    <div class="link_to_answer_wrap">
-                      <a href="#" class="link_to_answer">
-                        답변하기
-                        <span class="answer_icon icon"></span>
-                      </a>
-                    </div>
-                    <!-- // 답변하러가기 버튼 -->
-                  </div>
-                  <div class="question_box last">
                     <!-- 제목 + 내용-->
                     <div class="title_wrap">
                       <a href="#" class="link_to_q">

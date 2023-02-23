@@ -36,6 +36,12 @@ em {
     font-style: normal;
 }
 
+#header {
+	position: sticky;
+	top: 0;
+    z-index: 2;
+}
+
 
 #container-main {
     position: relative;
@@ -46,7 +52,6 @@ em {
 .container-fluid {
     position: relative;
     margin: 0 auto;
-    z-index:-2;
 }
 
 .container-fluid:after {
@@ -302,7 +307,7 @@ em {
     position: absolute;
     top: 0;
     left: 162px;
-    z-index: 15;
+/*     z-index: 15; */
     width: 1px;
     height: 100%;
     background-color: #ddd;
