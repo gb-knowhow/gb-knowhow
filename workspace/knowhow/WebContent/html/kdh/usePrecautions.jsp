@@ -12,13 +12,13 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
 </head>
 <body class="body">
-    <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
     <div class="topLocation"></div>
     <!-- Wrap -->
     <div id="wrap" class="wrap wrap_principle">
         <div id="container" class="container-fluid">
             <div class="container-fluid-content-inner">
-                <div id="header">
+                <div class="bodyHeader">
                     <div id="snb_wrap">
                         <h2>
                             <strong>Know-How</strong> 서비스 운영정책
