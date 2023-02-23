@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-               
+
         <div id="right-side" class="container">
             <div class="right-header">
                 <div class="letter-space">
@@ -182,7 +182,7 @@
                                 메일이 안와요
                             </div>
                             <div class="user-nick-name">
-                                룰루랄라
+                                벅벅코딩
                             </div>
                             <div class="qna-ask-day">
                                 2023-02-22 16:42:39
@@ -194,9 +194,28 @@
                                 답변 대기중
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal7" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal7" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -226,9 +245,28 @@
                                 답변 대기중
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal6" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal6" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -258,9 +296,28 @@
                                 답변완료
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal5" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal5" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -290,9 +347,28 @@
                                 답변완료
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal4" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal4" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -322,9 +398,28 @@
                                 답변완료
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal3" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal3" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -354,9 +449,28 @@
                                 답변완료
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal7" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal7" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 
@@ -386,9 +500,28 @@
                                 답변완료
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal2" type="submit">
                                     <img class="detail-icon" src="./images/edit-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal2" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 벅벅코딩</div>
+                                <div class="comment-title">제목: 메일이 안와요</div>
+                                <div class="comment-detail">
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                    메일이 안와요메일이 안와요메일이 안와요메일이 안와요메일이 안와요
+                                </div>
+                                <div class="qna-manage">
+                                    <p><textarea class="write-section" cols="82" rows="10"></textarea></p>
+                                    <input class="qna-submit-btn" type="submit" value="전송하기">
+                                </div>
                             </div>
                         </div>
 

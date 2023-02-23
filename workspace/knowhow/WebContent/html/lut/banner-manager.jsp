@@ -107,32 +107,185 @@
                 <button class="admin-logout" type="submit" value="">LOGOUT</button>
             </div>
             <div class="right-body">
+                <div class="user-list-letter">
+                    <p>배너 목록</p>
+                </div>
+
+                <div class="watch-all-ask">
+                    <input class="add integrated-for-margin" type="submit" value="배너추가">
+                </div>
                 <div class="right-contents-wrap">
+
                     <div class="right-contents margin-off">
+                        <p class="banner-num">배너1</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="detail">
+                            <button class="detail-button modal7" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <div id="my_modal7" class="my_modal" >
+                            <a class="modal_close_btn">✖</a>
+                            <div class="comment-writer">배너명: 합격면접</div>
+                            <div class="comment-title">코드: {{$메인배너1}}</div>
+                            <div class="container">
+                                <div class="image-upload" id="image-upload">
+                        
+                                    <div class="image-show" id="image-show"></div>
+                                    <form method="post" enctype="multipart/form-data">
+                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                                    </form>
+                                    
+                                    <div class="fileContainer">
+                                        <div class="button">
+                                            <label for="chooseFile">
+                                            </label>
+                                        </div>
+                                        <div class="fileInput">
+                                            <p>FILE NAME: </p>
+                                            <p id="fileName"></p>
+                                        </div>
+                                        <div class="buttonContainer">
+                                            <div class="submitButton" id="submitButton">업로드</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="qna-manage">
+                                <input class="qna-submit-btn" type="submit" value="수정하기">
+                                <input class="qna-submit-btn" type="submit" value="삭제하기">
+                            </div>
+                        </div>
                         <img  class="banner" src="./images/banner1.png">
                     </div>
-                   <!--  <input type="checkbox" id="toggle-slide">
-                    <label for="toggle-slide">on/off</label> -->
+
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner2.png"> 
+                        <p class="banner-num">배너2</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner2.png">
                     </div>
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner3.png"> 
+                        <p class="banner-num">배너3</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner3.png">
+                         
                     </div>
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner4.png"> 
+                        <p class="banner-num">배너4</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner4.png">
                     </div>
                     <div class="right-contents margin-off">
-                        <img  class="banner" src="./images/banner5.png"> 
+                        <p class="banner-num">배너5</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner5.png">
                     </div>
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner6.png"> 
+                        <p class="banner-num">배너6</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner6.png">
                     </div>
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner7.png"> 
+                        <p class="banner-num">배너7</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div> 
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner7.png">
                     </div>
                     <div class="right-contents">
-                        <img  class="banner" src="./images/banner8.png"> 
+                        <p class="banner-num">배너8</p>
+                        <div class="status-stop status">사용중단</div>
+                        <div class="status-use status">사용중</div>
+                        <div class="slide-button">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>   
+                        <div class="detail">
+                            <button class="detail-button" type="submit">
+                                <img class="detail-icon" src="./images/detail-icon.png">
+                            </button>
+                        </div>
+                        <img  class="banner" src="./images/banner8.png">
                     </div>
                     
                 </div>

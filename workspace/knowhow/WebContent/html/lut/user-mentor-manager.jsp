@@ -15,7 +15,7 @@
     <div class="wrap">
         <div id="menu-side" class="container">
             <div id="top-box" class="menu-box">
-                <img id="knowhow-logo" alt="know-how" src="./images/know-how-title.png">
+                <img id="knowhow-logo" alt="know-how" src="./images/know-how-title.PNG">
             </div>
             <div id="middle-box" class="menu-box">
                 <div id="wrap-middle-box">

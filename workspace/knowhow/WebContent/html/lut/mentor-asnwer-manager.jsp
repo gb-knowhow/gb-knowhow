@@ -199,9 +199,28 @@
                                 11
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal7" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal7" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 포토샵마스터</div>
+                                <div class="comment-title">제목: 실무 포토샵 사용방법</div>
+                                <div class="comment-detail">
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                </div>
                             </div>
                         </div>
 
@@ -237,9 +256,28 @@
                                 12
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal6" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal7" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 포토샵마스터</div>
+                                <div class="comment-title">제목: 실무 포토샵 사용방법</div>
+                                <div class="comment-detail">
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                    포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?포토샵을 잘쓰고 싶나요?
+                                </div>
                             </div>
                         </div>
 
@@ -275,9 +313,26 @@
                                 7
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal5" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal5" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 지나가는 회계사</div>
+                                <div class="comment-title">제목: 회계사가 꼭 알아야하는 것</div>
+                                <div class="comment-detail">
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                </div>
                             </div>
                         </div>
 
@@ -313,9 +368,26 @@
                                 9
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal4" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal4" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 지나가는 회계사</div>
+                                <div class="comment-title">제목: 회계사가 꼭 알아야하는 것</div>
+                                <div class="comment-detail">
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                </div>
                             </div>
                         </div>
 
@@ -351,9 +423,26 @@
                                 9
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal3" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal3" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 지나가는 회계사</div>
+                                <div class="comment-title">제목: 회계사가 꼭 알아야하는 것</div>
+                                <div class="comment-detail">
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                </div>
                             </div>
                         </div>
 
@@ -389,9 +478,26 @@
                                 9
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal2" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal2" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 지나가는 회계사</div>
+                                <div class="comment-title">제목: 회계사가 꼭 알아야하는 것</div>
+                                <div class="comment-detail">
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                </div>
                             </div>
                         </div>
 
@@ -427,9 +533,26 @@
                                 9
                             </div>
                             <div class="detail">
-                                <button class="detail-button" type="submit">
+                                <button class="detail-button modal1" type="submit">
                                     <img class="detail-icon" src="./images/detail-icon.png">
                                 </button>
+                            </div>
+                            <div id="my_modal1" class="my_modal" >
+                                <a class="modal_close_btn">✖</a>
+                                <div class="comment-writer">작성자: 지나가는 회계사</div>
+                                <div class="comment-title">제목: 회계사가 꼭 알아야하는 것</div>
+                                <div class="comment-detail">
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                    제무재표의 종류는 여러가지 있습니다.제무재표의 종류는 여러가지 있습니다.
+                                </div>
                             </div>
                         </div>
 

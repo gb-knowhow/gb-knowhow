@@ -412,3 +412,37 @@ bottom: 3%;
     color: #fff;
     transition: background-color 0.5s;
 }
+
+
+
+
+/* 모달창 */
+.my_modal {
+    display: none;
+    width: 40%;
+    height: auto;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+.my_modal .modal_close_btn {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+}
+
+.comment-title{
+    margin-top: 10%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+}
+
+.comment-detail{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}
