@@ -14,12 +14,9 @@
 	href="${pageContext.request.contextPath}/css/kdh/detailsPage.css" />
 </head>
 <body>
+	<header id="header"><jsp:include
+			page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
 	<div id="wrap" class="wrap wrap_end">
-		<div class="header_wrap">
-			<header><jsp:include
-					page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
-		</div>
-		<!-- div class="header_wrap부분" -->
 		<div class="container-full">
 			<div class="container-full-content">
 				<!-- fotter 제외 부분 -->
@@ -30,33 +27,31 @@
 								<span class="blind">질문</span>
 							</div>
 							<div class="question_title">
-								<div class="title">
-									<img
-										src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
-										style="margin-right: 3%;"> 욱성이는 공부 언제하나요?
-								</div>
+								<img
+									src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
+									style="margin-right: 3%; width: 50px; height: 50px;">
+								욱성이는 공부 언제하나요?
 							</div>
 							<!-- 질문 내용 -->
 							<div class="question_content">
 								질문 그대로 <br>궁금합니다.
 							</div>
 						</div>
-
+						<div></div>
+						<div class="question-userinfo__left">
+							<span class="thumbnail"
+								style="width: 50px; height: 50px; object-fit: cover;"> <img
+								src="${pageContext.request.contextPath}/image/mentee.png"
+								style="width: 50px; height: 50px;">
+							</span> 
+						</div>
 						<div class="question-userinfo">
-							<div class="question-userinfo__left">
-								<div class="question-userinfo__profile">
-									<div class="profile-default">
-										<div class="profile-default--inner">
-											<span class="question_thumbnail"
-												style="background-image: url(https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m_gray/public.png);"></span>
-										</div>
-									</div>
-									<span class="question-userinfo__author">비공개</span>
-								</div>
-								<span class="question-userinfo__info"> <span
-									class="blind"> 작성일 </span> 업로드 시간 적기
-								</span>
-							</div>
+							<span class="question-userinfo__info"> 
+							<!-- 작성자 닉네임 적기 -->
+								<span style="padding-right:10px;">주먹왕 김정표</span>
+								<span class="blind"> 작성일 </span> 업로드 시간 적기
+							</span>
+
 							<div class="question-userinfo__right" role="listbox">
 								<!-- 댓글달기 class 이름 button_comment로 쓰세요.-->
 								<button type="button" class="button_compose button_comment"
@@ -117,7 +112,7 @@
 										<strong>시그니엘 김욱성</strong>
 									</p>
 									<div class="question-commentList-text">
-										<p>댓글 내용</p>
+										<p>함 뜨던가</p>
 									</div>
 									<!-- 본문의 댓글 등록날짜 -->
 									<div class="reply-align">
@@ -169,7 +164,7 @@
 												<strong>집에 가고 싶은 순철</strong>
 											</p>
 											<div class="question-commentList-text">
-												<p>대댓글 내용 : 집가고싶다.</p>
+												<p>대댓글 내용 : 집 가고 싶다.</p>
 											</div>
 											<!-- 본문의 대댓글 등록날짜 -->
 											<p class="question-commentList-date">대댓글 등록날짜</p>
@@ -233,10 +228,12 @@
 														</div>
 													</div>
 												</div>
-												<a href="/profile/index.naver?u=IgEWIwOw%2BvqeYHdoWgaTMjDF7ls%2F9VCgLlDelkO0u%2Bs%3D"
+												<a
+													href="/profile/index.naver?u=IgEWIwOw%2BvqeYHdoWgaTMjDF7ls%2F9VCgLlDelkO0u%2Bs%3D"
 													target="_blank" class="thumbnail_area " onclick="">
 													<div class="thumbnail">
-														<img src="https://ssl.pstatic.net/static/kin/09renewal/avatar/200x200_m/4_3d.png"
+														<img
+															src="${pageContext.request.contextPath}/image/mentor.png"
 															alt="프로필 사진">
 													</div>
 												</a>
@@ -259,11 +256,11 @@
 												</div>
 											</div>
 											<div class="answer-guideline">
-												<strong class="answer-guideline-title"> 
-													<i class="icon_notice"></i> 
-													알아두세요!
+												<strong class="answer-guideline-title"> <i
+													class="icon_notice"></i> 알아두세요!
 												</strong>
-												<p class="answer-guideline-content">위 답변은 답변작성자가 경험과 지식을 바탕으로 작성한 내용입니다.</p>
+												<p class="answer-guideline-content">위 답변은 답변작성자가 경험과 지식을
+													바탕으로 작성한 내용입니다.</p>
 											</div>
 											<p class="answer-date">작성 날짜</p>
 
@@ -308,10 +305,10 @@
 											<div class="question-commentList">
 												<div class="replyItem">
 													<p class="question-commentList-nickname">
-														<strong>답글의 댓글 작성자 닉네임</strong>
+														<strong>자바보단 로아 강민구</strong>
 													</p>
 													<div class="question-commentList-text">
-														<p>댓글 내용</p>
+														<p>댓글 내용 : 게임하고 싶다</p>
 													</div>
 													<!-- 본문의 댓글 등록날짜 -->
 													<div class="reply-align">
@@ -380,10 +377,10 @@
 
 												<div class="replyItem">
 													<p class="question-commentList-nickname">
-														<strong>자바보단 로아 강민구</strong>
+														<strong>댓글 작성자 닉네임</strong>
 													</p>
 													<div class="question-commentList-text">
-														<p>댓글내용 : 게임하고 싶다</p>
+														<p>댓글내용</p>
 													</div>
 													<p class="question-commentList-date">작성 날짜</p>
 													<div class="button_more">
@@ -419,7 +416,8 @@
 				</div>
 			</div>
 		</div>
-		<footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
+		<footer><jsp:include
+				page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/kdh/detailsPage.js"></script>

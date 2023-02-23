@@ -362,3 +362,9 @@ input, textarea {
   margin-top: 16px;
   font-size: 14px;
 }
+
+#header {
+   position: sticky;
+   top: 0;
+    z-index: 2;
+}

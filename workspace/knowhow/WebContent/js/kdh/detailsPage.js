@@ -62,7 +62,8 @@ $(function() {
     $('.button_comment').click(function() {
         let status = $('#questionCommentList').css('display');
       if (status == 'block') {
-          $('#questionCommentList').hide();
+			$('#questionCommentList').hide();
+			$('#questionCommentList3').hide();
       } else {
           $('#questionCommentList').show();
       }
@@ -74,7 +75,8 @@ $(function() {
     $('.button_reply_comment').click(function() {
         let status = $('#questionCommentList2').css('display');
       if (status == 'block') {
-          $('#questionCommentList2').hide();
+			$('#questionCommentList2').hide();
+			$('#questionCommentList4').hide();
       } else {
           $('#questionCommentList2').show();
       }
@@ -106,5 +108,7 @@ $(function() {
     })
 });
 
+
+/* 작성글의 업로드 시간 적기*/
 
 

@@ -19,13 +19,10 @@ td, form, fieldset, legend, input, textarea, button, select {
   padding: 0;
 }
 
-.header_wrap {
-    position: relative;
-    z-index: 1100;
-    width: 100%;
-    background-color: #fff;
-    font-size: 13px;
-    line-height: 14px;
+#header {
+   position: sticky;
+   top: 0;
+    z-index: 2;
 }
 
 em, address {
@@ -219,6 +216,13 @@ li {
     color: #00c73c;
 }
 
+.question_title {
+	font-size: 25px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom:20px;
+}
+
 .questionHead {
     word-wrap: break-word;
     overflow: hidden;
@@ -241,11 +245,15 @@ li {
 }
 
 .question-content .question-userinfo {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .question-userinfo {
     position: relative;
     font-size: 13px;
+}
+
+.question-userinfo__left {
+    float: left;
 }
 
 .question-userinfo__left {
@@ -551,7 +559,7 @@ button .text, button .icon {
     border-radius: 50%;
     background-color: #eff1ee;
     overflow: hidden;
-    z-index: 5;
+/*     z-index: 5; */
 }
 
 .profile_card .thumbnail_area .thumbnail img {
@@ -672,7 +680,7 @@ button .text, button .icon {
 }
 
 .question-content .question-userinfo+.c-opinion {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 .c-opinion {
     position: relative;
@@ -940,7 +948,7 @@ button .text, button .icon {
     border-radius: 50%;
     background-color: #eff1ee;
     overflow: hidden;
-    z-index: 5;
+/*     z-index: 5; */
 }
 
 .profile_card .thumbnail_area .thumbnail img {
@@ -1065,7 +1073,8 @@ button .text, button .icon {
 .question_content {
     font-size: 16px;
     line-height: 28px;
-    margin-top: 7px
+    margin-top: 7px;
+    margin-bottom:20px;
 }
 
 .paginate a.prev, .paginate a.next {
@@ -1139,6 +1148,6 @@ button .text, button .icon {
   position: relative;
   padding: 12px 0 9px 10px;
   line-height: 18px;
-  z-index: 22;
+/*   z-index: 22; */
   zoom: 1;
 }

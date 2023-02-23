@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="input_help_ask_home_end">
-      <header><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+      <header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
       <div class="input_help_content_full">
         <div class="InquiryInput_ask_form">
           <div class="innerFull">
@@ -86,7 +86,7 @@
                       <textarea id="moText2CA"  class="textarea" maxlength="1000"></textarea>
                       <div class="err2"></div>
                       <span class="InquiryInput_text_count">
-                        <span>0</span>
+                        <span id="writeCounter">0</span>
                         자 입력 / 최대 1000자
                       </span>
                     </dd>
@@ -130,5 +130,6 @@
       </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/kdh/questionWrite.js"></script>
 </html>
