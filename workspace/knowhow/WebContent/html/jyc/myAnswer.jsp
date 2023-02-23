@@ -24,7 +24,7 @@
 			
 				<div class="profile_group">
 					<span class="thumbnail">
-						<img src="${pageContext.request.contextPath}/html/jyc/image/mentee.png" width="100%" height="100%" />
+						<img src="${pageContext.request.contextPath}/image/mentee.png" width="100%" height="100%" />
 					</span>
 				</div>
 				

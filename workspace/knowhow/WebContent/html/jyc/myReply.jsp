@@ -23,7 +23,7 @@
 			
 				<div class="profile_group">
 					<span class="thumbnail">
-						<img src="${pageContext.request.contextPath}/html/jyc/image/mentor.png" width="100%" height="100%" />
+						<img src="${pageContext.request.contextPath}/image/mentor.png" width="100%" height="100%" />
 					</span>
 				</div>
 				
