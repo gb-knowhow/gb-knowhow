@@ -271,6 +271,15 @@
             }, this).attach(window, 'load');
           </script> -->
           <!-- 페이징 -->
+          
+          <!-- 정적 사진 -->
+          <div class="pics">
+            <img class="pic p1" src="${pageContext.request.contextPath}/css/hhs/main/image/1.png"></img>
+            <img class="pic p2 " src="${pageContext.request.contextPath}/css/hhs/main/image/2.png"></img>
+            <img class="pic p3" src="${pageContext.request.contextPath}/css/hhs/main/image/3.png"></img>
+            <img class="pic p2" src="${pageContext.request.contextPath}/css/hhs/main/image/4.png"></img>
+          </div>
+          <!-- //정적 사진 -->
 
           <!-- 답변을 기다리는 질문 -->
           <div class="stats_ranking_area">
