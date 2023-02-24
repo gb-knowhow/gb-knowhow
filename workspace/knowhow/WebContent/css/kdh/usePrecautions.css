@@ -24,7 +24,7 @@ td, form, fieldset, legend, input, textarea, button, select
 }
 
 .wrap_principle .container-fluid-content-inner {
-    width: 900px;
+    width: 60%;
 }
 
 .container-fluid-content-inner {

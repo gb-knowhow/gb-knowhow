@@ -44,6 +44,11 @@ button {
   color: #388C57;
 }
 
+.InquiryInput_ask_form div[class*='innerFull'] {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .EndTopTitle_bottom {
   display: block;
   padding-top: 11px;
@@ -51,37 +56,6 @@ button {
   font-size: 16px;
   letter-spacing: -0.5px;
   color: rgba(34, 34, 34, 0.8);
-}
-
-.input_help_ask_home_end {
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  table-layout: fixed;
-  text-align: left;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-.input_help_ask_home_end .input_help_content_full {
-  display: table-row;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.input_help_ask_home_end a[class*='innerFull'],
-.input_help_ask_home_end div[class*='innerFull'] {
-  position: relative;
-  padding: 0 40px;
-  height: 100%;
-  max-width: 1130px;
-  margin: 0 auto;
 }
 
 .InquiryInput_ask_form div[class*='innerFull'] {
