@@ -25,7 +25,7 @@
           <div class="stats_ranking_area" id="statsRankingArea">
             <!-- 좋아요 많은 답글 헤딩 -->
             <div class="section_headings section_headings__step1">
-              <h1 class="section_headings_title">좋아요 많은 답글</h1>
+              <h1 class="section_headings_title">좋아요 많은 질문</h1>
               <div class="side _ranking_base_date" id="rankingDate">20일 06시 기준</div>
             </div>
             <!-- //좋아요 많은 답글 헤딩 -->
@@ -273,12 +273,64 @@
           <!-- 페이징 -->
           
           <!-- 정적 사진 -->
-          <div class="pics">
-            <img class="pic p1" src="${pageContext.request.contextPath}/css/hhs/main/image/1.png"></img>
-            <img class="pic p2 " src="${pageContext.request.contextPath}/css/hhs/main/image/2.png"></img>
-            <img class="pic p3" src="${pageContext.request.contextPath}/css/hhs/main/image/3.png"></img>
-            <img class="pic p2" src="${pageContext.request.contextPath}/css/hhs/main/image/4.png"></img>
-          </div>
+		<div class="middle_ads_container">
+	        <div class="middle_ads_inner">
+	            <div class="middle_ads middle_ads1">
+	                <p class="middle_ads_title middle_ads_title1">
+	                </p>
+	                <p class="middle_ads_content middle_ads_content1">
+	                    전문가의 상담이
+	                    <br>
+	                    필요할 땐,
+	                    <br>
+	                    KnowHow!
+	                </p>
+	                <div class="middle_ads_img middle_ads_img1"></div>
+	                <div class="middle_ads_img middle_ads_subtitle2">
+	                    <p>KnowHow!</p>
+	                </div>
+	            </div>
+	            <div class="middle_ads middle_ads2">
+	                <p class="middle_ads_title middle_ads_title2">
+	                    Know-How 성지
+	                </p>
+	                <p class="middle_ads_content middle_ads_content2">
+	                    멘티 여러분!
+	                    <br>
+	                    전문 지식을 
+	                    <br>
+	                    채워보세요!
+	                </p>
+	                <div class="middle_ads_img middle_ads_img2"></div>
+	            </div>
+	            <div class="middle_ads middle_ads3">
+	                <p class="middle_ads_title middle_ads_title3">
+	                    나누는 행복
+	                </p>
+	                <p class="middle_ads_content middle_ads_content3">
+	                    멘토 여러분!
+	                    <br>
+	                    당신의 지식을 
+	                    <br>
+	                    나눠보세요!
+	                </p>
+	                <div class="middle_ads_img middle_ads_img3"></div>
+	            </div>
+	            <div class="middle_ads middle_ads4">
+	                <p class="middle_ads_title middle_ads_title4">
+	                    아하! 그렇구나!
+	                </p>
+	                <p class="middle_ads_content middle_ads_content4">
+	                    당신의
+	                    <br>
+	                    성장을 Know-How가
+	                    <br>
+	                    응원합니다
+	                </p>
+	                <div class="middle_ads_img middle_ads_img4"></div>
+	            </div>
+	        </div>
+	    </div>
           <!-- //정적 사진 -->
 
           <!-- 답변을 기다리는 질문 -->
@@ -575,4 +627,6 @@
   		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" flush="true"/>
   	</footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>contextPath = "${pageContext.request.contextPath}";</script>
 </html>

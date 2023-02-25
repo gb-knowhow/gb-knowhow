@@ -1,9 +1,16 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* !! */
 body {
     display: block;
     margin: 8px;
+    /* background-color: #000; */
 }
 
 /* 나중에 편집 */
@@ -95,49 +102,75 @@ button {
 #navigation .navigation_wrapper {
     width: 100%;
     /* max-width: 1280px; */
-    margin: 0 auto;
+    margin: 24px 0;
     background-color: #fff;
 }
 
-.navigation_inner {
-    width: 80%;
+
+a {
+    text-decoration: none;
+  }
+
+  .navi_wrap {
+    width: 100%;
+    height: 35px;
+    margin: 0px auto;
+    padding-bottom: 12px;
+    background-color: #fff;
+  }
+
+  .navi_container {
+    display: flex;
+    height: 100%;
+  }
+
+  .navi_menu {
+    display: inline-flex;
+    height: 100%;
+    width: 105px;
+    min-height: 25px;
+    max-height: 35px;
+    max-width: 105px;
+    min-width: 55px;
+    padding: 0 10px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-right: 3px;
+    background-color: #ddecca;
+    border-radius: 5px;
+  }
+
+  .navi_menu a {
     margin: 0 auto;
-        text-align: center;
-}
+    padding-top: 9px;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Cafe24Ssurround';
+    /* font-family: 'Hi Melody', cursive; */
+  }
 
-.navigation_menu {
-    /* display: block; */
-    width: 30%;
-    padding: 5px 10px;
-}
+  .navi_menu:hover {
+    background-color: #000;
+  }
 
-.navigation_icon.icon_knowhow {
-    background-image: url("/image/navi/qna.png");
-}
+  .navi_menu:hover a{
+      color: #388c57;
+  }
 
-.navigation_icon.icon_howto{
-    background-image: url("/image/navi/howto.png");
-}
+  .navi_knowhow {
+      background-color: #9e9797;
+    }
+    
+    .navi_howto {
+      background-color: #848383;
+  }
 
-.navigation_icon.icon_ask {
-    background-image: url("/image/navi/ask.png");
-}
-
-.navigation_icon{
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:55px;
-    height: 55px;
-    margin: 0 auto;
-}
-
-.navigation_text {
-    font-size: 1.2em;
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-
+  .navi_ask {
+      background-color: #6c6b6b;
+  }
 
 
 
@@ -256,10 +289,16 @@ button {
  */
 
  /* !! */
+ .header_all {
+    width: 60%;
+    margin: 0 auto;
+    min-width: 700px;
+} 
+ 
  .header_container {
      /* position: relative; */
      /* border: red 1px solid; */
- }
+}
 
 .header_wrapper {
     position: relative;
@@ -272,17 +311,19 @@ button {
     position: relative;
     width: 100%;
     height: 68px;
-    padding: 0 58px;
+    /* padding: 0 58px; */
     box-sizing: border-box;
 
 }
 
 .header_wrapper .header_inner{
-    padding: 0 62px;
-    max-width: 1280px;
+    /* padding: 0 62px; */
+    /* max-width: 1280px; */
     /* min-width: 708px; */
-    min-width: 420px;
+    min-width: 700px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .u_skip, .blind {
@@ -295,29 +336,36 @@ button {
 }
 
 .headerLogo_wrapper {
-    position: absolute;
-    top: 50%;
-    left: 20px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 5px; */
+    height: 100%;
+    width: 300px;
     line-height: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);    
+    /* -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);     */
 }
 
 .searchSection_wrapper {
-    display: none;
-    width: 340px;
-    margin: 0 auto;
+    display: block;
+    width: 40%;
+    /* margin: 0 auto; */
 }
 
 .buttonRight_wrapper, .buttonLeft_wrapper {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .buttonRight_wrapper {
-    right: 20px;
+    /* right: 0px; */
+    display: flex;
+    height: 32px;
+    width: 20%;
+    margin-top: 22px;
+    justify-content: flex-end;
 }
 
 .headerLogo_wrapper .linkNaver {
@@ -431,6 +479,10 @@ button {
     margin-left: 2px;
 }
 
+.searchButton {
+    display: none;
+}
+
 .userThumbnail {
     position: relative;
     width: 26px;
@@ -451,7 +503,7 @@ button {
 .categoryLayerWrap {
     display: none;
     position: absolute;
-    top: 38px;
+    top: 62px;
     height: 608px;
     right: 0;
     border-radius: 10px;
@@ -544,7 +596,7 @@ button {
 .search_dropdown{
     /* display: none; */
     position: absolute;
-    top: 38px;
+    top: 62px;
     height: 35px;
     right: 0;
     /* z-index: 1000; */
@@ -555,7 +607,7 @@ button {
 
 
 .search_wrapper {
-    width: 230px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     border: 1px solid #388C57;
@@ -640,21 +692,22 @@ button {
     아래부터 반응형!
  */
  
-@media screen and (min-width: 1025px){
+@media screen and (max-width: 1024px){
 
     .searchSection_wrapper {
-        display: block;
-    }
-    
-    .shearchButton {
         display: none;
+    }
+
+    .searchButton {
+        display: inline-block;
     }
 
     .search_dropdown {
-        display: none;
+        display: block;
     }
 }
 
+/*
 @media (min-width: 768px){
 
     .header_wrapper .header_inner{
@@ -741,8 +794,8 @@ button {
     
     .navigation_wrapper {
         background-color: #d2efdd;
-    }
+    } 
 
 
 
-}
+}*/
