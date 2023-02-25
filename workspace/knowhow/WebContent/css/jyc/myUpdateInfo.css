@@ -358,23 +358,39 @@ label[for='profile_upload'] {
 }
 
 
+
 label[for='profile_upload'] div.image{
-/* 	background-size: 100%;
-	width: 20%;
-	height: 20%;
-	background-repeat: no-repeat;
-	background-image: url(https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif);
-	margin: 0 auto; */
 	background-position: center;
 	position: relative;
  	height: 150px;
- 	background-image: url('https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif');
+ 	background-image: url('image/attach.png');
  	background-size: 100%;
  	cursor: pointer;
  	width: 20%;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+
+label[for='resume_upload'] {
+	text-align:center;
+	position:relative;
+	
+}
+
+
+
+label[for='resume_upload'] div.image{
+	background-position: center;
+	position: relative;
+ 	height: 150px;
+ 	background-image: url('image/resume.png');
+ 	background-size: 100%;
+ 	cursor: pointer;
+ 	width: 20%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 
 
 .file_name{

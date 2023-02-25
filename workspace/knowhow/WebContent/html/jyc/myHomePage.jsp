@@ -73,26 +73,26 @@
 		</div>
 	
 	<div class="body_content">
-	<div class="left_nav">
+		<div class="left_nav">
 		<ul>
 			<li>
-				<a href="#">나의 답글</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myAnswer.jsp">나의 답글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">내가쓴 글</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myQuestion.jsp">내가쓴 글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">나의 댓글목록</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myReply.jsp">나의 댓글목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">내가 좋아요한 목록</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myLike.jsp">내가 좋아요한 목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">프로필 수정 및 설정</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myUpdateInfo.jsp">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
@@ -104,7 +104,7 @@
 		
 		<div class="my_info_area" id="my_answer">
 			<h4>
-				<span class="text">나의 답변</span>
+				<span class="text">나의 답글</span>
 				<span class="count">(1)</span>
 			</h4>
 			
@@ -130,7 +130,7 @@
 									<span class="icon_q">
 										<img src="${pageContext.request.contextPath}/html/jyc/image/qicon.png" width="14" height="14" alt="질문">
 									</span>
-									<a href="#">나의 첫 답변</a>
+									<a href="#">나의 첫 답글</a>
 								</dt>
 							
 								<dd>
