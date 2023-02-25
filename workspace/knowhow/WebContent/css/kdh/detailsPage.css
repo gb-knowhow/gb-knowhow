@@ -120,6 +120,7 @@ li {
     display: flex;
     align-items: flex-end;
     margin-bottom:20px;
+    position:relative;
 }
 
 .questionHead {
@@ -141,6 +142,12 @@ li {
 
 .questionHead__title {
     color: #222;
+}
+
+.button_siren {
+	position: absolute;
+	right: 0;
+	
 }
 
 .question-content .question-userinfo {
@@ -288,6 +295,19 @@ button .text, button .icon {
     font-weight: 600;
     line-height: 23px;
     vertical-align: top;
+}
+.questionButton_siren {
+    display: inline-block;
+    padding-left: 6px;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    vertical-align: top;
+}
+
+.button_like {
+	cursor: pointer;
 }
 
 .question-userinfo__right .button_compose+.button_compose {
@@ -991,4 +1011,9 @@ button .text, button .icon {
   padding: 12px 0 9px 10px;
   line-height: 18px;
   zoom: 1;
+}
+
+.button_like2 {
+	cursor: pointer;
+	padding-left:18px;
 }

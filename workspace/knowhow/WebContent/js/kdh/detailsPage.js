@@ -109,6 +109,31 @@ $(function() {
 });
 
 
-/* 작성글의 업로드 시간 적기*/
+/* 질문의 좋아요 버튼 클릭시 이미지 변경 */
+$(function () {
+	let num=0;
+	$(".button_like").click(function () {
+		if(num == 0) {
+			$(".button_like img").attr("src", "/css/kdh/image/love.png");
+			num = 1;
+		}else {
+			$(".button_like img").attr("src", "/css/kdh/image/hate.png");
+			num = 0;
+		}
+	});
+});
 
+/* 답글의 좋아요 버튼 클릭시 이미지 변경 */
+$(function () {
+	let num=0;
+	$(".button_like2").click(function () {
+		if(num == 0) {
+			$(".button_like2 img").attr("src", "/css/kdh/image/love.png");
+			num = 1;
+		}else {
+			$(".button_like2 img").attr("src", "/css/kdh/image/hate.png");
+			num = 0;
+		}
+	});
+});
 
