@@ -29,6 +29,13 @@
 							src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
 							style="margin-right: 3%; width: 50px; height: 50px;"> 욱성이는
 						공부 언제하나요?
+						<button type="button" class="button_compose button_siren"
+							onclick="">
+							<i class="icon icon_compose_opinion"> <img
+								src="${pageContext.request.contextPath}/css/kdh/image/siren.png"
+								style="width: 20px; height: 20px;"></i> <span class="blind">신고하기</span>
+							<em class="questionButton_siren">신고하기</em>
+						</button>
 					</div>
 					<!-- 질문 내용 -->
 					<div class="question_content">
@@ -68,14 +75,13 @@
 								class="questionButton_reply">답글달기</em>
 						</button>
 
-						<!-- 신고하기 class 이름 button_siren으로 쓰세요.-->
-						<button type="button" class="button_compose button_siren"
-							onclick="">
-							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/siren.png"
-								style="width: 20px; height: 20px;"></i> <em
-								class="questionButton_siren">신고하기</em>
-						</button>
+						<!-- 좋아요 class 이름 button_like으로 쓰세요.-->
+						<label class="button_compose button_like" onclick=""> <i
+							class="icon icon_compose_opinion"> <img
+								src="${pageContext.request.contextPath}/css/kdh/image/hate.png"
+								id="like" style="width: 20px; height: 20px;"></i> <em
+							class="questionButton_reply">좋아요</em>
+						</label>
 					</div>
 				</div>
 				<!-- 본글의 댓글 c-opinion _commentListArea-->
@@ -270,6 +276,14 @@
 											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 										<em class="questionButton_comment">댓글달기</em>
 									</button>
+
+									<!-- 답글의 좋아요 -->
+									<label class="button_compose button_like2" onclick="">
+										<i class="icon icon_compose_opinion"> <img
+											src="/css/kdh/image/hate.png" id="like2"
+											style="width: 20px; height: 20px;"></i> <em
+										class="questionButton_reply">좋아요</em>
+									</label>
 								</div>
 
 							</div>
