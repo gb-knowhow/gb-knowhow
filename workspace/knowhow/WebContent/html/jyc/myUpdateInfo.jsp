@@ -100,14 +100,28 @@
 	<div class="body_content">
 		<!-- flex를 주기 위해서 왼쪽 전체 묶음 -->
 		<div class="left_nav">
-			<ul>
-				<li><a href="#">나의 답글</a> <span class="num">(3)</span></li>
-				<li><a href="#">내가쓴 글</a> <span class="num">(3)</span></li>
-				<li><a href="#">나의 댓글목록</a> <span class="num">(3)</span></li>
-				<li><a href="#">내가 좋아요한 목록</a> <span class="num">(3)</span></li>
-				<li><a href="#">프로필 수정 및 설정</a></li>
-
-			</ul>
+		<ul>
+			<li>
+				<a href="${pageContext.request.contextPath}/html/jyc/myAnswer.jsp">나의 답글</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="${pageContext.request.contextPath}/html/jyc/myQuestion.jsp">내가쓴 글</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="${pageContext.request.contextPath}/html/jyc/myReply.jsp">나의 댓글목록</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="${pageContext.request.contextPath}/html/jyc/myLike.jsp">내가 좋아요한 목록</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="${pageContext.request.contextPath}/html/jyc/myUpdateInfo.jsp">프로필 수정 및 설정</a>
+			</li>
+			
+		</ul>
 		</div>
 
 		<div class="content">
@@ -124,16 +138,22 @@
 							<tr>
 								<th>프로필 사진</th>
 								<td>
-							        <label for="profile_upload">
+							        <label for="profile_upload" id="profile_label">
 							        		<div class="image"></div>
 							        		<span class="close" style="display:none">X</span>
-							        		<div class="file_name"></div>
 							        </label>
 							        <input type="file" id="profile_upload" style="display: none" />
-							    <!-- <label for="profile_upload">
-						       		<div class="file_name"></div>
-						       	</label>
-						        	<input type="file" id="profile_upload" style="display: none" /> -->
+								</td>
+							</tr>
+							
+							<tr>
+								<th>이력서 첨부</th>
+								<td>
+							        <label for="resume_upload" id="resume_label">
+							        		<div class="image"></div>
+							        		<span class="close" style="display:none">X</span>
+							        </label>
+							        <input type="file" id="resume_upload" style="display: none" />
 								</td>
 							</tr>
 
@@ -150,7 +170,7 @@
 									<input type="text" id="age" value="" name="member_age" class="input_text" style="width: 229px;" placeholder="나이" />
 								</td>
 							</tr>
-
+							
 							<tr>
 								<th>이메일</th>
 								<td>
@@ -193,7 +213,9 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/jyc/myUpdateInfo.js"></script>
+<script src="${pageContext.request.contextPath}/js/jyc/myUpdateInfo.js">
+let contextPath = '${pageContext.request.contextPath}'
+</script>
 
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css"/>

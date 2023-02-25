@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>나의 답변</title>
+<title>나의 답글</title>
 <link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 </head>
@@ -80,27 +80,27 @@
 			
 
 		
-	<div class="body_content">
+<div class="body_content">
 		<div class="left_nav">
 		<ul>
 			<li>
-				<a href="#">나의 답글</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myAnswer.jsp">나의 답글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">내가쓴 글</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myQuestion.jsp">내가쓴 글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">나의 댓글목록</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myReply.jsp">나의 댓글목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">내가 좋아요한 목록</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myLike.jsp">내가 좋아요한 목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="#">프로필 수정 및 설정</a>
+				<a href="${pageContext.request.contextPath}/html/jyc/myUpdateInfo.jsp">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
@@ -109,7 +109,7 @@
 		<div class="content">
 		<dl class="my_question_info">
 			<dt>
-				<span>답변 목록</span>
+				<span>답글 목록</span>
 			</dt>
 			<dd>2</dd>
 		</dl>
@@ -127,7 +127,7 @@
 					<tr>
 						<th>제목</th>
                			<th>디렉토리</th>
-   	         			<th>답변</th>
+   	         			<th>답글</th>
                 		<th>작성</th>
                 	</tr>
 				</thead>
@@ -137,7 +137,7 @@
 						<td class="qna">
 							<dl>
 								<dt>
-									<a href="#">나의 첫 답변</a>
+									<a href="#">나의 첫 답글</a>
 								</dt>
 							
 							</dl>
@@ -149,7 +149,7 @@
 						
 						
 						<td class="answer_count" style="text-align:center">
-							답변
+							답글
 						</td>
 						
 						

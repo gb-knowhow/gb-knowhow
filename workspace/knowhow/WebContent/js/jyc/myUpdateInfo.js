@@ -24,27 +24,54 @@ $('input').keydown(function() {
 
 
 
-/* 썸네일 */
-const file = document.querySelector('input[type=file]');
-const imgDiv = document.querySelector('label[for=profile_upload] div.image');
-const closeSpan = document.querySelector('.close');
-const input = document.querySelector('#profile_upload');
+
+
+
+/* 망한코드 */
+/*const $files = $("input[type=file]");
+const $imgDiv = $('label[for=profile_upload] div.image')
+const $closeSpan = $('.close');
+
+$files.on("click", function(e){
+	let file = $(this).eq();
+	$(this).css('display', 'none');
+	console.log($(this))
+	console.log(e)
+	let reader = new FileReader();
+    reader.onload = function (e) {
+        let result = this.target;
+		console.log(this)
+		console.log(result)
+        if (result.includes('image')) {
+            $imgDiv.css('backgroundImage', `url('${result}')`);
+            closeSpan.style.display = "inline-block";
+            imgDiv.style.width = "50%";
+        } else {
+            imgDiv.style.backgroundImage = `url('https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif')`;
+		}
+	}()
+})*/
+
+
+/* 프로필 사진 썸네일 */
+const profile = document.querySelectorAll('input[type=file]')[0];
+const profileDiv = document.querySelector('label[for=profile_upload] div.image');
+const profileClose = document.querySelector('label[for=profile_upload] .close');
+const profileInput = document.querySelector('#profile_upload');
 const fileName = document.querySelector('.file_name');
 
-closeSpan.addEventListener('click', function (e) {
+
+profileClose.addEventListener('click', function (e) {
     e.preventDefault();
-    input.value = "";
-    fileName.innerHTML = "";
-    closeSpan.style.display="none";
-    imgDiv.style.backgroundImage =  `url('https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif')`;
-    imgDiv.style.width = "20%";
-    imgDiv.style.display = "block";
-    
-    
+    profileInput.value = "";
+    profileClose.style.display="none";
+    profileDiv.style.backgroundImage =  `url('../../css/jyc/image/attach.png')`;
+    profileDiv.style.width = "20%";
+    profileDiv.style.display = "block";
 });
 
 
-file.addEventListener('change', function (e) {
+profile.addEventListener('change', function (e) {
     this.style.display = 'none';
     let reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
@@ -52,14 +79,56 @@ file.addEventListener('change', function (e) {
     reader.onload = function (e) {
         let result = e.target.result;
         if (result.includes('image')) {
-            imgDiv.style.backgroundImage = `url('${result}')`;
-            closeSpan.style.display = "inline-block"
-            imgDiv.style.width = "50%";
+            profileDiv.style.backgroundImage = `url('${result}')`;
+            profileClose.style.display = "inline-block"
+            profileDiv.style.width = "50%";
         } else {
-            imgDiv.style.backgroundImage = `url('https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif')`;
+            profileDiv.style.backgroundImage = `url('../../css/jyc/image/attach.png')`;
         }
     };
 });
+
+
+/*  이력서 썸네일 */
+const resume = document.querySelectorAll('input[type=file]')[1];
+const resumeDiv = document.querySelector('label[for=resume_upload] div.image');
+const resumeClose = document.querySelector('label[for=resume_upload] .close');
+const resumeInput = document.querySelector('#resume_upload');
+
+
+resumeClose.addEventListener('click', function (e) {
+    e.preventDefault();
+    profileInput.value = "";
+    resumeClose.style.display="none";
+    resumeDiv.style.backgroundImage =  `url('../../css/jyc/image/resume.png')`;
+    resumeDiv.style.width = "20%";
+    resumeDiv.style.display = "block";
+});
+
+
+resume.addEventListener('change', function (e) {
+    this.style.display = 'none';
+    let reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+
+    reader.onload = function (e) {
+        let result = e.target.result;
+        if (result.includes('image')) {
+            resumeDiv.style.backgroundImage = `url('${result}')`;
+            resumeClose.style.display = "inline-block"
+            resumeDiv.style.width = "50%";
+        } else {
+            resumeDiv.style.backgroundImage = `url('../../css/jyc/image/resume.png')`;
+        }
+    };
+});
+
+
+
+
+
+
+
 
 // ----------------------------------------------------
 // 이름엔 한글과 영어만 가능하게
