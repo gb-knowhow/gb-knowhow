@@ -1,22 +1,15 @@
+const $latest = $('#latest');
+const $popular = $('#popular');
 
-var changePaginator = document.getElementsByClassName("btnNums");
-function handleClick(event) {
-  console.log(event.target.classList);
 
-  if (event.target.classList[1] === "clicked") {
-    event.target.classList.remove("clicked");
-  } else {
-    for (var i = 0; i < changePaginator.length; i++) {
-        changePaginator[i].classList.remove("clicked");
-    }
 
-    event.target.classList.add("clicked");
-  }
-}
+$popular.on("click", function(){
+	$popular.css("color","black");
+	$latest.css("color","#8c8c8c");
+});
 
-function init() {
-  for (var i = 0; i < changePaginator.length; i++) {
-    changePaginator[i].addEventListener("click", handleClick);
-  }
-}
-init();
+
+$latest.on("click", function(){
+	$latest.css("color","black");
+	$popular.css("color","#8c8c8c");
+});

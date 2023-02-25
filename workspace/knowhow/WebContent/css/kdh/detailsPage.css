@@ -29,22 +29,10 @@ em, address {
     font-style: normal;
 }
 
-#wrap {
-  position: relative;
-  min-width: 980px;
-}
-
-.nav {
-  position: relative;
-  height: 50px;
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
-}
-
-.nav_inner {
-  position: relative;
-  width: 980px;
-  margin: 0 auto;
+.container-full {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .blind, legend {
@@ -56,65 +44,8 @@ em, address {
   clip: rect(0 0 0 0);
 }
 
-.nav_list .menu {
-  float: left;
-  position: relative;
-  height: 50px;
-}
-
-.nav_list .menu > .item em {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 17px 0;
-  vertical-align: top;
-}
-
-.nav_list .menu:first-child > .item {
-  margin-left: -15px;
-}
-.nav_list .menu > .item {
-  display: block;
-  float: left;
-  padding: 0 15px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #4c4c4c;
-  text-decoration: none;
-}
-
 ul, li {
   list-style: none;
-}
-
-.nav_list .menu:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-}
-
-.nav__button_question {
-  position: absolute;
-  top: -1px;
-  right: 0;
-  bottom: -1px;
-  height: 50px;
-  padding: 0 18px;
-  line-height: 50px;
-  border: 1px solid #00bd39;
-  background-color: #388C57;
-  color: #fff;
-  font-size: 15px;
-}
-
-.nav__button_question .icon_pencil {
-  background-image: url('https://ssl.pstatic.net/static/kin/section/sprite/sp_gnb_230127.svg');
-  background-size: 85px 67px;
-  background-position: -15px -52px;
-  width: 15px;
-  height: 13px;
-  display: inline-block;
-  margin-right: 6px;
 }
 
 a {
@@ -131,45 +62,13 @@ li {
   text-align: -webkit-match-parent;
 }
 
-.nav_list .menu.on em {
-    position: relative;
-    border-bottom: 3px solid #4cc370;
-    color: #4cc370;
-    text-decoration: none;
-}
-
-.nav_list .menu > .item em {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 17px 0;
-    vertical-align: top;
-}
-
-.wrap_end .container-full-content-inner {
-    width: auto;
-}
-
-.wrap_end .container-full-content-inner {
-    position: relative;
-}
-
-.container-full-content-inner {
-    width: 980px;
-    margin: 0 auto;
-}
-
-.container-full {
-    position: relative;
-    margin: 0 auto;
-}
-
 .question-content {
     padding: 42px 0 43px;
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .question-content-inner {
-    width: 700px;
+    /* width: 700px; */
     margin: 0 auto;
 }
 .questionHead {
@@ -361,18 +260,6 @@ button .text, button .icon {
     position: relative;
 }
 
-/* 댓글달기 이미지 */
-/* .icon_compose_opinion:before {
-    font-family: "kin_iconfont";
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    text-decoration: none;
-    text-transform: none;
-    content: "";
-} */
-
-
 .questionButton_comment {
     display: inline-block;
     padding-left: 6px;
@@ -418,18 +305,6 @@ button .text, button .icon {
     color: #ccc;
 }
 
-/* 답글달기 이미지 넣기 */
-/* before 대신에 이미지를 직접 넣었다. */
-/* .icon_compose_wonder:before {
-    font-family: "kin_iconfont";
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    text-decoration: none;
-    text-transform: none;
-    content: "";
-} */
-
 .question-userinfo__button-siren {
     display: inline-block;
     position: relative;
@@ -465,8 +340,6 @@ button .text, button .icon {
 .anserContentFull {
     position: relative;
     padding: 22px 0 40px;
-    border: 1px solid #eee;
-    background-color: #f4f5f6;
 }
 
 .anserContentFull__inner {
@@ -559,7 +432,6 @@ button .text, button .icon {
     border-radius: 50%;
     background-color: #eff1ee;
     overflow: hidden;
-/*     z-index: 5; */
 }
 
 .profile_card .thumbnail_area .thumbnail img {
@@ -585,9 +457,6 @@ button .text, button .icon {
 }
 .answer-content {
     position: relative;
-    padding: 22px 0 40px;
-    border: 1px solid #eee;
-    background-color: #f4f5f6;
 }
 
 .anserContentFull__item .questionHead-answer, .anserContentFull__item .questionHead-answer__content {
@@ -659,18 +528,6 @@ button .text, button .icon {
     line-height: 23px;
     vertical-align: top;
 }
-
-
-/* 답글에 댓글달기 이미지 넣기 */
-/* .icon_compose_opinion::before {
-    font-family: kin_iconfont;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none;
-    content: "";
-    font-variant: normal;
-    text-decoration: none;
-} */
 
 .question-userinfo-answer:after {
     display: table;
@@ -868,15 +725,7 @@ button .text, button .icon {
     opacity: 0;
 }
 
-.answer-content {
-    position: relative;
-    padding: 22px 0 40px;
-    border: 1px solid #eee;
-    background-color: #f4f5f6;
-}
-
 .answer-content-inner {
-    width: 800px;
     margin: 0 auto;
 }
 
@@ -948,7 +797,6 @@ button .text, button .icon {
     border-radius: 50%;
     background-color: #eff1ee;
     overflow: hidden;
-/*     z-index: 5; */
 }
 
 .profile_card .thumbnail_area .thumbnail img {
@@ -973,10 +821,9 @@ button .text, button .icon {
     content: '';
 }
 .answerWrite {
-    margin: 0 49px;
+    margin: 0 15px;
     padding-bottom: 15px;
 }
-
 .answerOnlyContent {
     font-size: 16px;
     line-height: 30px;
@@ -1060,7 +907,7 @@ button .text, button .icon {
 }
 
 .reply-Comment {
-    padding: 0 49px 42px;
+   /*  padding: 0 49px 42px; */
 }
 
 .title {
@@ -1074,7 +921,8 @@ button .text, button .icon {
     font-size: 16px;
     line-height: 28px;
     margin-top: 7px;
-    margin-bottom:20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
 }
 
 .paginate a.prev, .paginate a.next {
@@ -1123,12 +971,6 @@ button .text, button .icon {
     text-align: right;
 }
 
-
-/* 페이지 버튼 클릭 시 css 변경 */
-.clicked {
-    background-color: #388C57;
-    color: #FFF;
-}
 .reply-align {
     display: flex;
     justify-content: space-between;
@@ -1148,6 +990,5 @@ button .text, button .icon {
   position: relative;
   padding: 12px 0 9px 10px;
   line-height: 18px;
-/*   z-index: 22; */
   zoom: 1;
 }
