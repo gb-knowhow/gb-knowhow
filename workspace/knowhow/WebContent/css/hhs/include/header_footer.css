@@ -113,7 +113,6 @@ a {
 
   .navi_wrap {
     width: 100%;
-    height: 35px;
     margin: 0px auto;
     padding-bottom: 12px;
     background-color: #fff;
@@ -121,56 +120,44 @@ a {
 
   .navi_container {
     display: flex;
-    height: 100%;
+    align-items: center;
+    width: 81vh;
+    height: 7vh;
+    /* border: 2px solid #262b2e; */
+    border-radius: 28px;
   }
 
-  .navi_menu {
-    display: inline-flex;
-    height: 100%;
-    width: 105px;
-    min-height: 25px;
-    max-height: 35px;
-    max-width: 105px;
-    min-width: 55px;
-    padding: 0 10px;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-right: 3px;
-    background-color: #ddecca;
-    border-radius: 5px;
+  .lt{
+    width: 20px;
+    height: 20px;
   }
 
-  .navi_menu a {
-    margin: 0 auto;
-    padding-top: 9px;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #fff;
-    font-family: 'Cafe24Ssurround';
-    /* font-family: 'Hi Melody', cursive; */
+  .header_message{
+    padding-top: 3%;
+    padding-left: 3%;
+    width: 23vh;
   }
 
-  .navi_menu:hover {
-    background-color: #000;
+  .header_line{
+    display: flex;
+    align-items: center;
   }
 
-  .navi_menu:hover a{
-      color: #388c57;
+ .navi_menu{
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+
+  .navi_menu a{
+    position: relative;
+    align-items: center;
   }
 
-  .navi_knowhow {
-      background-color: #9e9797;
-    }
-    
-    .navi_howto {
-      background-color: #848383;
-  }
+  .navi_knowhow
 
-  .navi_ask {
-      background-color: #6c6b6b;
-  }
+
 
 
 
@@ -293,6 +280,7 @@ a {
     width: 60%;
     margin: 0 auto;
     min-width: 700px;
+    background-color: #e9ecef;
 } 
  
  .header_container {
@@ -484,12 +472,17 @@ a {
 }
 
 .userThumbnail {
+    background-image: url(/image/mentor.png);
+    background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: #eff1ee no-repeat center/cover;
+    /* 들어갈 이미지가 없을 때 활성화 시키면 됨 */
+    /* background: #eff1ee no-repeat center/cover; */
     margin: -1px;
+
 }
 
 .lastline {
