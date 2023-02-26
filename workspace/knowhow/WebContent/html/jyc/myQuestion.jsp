@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>나의 좋아요 목록</title>
 <link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
-<title>내가 쓴 글</title>
+<!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 </head>
 <body>
-
 <header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
-
 	<div class="all_content">
 
 
@@ -26,7 +25,6 @@
 							<span class="thumbnail"> 
 								<img src="${pageContext.request.contextPath}/image/mentor.png" width="100%" height="100%" />
 							</span>
-
 						</div>
 
 						<div class="profile_info">
@@ -57,7 +55,7 @@
 								<p>
 									상태 : <span>멘티</span>
 								</p>
-								</p>
+								
 								</p>
 							</div>
 						</div>
@@ -72,10 +70,10 @@
 
 							<dt>질문</dt>
 							<dd>
-								<span class="q_list">전체질문 <strong>3건</strong></span>
+								<span class="q_list">| 전체질문 <strong>3건</strong></span>
 							</dd>
 
-							<dt style="margin-left: 16px">| 받은 추천</dt>
+							<dt style="margin-left: 16px">받은 추천</dt>
 							<dd>
 								<span class="q_list">| 좋아요 <strong>1</strong></span>
 							</dd>
@@ -91,29 +89,32 @@
 		</div>
 
 
-		<!-- flex를 주기 위해 묶음 -->
+
 		<div class="body_content">
-		
 		<div class="left_nav">
 		<ul>
 			<li>
-				<a href="${pageContext.request.contextPath}/html/jyc/myAnswer.jsp">나의 답글</a>
+				<a href="#">나의 답글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/html/jyc/myQuestion.jsp">내가쓴 글</a>
+				<a href="#">내가쓴 글</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/html/jyc/myReply.jsp">나의 댓글목록</a>
+				<a href="#">나의 댓글목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/html/jyc/myLike.jsp">내가 좋아요한 목록</a>
+				<a href="#">내가 좋아요한 목록</a>
 				<span class="num">(3)</span>
 			</li>
 			<li>
-				<a href="${pageContext.request.contextPath}/html/jyc/myUpdateInfo.jsp">프로필 수정 및 설정</a>
+				<a href="#">나의 문의사항</a>
+				<span class="num">(3)</span>
+			</li>
+			<li>
+				<a href="#">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
@@ -122,7 +123,7 @@
 			<div class="content">
 				<dl class="my_question_info">
 					<dt>
-						<span>내가 쓴 글</span>
+						<span>좋아요 목록</span>
 					</dt>
 					<dd>2</dd>
 				</dl>
@@ -151,7 +152,7 @@
 							<td class="qna">
 								<dl>
 									<dt>
-										<a href="#">나의 첫 답글</a>
+										<a href="#">배고파요. 밥주세요</a>
 									</dt>
 
 								</dl>
@@ -179,8 +180,9 @@
 								placeholder="키워드를 입력해주세요" /> <input type="image"
 								src="https://ssl.pstatic.net/static/kin/09renewal/btn_search.gif">
 							<div class="question_button">
-								<a href="#" class="question">
-								<img src="https://ssl.pstatic.net/static/kin/09renewal/btn_question.gif" width="92" height="30" alt="질문하기"></a>
+								<a href="#" class="question"><img
+									src="https://ssl.pstatic.net/static/kin/09renewal/btn_question.gif"
+									width="92" height="30" alt="질문하기"></a>
 							</div>
 						</form>
 					</fieldset>
@@ -191,6 +193,7 @@
 		</div>
 		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 	</div>
-	<!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
 </body>
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+</html>
