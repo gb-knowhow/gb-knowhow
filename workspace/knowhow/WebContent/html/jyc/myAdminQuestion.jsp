@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>나의 좋아요 목록</title>
+<title>나의 문의 목록</title>
 <link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 </head>
@@ -118,12 +118,14 @@
 			</li>
 			
 		</ul>
+			
+		</ul>
 		</div>
 
 			<div class="content">
 				<dl class="my_question_info">
 					<dt>
-						<span>좋아요 목록</span>
+						<span>나의 문의사항</span>
 					</dt>
 					<dd>2</dd>
 				</dl>
@@ -132,8 +134,6 @@
 					<colgroup>
 
 						<col width="3000">
-						<col width="500">
-						<col width="500">
 						<col width="1200">
 
 					</colgroup>
@@ -141,8 +141,6 @@
 					<thead>
 						<tr>
 							<th>제목</th>
-							<th>디렉토리</th>
-							<th>답글</th>
 							<th>작성</th>
 						</tr>
 					</thead>
@@ -152,17 +150,11 @@
 							<td class="qna">
 								<dl>
 									<dt>
-										<a href="#">배고파요. 밥주세요</a>
+										<a href="#">나의 첫 문의사항</a>
 									</dt>
 
 								</dl>
 							</td>
-
-							<td class="category"><a href="#">공군</a></td>
-
-
-							<td class="answer_count" style="text-align: center">답글</td>
-
 
 							<td class="first_write_date">2020.01.01.</td>
 						</tr>
@@ -181,8 +173,8 @@
 								src="https://ssl.pstatic.net/static/kin/09renewal/btn_search.gif">
 							<div class="question_button">
 								<a href="#" class="question"><img
-									src="https://ssl.pstatic.net/static/kin/09renewal/btn_question.gif"
-									width="92" height="30" alt="질문하기"></a>
+									src="https://www.bgscosmetic.co.kr/imgs/cscenter.png"
+									width="50" height="30" alt="질문하기"> <span style="display:inline-block; margin-top:6px;">문의하기</span></a>
 							</div>
 						</form>
 					</fieldset>
