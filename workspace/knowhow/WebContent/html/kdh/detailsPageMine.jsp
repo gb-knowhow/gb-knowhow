@@ -6,12 +6,12 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>글 상세 페이지(타인 시점)</title>
+<title>글 상세 페이지(내 시점)</title>
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon"
 	href="${pageContext.request.contextPath}/image/favicon.ico">
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/kdh/detailsPage.css" />
+	href="${pageContext.request.contextPath}/css/kdh/detailsPageMine.css" />
 </head>
 <body>
 	<header id="header"><jsp:include
@@ -29,13 +29,12 @@
 							src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
 							style="margin-right: 3%; width: 50px; height: 50px;"> 욱성이는
 						공부 언제하나요?
-						<!-- 버튼 클릭시 관리자에게 문의하는 페이지로 넘어가게 링크 걸어줌. 저렇게 쓰면 되는데 만약 데이터를 같이 움직여야 하면 컨트롤러 통해서 가자 -->
-						<button type="button" class="button_compose button_siren"
-							onclick="<%-- location.href='${pageContext.request.contextPath}/html/kjp/inquiry-board.jsp' --%>">
+						<button type="button" class="button_compose button_modify"
+							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/siren.png"
-								style="width: 20px; height: 20px;"></i> <span class="blind">신고하기</span>
-							<em class="questionButton_siren">신고하기</em>
+								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
+								style="width: 20px; height: 20px;"></i> <span class="blind">수정하기</span>
+							<em class="questionButton_modify">수정하기</em>
 						</button>
 					</div>
 					<!-- 질문 내용 -->
@@ -134,7 +133,7 @@
 							<div class="button_more">
 								<a href="javascript:void(0);" class="_reportBtn"
 									data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8B%98%EC%9D%98+%EC%9E%A5%EB%A5%B4%EB%B6%88%EB%AC%B8+%EB%85%B8%EB%9E%98%EC%8B%A4%EB%A0%A5%EC%97%90+%EC%99%84%EC%A0%84%EA%B9%9C%EC%A7%9D+%EB%86%80%EB%9E%AC%EB%8B%A4+%EA%B9%80%ED%98%B8%EC%A4%91%EB%8B%98%EC%9D%80+%EB%AA%85%EB%B6%88%ED%97%88%EC%A0%84+%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4">
-									신고 </a>
+									수정 </a>
 							</div>
 						</div>
 						<!-- 복붙 -->
@@ -188,9 +187,7 @@
 							</div>
 							<p class="question-commentList-date">작성 날짜</p>
 							<div class="button_more">
-								<a href="javascript:void(0);" class="_reportBtn"
-									data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9E%AC%EC%83%81%EC%97%90%EB%B9%9B%EB%82%98%EB%8A%94%EA%B5%AD%EB%B3%B4%EA%B8%89%ED%85%8C%EB%84%88%EB%85%B8%EB%9E%98%EC%99%80%EC%98%88%EB%8A%A5%EA%B0%90%EB%8F%84%EB%A7%8C%EC%A0%90%EC%9D%B4%EC%8B%9C%EB%84%A4%EC%9A%94">
-									신고 </a>
+								<a href="javascript:void(0);" class="_reportBtn"> 신고 </a>
 							</div>
 						</div>
 						<!-- 본문의 댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
@@ -429,5 +426,6 @@
 			page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/kdh/detailsPage.js"></script>
+<script
+	src="${pageContext.request.contextPath}/js/kdh/detailsPageMine.js"></script>
 </html>
