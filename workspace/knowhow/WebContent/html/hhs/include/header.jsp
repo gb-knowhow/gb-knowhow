@@ -196,7 +196,7 @@
 	            <div class="navi_wrap">
 	                <div class="navi_container">
 	                    <div class="navi_menu navi_knowhow">
-	                        <img src="header1.png">
+	                        <img src="${pageContext.request.contextPath }/css/hhs/include/image/header1.png">
 	                        <a class="header_message" href="#">
 	                            <div class="header_line">노하우 <img class="lt" src="${pageContext.request.contextPath }/css/hhs/include/image/lt.png"> </div>
 	                            <div>궁금한 질문을 빠르게</div>
@@ -204,7 +204,7 @@
 	                    </div>
 	
 	                    <div class="navi_menu navi_howto">
-	                        <img src="header2.png">
+	                        <img src="${pageContext.request.contextPath }/css/hhs/include/image/header2.png">
 	                        <a class="header_message" href="#">
 	                            <div class="header_line">이용방법 <img class="lt" src="${pageContext.request.contextPath }/css/hhs/include/image/lt.png"> </div>
 	                            <div>서비스 이용을 간편하게</div>
@@ -212,7 +212,7 @@
 	                    </div>
 	
 	                    <div class="navi_menu navi_ask">
-	                        <img src="header3.png">
+	                        <img src="${pageContext.request.contextPath }/css/hhs/include/image/header3.png">
 	                        <a class="header_message" href="#">
 	                            <div class="header_line">문의게시판 <img class="lt" src="${pageContext.request.contextPath }/css/hhs/include/image/lt.png"> </div>
 	                            <div>문의사항을 친절하게</div>
