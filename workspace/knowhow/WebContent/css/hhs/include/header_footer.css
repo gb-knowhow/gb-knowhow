@@ -149,13 +149,16 @@ a {
     margin-top: 2%;
     margin-bottom: 2%;
  }
+ 
+ .navi_menu img {
+    height: 15%;
+    width: 15%;
+}
 
-  .navi_menu a{
+ .navi_menu a{
     position: relative;
     align-items: center;
   }
-
-  .navi_knowhow
 
 
 
