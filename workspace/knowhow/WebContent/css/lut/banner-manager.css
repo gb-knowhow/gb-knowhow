@@ -1,320 +1,320 @@
 @charset "UTF-8";
 
 body {
-    margin: 0;
-    height: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
+   margin: 0;
+   height: 100%;
+   font-family: 'Noto Sans KR', sans-serif;
 }
 
 html{
-    height: 100%;
+   height: 100%;
 }
 
 .wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
+   width: 100%;
+   height: 100%;
+   display: flex;
 }
 
 #menu-side {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-    background-color: #474E68;
+   width: 15%;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   position: relative;
+   background-color: #474E68;
 }
 
 .menub-box {
-    height: 100%;
+   height: 100%;
 }
 
 #knowhow-logo {
-    width: 90%;
+   width: 90%;
 }
 
 #top-box {
-    display: flex;
-    border-bottom: 2px solid gray;
-    height: 7vh;
-    align-items: center;
-    justify-content: center;
-    background-color: #474E68;
+   display: flex;
+   border-bottom: 2px solid gray;
+   height: 7vh;
+   align-items: center;
+   justify-content: center;
+   background-color: #474E68;
 }
 
 #wrap-middle-box{
-    height: 100%;
+   height: 100%;
 }
 
 #middle-box {
-    width: 100%;
-    height: 100%;
-    
+   width: 100%;
+   height: 100%;
+   
 }
 
 #middle-box-contents {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9rem;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-size: 0.9rem;
 }
 
 .side-top-margin{
-    margin-top: 20%;
+   margin-top: 20%;
 }
 
 .checkbox-group{
-    width: 100%;
-    height: 60%;
+   width: 100%;
+   height: 60%;
 }
 
 .mouseOnEffect:hover{
-    background-color: #404258;
-    transition: background-color 0.5s;
+   background-color: #404258;
+   transition: background-color 0.5s;
 }
 
 .side-icons {
-    width: 25px;
-    height: 25px;
-    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+   width: 25px;
+   height: 25px;
+   filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
 }
 
 .side-bar{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    font-weight: 300;
-    margin: 5%;
-    color: #fff;
-    cursor: pointer;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   font-weight: 300;
+   margin: 5%;
+   color: #fff;
+   cursor: pointer;
 }
 
 .icon-gap{
-    margin-right: 5%;
+   margin-right: 5%;
 }
 
 .collapsible {
-    display: flex;
-    background-color: #474E68;
-    color: white;
-    cursor: pointer;
-    padding: 5%;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    align-items: center;
+   display: flex;
+   background-color: #474E68;
+   color: white;
+   cursor: pointer;
+   padding: 5%;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   align-items: center;
 }
 
 .active,
 .collapsible:hover {
-    background-color: #404258;
-    transition: background-color 0.5s;
+   background-color: #404258;
+   transition: background-color 0.5s;
 }
 .content {
-    padding: 0 18px;
-    cursor: pointer;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #1f2537;
-    color: #fff;
+   padding: 0 18px;
+   cursor: pointer;
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   background-color: #1f2537;
+   color: #fff;
 }
 .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: auto;
+   content: '\002B';
+   color: white;
+   font-weight: bold;
+   float: right;
+   margin-left: auto;
 }
 .active:after {
-    content: "\2212";
+   content: "\2212";
 }
 
 /* 여기까지 사이드바 */
 
 .letter-space {
-    width: 5%;
-    padding-left: 3%;
+   width: 5%;
+   padding-left: 3%;
 }
 .right-body{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 100%;
-    height: 100%;
-    background-color: #EEEEEE;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   width: 100%;
+   height: 100%;
+   background-color: #EEEEEE;
 }
 
 .watch-all-ask{
-    display: flex;
-    width: 100%;
-    height: 15%;
+   display: flex;
+   width: 100%;
+   height: 15%;
 }
 
 .preview{
-    background-color: #353C45;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 7rem;
-    height: 2.3rem;
-    margin-left: 78.8%;
+   background-color: #353C45;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   width: 7rem;
+   height: 2.3rem;
+   margin-left: 78.8%;
 }
 
 .add{
-    background-color: #353C45;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 7rem;
-    height: 2.3rem;
-    margin-left: 89.4%;
+   background-color: #353C45;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   width: 7rem;
+   height: 2.3rem;
+   margin-left: 2%;
 }
 
 .integrated-for-margin{
-    margin-top: 4%;
+   margin-top: 4%;
 }
 
 .integrated-for-margin:hover{
-   background-color:#3175c2;
-   transition: background-color 0.5s;
+  background-color:#3175c2;
+  transition: background-color 0.5s;
 }
 
 #right-side{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 .right-header {
-    display: flex;
-    font-size: 1rem;
-    align-items: center;
-    height: 7vh;
+   display: flex;
+   font-size: 1rem;
+   align-items: center;
+   height: 7vh;
 }           
 
 .user-list-letter{
-    position: absolute;
-    top: 0;
-    margin-left: 5%;
-    font-size: 1.3rem;
+   position: absolute;
+   top: 0;
+   margin-left: 5%;
+   font-size: 1.3rem;
 }
 
 #clock{
-    margin-left: 65%;
-    font-size: 0.9rem;
-    font-weight: 500;
+   margin-left: 65%;
+   font-size: 0.9rem;
+   font-weight: 500;
 }
 
 .admin-profile{
-    width: 2.3%;
-    margin-left: 1%;
+   width: 2.3%;
+   margin-left: 1%;
 }
 
 .admin-name{
-    font-size: 0.9rem;
-    margin-left: 0.5%;
-    margin-top: 0;
-    margin-bottom: 0;
+   font-size: 0.9rem;
+   margin-left: 0.5%;
+   margin-top: 0;
+   margin-bottom: 0;
 }
 
 .admin-logout{
-    background-color: #fff;
-    margin-top: 2.5px;
-    padding-left: 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
+   background-color: #fff;
+   margin-top: 2.5px;
+   padding-left: 0;
+   border: none;
+   outline: none;
+   cursor: pointer;
 }
 
 .name-logout-space{
-    font-weight: 300;
+   font-weight: 300;
 }
 
 .right-contents-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   justify-content: center;
 }
 
 .right-contents{
-    position: relative;
-    display: flex;
-    width: 40vh;
-    height: 30vh;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    background-color: #fff;
-    box-shadow: 0px 0px 5px 0px gray;
+   position: relative;
+   display: flex;
+   width: 40vh;
+   height: 30vh;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-bottom: 0px;
+   background-color: #fff;
+   box-shadow: 0px 0px 5px 0px gray;
 }
 
 .banner-num{
-    position: absolute;
-    top: 0;
-    left: 5%;
+   position: absolute;
+   top: 0;
+   left: 5%;
 }
 
 
 .status-stop{
-    position: absolute;
-    text-align: center;
-    width: 22%;
-    top: 8%;
-    left: 20%;
-    font-size: 0.9rem;
-    background-color: #7F7F7F;
-    color: #fff;
-    border-radius: 10px;
+   position: absolute;
+   text-align: center;
+   width: 22%;
+   top: 8%;
+   left: 20%;
+   font-size: 0.9rem;
+   background-color: #7F7F7F;
+   color: #fff;
+   border-radius: 10px;
 }
 
 .status-use{
-    display: none;
-    position: absolute;
-    text-align: center;
-    width: 22%;
-    top: 8%;
-    left: 20%;
-    font-size: 0.9rem;
-    background-color: #2196F3;
-    color: #fff;
-    border-radius: 10px;
+   display: none;
+   position: absolute;
+   text-align: center;
+   width: 22%;
+   top: 8%;
+   left: 20%;
+   font-size: 0.9rem;
+   background-color: #2196F3;
+   color: #fff;
+   border-radius: 10px;
 }
 
 .detail{
-    position: absolute;
-    top: 4%;
-    right: 5%;
-    cursor: pointer;
-    text-align: center;
-    width: 10%;
+   position: absolute;
+   top: 4%;
+   right: 5%;
+   cursor: pointer;
+   text-align: center;
+   width: 10%;
 }
 
 .detail-icon{
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    left: 4px;
-    top: 3px;
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   left: 4px;
+   top: 3px;
 }
 
 .detail-button{
-    position: relative;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    background-color: #fff;
+   position: relative;
+   border: none;
+   text-align: center;
+   cursor: pointer;
+   width: 25px;
+   height: 25px;
+   margin: 0;
+   background-color: #fff;
 }
 
 .detail-button:hover{
-    background-color: #EEEEEE;
-    transition: background-color 0.5s;
+   background-color: #EEEEEE;
+   transition: background-color 0.5s;
 }
 
 
@@ -381,162 +381,162 @@ border-radius: 50%;
 
 
 .slide-button{
-    position: absolute;
-    top: 6.5%;
-    left: 65%;
+   position: absolute;
+   top: 6.5%;
+   left: 65%;
 }
 
 .margin-off{
-    margin-left: 0;
+   margin-left: 0;
 }
 
 
 .banner{
-    position: absolute;
-    bottom: 0px;
-    width: 40vh;
-    height: 20vh;
+   position: absolute;
+   bottom: 0px;
+   width: 40vh;
+   height: 20vh;
 }
 
 
 .member-input-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 3%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 3%;
 }
 
 #right-side {
-    width: 85%;
-    height: auto;
-    position: relative;
+   width: 85%;
+   height: auto;
+   position: relative;
 }
 
 .member-search-wrap {
-    padding-right: 3%;
+   padding-right: 3%;
 }
 
 .member-search{
-    width: 40vh;
-    height: 5vh;
-    border: none;
-    outline: none;
-    background-color: #EEEEEE;
+   width: 40vh;
+   height: 5vh;
+   border: none;
+   outline: none;
+   background-color: #EEEEEE;
 }
 
 #search-icon{
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    cursor: pointer;
+   width: 1.2rem;
+   height: 1.2rem;
+   margin-left: 0.5rem;
+   margin-right: 0.5rem;
+   cursor: pointer;
 }
 
 .search-border{
-    display: flex;
-    align-items: center;
-    border-radius: 3px;
-    background-color: #EEEEEE;
+   display: flex;
+   align-items: center;
+   border-radius: 3px;
+   background-color: #EEEEEE;
 }
 
 
 .member-delete-button{
-    background-color: #F1416C;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: 6rem;
-    height: 2rem;
-    margin-top: 5%;
-    margin-right: 15%;
+   background-color: #F1416C;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   width: 6rem;
+   height: 2rem;
+   margin-top: 5%;
+   margin-right: 15%;
 }
 
 .member-delete-button-wrap{
-    padding-left: 3%;
+   padding-left: 3%;
 }
 
 .total-mentor{
-    display: flex;
-    margin-top: 2%;
-    margin-left: 3%;
-    font-size: 0.9rem;
+   display: flex;
+   margin-top: 2%;
+   margin-left: 3%;
+   font-size: 0.9rem;
 }
 
 .total-mentor-num{
-    margin-left: 0.5%;
-    color: #F1416C;
+   margin-left: 0.5%;
+   color: #F1416C;
 }
 
 .mentor-list-header{
-    margin-left: 3%;
-    margin-right: 3%;
-    height: 5vh;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    background-color: #EEEEEE;
+   margin-left: 3%;
+   margin-right: 3%;
+   height: 5vh;
+   font-size: 0.9rem;
+   display: flex;
+   align-items: center;
+   background-color: #EEEEEE;
 }
 
 .mentor-list-contents{
-    margin-left: 3%;
-    margin-right: 3%;
-    height: 5vh;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #EEEEEE;
+   margin-left: 3%;
+   margin-right: 3%;
+   height: 5vh;
+   font-size: 0.9rem;
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid #EEEEEE;
 
 }
 
 .checkbox-zip{
-    text-align: center;
-    width: 10%;
+   text-align: center;
+   width: 10%;
 }
 
 .checkbox-zip input[type=checkbox]{
-    width: 1.2rem;
-    height: 1.2rem;
+   width: 1.2rem;
+   height: 1.2rem;
 }
 
 .user-num{
-    text-align: center;
-    width: 10%;
+   text-align: center;
+   width: 10%;
 
 }
 
 .user-role{
-    text-align: center;
-    width: 11%;
+   text-align: center;
+   width: 11%;
 
 }
 
 .user-name{
-    text-align: center;
-    width: 11%;
+   text-align: center;
+   width: 11%;
 
 }
 
 .user-email{
-    text-align: center;
-    width: 20%;
+   text-align: center;
+   width: 20%;
 
 }
 
 .user-reply{
-    text-align: center;
-    width: 11%;
+   text-align: center;
+   width: 11%;
 
 }
 
 .user-comment{
-    text-align: center;
-    width: 11%;
+   text-align: center;
+   width: 11%;
 
 }
 
 .user-join-day{
-    text-align: center;
-    width: 15%;
+   text-align: center;
+   width: 15%;
 
 }
 
@@ -548,31 +548,750 @@ bottom: 3%;
 }
 
 .page-button{
+   width: 2rem;
+   height: 2rem;
+   border: none;
+   border-radius: 5px;
+   background-color: #81839C; 
+   color: #fff;
+}
+
+.page-button2{
+   width: 2rem;
+   height: 2rem;
+   border: none;
+   border-radius: 5px;
+   background-color: #EEEEEE;
+   color: black;
+}
+
+.page-button2:hover{
+   background-color: #81839C;
+   color: #fff;
+   transition: background-color 0.5s;
+}
+
+/* 모달창 */
+.my_modal {
+   display: none;
+   width: 40%;
+   height: auto;
+   padding: 20px 60px;
+   background-color: #fefefe;
+   border: 1px solid #888;
+   border-radius: 3px;
+}
+
+.my_modal .modal_close_btn {
+   position: absolute;
+   cursor: pointer;
+   top: 20px;
+   right: 30px;
+}
+
+.comment-writer{
+   margin-top: 10%;
+   padding-bottom: 1%;
+   border-bottom: 1px solid black;
+}
+
+.comment-detail{
+   margin-top: 5%;
+   margin-bottom: 3%;
+   padding-bottom: 5%;
+   border-bottom: 1px solid black;
+}
+
+.qna-submit-btn{
+   background-color: #353C45;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   width: 6rem;
+   height: 2rem;
+   margin-top: 1%;
+   margin-left: 2%;
+}
+
+.qna-delete-btn{
+   background-color: #353C45;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   width: 6rem;
+   height: 2rem;
+   margin-top: 1%;
+   margin-left: 2%;
+}
+
+.qna-submit-btn:hover{
+  background-color:#3175c2;
+  transition: background-color 0.5s;
+}
+
+.qna-delete-btn:hover{
+  background-color:#F1416C;
+  transition: background-color 0.5s;
+}
+
+.qna-manage{
+   text-align: center;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+.write-section{
+   width: 100%;
+   height: 30vh;
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+/* 배너 수정하기 */
+ .container {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+}
+
+.image-upload {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+}
+
+label {
+   position: absolute;
+   cursor: pointer;
+   left: 24%;
+   bottom: 10%;
+   width: 41vh;
+   height: 5vh;
+   font-size: 1em;
+}
+
+#file {
+   visibility: hidden;
+}
+
+.fileContainer {
+   display: flex;
+   position: relative;
+   justify-content: center;
+   align-items: center;
+}
+
+.fileInput {
+   display: flex;
+   align-items: center;
+   border-bottom: solid 2px black;
+   width: 60%;
+   height: 30px;
+}
+
+#fileName {
+   margin-left: 5px;
+}
+
+.buttonContainer {
+   width: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10px;
+   background-color: black;
+   color: white;
+   border-radius: 30px;
+   padding: 10px;
+   font-size: 0.8em;
+
+   cursor: pointer;
+}
+
+.image-show {
+   z-index: -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   margin-top: 5%;
+   margin-bottom: 3%;
+}
+
+.image-box{
+   width: 70%;
+   height: 70%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+ }
+ 
+ html{
+    height: 100%;
+ }
+ 
+ .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+ }
+ 
+ #menu-side {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    background-color: #474E68;
+ }
+ 
+ .menub-box {
+    height: 100%;
+ }
+ 
+ #knowhow-logo {
+    width: 90%;
+ }
+ 
+ #top-box {
+    display: flex;
+    border-bottom: 2px solid gray;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #474E68;
+ }
+ 
+ #wrap-middle-box{
+    height: 100%;
+ }
+ 
+ #middle-box {
+    width: 100%;
+    height: 100%;
+    
+ }
+ 
+ #middle-box-contents {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+ }
+ 
+ .side-top-margin{
+    margin-top: 20%;
+ }
+ 
+ .checkbox-group{
+    width: 100%;
+    height: 60%;
+ }
+ 
+ .mouseOnEffect:hover{
+    background-color: #404258;
+    transition: background-color 0.5s;
+ }
+ 
+ .side-icons {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+ }
+ 
+ .side-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 300;
+    margin: 5%;
+    color: #fff;
+    cursor: pointer;
+ }
+ 
+ .icon-gap{
+    margin-right: 5%;
+ }
+ 
+ .collapsible {
+    display: flex;
+    background-color: #474E68;
+    color: white;
+    cursor: pointer;
+    padding: 5%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+ }
+ 
+ .active,
+ .collapsible:hover {
+    background-color: #404258;
+    transition: background-color 0.5s;
+ }
+ .content {
+    padding: 0 18px;
+    cursor: pointer;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1f2537;
+    color: #fff;
+ }
+ .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: auto;
+ }
+ .active:after {
+    content: "\2212";
+ }
+ 
+ /* 여기까지 사이드바 */
+ 
+ .letter-space {
+    width: 5%;
+    padding-left: 3%;
+ }
+ .right-body{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+ }
+ 
+ .watch-all-ask{
+    display: flex;
+    width: 100%;
+    height: 15%;
+ }
+ 
+ .add{
+    background-color: #353C45;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 2.3rem;
+    margin-left: 89.5%;
+ }
+ 
+ .integrated-for-margin{
+    margin-top: 4%;
+ }
+ 
+ .integrated-for-margin:hover{
+   background-color:#3175c2;
+   transition: background-color 0.5s;
+ }
+ 
+ #right-side{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .right-header {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    height: 7vh;
+ }           
+ 
+ .user-list-letter{
+    position: absolute;
+    top: 0;
+    margin-left: 5%;
+    font-size: 1.3rem;
+ }
+ 
+ #clock{
+    margin-left: 65%;
+    font-size: 0.9rem;
+    font-weight: 500;
+ }
+ 
+ .admin-profile{
+    width: 2.3%;
+    margin-left: 1%;
+ }
+ 
+ .admin-name{
+    font-size: 0.9rem;
+    margin-left: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ 
+ .admin-logout{
+    background-color: #fff;
+    margin-top: 2.5px;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+ 
+ .name-logout-space{
+    font-weight: 300;
+ }
+ 
+ .right-contents-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+ }
+ 
+ .right-contents{
+    position: relative;
+    display: flex;
+    width: 40vh;
+    height: 30vh;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px gray;
+ }
+ 
+ .banner-num{
+    position: absolute;
+    top: 0;
+    left: 5%;
+ }
+ 
+ 
+ .status-stop{
+    position: absolute;
+    text-align: center;
+    width: 22%;
+    top: 8%;
+    left: 20%;
+    font-size: 0.9rem;
+    background-color: #7F7F7F;
+    color: #fff;
+    border-radius: 10px;
+ }
+ 
+ .status-use{
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 22%;
+    top: 8%;
+    left: 20%;
+    font-size: 0.9rem;
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 10px;
+ }
+ 
+ .detail{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    cursor: pointer;
+    text-align: center;
+    width: 10%;
+ }
+ 
+ .detail-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    top: 3px;
+ }
+ 
+ .detail-button{
+    position: relative;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    background-color: #fff;
+ }
+ 
+ .detail-button:hover{
+    background-color: #EEEEEE;
+    transition: background-color 0.5s;
+ }
+ 
+ 
+ /* The switch - the box around the slider */
+ .switch {
+ position: relative;
+ display: inline-block;
+ width: 40px;
+ height: 20px;
+ vertical-align:middle;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {display:none;}
+ 
+ /* The slider */
+ .slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+ }
+ 
+ .slider:before {
+ position: absolute;
+ content: "";
+ height: 15px;
+ width: 15px;
+ left: 4px;
+ bottom: 3px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+ }
+ 
+ input:checked + .slider {
+ background-color: #2196F3;
+ }
+ 
+ input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+ }
+ 
+ input:checked + .slider:before {
+ -webkit-transform: translateX(17px);
+ -ms-transform: translateX(17px);
+ transform: translateX(17px);
+ }
+ 
+ /* Rounded sliders */
+ .slider.round {
+ border-radius: 34px;
+ }
+ 
+ .slider.round:before {
+ border-radius: 50%;
+ }
+ 
+ 
+ 
+ .slide-button{
+    position: absolute;
+    top: 6.5%;
+    left: 65%;
+ }
+ 
+ .margin-off{
+    margin-left: 0;
+ }
+ 
+ 
+ .banner{
+    position: absolute;
+    bottom: 0px;
+    width: 40vh;
+    height: 20vh;
+ }
+ 
+ 
+ .member-input-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+ }
+ 
+ #right-side {
+    width: 85%;
+    height: auto;
+    position: relative;
+ }
+ 
+ .member-search-wrap {
+    padding-right: 3%;
+ }
+ 
+ .member-search{
+    width: 40vh;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+ }
+ 
+ #search-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+ }
+ 
+ .search-border{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+ }
+ 
+ 
+ .member-delete-button{
+    background-color: #F1416C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 5%;
+    margin-right: 15%;
+ }
+ 
+ .member-delete-button-wrap{
+    padding-left: 3%;
+ }
+ 
+ .total-mentor{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 0.9rem;
+ }
+ 
+ .total-mentor-num{
+    margin-left: 0.5%;
+    color: #F1416C;
+ }
+ 
+ .mentor-list-header{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+ }
+ 
+ .mentor-list-contents{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EEEEEE;
+ 
+ }
+ 
+ .checkbox-zip{
+    text-align: center;
+    width: 10%;
+ }
+ 
+ .checkbox-zip input[type=checkbox]{
+    width: 1.2rem;
+    height: 1.2rem;
+ }
+ 
+ .user-num{
+    text-align: center;
+    width: 10%;
+ 
+ }
+ 
+ .user-role{
+    text-align: center;
+    width: 11%;
+ 
+ }
+ 
+ .user-name{
+    text-align: center;
+    width: 11%;
+ 
+ }
+ 
+ .user-email{
+    text-align: center;
+    width: 20%;
+ 
+ }
+ 
+ .user-reply{
+    text-align: center;
+    width: 11%;
+ 
+ }
+ 
+ .user-comment{
+    text-align: center;
+    width: 11%;
+ 
+ }
+ 
+ .user-join-day{
+    text-align: center;
+    width: 15%;
+ 
+ }
+ 
+ .page-button-box{
+ width: 100%;
+ text-align: center;
+ position: absolute;
+ bottom: 3%;
+ }
+ 
+ .page-button{
     width: 2rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
     background-color: #81839C; 
     color: #fff;
-}
-
-.page-button2{
+ }
+ 
+ .page-button2{
     width: 2rem;
     height: 2rem;
     border: none;
     border-radius: 5px;
     background-color: #EEEEEE;
     color: black;
-}
-
-.page-button2:hover{
+ }
+ 
+ .page-button2:hover{
     background-color: #81839C;
     color: #fff;
     transition: background-color 0.5s;
-}
-
-/* 모달창 */
-.my_modal {
+ }
+ 
+ /* 모달창 */
+ .my_modal {
     display: none;
     width: 40%;
     height: auto;
@@ -580,35 +1299,29 @@ bottom: 3%;
     background-color: #fefefe;
     border: 1px solid #888;
     border-radius: 3px;
-}
-
-.my_modal .modal_close_btn {
+ }
+ 
+ .my_modal .modal_close_btn {
     position: absolute;
     cursor: pointer;
     top: 20px;
     right: 30px;
-}
-
-.comment-writer{
+ }
+ 
+ .comment-writer{
     margin-top: 10%;
     padding-bottom: 1%;
     border-bottom: 1px solid black;
-}
-
-.comment-title{
-    margin-top: 1%;
-    padding-bottom: 1%;
-    border-bottom: 1px solid black;
-}
-
-.comment-detail{
+ }
+ 
+ .comment-detail{
     margin-top: 5%;
     margin-bottom: 3%;
     padding-bottom: 5%;
     border-bottom: 1px solid black;
-}
-
-.qna-submit-btn{
+ }
+ 
+ .qna-submit-btn{
     background-color: #353C45;
     color: #fff;
     border: none;
@@ -617,27 +1330,27 @@ bottom: 3%;
     height: 2rem;
     margin-top: 1%;
     margin-left: 2%;
-}
-
-.qna-submit-btn:hover{
+ }
+ 
+ .qna-submit-btn:hover{
    background-color:#3175c2;
    transition: background-color 0.5s;
-}
-
-.qna-manage{
+ }
+ 
+ .qna-manage{
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-
-.write-section{
+ }
+ 
+ .write-section{
     width: 100%;
     height: 30vh;
     font-size: 1rem;
     font-weight: 300;
-}
-
-/* 배너 수정하기 */
+ }
+ 
+ /* 배너 수정하기 */
   .container {
     display: flex;
     height: 100%;
@@ -666,7 +1379,7 @@ bottom: 3%;
     font-size: 1em;
  }
  
- #chooseFile {
+ #file {
     visibility: hidden;
  }
  
@@ -714,8 +1427,8 @@ bottom: 3%;
     margin-top: 5%;
     margin-bottom: 3%;
  }
-
- .img{
+ 
+ .image-box{
     width: 70%;
     height: 70%;
  }
