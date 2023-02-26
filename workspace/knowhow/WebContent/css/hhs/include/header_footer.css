@@ -179,13 +179,14 @@ a {
     clear: both;
     margin: 0 auto;
     padding: 30px 0 15px 0;
-    text-align: center;
+
 }
 
 #footer {
     margin:0 auto;
     max-width: 768px;
     min-width: 460px;
+    text-align: center;
 }
 
 #footer * {
