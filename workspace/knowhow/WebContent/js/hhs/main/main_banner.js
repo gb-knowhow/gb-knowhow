@@ -12,7 +12,7 @@ let checkArrow = false;
 let count = 1;
 let auto = setInterval(autoSlide, 2000);
 // 색은 원하는 만큼만 선언하면 되지만 text는 맨 처음 인덱스값이 마지막에 하나 더 추가되어야 함
-var colors = ['#7D78FF', '#99004C', '#598700', '#FFBB00'];
+var colors = ['#F0E5DE', '#ABD0CE', '#7C7877', '#D9D4CF'];
 var texts = ['새학기<br>학습전략<br>성공적으로<br>준비하기', '행복한<br>아이디어<br>나눔생활',
                 '알쏭달쏭<br>디지털 세상<br>미디어 최고', '오늘은<br>울고<br>내일은<br>웃고',
                 '새학기<br>학습전략<br>성공적으로<br>준비하기'];

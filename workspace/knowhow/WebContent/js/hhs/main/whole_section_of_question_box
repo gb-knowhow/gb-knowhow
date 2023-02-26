@@ -1,0 +1,24 @@
+<div>
+<div class="question_box first">
+  <div class="title_wrap">
+    <a href="#" class="link_to_q">
+      <span class="title">영어로 번역 좀 부탁드립니다.</span>
+      <p class="detail">
+        유호이엔지 (주)유호이엔지 위에 2개 영어로 번역 부탁드립니다.
+      </p>
+    </a>
+  </div>
+  <div class="update_info">
+    <span class="num_answer">답변 <em>0</em></span>
+    <span class="info category">
+      <a href="#">생활</a>
+    </span>
+    <span class="info update_time"> 방금 </span>
+  </div>
+  <div class="link_to_answer_wrap">
+    <a href="#" class="link_to_answer">
+      답변하기
+      <span class="answer_icon icon"></span>
+    </a>
+  </div>
+</div>
