@@ -29,7 +29,7 @@ html{
 }
 
 #knowhow-logo {
-    width: 60%;
+    width: 90%;
 }
 
 #top-box {
@@ -255,7 +255,6 @@ html{
     width: 6rem;
     height: 2rem;
     margin-top: 5%;
-    margin-right: 15%;
 }
 
 .watch-all-ask-button:hover{
@@ -272,7 +271,7 @@ html{
     width: 6rem;
     height: 2rem;
     margin-top: 5%;
-    margin-right: 15%;
+    
 }
 
 .watch-waiting-ask-button:hover{
@@ -288,7 +287,6 @@ html{
     width: 6rem;
     height: 2rem;
     margin-top: 5%;
-    margin-right: 15%;
 }
 
 .member-delete-button:hover{
@@ -302,13 +300,12 @@ html{
 
 .watch-waiting-ask{
     position: absolute;
-    left: 13%;
+    left: 12%;
 }
 
 .member-delete-button-wrap{
     position: absolute;
-    left: 20%;
-    padding-left: 3%;
+    left: 21%;
 }
 
 .total-mentor{
@@ -394,16 +391,16 @@ html{
 }
 
 .qna-status-false{
-    background-color: gray;
     border-radius: 10px;
-    color: #fff;
+    color: gray;
+    font-weight: bold;
     
 }
 
 .qna-status-true{
-    background-color: #1A7CFF;
     border-radius: 10px;
-    color: #FFF;
+    color: #1A7CFF;
+    font-weight: bold;
 }
 
 .detail{
@@ -528,4 +525,5 @@ bottom: 3%;
     height: 30vh;
     font-size: 1rem;
     font-weight: 300;
+    resize: none;
 }

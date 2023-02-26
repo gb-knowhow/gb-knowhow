@@ -134,26 +134,26 @@
                         <div id="my_modal7" class="my_modal" >
                             <a class="modal_close_btn">✖</a>
                             <div class="comment-writer">배너명: 합격면접</div>
-                            <div class="comment-title">코드: {{$메인배너1}}</div>
                             <div class="container">
                                 <div class="image-upload" id="image-upload">
                         
-                                    <div class="image-show" id="image-show"></div>
+                                    <div class="image-show" id="image-show">
+                                      <img src="./images/banner1.png" class="image-box" />
+                                    </div>
                                     <form method="post" enctype="multipart/form-data">
-                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                                        <input id="file" name="chooseFile" type="file" accept="image/*" onchange="loadFile(this)" />
                                     </form>
+                                    
+
                                     
                                     <div class="fileContainer">
                                         <div class="button">
-                                            <label for="chooseFile">
+                                            <label for="file">
                                             </label>
                                         </div>
                                         <div class="fileInput">
                                             <p>FILE NAME: </p>
-                                            <p id="fileName"></p>
-                                        </div>
-                                        <div class="buttonContainer">
-                                            <div class="submitButton" id="submitButton">업로드</div>
+                                            <p id="fileName">banner1.png</p>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@
                             </div>
                             <div class="qna-manage">
                                 <input class="qna-submit-btn" type="submit" value="수정하기">
-                                <input class="qna-submit-btn" type="submit" value="삭제하기">
+                                <input class="qna-delete-btn" type="submit" value="삭제하기">
                             </div>
                         </div>
                         <img  class="banner" src="./images/banner1.png">
