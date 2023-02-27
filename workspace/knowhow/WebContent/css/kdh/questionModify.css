@@ -17,6 +17,13 @@ input, legend, li, ol, p, select, table, td, textarea, th, ul
   }
 }
 
+.category {
+	width:150px;
+	text-align:center;
+	border-color: #388C57;
+	border-radius: 0.5em;
+}
+
 .firstTitle {
   line-height: 38px;
   font-size: 38px;
