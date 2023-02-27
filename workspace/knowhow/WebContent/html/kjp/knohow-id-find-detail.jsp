@@ -87,7 +87,6 @@
             </div>
         </div>
     </div>
-    <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
 </html>
 </html>

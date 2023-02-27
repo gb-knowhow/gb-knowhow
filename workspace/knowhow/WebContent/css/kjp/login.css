@@ -37,19 +37,18 @@ header{
 }
 
 .logo {
-    display: inline-block;
+     display: inline-block;
     margin-top: 52px;
     vertical-align: top;
-    background-position: 0 -51px;
-    background-repeat: no-repeat;
-    width: 303px;
-    height: 194px;
+    width: 170px;
+    height: 136px;
     background-image: url(../../image/logo_450.png);
     background-size: 100%;
     text-decoration: none;
     cursor: pointer;
     font-size: 0;
 }
+
 
 #blind {
     position: absolute;
@@ -422,7 +421,6 @@ select {
     appearance: none;
     outline: 0;
     text-decoration: none;
-    cursor: pointer;
     margin: 0;
     padding: 0;
 }

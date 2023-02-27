@@ -24,7 +24,7 @@
               <div class="EndTopTitle_title_box">
                 <h2>
                   <button class="EndTopTitle_title_content" style="cursor: default">
-                    <img src="${pageContext.request.contextPath}/image/logo_450.png">
+                  <div class="logo-text">KonHow 문의</div>
                   </button>
                 </h2>
                 <span class="EndTopTitle_bottom"></span>

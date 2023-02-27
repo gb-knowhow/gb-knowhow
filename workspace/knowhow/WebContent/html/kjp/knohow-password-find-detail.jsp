@@ -83,7 +83,6 @@
             </div>
         </div>
     </div>
-    <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
 <script src="../../js/kjp/knohow-password-find-detail.js"></script>
 </html>
