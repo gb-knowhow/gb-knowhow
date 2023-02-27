@@ -22,7 +22,7 @@
 	    </section>
         <div class="section_qna">
           <!-- 좋아요 많은 답글 -->
-          <div class="stats_ranking_area" id="statsRankingArea">
+          <div class="stats_ranking_area">
             <!-- 좋아요 많은 답글 헤딩 -->
             <div class="section_headings section_headings__step1">
               <h1 class="section_headings_title">좋아요 많은 질문</h1>
@@ -32,11 +32,11 @@
             <!-- // 좋아요 많은 답글 본문 -->
             <div class="ranking_section">
               <!-- 랭킹 -->
-              <div class="ranking_list_area" id="rankingChart">
+              <div class="ranking_list_area">
                 <ul class="ranking_list">
                   <!-- 랭킹 아이템 한개 div -->
                   <!-- 백단에서 정보를 가지고 와서 js로 a태그에 링크 삽입 해 주어야함. -->
-                  <li class="ranking_item _item_1">
+                  <li class="ranking_item">
                     <span class="no">1</span>
                     <a
                       href="/qna/detail.naver?d1id=3&amp;dirId=31505&amp;docId=369817730"
@@ -57,7 +57,7 @@
                     ><span class="reply_num">답변수 1</span>
                   </li>
                   <!-- //랭킹 아이템 한개 div -->
-                  <li class="ranking_item _item_2">
+                  <li class="ranking_item">
                     <span class="no">2</span>
                     <a
                       href="/qna/detail.naver?d1id=3&amp;dirId=31402&amp;docId=439814874"
@@ -78,7 +78,7 @@
                     ><span class="reply_num">답변수 12</span>
                   </li>
 
-                  <li class="ranking_item _item_3">
+                  <li class="ranking_item">
                     <span class="no">3</span>
                     <a
                       href="/qna/detail.naver?d1id=11&amp;dirId=11080501&amp;docId=348216660"
@@ -99,7 +99,7 @@
                     ><span class="reply_num">답변수 1</span>
                   </li>
 
-                  <li class="ranking_item _item_7" style="display: none">
+                  <li class="ranking_item" style="display: none">
                     <span class="no">7</span>
                     <a
                       href="/qna/detail.naver?d1id=1&amp;dirId=1060305&amp;docId=399654874"
@@ -119,7 +119,7 @@
                     ><span class="reply_num">답변수 2</span>
                   </li>
 
-                  <li class="ranking_item _item_8" style="display: none">
+                  <li class="ranking_item" style="display: none">
                     <span class="no">8</span>
                     <a
                       href="/qna/detail.naver?d1id=8&amp;dirId=8040103&amp;docId=439900242"
@@ -140,7 +140,7 @@
                     ><span class="reply_num">답변수 1</span>
                   </li>
 
-                  <li class="ranking_item _item_9" style="display: none">
+                  <li class="ranking_item" style="display: none">
                     <span class="no">9</span>
                     <a
                       href="/qna/detail.naver?d1id=3&amp;dirId=3031001&amp;docId=349200363"
@@ -162,7 +162,7 @@
                 </ul>
 
                 <ul class="ranking_list">
-                  <li class="ranking_item _item_4">
+                  <li class="ranking_item">
                     <span class="no">4</span>
                     <a
                       href="/qna/detail.naver?d1id=11&amp;dirId=111301&amp;docId=310914081"
@@ -182,7 +182,7 @@
                     ><span class="reply_num">답변수 3</span>
                   </li>
 
-                  <li class="ranking_item _item_5">
+                  <li class="ranking_item">
                     <span class="no">5</span>
                     <a
                       href="/qna/detail.naver?d1id=8&amp;dirId=80507&amp;docId=28705162"
@@ -203,7 +203,7 @@
                     ><span class="reply_num">답변수 3</span>
                   </li>
 
-                  <li class="ranking_item _item_6">
+                  <li class="ranking_item">
                     <span class="no">6</span>
                     <a
                       href="/qna/detail.naver?d1id=9&amp;dirId=90203&amp;docId=439878617"
@@ -224,7 +224,7 @@
                     ><span class="reply_num">답변수 1</span>
                   </li>
 
-                  <li class="ranking_item _item_10" style="display: none">
+                  <li class="ranking_item" style="display: none">
                     <span class="no">10</span>
                     <a
                       href="/qna/detail.naver?d1id=6&amp;dirId=6010101&amp;docId=439893434"
