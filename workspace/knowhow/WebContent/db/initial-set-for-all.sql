@@ -242,18 +242,18 @@ drop table tbl_ask_admin_answer;
 
 /* select tables */ 
 
-select * from table tbl_member;
-select * from table tbl_resume;
-select * from table tbl_banner;
-select * from table tbl_category;
-select * from table tbl_question;
-select * from table tbl_question_comment;
-select * from table tbl_question_like;
-select * from table tbl_answer;
-select * from table tbl_answer_comment;
-select * from table tbl_answer_like;
-select * from table tbl_ask_admin;
-select * from table tbl_ask_admin_answer;
+select * from tbl_member;
+select * from tbl_resume;
+select * from tbl_banner;
+select * from tbl_category;
+select * from tbl_question;
+select * from tbl_question_comment;
+select * from tbl_question_like;
+select * from tbl_answer;
+select * from tbl_answer_comment;
+select * from tbl_answer_like;
+select * from tbl_ask_admin;
+select * from tbl_ask_admin_answer;
 
 
 
