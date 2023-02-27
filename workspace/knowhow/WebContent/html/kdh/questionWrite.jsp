@@ -34,8 +34,7 @@
 					<div style="line-height: 1.8">
 						<span
 							style="font-size: 12pt; font-family: 나눔바른고딕, NanumBarunGothic, NanumBarunGothicOTF;">
-							은퇴자 분들에게 궁금하신 부분을 질문해주세요!<br />
-						<br />
+							은퇴자 분들에게 궁금하신 부분을 질문해주세요!<br /> <br />
 						</span>
 					</div>
 					<div style="line-height: 1.8">
@@ -51,6 +50,22 @@
 					<div class="InquiryInput_guide_text" style="color: red;">※
 						작성하신 내용에 욕설, 성희롱 등의 내용이 포함된 경우 관련 법령에 따라 조치될 수 있습니다.</div>
 					<span class="InquiryInput_add_text">필수 입력 사항</span>
+					<div class="InquiryInput_field_box">
+						<dl>
+							<dt>
+								<em class="blind"></em><label for="mocustomerMemberID">카테고리</label>
+							</dt>
+							<form>
+								<select class="category">
+									<option value="computer" selected>컴퓨터</option>
+									<option value="cook">요리</option>
+									<option value="exercise">운동</option>
+								</select>
+							</form>
+						</dl>
+					</div>
+
+
 					<div class="InquiryInput_field_box">
 						<dl>
 							<dt>
@@ -101,10 +116,10 @@
 							</dt>
 							<dd>
 								<p class="InquiryInput_desc_text">
-									- 수집하는 개인정보 항목: 이메일 주소<br />
-									<br /> 개인정보는 문의 접수, 고객 불편 사항 확인 및 처리 결과 회신에 이용되며 전자상거래법 등 관련
-									법령에 따라 <span style="font-size: 19.2px; color: #2d2d2d">
-										<strong>3년간 보관됩니다.</strong>
+									- 수집하는 개인정보 항목: 이메일 주소<br /> <br /> 개인정보는 문의 접수, 고객 불편 사항 확인
+									및 처리 결과 회신에 이용되며 전자상거래법 등 관련 법령에 따라 <span
+										style="font-size: 19.2px; color: #2d2d2d"> <strong>3년간
+											보관됩니다.</strong>
 									</span><br /> 이용자는 본 동의를 거부할 수 있으나, 미동의 시 문의 접수가 불가능합니다.
 								</p>
 								<div class="InquiryInput_check_box">
