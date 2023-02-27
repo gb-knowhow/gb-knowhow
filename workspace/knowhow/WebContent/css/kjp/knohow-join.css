@@ -51,14 +51,14 @@ p.p-text1 {
     margin-left: 10px;
 }
 p.sub-title {
-    margin-left: 365px;
+    margin-left: 325px;
     margin-top: 20px;
 }
 
 p.p-text {
     font-size: 13px;
     color: gray;
-    margin-left: 365px;
+    margin-left: 325px;
     
 }
 
@@ -411,14 +411,14 @@ label {
 
 
 label[for='attach'] .image {
-        position: relative;
-    width: 35%;
+    position: relative;
+    width: 38%;
     height: 52px;
     background-image: url(../../css/kjp/file2.png);
     background-image: 18px;
     background-size: 34%;
     cursor: pointer;
-    margin-left: 410px;
+    margin-left: 354px;
 }
 
 .cancel{
