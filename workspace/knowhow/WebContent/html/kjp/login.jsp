@@ -16,17 +16,9 @@
         <!-- 헤더 -->
       <header>
             <div id="header-center">
-                <a href="www.naver.com" class="logo">
-                    <h1 id="blind">NAVER</h1>
+                <a href="#" class="logo">
+                    <h1 id="blind"></h1>
                 </a>
-                <div id="header-language">
-                    <select id="language-select" name="language-select" title="언어선택">
-                        <option value="ko_KR">한국어</option>
-                        <option value="en_US">English</option>
-                        <option value="zh-Hans_CN">中文(简体)</option>
-                        <option value="zh-Hant_TW">中文(台灣)</option>
-                    </select>
-                </div>
             </div>
         </header> 
         <!-- 컨텐츠 -->
@@ -65,17 +57,6 @@
                                 <div id="login-keep">
                                     <input type="checkbox" id="check-login-keep" value="off">
                                     <label for="keep" class="login-keep-text">로그인 상태 유지</label>
-                                </div>
-                                <div id="ip-check">
-                                    <a href="" id="ip">
-                                        <span class="ip-text">IP보안</span>
-                                    </a>
-                                    <span class="switch-wrapper">
-                                        <input type="checkbox" id="switch" value="off">
-                                        <label for="switch" class="switch-btn">
-                                            <span id="off"></span>
-                                        </label>
-                                    </span>
                                 </div>
                             </div>
                             <!-- login-keep-wrap 끝 -->

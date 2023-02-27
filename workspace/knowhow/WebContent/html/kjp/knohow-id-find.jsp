@@ -18,7 +18,7 @@
     <div class="header1">
         <div class="header-logo">
             <a href="#" id="naver-logo">
-                <h1 id="naver-image"><span> <img src="${pageContext.request.contextPath}/image/logo.png" class="img1"> </span></h1>
+                <h1 id="naver-image"><span></span></h1>
             </a>
         </div>
     </div>
@@ -39,6 +39,5 @@
             </div>
         </div>
     </content>
-    <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
 </html>
