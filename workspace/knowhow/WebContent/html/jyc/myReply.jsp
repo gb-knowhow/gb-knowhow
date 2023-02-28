@@ -195,5 +195,5 @@
 	</div>
 </body>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+	href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css" />
 </html>

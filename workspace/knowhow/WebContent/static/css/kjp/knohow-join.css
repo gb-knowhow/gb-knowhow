@@ -1,0 +1,435 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+
+.content {
+    height: 1300px;
+}
+
+.find-by-id {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
+
+.inner-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+span.inner-text {
+    margin-right: 80px;
+    padding-left: 60px;
+}
+
+.form_info {
+    margin-top: 45px;
+}
+
+strong {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+p.sub-title1 {
+    margin-left: 10px;
+}
+
+p.p-text1 {
+    font-size: 13px;
+    color: gray;
+    margin-left: 10px;
+}
+p.sub-title {
+    margin-left: 325px;
+    margin-top: 20px;
+}
+
+p.p-text {
+    font-size: 13px;
+    color: gray;
+    margin-left: 325px;
+    
+}
+
+.form-content {
+    padding: 30px;
+    margin-top: 18px;
+    background-color: #fff;
+    border: 1px solid rgba(74,101,246,.2);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgb(74 101 246 / 10%);
+}
+
+.input-box {
+    border: 1px solid rgba(126,150,255,.3);
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 15px 11px 10px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+.input1 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+    display: inline-block;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/272/272446.png);
+    background-size: 25%;
+    
+}
+input#resume {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 48px; */
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+input#resume {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 48px; */
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+
+.input-form {
+    position: relative;
+    padding-left: 167px;
+    min-height: 48px;
+}
+.input-form-resume {
+    position: relative;
+    padding-left: 167px;
+    min-height: 48px;
+}
+
+span.absolute {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 157px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+    font-weight: 600;
+}
+span.absolute-resume {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 157px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+    font-weight: 600;
+}
+
+button.email-bt {
+    width: 89px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 25px;
+    margin-left: 15px;
+    border-radius: 12px;
+    border: 0;
+    background: #647dfb;
+    cursor: pointer;
+    color: white;
+}
+.resume-bt {
+    width: 89px;
+    height: 53px;
+    font-size: 14px;
+    line-height: 23px;
+    margin-right: 25px;
+    margin-left: 15px;
+    border-radius: 7px;
+    border: 0;
+    background-image: url(file.png);
+    background-size: 100%;
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.email-input {
+    width: 459px;
+}
+.resume-input {
+    width: 459px;
+}
+
+.form-email {
+    margin-bottom: 25px;
+}
+.form-resume {
+    padding: 30px;
+    margin: 25%;
+    margin-bottom: 0;
+    margin-top: 18px;
+    background-color: #fff;
+    border: 1px solid rgba(74,101,246,.2);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgb(74 101 246 / 10%);
+}
+
+.email-box {
+    display: flex;
+}
+.resume-box {
+    display: flex;
+}
+
+.resume-info {
+    width: 75%;
+    margin: 0 auto;
+}
+
+span.inquiry {
+    margin-top: 14px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+strong.st {
+    font-size: 19px;
+}
+.bt {
+    margin-top: 18px;
+    text-align: center;
+}
+
+button.back-button {
+    width: 110px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 0;
+    background: #388C57;
+    cursor: pointer;
+    color: white;
+}
+button.complete-button {
+    width: 110px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-left: 15px;
+    border-radius: 8px;
+    border: 0;
+    background: #388C57;
+    cursor: pointer;
+    color: white;
+}
+
+input#ck {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+i.icon-checkbox {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+span.text-label {
+    font-size: 13px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.form-list {
+    margin: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.password-eye1{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+}
+.password-eye3{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+}
+.password-eye4{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+}
+.password-eye2{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    margin-top: -12px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_icon_pw_step.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 125px 75px;
+    cursor: pointer;
+}
+
+.err-id{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.err-password{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.err-password-check{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.err-email{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.err-nick{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+.err-age{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+
+.image {
+    width: 150px;
+}
+
+.file-name {
+  	text-align: center;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 22px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+
+label[for='attach'] .image {
+    position: relative;
+    width: 38%;
+    height: 52px;
+    background-image: url(../../css/kjp/file2.png);
+    background-image: 18px;
+    background-size: 34%;
+    cursor: pointer;
+    margin-left: 354px;
+}
+
+.cancel{
+       text-align: center;
+    display: none;
+    width: 29px;
+    height: 24px;
+    position: absolute;
+    right: 75px;
+    top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}

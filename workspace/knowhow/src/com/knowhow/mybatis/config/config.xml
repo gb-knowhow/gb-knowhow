@@ -22,13 +22,13 @@
 	</environments>
 	
 	<mappers>
-		<mapper resource="com/app/mybatis/mapper/memberMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/adminMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/answerCommentMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/answerMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/askAdminMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/questionCommentMapper.xml"/>
-		<mapper resource="com/app/mybatis/mapper/questionMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/memberMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/adminMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/answerCommentMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/answerMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/askAdminMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/questionCommentMapper.xml"/>
+		<mapper resource="com/knowhow/mybatis/mapper/questionMapper.xml"/>
 	</mappers>
 </configuration>
 

@@ -1,0 +1,385 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#menu-side {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    background-color: #474E68;
+}
+
+.menub-box {
+    height: 100%;
+}
+
+#knowhow-logo {
+    width: 90%;
+}
+
+#top-box {
+    display: flex;
+    border-bottom: 2px dotted gray;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #474E68;
+}
+
+#wrap-middle-box{
+    height: 100%;
+}
+
+#middle-box {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#middle-box-contents {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.side-top-margin{
+    margin-top: 20%;
+}
+
+.checkbox-group{
+    width: 100%;
+    height: 60%;
+}
+
+.mouseOnEffect:hover{
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+
+.side-icons {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+}
+
+.side-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 300;
+    margin: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-gap{
+    margin-right: 5%;
+}
+
+.collapsible {
+    display: flex;
+    background-color: #474E68;
+    color: white;
+    cursor: pointer;
+    padding: 5%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1f2537;
+    color: #fff;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: auto;
+}
+.active:after {
+    content: "\2212";
+}
+
+/* 여기까지 사이드바 */
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+    position: relative;
+}
+
+.right-header {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    height: 7vh;
+    box-shadow: 10px 10px 10px 10px gray;
+}
+
+.letter-space {
+    width: 10%;
+    padding-left: 5%;
+}
+
+#clock{
+    margin-left: 60%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.admin-profile{
+    width: 2.3%;
+    margin-left: 1%;
+}
+
+.admin-name{
+    font-size: 0.9rem;
+    margin-left: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.admin-logout{
+    background-color: #fff;
+    margin-top: 2.5px;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.name-logout-space{
+    font-weight: 300;
+}
+
+.right-body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+.dashboard-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    height: 5vh;
+}
+
+.detail-button{
+    width: 11%;
+    height: 1.7rem;
+    margin-right: 3%;
+    border: none;
+    background-color: #F1FAFF;
+}
+
+.detail-button:hover{
+    background-color:   #8bc2df;
+    transition: background-color 0.5s;
+}
+
+.user-list-letter{
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.user-list-contents{
+    border-radius: 10px;
+    width: 82vh;
+    height: 43vh;
+    margin: 10px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    box-shadow: 5px 5px 5px 0 gray;
+}
+
+.user-list-contents:hover{
+    border: 2px solid #8bc2df;
+}
+
+.mentor-list-header{
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+
+}
+
+.mentor-list-contents{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EEEEEE;
+
+}
+
+/* 신규 회원 대시보드 */
+
+.new-user{
+    overflow-y: hidden;
+    height: 50%;
+}
+
+.user-num{
+    text-align: center;
+    width: 10%;
+
+}
+
+.user-role{
+    text-align: center;
+    width: 15%;
+
+}
+
+.user-name{
+    text-align: center;
+    width: 15%;
+
+}
+
+.user-email{
+    text-align: center;
+    width: 30%;
+
+}
+
+
+.user-comment{
+    text-align: center;
+    width: 15%;
+
+}
+
+.user-join-day{
+    text-align: center;
+    width: 15%;
+
+}
+
+.dashboard-label{
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+/* 문의사항 대시보드 */
+
+.qna-num{
+    text-align: center;
+    width: 10%;
+}
+
+.qna-title{
+    text-align: center;
+    width: 35%;
+}
+
+.qna-writer{
+    text-align: center;
+    width: 20%;
+}
+
+.qna-category{
+    text-align: center;
+    width: 20%;
+}
+
+.qna-write-day{
+    text-align: center;
+    width: 15%;
+}
+
+/* 최근 멘티 질문글 */
+
+.ask-num{
+    text-align: center;
+    width: 10%;
+}
+
+.specialization{
+    text-align: center;
+    width: 20%;
+}
+
+.ask-title{
+    text-align: center;
+    width: 30%;
+}
+
+.writer{
+    text-align: center;
+    width: 15%;
+}
+
+.answer{
+    text-align: center;
+    width: 5%;
+}
+
+.ask-write-day{
+    text-align: center;
+    width: 20%;
+}
+
+/* 최근 멘토 답변글 */
+
+.answer-num{
+    text-align: center;
+    width: 10%;
+}
+
+.answer-title{
+    text-align: center;
+    width: 30%;
+}
+
+.like-count{
+    text-align: center;
+    width: 10%;
+}
+
+.answer-write-day{
+    text-align: center;
+    width: 15%;
+}
+

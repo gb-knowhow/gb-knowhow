@@ -174,7 +174,7 @@
 							<div class="question_button">
 								<a href="#" class="question"><img
 									src="https://www.bgscosmetic.co.kr/imgs/cscenter.png"
-									width="50" height="30" alt="질문하기"> <span style="display:inline-block; margin-top:6px;">문의하기</span></a>
+									width="20" height="20" alt="질문하기"> <span style="display:inline-block; margin-top:6px;">문의하기</span></a>
 							</div>
 						</form>
 					</fieldset>
@@ -187,5 +187,5 @@
 	</div>
 </body>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+	href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css" />
 </html>

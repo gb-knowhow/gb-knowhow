@@ -10,7 +10,6 @@ body{
 }
 
 #header{
-	position:sticky;
 	top:0;
 	z-index:2;
 }
@@ -290,15 +289,78 @@ table{
     font-weight: bold;
 }
 
+.main{
+	margin-top : 30px;
+}
 
 .content{
 	float: left;
     width: 747px;
     padding-top: 30px;
 }
+/* 댓글, 답변에만 있는 태그 */
+.my_question_info{
+	margin-top:41px;
+}
+
+.my_question_info dd{
+    float: left;
+    display: inline;
+    margin-top: -2px;
+    padding-right: 22px;
+    color: #e93100;
+    font-family: Tahoma,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 16px;
+    margin-left:0;
+}
+
+.my_question_info dt{
+	float: left;
+    display: inline;
+    margin-left: 26px;
+    padding: 0 4px 0 12px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/line_v2.gif) no-repeat left 1px;
+    font-weight: bold;
+}
 
 
+/* myHomePage에만 있는 테그들 */
 
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:38px;
+}
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
+
+dt .icon_q {
+	display: inline-block;
+    margin: 1px 0 0 0;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -300px;
+    vertical-align: top;
+}
+
+.qna dl dt{
+	margin-top: 3px;
+    margin-bottom: 6px;
+    margin-left:0px;
+}
+
+
+dd .icon_a{
+	display: inline-block;
+    margin: 2px 0 0 0px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/bg_sprite_qna_170227.png) no-repeat 0 -350px;
+    vertical-align: top;
+}
+/*  */
 tbody td{
 	padding: 7px 0 6px;
     border-bottom: 1px solid #f3f3f3;
@@ -311,9 +373,11 @@ td p{
     color:coral;
 }
 
+/*  */
+
 thead th {
 	width: 129px;
-    padding: 19px 0 0 24px;
+    padding: 19px 0 0 0px;
     background: #fbfbfb;
     border-top: 1px solid #fff;
     color: #2e2e2e;

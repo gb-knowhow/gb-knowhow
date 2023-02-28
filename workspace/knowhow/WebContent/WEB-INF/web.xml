@@ -9,4 +9,111 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+    <servlet>
+  	<servlet-name>member</servlet-name>
+  	<servlet-class>com.knowhow.member.MemberFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>member</servlet-name>
+  	<url-pattern>*.member</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>admin</servlet-name>
+  	<servlet-class>com.knowhow.admin.AdminFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>admin</servlet-name>
+  	<url-pattern>*.admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>answer</servlet-name>
+  	<servlet-class>com.knowhow.answer.AnswerFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>answer</servlet-name>
+  	<url-pattern>*.answer</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>answerComment</servlet-name>
+  	<servlet-class>com.knowhow.answerComment.AnswerCommentFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>answerComment</servlet-name>
+  	<url-pattern>*.answerComment</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>askAdmin</servlet-name>
+  	<servlet-class>com.knowhow.askAdmin.AskAdminFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>askAdmin</servlet-name>
+  	<url-pattern>*.askAdmin</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+   <servlet>
+  	<servlet-name>askAdminAnswer</servlet-name>
+  	<servlet-class>com.knowhow.askAdminAnswer.AskAdminAnswerFrontController</servlet-class>
+  </servlet>
+  
+    <servlet-mapping>
+  	<servlet-name>askAdminAnswer</servlet-name>
+  	<url-pattern>*.askAdminAnswer</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>main</servlet-name>
+  	<servlet-class>com.knowhow.main.MainFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>main</servlet-name>
+  	<url-pattern>*.main</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>question</servlet-name>
+  	<servlet-class>com.knowhow.question.QuestionFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>question</servlet-name>
+  	<url-pattern>*.question</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>questionComment</servlet-name>
+  	<servlet-class>com.knowhow.questionComment.QuestionCommentFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>questionComment</servlet-name>
+  	<url-pattern>*.questionComment</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
 </web-app>

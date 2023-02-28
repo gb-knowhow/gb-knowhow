@@ -114,15 +114,15 @@
 			
 			<table class="my_answer_content" width="100%">
 				<colgroup>
-        			<col width="3000">
+        			<col width="1000">
 					<col width="500">
-        			<col width="1200">
+        			<col width="">
     		</colgroup>
 				<thead>
 					<tr>
 						<th>제목</th>
                			<th>디렉토리</th>
-                		<th>작성</th>
+                		<th style="text-align:center;">작성</th>
                 	</tr>
 				</thead>
 					
@@ -151,7 +151,7 @@
 						</td>
 						
 						
-						<td class="first_write_date">
+						<td class="first_write_date" style="text-align:center;">
 							2020.01.01.
 						</td>
 					</tr>
@@ -176,7 +176,7 @@
 					<tr>
 						<th>제목</th>
                			<th>디렉토리</th>
-   	         			<th>답변</th>
+   	         			<th style="text-align:center;">답변</th>
                 		<th>작성</th>
                 	</tr>
 				</thead>
@@ -209,7 +209,7 @@
 						</td>
 						
 						
-						<td class="first_write_date">
+						<td class="first_write_date" style="text-align:center;">
 							2020.01.01.
 						</td>
 					</tr>
@@ -229,5 +229,5 @@
 	
 	
 </body>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myHomePage.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css"/>
 </html>

@@ -1,0 +1,330 @@
+@charset "UTF-8";
+body {
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
+.header1 {
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    padding: 110px 0 30px;
+}
+
+.header-logo {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+#naver-logo {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 62px 0 24px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.img1{
+	width: 181px;
+	
+}
+
+h1 {
+    background-size: 155px 89px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    cursor: pointer;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+content {
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+#content-wrapper {
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+#content-wrapper-inner {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -.33px;
+    color: #1e1e23;
+    margin: 0;
+    padding: 0 0 40px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+/* #content-top-wrapper {
+
+} */
+
+ol, ul {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+li {
+    display: block;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #388C57;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+.button-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px 0 19px 50px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    background: 0 0;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+.button-item:hover{
+	background-color: #388C57;
+}
+
+/* .icon {
+    
+} */
+
+#icon1 {
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    background-position: -32px -32px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://ssl.pstatic.net/static/nid/identify/m_sp_01_idpw_fdd53d03.png");
+    background-size: 82px 62px;
+    background-repeat: no-repeat;
+    text-align: left;
+    cursor: pointer;
+}
+
+.id-text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    color: #303038;
+    cursor: pointer;
+}
+
+#icon2 {
+    background-position: -32px 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    background-image: url("https://ssl.pstatic.net/static/nid/identify/m_sp_01_idpw_fdd53d03.png");
+    background-size: 82px 62px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#icon3 {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    background-image: url("https://ssl.pstatic.net/static/nid/identify/m_sp_01_idpw_fdd53d03.png");
+    background-size: 82px 62px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#list1 {
+    margin-bottom: 14px;
+}
+
+#list2 {
+    margin-bottom: 14px;
+}
+
+#next-text {
+    display: inline-block;
+    padding-left: 24px;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -.3px;
+    color: #929294;
+    text-align: left;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#text-inside {
+    display: inline-block;
+    padding-left: 7px;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: -.3px;
+    color: #929294;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 60px 0 27px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+#footer-inner {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+}
+
+#footer-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+        margin-right: 66px;
+}
+
+#footer-li-1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    border: 0;
+}
+
+#footer-li-2 {
+    position: relative;
+    margin-left: 13px !important;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 1rem;
+    border: 0;
+}
+
+#footer-li-2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    width: 1px;
+    height: 11px;
+    margin-top: -6px;
+    background-color: rgba(0,0,0,.25);
+    opacity: .52;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+#footer-logo1 {
+    display: inline-block;
+    background-position: 0 -58px;
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 11px;
+    background-size: 155px 89px;
+    cursor: pointer;
+}
+
+#footer-logo2 {
+    font-size: 13px;
+    letter-spacing: -.5px;
+    color: rgba(0,0,0,.6);
+    white-space: nowrap;
+    word-break: keep-all;
+    cursor: pointer;
+}
+
+img{
+	width: 99px
+}
