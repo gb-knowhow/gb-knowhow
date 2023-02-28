@@ -20,7 +20,6 @@
             <div class="section_headings section_headings__step1">
               <h1 class="section_headings_title">문의 목록</h1>
               <div class="side _ranking_base_date" id="rankingDate">20일 06시 기준</div>
-              <div class="date_base_sort" id="latest">최신순</div>
             </div>
             <!-- //좋아요 많은 답글 헤딩 -->
             <!-- // 좋아요 많은 답글 본문 -->
