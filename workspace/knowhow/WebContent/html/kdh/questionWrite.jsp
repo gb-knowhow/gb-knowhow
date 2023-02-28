@@ -85,7 +85,7 @@
 									사항</label>
 							</dt>
 							<dd>
-								<textarea id="moText2CA" class="textarea" maxlength="1000"></textarea>
+								<textarea class="textarea" maxlength="1000"></textarea>
 								<div class="err2"></div>
 								<span class="InquiryInput_text_count"> <span
 									id="writeCounter">0</span> 자 입력 / 최대 1000자
