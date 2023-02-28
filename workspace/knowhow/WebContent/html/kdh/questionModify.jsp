@@ -53,6 +53,21 @@
 					<div class="InquiryInput_field_box">
 						<dl>
 							<dt>
+								<em class="blind"></em><label for="mocustomerMemberID">카테고리</label>
+							</dt>
+							<form>
+								<select class="category">
+									<option value="computer" selected>컴퓨터</option>
+									<option value="cook">요리</option>
+									<option value="exercise">운동</option>
+								</select>
+							</form>
+						</dl>
+					</div>
+
+					<div class="InquiryInput_field_box">
+						<dl>
+							<dt>
 								<em class="blind"></em><label for="mocustomerMemberID">아이디</label>
 							</dt>
 							<dd>
