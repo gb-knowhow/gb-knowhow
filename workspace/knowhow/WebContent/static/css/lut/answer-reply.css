@@ -1,0 +1,448 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#menu-side {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    background-color: #474E68;
+}
+
+.menub-box {
+    height: 100%;
+}
+
+#knowhow-logo {
+    width: 90%;
+}
+
+#top-box {
+    display: flex;
+    border-bottom: 2px dotted gray;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #474E68;
+}
+
+#wrap-middle-box{
+    height: 100%;
+}
+
+#middle-box {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#middle-box-contents {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.side-top-margin{
+    margin-top: 20%;
+}
+
+.checkbox-group{
+    width: 100%;
+    height: 60%;
+}
+
+.mouseOnEffect:hover{
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+
+.side-icons {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%) sepia(2%) saturate(7459%) hue-rotate(3deg) brightness(109%) contrast(105%);
+}
+
+.side-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 300;
+    margin: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-gap{
+    margin-right: 5%;
+}
+
+.collapsible {
+    display: flex;
+    background-color: #474E68;
+    color: white;
+    cursor: pointer;
+    padding: 5%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #404258;
+    transition: background-color 0.5s;
+}
+.content {
+    padding: 0 18px;
+    cursor: pointer;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #1f2537;
+    color: #fff;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: auto;
+}
+.active:after {
+    content: "\2212";
+}
+
+/* 여기까지 사이드바 */
+
+.letter-space {
+    width: 69.8%;
+    padding-left: 3%;
+}
+
+
+.right-body{
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-header {
+    position: relative;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    height: 7vh;
+    width: 100%;
+}           
+
+.user-list-letter{
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+#clock{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.admin-profile{
+    width: 2.3%;
+    margin-left: 1%;
+}
+
+.admin-name{
+    font-size: 0.9rem;
+    margin-left: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.admin-logout{
+    background-color: #fff;
+    margin-top: 2.5px;
+    padding-left: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.name-logout-space{
+    font-weight: 300;
+}
+
+
+.user-list-contents{
+    position: relative;
+    border-radius: 10px;
+    width: 160vh;
+    height: 70vh;
+    margin: 2% 5% 5% 5%;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 0 gray;
+}
+
+.member-input-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+}
+
+#right-side {
+    width: 85%;
+    height: auto;
+    position: relative;
+}
+
+.member-search-wrap {
+    padding-right: 3%;
+}
+
+.member-search{
+    width: 40vh;
+    height: 5vh;
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+}
+
+#search-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.search-border{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #EEEEEE;
+}
+
+
+.member-delete-button{
+    background-color: #F1416C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.member-delete-button:hover{
+    background-color:#ff0000;
+    transition: background-color 0.5s;
+ }
+
+.member-delete-button-wrap{
+    padding-left: 3%;
+}
+
+.total-mentor{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 0.9rem;
+}
+
+.total-mentor-num{
+    margin-left: 0.5%;
+    color: #F1416C;
+}
+
+.mentor-list-header{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.mentor-list-contents{
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 5vh;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #EEEEEE;
+
+}
+
+.checkbox-zip{
+    text-align: center;
+    width: 7%;
+}
+
+.checkbox-zip input[type=checkbox]{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.answer-reply-num{
+    text-align: center;
+    width: 10%;
+
+}
+
+.answer-num{
+    text-align: center;
+    width: 10%;
+
+}
+
+.specialization{
+    text-align: center;
+    width: 15%;
+
+}
+
+.user-role{
+    text-align: center;
+    width: 10%;
+}
+
+.user-nick-name{
+    text-align: center;
+    width: 15%;
+
+}
+
+
+.answer-reply-contents{
+    text-align: center;
+    width: 40%;
+
+}
+
+
+.user-answer-reply-day{
+    text-align: center;
+    width: 15%;
+
+}
+
+.detail{
+    cursor: pointer;
+    text-align: center;
+    width: 10%;
+}
+
+.detail-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    top: 3px;
+}
+
+.detail-button{
+    position: relative;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.detail-button:hover{
+    background-color: #EEEEEE;
+    transition: background-color 0.5s;
+}
+
+.page-button-box{
+width: 100%;
+text-align: center;
+position: absolute;
+bottom: 3%;
+}
+
+.page-button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #81839C; 
+    color: #fff;
+}
+
+.page-button2{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+}
+
+.page-button2:hover{
+    background-color: #81839C;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+
+
+
+/* 모달창 */
+.my_modal {
+    display: none;
+    width: 40%;
+    height: auto;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+.my_modal .modal_close_btn {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+}
+
+.comment-title{
+    margin-top: 10%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid black;
+}
+
+.comment-detail{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}

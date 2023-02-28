@@ -1,0 +1,256 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} 
+
+.content {
+    height: 620px;
+}
+span.span-text {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.find-by-id {
+    width: 75%;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+span.inner-text {
+    margin-right: 80px;
+    padding-left: 60px;
+}
+
+.form_info {
+    margin-top: 45px;
+}
+
+strong {
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+
+p.p-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.form-content {
+    padding: 30px;
+    margin-top: 18px;
+    background-color: #fff;
+    border: 1px solid rgba(74,101,246,.2);
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgb(74 101 246 / 10%);
+}
+
+.input-box {
+    border: 1px solid rgba(126,150,255,.3);
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+input#email {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+input#name {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+input#nick {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 15px 11px 24px;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    line-height: 24px;
+    caret-color: #6175e6;
+    outline: none;
+}
+
+.input-form {
+    position: relative;
+    padding-left: 167px;
+    min-height: 48px;
+    margin-bottom: 20px;
+}
+.absolute {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 157px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+}
+.absolute-name {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 157px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+}
+span.absolute-nick {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 157px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #4c4c4c;
+}
+
+button.email-bt {
+    width: 93px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: -3px;
+    margin-left: 13px;
+    border-radius: 12px;
+    border: 0;
+    background: #388C57;
+    cursor: pointer;
+    color: white;
+}
+
+.name-input {
+    width: 459px;
+}
+.nick-input {
+    width: 459px;
+}
+.email-input {
+    width: 459px;
+}
+
+.form-nick {
+    margin-bottom: 25px;
+}
+.form-name {
+    margin-bottom: 25px;
+}
+.form-email {
+    margin-bottom: 25px;
+}
+
+.name-box {
+    display: flex;
+}
+.nick-box {
+    display: flex;
+}
+.email-box {
+    display: flex;
+}
+
+span.inquiry {
+    margin-top: 48px;
+    display: inline-block;
+    margin-left: 297px;
+}
+.bt {
+    margin-top: 15px;
+    text-align: right;
+    width: 75%;
+}
+
+button.back-button {
+    width: 59px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 0px;
+    margin-left: 7px;
+    border-radius: 8px;
+    border: 0;
+    background: #388C57;
+    cursor: pointer;
+    color: white;
+}
+button.complete-button {
+    width: 59px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 0px;
+    margin-left: 7px;
+    border-radius: 8px;
+    border: 0;
+    background: #388C57;
+    cursor: pointer;
+    color: white;
+}
+
+.form-list {
+    margin-left: 25%;
+    width: 50%;
+}
+input#ck {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+i.icon-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+span.text-label {
+    font-size: 13px;
+}
+
+label {
+    cursor: pointer;
+}

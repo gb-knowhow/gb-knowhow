@@ -186,9 +186,10 @@
 	</div>
 	</div>
 	
-	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </div>
+<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </div>
+
 </body>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myAnswer.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css"/>
 </html>

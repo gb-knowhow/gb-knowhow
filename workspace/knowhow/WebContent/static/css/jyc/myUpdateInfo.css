@@ -1,0 +1,543 @@
+@charset "UTF-8";
+.containter{
+	position:static;
+}
+
+body{
+	font-family: 'Helvetica Neue','Apple SD Gothic Neo','나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#header{
+	top:0;
+	z-index:2;
+}
+.all_content{
+	margin-top: 20px;
+	margin-bottom : 80px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+p{
+	margin:9px;
+	padding:0;
+}
+li, ul {
+	list-style:none;
+}
+
+dt{
+	display:inline-block;
+}
+
+em{
+	font-style:normal;
+}
+
+table{
+	 margin: -2px 0 48px 0;
+	 width:760px;
+}
+
+.body_content{
+	display:flex;
+	justify-content:center;
+}
+
+.nav{
+	position: relative;
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.nav_inner{
+	position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.menu{
+	float:left;
+	position: relative;
+    height: 50px;
+    margin-left: 15px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav_list .menu em{
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 17px 0;
+    vertical-align: top;
+}
+
+.ask{
+	position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    height: 50px;
+    padding: 0 18px;
+    line-height: 50px;
+    border: 1px solid #388C57;
+    background-color: #388C57;
+    color: #fff;
+    font-size: 15px;
+}
+.my_main_content{
+	width:980px;
+	margin: 0 auto;
+}
+
+.my_personal{
+	position: relative;
+    width: 980px;
+    background: url(/css/jyc/image/personal.png) repeat-y;
+    z-index:0;
+}
+
+.my_personal_top{
+	height: 4px;
+    line-height: 0;
+    font-size: 0;
+    background: url(/css/jyc/image/personal_top.png) no-repeat;
+}
+
+.my_personal .my_personal_inner{
+	position: relative;
+    width: 1000px;
+    padding: 0 4px 22px 27px;
+    background: url(/css/jyc/image/personal_inner.png) no-repeat left bottom;
+    zoom: 1;
+    height:190px;
+}
+
+.profile_section{
+	position: relative;
+    float: left;
+    width: 119px;
+    margin-right: 51px;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.profile_gruop{
+	width: 134px;
+    height: 134px;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail{
+	width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    background-position: 0 0;
+    background-size: 100% auto;
+}
+
+.thumbnail .img{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+
+.photo_btn{
+	width: 15px;
+    height: 15px;
+    display: block;
+    overflow: hidden;
+    background-position: -255px 0;
+    background-image: url(https://ssl.pstatic.net/static/kin/09renewal/sp_profile_161027.png);
+}
+
+
+.profile_info{
+	width: 100%;
+    clear: both;
+    margin: 12px 0 0;
+    zoom: 1;
+}
+.profile_name{
+	margin-bottom: 7px;
+}
+.profile_user{
+	display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.answer_date{
+	margin-bottom: -2px;
+    padding: 0;
+    color: #909090;
+    font-size:12px;
+}
+
+.profile_section2{
+	float: left;
+    width: 339px;
+    margin-right: 40px;
+    font-size:13px;
+}
+
+.my_intro{
+	position: relative;
+    padding: 20px 0 17px;
+}
+
+
+.my_title{
+	padding-bottom:0;
+	padding-left:50px;
+}
+
+.sum{
+	margin-bottom: 7px;
+    color: #2e2e2e;
+    letter-spacing: -1px;
+}
+
+.my_title .action{
+	margin-bottom: 7px;
+    padding-top: 1px;
+    color: #919190;
+    font-size: 11px;
+    line-height: 17px;
+}
+
+
+
+.profile_section3{
+	float: left;
+    width: 395px;
+    margin-left:30px;
+    font-size:13px;
+}
+
+
+.my_spec{
+	zoom: 1;
+    clear: both;
+    padding: 12px 20px 11px;
+    color: #606060;
+    line-height: 22px;
+    margin-top:25px;
+}
+
+.my_spec dt{
+	box-sizing: border-box;
+    float: left;
+    width: 20%;
+    padding:5px;
+    text-align:center;
+}
+
+.my_spec dd{
+	float: left;
+    width: 81%;
+    overflow: visible;
+    text-indent: 10px;
+    padding-left: 40px
+}
+
+.q_list{
+	display: inline-block;
+	width:55%;
+	float: left;
+    color: #606060;
+}
+
+
+
+.left_nav{
+	position:relative;
+	float:left;
+	width: 125px;
+    padding: 28px 40px 100px 0;
+    z-index:0;
+}
+
+.left_nav ul{
+	overflow: hidden;
+    margin-top: 10px;
+    margin-left:-37px;
+}
+
+.left_nav ul li{
+	border-top: 1px solid #e6e6e6;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+
+.content{
+	float: left;
+    width: 747px;
+    padding-top: 30px;
+}
+
+
+
+tbody td{
+	padding: 7px 0 6px;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 11px;
+    line-height: 18px;
+    color: #848484;
+}
+
+td p{
+    color:coral;
+}
+
+thead th {
+	width: 129px;
+    padding: 19px 0 0 24px;
+    background: #fbfbfb;
+    border-top: 1px solid #fff;
+    color: #2e2e2e;
+    vertical-align: top;
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+fieldset{
+	color: #c4c4c4;
+    text-align: center;
+    border : 0;
+}
+
+fieldset input[type="text"], input[type="password"], input[type="email"]{
+	width: 219px;
+    height: 15px;
+    margin-left: 1px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #b5b5b5;
+    border-color: #b5b5b5 #ddd #ddd #b5b5b5;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+input[type="password"]{
+	padding-right:18px;
+}
+
+
+label[for='profile_upload'] {
+	text-align:center;
+	position:relative;
+	
+}
+
+
+
+label[for='profile_upload'] div.image{
+	background-position: center;
+	position: relative;
+ 	height: 150px;
+ 	background-image: url('image/attach.png');
+ 	background-size: 100%;
+ 	cursor: pointer;
+ 	width: 20%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+label[for='resume_upload'] {
+	text-align:center;
+	position:relative;
+	
+}
+
+
+
+label[for='resume_upload'] div.image{
+	background-position: center;
+	position: relative;
+ 	height: 150px;
+ 	background-image: url('image/resume.png');
+ 	background-size: 100%;
+ 	cursor: pointer;
+ 	width: 20%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+
+
+.file_name{
+	text-align: center;
+	font-size: 14px;
+}
+
+
+.close{
+	position: absolute;
+    left: 135px;
+    top: 4px;
+    font-size: 19px;
+    cursor:pointer;
+}
+
+tbody tr th{
+	width: 129px;
+    padding: 19px 0 0 24px;
+    background: #fbfbfb;
+    border-top: 1px solid #fff;
+    color: #2e2e2e;
+    vertical-align: top;
+    line-height: 1.4;
+    text-align: left;
+    letter-spacing: -1px;
+}
+
+
+form{
+	position:relative;
+}
+
+
+.agree_area{
+	margin-top:30px
+}
+
+.agree_checkbox{
+	position: relative;
+    line-height: 22px;
+    text-align:left;
+    margin: 15px;
+}
+
+.agree_checkbox label{
+	display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.agree_checkbox label input{
+	position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.agree_checkbox label em{
+	color:#666;
+	
+}
+.agree_right{
+	position: absolute;
+    top: 0;
+    right: 0;
+    font-size:12px;
+}
+
+.agree_list_area{
+	margin-top: 20px;
+    padding: 16px;
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+}
+
+.agree_checkbox .agree_for__privacy{
+	color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.agree_checkbox .privacy_discription{
+    margin-top: 7px;
+    padding-left: 32px;
+    color: #666;
+    font-size: 13px;
+}
+
+.agree_checkbox .privacy_discription .highlight{
+	font-size: 14px;
+    font-weight: 900;
+    color: #00704a;
+    
+}
+
+.agree_for__responsibilty{
+	color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.agree_checkbox{
+    position: relative;
+    line-height: 20px;
+}
+
+.agree_right{
+    color: #ff7070;
+}
+
+.button{
+	margin-top:30px;
+	text-align:center;
+}
+
+
+.save{
+	background-color:  #ddd;
+    color: #fff;
+    width: 60px;
+    height: 28px;
+    font-weight: 500;
+    border:0;
+}
+
+.cancel{
+	border: solid 1px #cfcfcf;
+	width: 60px;
+    height: 28px;
+    background-color: #fff;
+    color: #a4a4a4;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
