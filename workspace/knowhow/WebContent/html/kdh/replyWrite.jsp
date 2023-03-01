@@ -1,17 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>질문 수정페이지</title>
-<!-- Favicon -->
+<meta charset="UTF-8">
+<title>답글 작성</title>
 <link rel="shortcut icon" type="image/x-icon"
 	href="${pageContext.request.contextPath}/image/favicon.ico">
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/kdh/questionModify.css" />
+	href="${pageContext.request.contextPath}/css/kdh/questionWrite.css" />
 </head>
 <body>
 	<header id="header"><jsp:include
@@ -22,7 +19,7 @@
 				<div class="EndTopTitle_title_box">
 					<h2>
 						<div class="firstTitle">
-							<span class="titleColor">Know-How </span>질문
+							<span class="titleColor">Know-How </span>답변
 						</div>
 					</h2>
 					<span class="EndTopTitle_bottom"></span>
@@ -34,7 +31,7 @@
 					<div style="line-height: 1.8">
 						<span
 							style="font-size: 12pt; font-family: 나눔바른고딕, NanumBarunGothic, NanumBarunGothicOTF;">
-							은퇴자 분들에게 궁금하신 부분을 질문해주세요!<br /> <br />
+							도움이 필요한 멘티들에게 답변해주세요!<br /> <br />
 						</span>
 					</div>
 					<div style="line-height: 1.8">
@@ -48,7 +45,7 @@
 				<fieldset class="InquiryInput_field_set_downContent">
 					<legend class="blind">문의내용 작성</legend>
 					<div class="InquiryInput_guide_text" style="color: red;">※
-						작성하신 내용에 욕설, 성희롱 등의 내용이 포함된 경우 관련 법령에 따라 조치될 수 있습니다.</div>
+						작성하신 답변 내용에 욕설, 성희롱 등의 내용이 포함된 경우 관련 법령에 따라 조치될 수 있습니다.</div>
 					<span class="InquiryInput_add_text">필수 입력 사항</span>
 					<div class="InquiryInput_field_box">
 						<dl>
@@ -65,6 +62,7 @@
 						</dl>
 					</div>
 
+
 					<div class="InquiryInput_field_box">
 						<dl>
 							<dt>
@@ -80,7 +78,7 @@
 					<div class="InquiryInput_field_box">
 						<dl>
 							<dt class="InquiryInput_essential">
-								<em class="blind">필수 입력 사항</em> <label for="questionTitle">질문
+								<em class="blind">필수 입력 사항</em> <label for="questionTitle">답변
 									제목</label>
 							</dt>
 							<dd>
@@ -95,14 +93,14 @@
 					<div class="InquiryInput_write_area">
 						<dl>
 							<dt class="InquiryInput_essential">
-								<em class="blind">필수 입력 사항</em> <label for="moText2CA">질문
+								<em class="blind">필수 입력 사항</em> <label for="moText2CA">답변
 									사항</label>
 							</dt>
 							<dd>
-								<textarea id="moText2CA" class="textarea" maxlength="1000"></textarea>
+								<textarea class="textarea" maxlength="1000"></textarea>
 								<div class="err2"></div>
 								<span class="InquiryInput_text_count"> <span
-									id="modifyCounter">0</span> 자 입력 / 최대 1000자
+									id="writeCounter">0</span> 자 입력 / 최대 1000자
 								</span>
 							</dd>
 						</dl>
@@ -131,12 +129,8 @@
 					<div class="CommonBtn_common_btn_wrap">
 						<div class="CommonBtn_common_btn_box">
 							<button type="button"
-								class="CommonBtn_common_btn CommonBtn_on button1">수정하기</button>
-						</div>
-						<div class="CommonBtn_common_btn_box">
-						<!-- class명 delete로 쓰세요 -->
-							<button type="button"
-								class="CommonBtn_common_btn CommonBtn_on button1 delete">삭제하기</button>
+								class="CommonBtn_common_btn CommonBtn_on button1">답변하기
+							</button>
 						</div>
 					</div>
 				</fieldset>
@@ -147,6 +141,5 @@
 			page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script
-	src="${pageContext.request.contextPath}/js/kdh/questionModify.js"></script>
+<script src="${pageContext.request.contextPath}/js/kdh/replyWrite.js"></script>
 </html>
