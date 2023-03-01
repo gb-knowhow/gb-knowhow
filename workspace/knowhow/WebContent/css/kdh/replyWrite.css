@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+.EndTopTitle_top_title {
+	padding: 61px 0 60px;
+	text-align: center;
+}
+
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input,
+	legend, li, ol, p, select, table, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+}
+
+@media ( min-width : 1025px) {
+	.firstTitle {
+		font-family: NanumSquareB;
+	}
+}
+
+.firstTitle {
+	line-height: 38px;
+	font-size: 38px;
+	letter-spacing: -1px;
+	text-shadow: 0 0 2px rgb(0 0 0/ 10%);
+	font-weight: 700;
+}
+
+button {
+	-webkit-appearance: none;
+	border: 0;
+	background: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	color: inherit;
+}
+
+#app, body, button, html, input, select, textarea {
+	font-family: NanumSquareR, -apple-system, AppleSDGothicNeo, SFProDisplay,
+		BlinkMacSystemFont, HelveticaNeue, Helvetica, arial, 'sans-serif';
+}
+
+.titleColor {
+	color: #388C57;
+}
+
+.InquiryInput_ask_form div[class*='innerFull'] {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.EndTopTitle_bottom {
+	display: block;
+	padding-top: 11px;
+	line-height: 26px;
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	color: rgba(34, 34, 34, 0.8);
+}
+
+.InquiryInput_ask_form div[class*='innerFull'] {
+	padding-bottom: 120px !important;
+}
+
+body {
+	line-height: 18px;
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	background-color: #fff;
+}
+
+/*
+.InquiryInput_field_set_downContent {
+	min-inline-size: 0;
+}
+*/
+
+fieldset, img {
+	border: 0;
+	vertical-align: top;
+}
+
+.blind {
+	overflow: hidden !important;
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.InquiryInput_guide_text {
+	padding: 18px 0;
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.InquiryInput_add_text {
+	display: block;
+	line-height: 24px;
+	padding-bottom: 10px;
+	text-align: right;
+	font-size: 14px;
+	letter-spacing: -0.35px;
+	color: #388C57;
+}
+
+.InquiryInput_field_set_downContent>div[class*='_box'] {
+	margin-bottom: 30px;
+}
+
+.InquiryInput_field_box {
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+dl, ol, ul, li {
+	list-style: none;
+}
+
+.category {
+	width:150px;
+	text-align:center;
+	border-color: #388C57;
+	border-radius: 0.5em;
+}
+
+.InquiryInput_ask_form dl {
+	display: -moz-box;
+	display: flex;
+	display: -webkit-flex;
+	font-size: 16px;
+}
+
+.InquiryInput_ask_form dl dt {
+	width: 185px;
+	-webkit-flex-shrink: 0;
+	flex-shrink: 0;
+	line-height: 20px;
+	padding: 8px 10px 7px 0;
+	color: #222;
+	letter-spacing: -0.5px;
+	font-weight: 700;
+}
+
+@media ( min-width : 1025px) {
+	.InquiryInput_ask_form dl dt {
+		font-family: NanumSquareB;
+	}
+}
+
+address, em {
+	font-style: normal;
+}
+
+.InquiryInput_ask_form dl dd {
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	flex-grow: 1;
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_login_link {
+	display: inline-block;
+	line-height: 35px;
+	color: #388C57;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.InquiryInput_ask_form dl dt.InquiryInput_essential {
+	color: #388C57;
+}
+
+.InquiryInput_ask_form dl dt.InquiryInput_essential {
+	color: #388C57;
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_input_text {
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 18px;
+	outline: none;
+	font-size: 16px;
+	background: transparent;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: rgba(34, 34, 34, 0.8);
+}
+
+.InquiryInput_write_area {
+	margin-bottom: 30px;
+	line-height: 0;
+}
+
+.InquiryInput_write_area textarea {
+	width: 100%;
+	height: 212px;
+	line-height: 16px;
+	padding: 20px;
+	font-size: 16px;
+	color: #333;
+	line-height: 25px;
+	resize: none;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input, textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 0;
+}
+
+.InquiryInput_write_area .InquiryInput_text_count {
+	display: block;
+	margin-top: 11px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #666;
+	letter-spacing: -0.35px;
+}
+
+.InquiryInput_field_set>div[class*='_box'] {
+	margin-bottom: 30px;
+}
+
+.InquiryInput_field_box {
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_desc_text {
+	line-height: 24px;
+	letter-spacing: -0.47px;
+	color: #666;
+}
+
+.InquiryInput_field_box.InquiryInput_privacy dd .InquiryInput_check_box
+	{
+	padding-top: 18px;
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_check_box input {
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+	background:
+		url('https://ssl.pstatic.net/static/help/new_help/checkbox_btn.svg')
+		no-repeat;
+	background-size: 22px 22px;
+	-webkit-background-size: 22px 22px;
+	vertical-align: -5px;
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_check_box label {
+	display: inline-block;
+	line-height: 22px;
+	color: #666;
+	letter-spacing: -0.27px;
+}
+
+.CommonBtn_common_btn_wrap {
+	margin-top: 64px;
+	text-align: center;
+}
+
+.CommonBtn_common_btn_wrap .CommonBtn_common_btn_box {
+	display: inline-block;
+	text-align: center;
+}
+
+.CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn.CommonBtn_on
+	{
+	/* color: #fff; */
+	border-color: #e0e0e0;;
+	/* background-color: blue; */
+	/* 
+  color: #fff; */
+	/* border-color: blue; */
+	/* background-color: blue; */
+}
+
+.CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn
+	{
+	display: inline-block;
+	width: 196px;
+	padding: 14px 0;
+	margin: 0 10px;
+	line-height: 20px;
+	color: #222;
+	font-size: 18px;
+	letter-spacing: -0.56px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.InquiryInput_ask_form dl dd .InquiryInput_id_text {
+	display: inline-block;
+	line-height: 35px;
+	color: rgba(34, 34, 34, .8);
+}
+
+.input-agree {
+	cursor: pointer;
+}
+
+.lab {
+	cursor: pointer;
+}
+
+.CommonBtn_common_btn_wrap .CommonBtn_common_btn_box .CommonBtn_common_btn
+	{
+	display: inline-block;
+	width: 196px;
+	padding: 14px 0;
+	margin: 0 10px;
+	line-height: 20px;
+	color: #222;
+	font-size: 18px;
+	letter-spacing: -.56px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.arr {
+	margin-top: 11px;
+	font-size: 14px;
+}
+
+.err2 {
+	margin-top: 16px;
+	font-size: 14px;
+}
