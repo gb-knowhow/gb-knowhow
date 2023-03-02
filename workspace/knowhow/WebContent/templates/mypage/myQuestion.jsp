@@ -9,7 +9,7 @@
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
 </head>
 <body>
-<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" /></header>
 	<div class="all_content">
 
 
@@ -191,7 +191,7 @@
 
 			</div>
 		</div>
-		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 	</div>
 </body>
 <link rel="stylesheet"
