@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>header</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/include/header_footer.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/include/header_footer.css" />
   </head>
      <body>
      <div class="header_outer">
@@ -192,38 +192,23 @@
 	         </div>
 	       </div>
 	       <navigation id="navigation">
-	       		
-	            <div class="navi_wrap">
-	                <div class="navi_container">
-	                    <div class="navi_menu navi_knowhow">
-	                        <img src="${pageContext.request.contextPath }/static/css/main/include/image/header1.png">
-	                        <a class="header_message" href="#">
-	                            <div class="header_line">노하우 <img class="lt" src="${pageContext.request.contextPath }/static/css/main/include/image/lt.png"> </div>
-	                            <div>궁금한 질문을 빠르게</div>
-	                        </a>    
-	                    </div>
-	
-	                    <div class="navi_menu navi_howto">
-	                        <img src="${pageContext.request.contextPath }/static/css/main/include/image/header2.png">
-	                        <a class="header_message" href="#">
-	                            <div class="header_line">이용방법 <img class="lt" src="${pageContext.request.contextPath }/static/css/main/include/image/lt.png"> </div>
-	                            <div>서비스 이용을 간편하게</div>
-	                        </a>    
-	                    </div>
-	
-	                    <div class="navi_menu navi_ask">
-	                        <img src="${pageContext.request.contextPath }/static/css/main/include/image/header3.png">
-	                        <a class="header_message" href="#">
-	                            <div class="header_line">문의게시판 <img class="lt" src="${pageContext.request.contextPath }/static/css/main/include/image/lt.png"> </div>
-	                            <div>문의사항을 친절하게</div>
-	                        </a>    
-	                    </div>
-	                </div>
-	            </div>
+		    <div class="navi_wrap" style="width: 100%">
+		      <div class="navi_container">
+		        <div class="navi_menu navi_knowhow">
+		          <a href="#"> 노하우 </a>
+		        </div>
+		        <div class="navi_menu navi_howto">
+		          <a href="#">이용방법</a>
+		        </div>
+		        <div class="navi_menu navi_ask">
+		          <a href="#">문의게시판</a>
+		        </div>
+		      </div>
+		    </div>
         	</navigation>
         </div>
       </div>
    </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="${pageContext.request.contextPath}/static/js/main/include/header.js"></script>
+  <script src="${pageContext.request.contextPath}/js/hhs/include/header.js"></script>
 </html>
