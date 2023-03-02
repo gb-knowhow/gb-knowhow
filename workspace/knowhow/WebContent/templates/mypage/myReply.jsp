@@ -23,7 +23,7 @@
 
 						<div class="profile_group">
 							<span class="thumbnail"> 
-								<img src="${pageContext.request.contextPath}static/image/mentor.png" width="100%" height="100%" />
+								<img src="${pageContext.request.contextPath}/static/image/mentor.png" width="100%" height="100%" />
 							</span>
 						</div>
 
@@ -194,6 +194,5 @@
 		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 	</div>
 </body>
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/jyc/myAnswer.css" />
+<link rel="stylesheet"href="${pageContext.request.contextPath}/static/css/mypage/myUpdateInfo.css" />
 </html>

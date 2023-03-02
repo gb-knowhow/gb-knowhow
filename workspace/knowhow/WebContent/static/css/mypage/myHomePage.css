@@ -318,32 +318,7 @@ table{
 	
 }	
 
-.level_wrap{
-	position: relative;
-	padding-bottom: 26px;
-}
-.my_level{
-	position: absolute;
-    line-height: 16px;
-    overflow: hidden;
-}
 
-.level_number{
-	 background: #fb9300;
-}
-
-
-
-.lv_content{
-	overflow:hidden;
-	text-align:center;
-}
-
-
-.lv_content li{
-	position: relative;
-    height: 36px;
-}
 
 
 .my_spec{
