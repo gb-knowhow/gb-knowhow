@@ -9,7 +9,7 @@
 	<typeAliases>
 		<typeAlias type="com.knowhow.member.domain.MemberVO" alias="memberVO"/>
 		<typeAlias type="com.knowhow.member.domain.ResumeVO" alias="resumeVO"/>
-		<typeAlias type="com.knowhow.member.domain.BannerVO" alias="bannerVO"/>
+		<typeAlias type="com.knowhow.admin.domain.BannerVO" alias="bannerVO"/>
 		<typeAlias type="com.knowhow.admin.domain.MenteeListDTO" alias="menteeListDTO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerLikeVO" alias="answerLikeVO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerVO" alias="answerVO"/>
@@ -19,6 +19,7 @@
 		<typeAlias type="com.knowhow.question.domain.CategoryVO" alias="categoryVO"/>
 		<typeAlias type="com.knowhow.question.domain.QuestionLikeVO" alias="questionLikeVO"/>
 		<typeAlias type="com.knowhow.question.domain.QuestionVO" alias="questionVO"/>
+		<typeAlias type="com.knowhow.question.domain.QuestionDTO" alias="questionDTO"/>
 		<typeAlias type="com.knowhow.questionComment.domain.QuestionCommentVO" alias="questionCommentVO"/>
 	</typeAliases>
 	

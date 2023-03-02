@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="knohow-login.css">
     <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="knohow.jpeg">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/login.css"/>
     <title>노하우 : 로그인</title>
 </head>
 <body>
+<form action="loginAction.member">
     <div id="wrap">
         <!-- 헤더 -->
       <header>
@@ -43,19 +43,19 @@
                                     <div class="icon-wrapper">
                                         <span id="icon-id"></span>
                                     </div>
-                                    <input type="text" id="input-id" placeholder="아이디">
+                                    <input type="text" id="input-id" placeholder="아이디" name="memberIdentification">
                                 </div>
                                 <div id="password-input-wrapper">
                                     <div class="icon-wrapper">
                                         <span id="icon-password"></span>
                                     </div>
-                                    <input type="password" id="input-password" placeholder="비밀번호">
+                                    <input type="password" id="input-password" placeholder="비밀번호" name="memberPassword">
                                 </div>
                             </div>
                             <!-- 아이디 패스워드 인풋 끝 -->
                             <div id="login-keep-wrap">
                                 <div id="login-keep">
-                                    <input type="checkbox" id="check-login-keep" value="off">
+                                    <input type="checkbox" id="check-login-keep" checked="checked" name="autoLogin">
                                     <label for="keep" class="login-keep-text">로그인 상태 유지</label>
                                 </div>
                             </div>
@@ -103,7 +103,9 @@
             </div>
         </footer>
     </div>
+   </form>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js">
 </script>
+<script src="${pageContext.request.contextPath}/static/js/member/login.js"></script>
 </html>

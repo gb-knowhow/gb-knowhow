@@ -11,8 +11,9 @@
 </head>
 <body>
 	<header id="header">
-		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true" />
 	</header>
+	<form action="${pageContext.request.contextPath}/joinAction.member" method="post" enctype="multipart/form-data" >
     <div class="wrapper">
         <div class="section">
             <div class="content">
@@ -23,7 +24,7 @@
                             <p class="sub-title1">
                                 <span class="span-text1">회원정보 입력</span>
                             </p>
-                            <p class="p-text1"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수기제 사항입니다 모두 입력후 확인 버튼을 눌러주세요.</p>
+                            <p class="p-text1"></svg>필수기제 사항입니다 모두 입력후 확인 버튼을 눌러주세요.</p>
                             <div class="form-content">
                                 <div class="form-email">
                                     <div class="input-form">
@@ -34,11 +35,11 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="id" class="input">
+                                                            <input type="text" id="id" class="input" name="memberIdentification">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="err-id"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
+                                                <div class="err-id">필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -52,7 +53,7 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="password" id="password" class="input">
+                                                            <input type="password" id="password" class="input" name="memberPassword">
                                                             <div class="password-eye1"></div>
                                                             <div class="password-eye3" style="display: none;"></div>
                                                         </div>
@@ -78,7 +79,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="err-password-check"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
+                                                <div class="err-password-check">필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -92,11 +93,11 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="email" class="input">
+                                                            <input type="text" id="email" class="input" name="memberEmail">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="err-email"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
+                                                <div class="err-email">필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -110,11 +111,29 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="nick-name" class="input">
+                                                            <input type="text" id="nick-name" class="input" name="memberNickname">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="err-nick"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
+                                                <div class="err-nick">필수입력 사항입니다.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-email">
+                                    <div class="input-form">
+                                        <span class="absolute">이름</span>
+                                        <div>
+                                            <div class="">
+                                                <div class="form-email">
+                                                    <div class="eamil-box">
+                                                        <div class="input-box">
+                                                            <label for=""></label>
+                                                            <input type="text" id="name" class="input" name="memberName">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="err-name" style="display:none">필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -128,11 +147,11 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="age" placeholder="" class="input">
+                                                            <input type="text" id="age" placeholder="" class="input" name="memberAge">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="err-age"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" class="icon__IT9jA"><path fill="#FF7B7B" d="m4.356 2.398 2.088-.792.486 1.386-2.124.702 1.332 1.764-1.188.882-1.332-1.854-1.26 1.854-1.206-.882 1.332-1.764-2.088-.702.486-1.386 2.034.792V.148h1.44z"></path></svg>필수입력 사항입니다.</div>
+                                                <div class="err-age">필수입력 사항입니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +182,7 @@
                                                         <div class="image"></div>
                                                         <div class="file-name"></div>
                                                     </label>
-                                                    <input type="file" id="attach" style="display: none" />
+                                                    <input type="file" id="attach" style="display: none" name="memberResume" />
                                                 </div>
                                                 <span class="cancel">X</span>
                                             </div>
@@ -183,7 +202,7 @@
                         </span>
                         <div class="bt">
                             <button type="button" class="back-button">취소</button>
-                            <button type="button" class="complete-button" >완료</button>
+                            <button type="submit" class="complete-button" >완료</button>
                         </div>
                     </div>
                     
@@ -191,6 +210,9 @@
             </div>
         </div>
     </div>
+  </form>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script> let contextPath = "${pageContext.request.contextPath}" </script>
 <script src="${pageContext.request.contextPath}/static/js/member/knohow-join.js"></script>
 </html>
