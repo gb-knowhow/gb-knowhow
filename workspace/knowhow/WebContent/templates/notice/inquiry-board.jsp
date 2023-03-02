@@ -10,11 +10,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/image/logo.ico">
     <link rel="stylesheet" href="/naver-team/inquiry.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/inquiry.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/notice/inquiry.css"/>
   </head>
   <body>
   <header id="header">
-		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	</header>
     <div class="input_help_ask_home_end">
       <div class="input_help_content_full">
@@ -134,5 +134,5 @@
     </div>
     <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
 </body>
-<script src="${pageContext.request.contextPath}/js/kjp/inquiry.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/notice/inquiry.js"></script>
 </html>

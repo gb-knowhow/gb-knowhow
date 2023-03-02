@@ -9,10 +9,10 @@
     <title>질문 목록</title>
     <!-- Favicon -->
    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
-   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/askadmin-board.css" />
+   <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/notice/askadmin-board.css" />
 </head>
 </head>
-       <header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+       <header id="header"><jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/></header>
    <body>
                       <!-- 좋아요 많은 답글 -->
           <div class="stats_ranking_area" id="statsRankingArea">
@@ -72,5 +72,5 @@
    </body>
 </html>s
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/kdh/questionList.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/board/questionList.js"></script>
 </html>

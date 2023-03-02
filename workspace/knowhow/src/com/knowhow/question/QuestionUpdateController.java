@@ -11,25 +11,20 @@ import com.knowhow.Result;
 import com.knowhow.question.dao.QuestionDAO;
 import com.knowhow.question.domain.QuestionVO;
 
-public class QuestionUpdateActionController implements Action {
+public class QuestionUpdateController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		QuestionDAO questionDAO = new QuestionDAO();
 		Result result = new Result();
-		QuestionVO questionVO = new QuestionVO();
+		QuestionDAO questionDAO = new QuestionDAO();
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
 		
-		questionVO.setQuestionId(questionId);
-		questionVO.setQuestionTitle(req.getParameter("questionTitle"));
-		questionVO.setQuestionContent(req.getParameter("questionContent"));
 		
-		questionDAO.update(questionVO);
 		
-//		result.setPath(req.getContextPath() + "/questionUpdateAction.question");
-		result.setPath(req.getContextPath() + "/questionDetailAction.question");
+		req.setAttribute("question",questionDAO.selectOne(questionId));
+		
+		result.setPath("/html/kdh/questionModify.jsp");
 		
 		return result;
 	}
-
 }
