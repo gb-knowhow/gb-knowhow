@@ -22,13 +22,13 @@ var texts = ['새학기<br>학습전략<br>성공적으로<br>준비하기', '�
 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
-imageDiv.forEach((div, i) => (div.style.backgroundImage = `url(/css/hhs/main/image/banner/img${i + 1}.jpg)`));
+imageDiv.forEach((div, i) => (div.style.backgroundImage = `url(/static/css/main/image/banner/img${i + 1}.jpg)`));
 
 banner.appendChild(lastImageDiv);
-lastImageDiv.style.backgroundImage = `url(/css/hhs/main/image/banner/img1.jpg)`;
+lastImageDiv.style.backgroundImage = `url(/static/css/main/image/banner/img1.jpg)`;
 
 banner.insertBefore(firstImageDiv, document.querySelector('div.banner div'));
-firstImageDiv.style.backgroundImage = `url(/css/hhs/main/image/banner/img${imageDiv.length}.jpg)`;
+firstImageDiv.style.backgroundImage = `url(/static/css/main/image/banner/img${imageDiv.length}.jpg)`;
 backgoundDiv.style.backgroundColor = colors[0];
 titles.innerHTML = texts[0];
 
