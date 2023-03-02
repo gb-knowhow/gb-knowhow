@@ -2,5 +2,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="member">
-
+	<insert id="join" parameterType="memberVO">
+		insert into tbl_member(member_identification, member_password, member_name, member_age, member_nickname, member_email<!-- , member_profile_system_name, member_profile_original_name, member_profile_file_path -->)
+		values(#{memberIdentification}, #{memberPassword}, #{memberName}, #{memberAge},#{memberNickname}, #{memberEmail}<!-- , #{memberProfileSystemName}, #{memberProfileOriginalName}, #{memberProfileilePath} -->)
+	</insert>
+	
+	<!-- 회원가입한 맴버의 id가져오기 -->
+	<select id="getMemberId" parameterType="string" resultType="long">
+		select member_id from tbl_member where member_identification = #{memberIdentification}
+	</select>
+	
+	<!-- 이력서 넣기 -->
+	<insert id="insertResume" parameterType="resumeVO">
+		insert into tbl_resume (resume_original_name, resume_system_name, member_id) 
+		values(#{resumeOriginalName}, #{resumeSystemName}, #{memberId});
+	</insert>
+	
+	<!-- 로그인 -->
+	<select id="login" parameterType="map" resultType="long">
+		select member_id from tbl_member 
+		where member_identification = #{memberIdentification} and member_password = #{memberPassword}
+	</select>
+	
+	<select id="checkId" parameterType="string" resultType="long">
+		select member_id from tbl_member where member_identification = #{memberIdentification}
+	</select>
+	
+	<select id="checkNickname" parameterType="string" resultType="long">
+		select member_id from tbl_member where member_identification = #{memberNickname}
+	</select>
 </mapper>

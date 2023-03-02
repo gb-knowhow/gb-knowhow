@@ -28,6 +28,7 @@ const errPassword = document.querySelector('.err-password');
 const errPasswordCheck = document.querySelector('.err-password-check');
 const errEmail = document.querySelector('.err-email');
 const errNick = document.querySelector('.err-nick');
+const errName = document.querySelector('.err-name');
 const errAge = document.querySelector('.err-age');
 
 // 필수입력사랑 확인 플래그
@@ -84,8 +85,8 @@ changePassword4.addEventListener("click",function(){
 
 
 inputId.addEventListener("blur", function(){
-    var idInputValue = document.querySelector("#id").value;
-    console.log("들어옴");
+    let idInputValue = document.querySelector("#id").value;
+    
     if(idInputValue.length < 1){
         errId.style.display = "block";
     } else{
@@ -94,9 +95,100 @@ inputId.addEventListener("blur", function(){
         flag1 = true;
     }
 });
+
+
+/*---------------------------------------------------------------------*/
+const $joinHelp = $(".err-id");
+const $joinInputId = $('input[id=id]');
+var value = $joinInputId.val();
+
+/* 인풋 id테그 가져옴 */
+$joinInputId.on("blur",function(){$.ajax({
+	url: contextPath + "/checkIdAction.member",
+	data: {memberIdentification: $joinInputId.val()},
+	success: function(result){
+		let message, icon;
+		result = JSON.parse(result);
+		if(result.check){
+			message = "중복된 아이디입니다.";
+			$joinHelp.css('color', 'red')
+			$joinHelp.css('display', 'block');
+			
+		}else if($joinInputId.val() < 1){
+			$joinHelp.css('display', 'block');
+       		$joinHelp.css('color', 'red');
+       		message = "필수 입력 사항입니다";
+		}else{
+			message = "사용 가능한 아이디입니다.";
+			$joinHelp.css('display', 'block');
+			$joinHelp.css('color', '#2bb673');
+		}
+			$joinHelp.text(message);
+			console.log("checkID 들어옴")
+		
+	}
+});
+});
+
+
+
+const $joinInputNickname = $("#nick-name");
+const $errorNickname = $(".err-nick")
+
+$joinInputNickname.on("blur",function(){$.ajax({
+	url: contextPath + "/checkNicknameAction.member",
+	data: {memberNickname: $joinInputNickname.val()},
+	success: function(result){
+		let message, icon;
+		result = JSON.parse(result);
+		if(result.checkNickname){
+			message = "중복된 닉네임입니다.";
+			$errorNickname.css('color', 'red')
+			$errorNickname.css('display', 'block');
+			
+		}else if($joinInputId.val() < 1){
+			$errorNickname.css('display', 'block');
+       		$errorNickname.css('color', 'red');
+       		message = "필수 입력 사항입니다";
+		}else{
+			message = "사용 가능한 닉네임입니다.";
+			$errorNickname.css('display', 'block');
+			$errorNickname.css('color', '#2bb673');
+		}
+			$errorNickname.text(message);
+			console.log("checkNickname 들어옴")
+		
+	}
+});
+});
+
+const $inputName = $("#name");
+const $errName = $(".err-name")
+$inputName.on("blur", function(){
+    let $inputNameValue = $inputName.val();
+    console.log("inputName들어옴");
+    console.log($inputNameValue.length)
+    if($inputNameValue.length < 1){
+        /*errNick.style.display = "block";*/
+        $errName.show();
+    } else{
+    	$errName.css("color", 'red');
+    	$errName.css("font-size", '12px')
+    	$errName.css("margin-top", '-21px')
+       	$errName.hide();
+       /* errNick.style.display = "none";*/
+        /*inputname.style.background = '#93a0ea30';*/
+    }
+});
+
+
+/* 수정사항---------------------------------------------------------------------*/
+
+
+
 inputPassword.addEventListener("blur", function(){
     var idInputValue = document.querySelector("#password").value;
-    console.log("들어옴");
+    console.log("");
     if(idInputValue.length < 1){
         errPassword.style.display = "block";
     } else{
@@ -258,6 +350,7 @@ closeSpan.addEventListener('click', function (e){
 });
 
 file.addEventListener('change', function (e) {
+	console.log(file.value);
     let name = e.target.files[0].name;
     fileName.innerHTML = name;
     closeSpan.style.display = "inline-block";
@@ -269,7 +362,6 @@ file.addEventListener('change', function (e) {
         if (result.includes('image')) {
             imgDiv.style.backgroundImage = `url('${result}')`;
         } else {
-			this.style.display = 'block';
             imgDiv.style.backgroundImage = `url('../../css/kjp/file2.png')`;
         }
     };

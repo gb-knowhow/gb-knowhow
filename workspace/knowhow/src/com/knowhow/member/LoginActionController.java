@@ -3,18 +3,62 @@ package com.knowhow.member;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.member.dao.MemberDAO;
 
 public class LoginActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		MemberDAO memberDAO = new MemberDAO();
+		HttpSession session = req.getSession();
+		String autoLogin = req.getParameter("autoLogin");
+		Boolean isChecked = false;
+		String memberIdentification = req.getParameter("memberIdentification");
+		String memberPassword = req.getParameter("memberPassword");
+		Long memberId = memberDAO.login(memberIdentification, memberPassword);
+		String path = null;
+		Result result = new Result();
+		System.out.println("autoLogin은 " + autoLogin +" 입니다");
+		if(autoLogin.equals("on")) {
+			isChecked = true;
+		} else {
+			isChecked = false;
+		}
+		
+		if(memberId == null) {
+			memberIdentification = String.valueOf(req.getAttribute("memberIdentification"));
+			memberPassword = String.valueOf(req.getAttribute("memberPassword"));
+			memberId = memberDAO.login(memberIdentification, memberPassword);
+		}
+		
+		System.out.println("isChecked 지금" + isChecked);
+		System.out.println("맴버 아이디" + memberId);
+		
+		if(memberId != null) {
+			if(isChecked) {
+				Cookie memberIdentificationCookie = new Cookie("memberIdentification", memberIdentification);
+				Cookie memberPasswordCookie = new Cookie("memberPassword", memberPassword);
+				Cookie memberChecked = new Cookie("memberChecked", String.valueOf(isChecked));
+				resp.addCookie(memberIdentificationCookie);
+				resp.addCookie(memberPasswordCookie);
+				resp.addCookie(memberChecked);
+				System.out.println("12345");
+			}
+			session.setAttribute("memberId", memberId);
+			path = req.getContextPath() + "templates/main/main_content.jsp";
+		}else {
+			path = req.getContextPath() + "/login.member?login=false";
+		}
+		result.setPath(path);
+		result.setRedirect(true);
+		return result;
 	}
 
 }

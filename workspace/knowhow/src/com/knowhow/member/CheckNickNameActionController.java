@@ -14,7 +14,7 @@ import com.knowhow.Action;
 import com.knowhow.Result;
 import com.knowhow.member.dao.MemberDAO;
 
-public class CheckIdActionController implements Action {
+public class CheckNickNameActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -22,7 +22,8 @@ public class CheckIdActionController implements Action {
 		MemberDAO memberDAO = new MemberDAO();
 		JSONObject json = new JSONObject();
 		try {
-			json.put("check", memberDAO.checkId(req.getParameter("memberIdentification")));
+			json.put("checkNickname", memberDAO.checkNickname(req.getParameter("memberNickname")));
+			System.out.println(memberDAO.checkNickname(req.getParameter("memberNickname")));
 			out.print(json.toString());
 		} catch (JSONException e) {
 			e.printStackTrace();

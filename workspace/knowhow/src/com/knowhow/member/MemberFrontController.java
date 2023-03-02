@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.knowhow.member.LoginController;
 import com.knowhow.Result;
 
 public class MemberFrontController extends HttpServlet {
@@ -17,19 +18,27 @@ public class MemberFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
-
+		
+		System.out.println(target);
+		
 		if (target.equals("join")) {
+			result = new Result();
+			result.setPath("templates/member/knohow-join.jsp");
 			
 		} else if (target.equals("joinAction")) {
 			result = new JoinActionController().execute(req, resp);
 			
 		} else if (target.equals("login")) {
-
+			result = new LoginController().execute(req, resp);
+			
 		} else if (target.equals("loginAction")) {
 			result = new LoginActionController().execute(req, resp);
 
-		} else if (target.equals("checkIdActionController")) {
+		} else if (target.equals("checkIdAction")) {
 			result = new CheckIdActionController().execute(req, resp);
+			
+		} else if (target.equals("checkNicknameAction")) {
+			result = new CheckNickNameActionController().execute(req, resp);
 			
 		} else if (target.equals("logout")) {
 
