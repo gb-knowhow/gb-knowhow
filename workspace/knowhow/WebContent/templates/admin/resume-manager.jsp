@@ -8,15 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>know-how</title>
 <link rel="icon" href="https://kr.accounts.ikea.com/resources/kr/favicon-16x16.png " type="image/x-icon">
-<link rel="shortcut icon" type="image/x-icon" href="./images/logo-favicon.ico" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/lut/resume-manager.css">
+<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/templates/admin/images/logo-favicon.ico" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/resume-manager.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body> 
     <div class="wrap">
         <div id="menu-side" class="container">
             <div id="top-box" class="menu-box">
-                <img id="knowhow-logo" alt="know-how" src="./images/know-how-title.png">
+                <img id="knowhow-logo" alt="know-how" src="${pageContext.request.contextPath}/templates/admin/images/know-how-title.png">
             </div>
             <div id="middle-box" class="menu-box">
                 <div id="wrap-middle-box">
@@ -25,7 +25,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-site-shortcut-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="home" src="./images/home-icon.png">
+                                    <img class="side-icons" alt="home" src="${pageContext.request.contextPath}/templates/admin/images/home-icon.png">
                                 </div>
                                 사이트 바로가기
                             </div>
@@ -34,7 +34,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="dash-board" src="./images/dashBoard-icon.png">
+                                    <img class="side-icons" alt="dash-board" src="${pageContext.request.contextPath}/templates/admin/images/dashBoard-icon.png">
                                 </div>
                                 대시보드
                             </div>
@@ -42,7 +42,7 @@
                     
                         <button type="button" class="collapsible" onclick="collapse(this);">
                             <div class="icon-gap">
-                                <img class="side-icons" alt="user" src="./images/user-icon.png">
+                                <img class="side-icons" alt="user" src="${pageContext.request.contextPath}/templates/admin/images/user-icon.png">
                             </div>
                             회원관리
                         </button>
@@ -54,7 +54,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="./images/resume.png">
+                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/resume.png">
                                 </div>
                                 이력서 관리
                             </div>
@@ -62,7 +62,7 @@
 
                         <button type="button" class="collapsible" onclick="collapse(this);">
                             <div class="icon-gap">
-                                <img class="side-icons" alt="ask-answer" src="./images/ask-answer-icon2.png">
+                                <img class="side-icons" alt="ask-answer" src="${pageContext.request.contextPath}/templates/admin/images/ask-answer-icon2.png">
                             </div>
                             질문 답변 관리
                         </button>
@@ -76,7 +76,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="./images/ask-board-icon.png">
+                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/ask-board-icon.png">
                                 </div>
                                 문의 게시판 관리
                             </div>
@@ -85,7 +85,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="./images/banner-icon.png">
+                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/banner-icon.png">
                                 </div>
                                 배너 관리
                             </div>
@@ -102,7 +102,7 @@
                 이력서 관리 
                 </div>
                 <h1 id="clock" style="color:black;">clock</h1>
-                <img  class="admin-profile" src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/bart-.png"> 
+                <img  class="admin-profile" src="${pageContext.request.contextPath}/templates/admin/images/profile-image.png"> 
                 <p class="admin-name">관리자</p>
                 <p class="name-logout-space">ㅣ</p>
                 <button class="admin-logout" type="submit" value="">LOGOUT</button>
@@ -120,7 +120,7 @@
 
                         <div class="member-search-wrap">
                             <div class="search-border">
-                                <img id="search-icon" alt="search" src="./images/search-icon.png">
+                                <img id="search-icon" alt="search" src="${pageContext.request.contextPath}/templates/admin/images/search-icon.png">
                                 <input class="member-search" type="text" placeholder="이력서 검색">
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -201,7 +201,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -227,7 +227,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -253,7 +253,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -279,7 +279,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -305,7 +305,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -331,7 +331,7 @@
                             </div>
                             <div class="download">
                                 <button class="download-button" type="submit">
-                                    <img class="download-icon" src="./images/download-icon.png">
+                                    <img class="download-icon" src="${pageContext.request.contextPath}/templates/admin/images/download-icon.png">
                                 </button>
                             </div>
                             <div class="register-date">
@@ -350,5 +350,5 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/lut/know-how.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 </html>
