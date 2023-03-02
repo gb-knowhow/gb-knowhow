@@ -19,6 +19,15 @@
   	<url-pattern>*.member</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+  	<servlet-name>mypage</servlet-name>
+  	<servlet-class>com.knowhow.mypage.MypageFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mypage</servlet-name>
+  	<url-pattern>*.mypage</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
   	<servlet-name>admin</servlet-name>
