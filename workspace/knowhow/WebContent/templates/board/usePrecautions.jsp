@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이용방법 및 유의사항 페이지</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/usePrecautions.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/static/image/favicon.ico">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/board/usePrecautions.css"/>
 </head>
 <body class="body">
-<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
     <div class="topLocation"></div>
     <!-- Wrap -->
     <div id="wrap" class="wrap wrap_principle">
@@ -84,6 +84,6 @@
             </div>
         </div>
     </div>
-    <footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
+    <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
 </body>
 </html>

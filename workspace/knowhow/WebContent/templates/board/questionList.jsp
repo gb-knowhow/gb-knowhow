@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>질문 목록</title>
     <!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/kdh/questionList.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/static/image/favicon.ico">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/board/questionList.css" />
 </head>
 </head>
-    	<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+    	<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	<body>
 			             <!-- 좋아요 많은 답글 -->
           <div class="stats_ranking_area" id="statsRankingArea">
@@ -251,9 +251,9 @@
           </div>
           <!-- // 좋아요 많은 답글 -->
       		
-    	<footer><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
+        <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
 	</body>
 </html>s
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/kdh/questionList.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/board/questionList.js"></script>
 </html>
