@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>header</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/include/header_footer.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/include/header_footer.css" />
   </head>
      <body>
      <div class="header_outer">
@@ -185,6 +185,13 @@
 	                       </div>
 	                     </button>
 	                   </div>
+	                   <!-- 로그아웃 버튼! -->
+	                   <div class="buttonWrap headerButton">
+	                     <button class="listButton logoutButton">
+	                       <div class="logoutButton_img"></div>
+	                     </button>
+	                   </div>
+	                   <!-- // 로그아웃 버튼! -->
 	                 </div>
 	               </div>
 	             </div>
@@ -210,5 +217,5 @@
       </div>
    </body>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="${pageContext.request.contextPath}/js/hhs/include/header.js"></script>
+  <script src="${pageContext.request.contextPath}/static/js/main/include/header.js"></script>
 </html>
