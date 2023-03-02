@@ -249,7 +249,7 @@ a {
     display: inline-block;
     width: 65px;
     height: 57px;
-    background-image: url('/image/logo_150.png');
+    background-image: url('/static/image/logo_150.png');
     background-size: cover;
 
     /* background: url('/image/logo_150.png') no-repeat;
@@ -365,7 +365,7 @@ a {
     float: left;
     width: 205px;
     height: 57px;
-    background-image: url('/image/logo.png');
+    background-image: url('/static/image/logo.png');
     display: inline-block;
     background-size: cover;
 
@@ -476,7 +476,7 @@ a {
 }
 
 .userThumbnail {
-    background-image: url(/image/mentor.png);
+    background-image: url("/static/image/mentor.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;

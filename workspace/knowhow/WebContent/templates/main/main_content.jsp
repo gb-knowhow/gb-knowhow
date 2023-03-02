@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main1</title>
-    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/image/favicon.ico">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_content.css" />
-  	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/hhs/main/main_banner.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/static/image/favicon.ico">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/main_content.css" />
+  	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/main_banner.css" />
   </head>
   <body>
 	  <header id="header">
-	  	<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" flush="true"/>
+	  	<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	  </header>
 	<div id="container-main" class="container-fluid" role="main">
       <div class="container-fluid-content-inner _containerFluidContentInner">
 	    <section class="banner">
-	      <jsp:include page="${pageContext.request.contextPath}/html/hhs/main/main_banner.jsp" flush="true"/>
+	      <jsp:include page="${pageContext.request.contextPath}/templates/main/main_banner.jsp" flush="true"/>
 	    </section>
         <div class="section_qna">
           <!-- 좋아요 많은 답글 -->
@@ -39,17 +39,17 @@
                   <li class="ranking_item">
                     <span class="no">1</span>
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=31505&amp;docId=369817730"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >이가 빠지는 꿈&amp;예지몽</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=31505&amp;docId=369817730"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >1.이가 빠지는 꿈 해몽 부탁드려요... 중2 학생입니다. 제가 엊그저께 이가 빠시는
                       꿈을 꿨어요. 제가 전...</a
                     >
@@ -60,17 +60,17 @@
                   <li class="ranking_item">
                     <span class="no">2</span>
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=31402&amp;docId=439814874"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >임영웅 사진 찿아주세요</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=31402&amp;docId=439814874"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >임영웅 사진으로 앨범 제작하려합니다 워낙 잘 생겨서 어느 사진이나 다 이뿌고
                       멋져서 폰에 저장을 했었는...</a
                     >
@@ -81,17 +81,17 @@
                   <li class="ranking_item">
                     <span class="no">3</span>
                     <a
-                      href="/qna/detail.naver?d1id=11&amp;dirId=11080501&amp;docId=348216660"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >중국 숫자 암호..?</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=11&amp;dirId=11080501&amp;docId=348216660"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >중국 숫자 암호 중에 혹시 날 사랑해줘라던지 날 생각해줘 뭐 대충 이런 암호
                       있나요? 있으면 알려주세요!</a
                     >
@@ -102,17 +102,17 @@
                   <li class="ranking_item" style="display: none">
                     <span class="no">7</span>
                     <a
-                      href="/qna/detail.naver?d1id=1&amp;dirId=1060305&amp;docId=399654874"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >제출한 구글폼 확인</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=1&amp;dirId=1060305&amp;docId=399654874"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >구글 폼 제출하고 나서 제출한 거 다시 볼 수 있나요?</a
                     >
                     <span class="recommend_num">좋아요 25</span
@@ -122,17 +122,17 @@
                   <li class="ranking_item" style="display: none">
                     <span class="no">8</span>
                     <a
-                      href="/qna/detail.naver?d1id=8&amp;dirId=8040103&amp;docId=439900242"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >검정 롱코트</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=8&amp;dirId=8040103&amp;docId=439900242"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >격식있는 자리에 가야하는데 외투는 검정 롱코트로 정했는데 안에 뭘 입어야 할 지
                       모르겠어요ㅠㅠ 아직 학...</a
                     >
@@ -143,17 +143,17 @@
                   <li class="ranking_item" style="display: none">
                     <span class="no">9</span>
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=3031001&amp;docId=349200363"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >애교대사&amp;멘트</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=3&amp;dirId=3031001&amp;docId=349200363"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >해줘해줘,슈크림빵,애라애교등등 대사 알려주세요 최대한 많이요!!!</a
                     >
                     <span class="recommend_num">좋아요 22</span
@@ -165,17 +165,17 @@
                   <li class="ranking_item">
                     <span class="no">4</span>
                     <a
-                      href="/qna/detail.naver?d1id=11&amp;dirId=111301&amp;docId=310914081"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >(중딩)리만가설이 무엇인가요?? 말</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=11&amp;dirId=111301&amp;docId=310914081"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >(중딩)리만가설이 무엇인가요?? 말 그자체로 소수인가요??? 모르겠어요ㅠㅠ..</a
                     >
                     <span class="recommend_num">좋아요 37</span
@@ -185,17 +185,17 @@
                   <li class="ranking_item">
                     <span class="no">5</span>
                     <a
-                      href="/qna/detail.naver?d1id=8&amp;dirId=80507&amp;docId=28705162"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >이 새의종류가무엇인가요???</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=8&amp;dirId=80507&amp;docId=28705162"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >오늘 제 동생이놀이터에서놀다가 새끼새는 찾았는데 이새의
                       종류가무엇인지몰르겟어효 ㅜㅜ좀 가르쳐주세요...</a
                     >
@@ -206,17 +206,17 @@
                   <li class="ranking_item">
                     <span class="no">6</span>
                     <a
-                      href="/qna/detail.naver?d1id=9&amp;dirId=90203&amp;docId=439878617"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >프랑스 스위스 이탈리아 3개국 11박 13일 일정 도와주세요</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=9&amp;dirId=90203&amp;docId=439878617"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >안녕하세요 5월 17일~29일 총 11박 13일 프랑스 스위스 이탈리아 3개국
                       여행일정이에요 첫 해외여행이 유럽...</a
                     >
@@ -227,17 +227,17 @@
                   <li class="ranking_item" style="display: none">
                     <span class="no">10</span>
                     <a
-                      href="/qna/detail.naver?d1id=6&amp;dirId=6010101&amp;docId=439893434"
+                      href="#"
                       class="ranking_title"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >여권 재발급 기간</a
                     >
                     <a
-                      href="/qna/detail.naver?d1id=6&amp;dirId=6010101&amp;docId=439893434"
+                      href="#"
                       class="text"
                       target="_blank"
-                      onclick="nhn.Kin.Utility.nClicks('hrk.list', '', '', event);"
+                      onclick=""
                       >15일 저녁에 신청했고 17일에 발급처리된것까지 확인했습니다 그럼 28일 전까지는
                       받을수있겠죠?? 1일에 출...</a
                     >
@@ -253,24 +253,19 @@
                   href="#"
                   class="on"
                   title="선택됨"
-                  onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);"
-                  >1</a
-                >
+                  onclick=""
+                >1</a>
 
-                <a href="#" onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);">2</a>
+                <a 
+                  href="#" 
+                  onclick=""
+                >2</a>
+                
               </div>
             </div>
             <!-- // 좋아요 많은 답글 본문 -->
           </div>
           <!-- // 좋아요 많은 답글 -->
-          <!-- <script type="text/javascript">
-            $Fn(function () {
-              if (naver.kin.main.StatRanking !== undefined) {
-                var oStatRanking = new naver.kin.main.StatRanking();
-              }
-            }, this).attach(window, 'load');
-          </script> -->
-          <!-- 페이징 -->
           
           <!-- 정적 사진 -->
 		<div class="middle_ads_container">
@@ -624,7 +619,7 @@
       </div>
     </div>
     <footer>
-  		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" flush="true"/>
+  		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
   	</footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
