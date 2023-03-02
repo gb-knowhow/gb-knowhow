@@ -9,13 +9,13 @@
 <title>글 상세 페이지(타인 시점)</title>
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon"
-	href="${pageContext.request.contextPath}/image/favicon.ico">
+	href="${pageContext.request.contextPath}/static/image/favicon.ico">
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/kdh/detailsPage.css" />
+	href="${pageContext.request.contextPath}/static/css/board/detailsPage.css" />
 </head>
 <body>
 	<header id="header"><jsp:include
-			page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+			page="${pageContext.request.contextPath}/static/main/include/header.jsp" /></header>
 	<div class="container-full">
 		<!-- fotter 제외 부분 -->
 		<div class="question-content">

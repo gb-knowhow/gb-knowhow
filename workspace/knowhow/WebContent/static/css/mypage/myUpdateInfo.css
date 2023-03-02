@@ -157,25 +157,17 @@ table{
 
 
 
-.photo_btn{
-	width: 15px;
-    height: 15px;
-    display: block;
-    overflow: hidden;
-    background-position: -255px 0;
-    background-image: url(https://ssl.pstatic.net/static/kin/09renewal/sp_profile_161027.png);
-}
-
-
 .profile_info{
 	width: 100%;
     clear: both;
     margin: 12px 0 0;
     zoom: 1;
 }
+
 .profile_name{
 	margin-bottom: 7px;
 }
+
 .profile_user{
 	display: block;
     font-size: 14px;
@@ -296,7 +288,32 @@ table{
     padding-top: 30px;
 }
 
+.my_question_info{
+	margin-top:41px;
+}
 
+.my_question_info dd{
+    float: left;
+    display: inline;
+    margin-top: -2px;
+    padding-right: 22px;
+    color: #e93100;
+    font-family: Tahoma,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 16px;
+    margin-left:0;
+}
+
+.my_question_info dt{
+	float: left;
+    display: inline;
+    margin-left: 26px;
+    padding: 0 4px 0 12px;
+    background: url(https://ssl.pstatic.net/static/kin/09renewal/line_v2.gif) no-repeat left 1px;
+    font-weight: bold;
+}
 
 tbody td{
 	padding: 7px 0 6px;

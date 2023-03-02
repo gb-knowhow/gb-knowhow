@@ -217,10 +217,10 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/myPage/myUpdateInfo.js">
+<script src="${pageContext.request.contextPath}/static/js/mypage/myUpdateInfo.js">
 let contextPath = '${pageContext.request.contextPath}'
 </script>
 
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
-   <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/myPage/myUpdateInfo.css"/>
+<link rel="stylesheet"href="${pageContext.request.contextPath}/static/css/mypage/myUpdateInfo.css" />
 </html>
