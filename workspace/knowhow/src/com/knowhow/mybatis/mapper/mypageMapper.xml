@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mypage">
-	
+	<!-- 내 정보 -->
 	<select id="selectMyInfo" parameterType="long" resultType="memberVO" >
 		select member_id, member_identification, member_password, member_name, member_age, member_email, 
 		member_job, member_nickname, member_profile_system_name, member_profile_original_name, 
@@ -10,13 +10,87 @@
 		from tbl_member where member_id = #{memberId}
 	</select>
 	
+	<!-- 내 질문글 -->
+	<select id="selectMyQuestion" parameterType="long" resultType="questionVO">
+		select member_id, question_id, question_title, question_content, question_regdate, question_upddate 
+		from tbl_question where member_id = #{memberId}
+	</select>
 	
+	<!-- 내 답변글 -->
+	<select id="selectMyAnswer" parameterType="long" resultType="answerVO">
+		select member_id, answer_id, answer_title, answer_content, answer_regdate, answer_upddate, question_id 
+		from tbl_answer where member_id = #{memberId}
+	</select>
 	
+	<!-- 내가 좋아요 한 답변 -->
+	<select id="selectMylikeAnswer" parameterType="long" resultType="answerVO">
+		select  al.member_id member_id, a.member_id writer, a.answer_id, answer_title, answer_content, 
+		answer_regdate, answer_upddate, question_id 
+		from tbl_answer a left join tbl_answer_like al on a.answer_id = al.answer_id 
+		where al.member_id = #{memberId}
+	</select>
 	
+	<!-- 내가 좋아요 한 질문 -->
+	<select id="selectMylikeQuestion" parameterType="long" resultType="questionVO">
+		select  ql.member_id member_id, q.member_id writer, q.question_id, 
+		question_title, question_content, question_regdate, question_upddate 
+		from tbl_question q left join tbl_question_like ql 
+		on q.question_id = ql.question_id 
+		where ql.member_id = #{memberId}
+	</select>
 	
+	<!-- 총 좋아요 한 글 수 -->
+	<select id="countLikesAll" parameterType="long" resultType="long">
+		select count(distinct like_id)+count(distinct answer_like_id) like_count_all
+		from view_like_count group by member_id 
+		having member_id = #{memberId}
+	</select>
 	
+	<!-- 좋아요 한 질문 수 -->
+	<select id="countLikesQuestion" parameterType="long" resultType="long">
+		select count(like_id) like_count_question from tbl_question_like group by member_id 
+		having member_id = #{member_id}
+	</select>
 	
+	<!-- 좋아요 한 답변 수 -->
+	<select id="countLikesAnswer" parameterType="long" resultType="long">
+		select count(answer_like_id) like_count_answer from tbl_answer_like group by member_id 
+		having member_id = #{member_id}
+	</select>
 	
+	<!-- 내가 쓴 댓글 in 질문 -->
+	<select id="myCommentsInQuestion" parameterType="long" resultType="questionCommentVO">
+		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, 
+		comment_group, member_id, question_id 
+		from tbl_question_comment 
+		where member_id = #{member_id}
+	</select>
+	
+	<!-- 내가 쓴 댓글 in 답변 -->
+	<select id="myCommentsInAnswer" parameterType="long" resultType="answerCommentVO">
+		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, 
+		comment_group, member_id, question_id 
+		from tbl_question_comment 
+		where member_id = #{member_id}
+	</select>
+	
+	<!-- 내 질문이 받은 좋아요 수 -->
+	<select id="countMyLikedQuestion" parameterType="long" resultType="long">
+		select count(like_id) my_question_liked 
+		from tbl_question q left join tbl_question_like ql  
+		on q.question_id = ql.question_id 
+		group by q.question_id 
+		having member_id = #{member_id}
+	</select>
+	
+	<!-- 내 답변이 받은 좋아요 수 -->
+	<select id="countMyLikedAnswer" parameterType="long" resultType="long">
+		select count(answer_like_id) answer_liked 
+		from tbl_answer a left join tbl_answer_like al 
+		on a.answer_id = al.answer_id 
+		group by answer_id 
+		having member_id = #{member_id}
+	</select>
 	
 	
 	
