@@ -4,11 +4,6 @@
   text-align: center;
 }
 
-#header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-} 
 
 label {
     color: green;
@@ -160,7 +155,6 @@ img {
   font-size: 14px;
   letter-spacing: -0.35px;
   color: green;
-}
 }
 
 .InquiryInput_field_set_downContent > div[class*='_box'] {

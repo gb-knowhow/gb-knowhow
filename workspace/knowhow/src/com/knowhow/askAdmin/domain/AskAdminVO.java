@@ -4,7 +4,6 @@ package com.knowhow.askAdmin.domain;
 
 
 
-
 public class AskAdminVO{
 	private Long askAdminId;
 	private Long memberId;

@@ -3,4 +3,41 @@
 
 <mapper namespace="question">
 
+ 	<select id="selectAll" resultType="questionDTO"> 
+ 		select question_id, question_title, question_content, question_regdate, question_upddate, member_name, category_id,
+ 		question_count 
+		from view_question
+ 	</select>
+ 	
+ 	<select id="getTotal" resultType="long">
+		select count(qusetion_id) from tbl_qusetion
+	</select>
+	
+	<select id="selectOne" parameterType="long" resultType="questionDTO">
+		select question_id, question_title, question_content, question_regdate, question_upddate, m.member_name, category_id,
+ 		question_count, member_nickname, member_identification
+		from view_question q join tbl_member m
+		where question_id = #{questionId}
+	</select>
+	
+	<update id="update" parameterType="questionDTO">
+		update view_question 
+		set question_title = #{questionTitle}, question_content = #{questionContent}
+		where question_id = #{questionId}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM tbl_question
+		WHERE question_id= #{questuionId}
+	</delete>
+	
+	<insert id="insert" parameterType="questionVO">
+		insert into tbl_question
+		(question_title, question_content, member_id, category_id)
+		values(#{questionTitle}, #{questionContent},#{memberId}, #{categoryId})
+	</insert>
+	
+	
+	
+	
 </mapper>

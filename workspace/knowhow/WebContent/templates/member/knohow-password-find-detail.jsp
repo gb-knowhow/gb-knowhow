@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비밀번호 찾기</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/knohow-password-find.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/knohow-password-find.css">
 </head>
 <body>
 <header id="header">
-		<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" />
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	</header>
     <div class="wrapper">
         <div class="section">
@@ -84,5 +84,5 @@
         </div>
     </div>
 </body>
-<script src="../../js/kjp/knohow-password-find-detail.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/member/knohow-password-find-detail.js"></script>
 </html>

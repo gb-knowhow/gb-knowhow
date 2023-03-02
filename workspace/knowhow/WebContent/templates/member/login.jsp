@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="knohow-login.css">
     <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="knohow.jpeg">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/kjp/login.css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/login.css"/>
     <title>노하우 : 로그인</title>
 </head>
 <body>

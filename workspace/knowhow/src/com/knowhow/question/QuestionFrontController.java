@@ -20,23 +20,31 @@ public class QuestionFrontController extends HttpServlet{
 		
 		if(target.equals("questionList")) {
 			
+			
 		} else if(target.equals("questionListAction")){
 			result = new QuestionListActionController().execute(req, resp);
 			
 		} else if(target.equals("questionWrite")){
+			result = new Result();
+			result.setPath("/html/kdh/questionWrite.jsp");
 			
 		} else if(target.equals("questionWriteAction")){
+			System.out.println("들어왔다이");
 			result = new QuestionWriteActionController().execute(req, resp);
 			
 		} else if(target.equals("questionUpdate")){
-			
+			result = new QuestionUpdateController().execute(req, resp);
 		} else if(target.equals("questionUpdateAction")){
+			System.out.println("들어왔다이");
 			result = new QuestionUpdateActionController().execute(req, resp);
 			
 		} else if(target.equals("questionDelete")){
 			
 		} else if(target.equals("questionDeleteAction")){
 			result = new QuestionDeleteActionController().execute(req, resp);
+			
+		} else if(target.equals("questionDetailAction")){
+			result = new QuestionDetailActionController().execute(req, resp);
 			
 		} else {
 			System.out.println(target);
