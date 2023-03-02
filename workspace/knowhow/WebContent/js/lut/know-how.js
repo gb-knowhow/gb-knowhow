@@ -133,15 +133,6 @@ $('.modal7').on('click', function() {
 });
 
 
-var submit = document.getElementById('submitButton');
-submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
-
-function showImage() {
-    var newImage = document.getElementById('image-show').lastElementChild;
-    newImage.style.display = "";
-}
-
-
 function loadFile(input) {
     var file = input.files[0];
     
@@ -163,5 +154,34 @@ function loadFile(input) {
     container.appendChild(newImage);
 };
 
+
+/*멘티 삭제 js 넣기*/
+$('.member-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		
+		let menteeId = $(this).parent().children(".user-num").text();
+		
+		/*$.ajax({
+			url: contextPath + "/adminMenteeDeleteAction.admin",
+			data:{menteeId: menteeId},
+			success: function(result){
+				alert(result + "삭제 완료");				
+			}
+			
+		});*/
+		
+		txt+="&"+"menteeId=" + menteeId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminMenteeDeleteAction.admin?"+txt;
+
+});
 
 
