@@ -602,11 +602,11 @@
                     href="#"
                     class="on"
                     title="선택됨"
-                    onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);"
+                    onclick=""
                     >1</a
                   >
 
-                  <a href="#" onclick="nhn.Kin.Utility.nClicks('hrk.page', '', '', event);">2</a>
+                  <a href="#" onclick="">2</a>
                 </div>
                 <!-- // 페이징 -->
               </div>

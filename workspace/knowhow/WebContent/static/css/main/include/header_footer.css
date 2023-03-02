@@ -690,6 +690,23 @@ a {
 	display: none;
 }
 
+.logoutButton_img {
+	background-image: url(/static/css/main/image/logout.png);
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	width: 17px;
+	height: 18px;
+	/* 들어갈 이미지가 없을 때 활성화 시키면 됨 */
+	/* background: #eff1ee no-repeat center/cover; */
+}
+
+.logoutButton {
+	width: 31.99px;
+    height: 31.99px;
+    padding: 4px;
+}
+
 /* 
     아래부터 반응형!
  */
