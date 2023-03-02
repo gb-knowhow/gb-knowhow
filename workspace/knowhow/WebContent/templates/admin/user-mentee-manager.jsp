@@ -127,172 +127,41 @@
                     </div>
 
                     <div class="total-mentor">
-                        <p>총 멘티 수</p>
-                        <p class="total-mentor-num">3</p>
-                    </div>
+						<p>총 멘티 수</p>
+						<p class="total-mentor-num">${menteeTotal}</p>
+					</div>
 
-                    <div class="checkbox-group">
-                        <div class="mentor-list-header">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check-all" class="all" value="all">
-                            </div>
-                            <div class="user-num">
-                                회원 번호
-                            </div>
-                            <div class="user-role">
-                                구분
-                            </div>
-                            <div class="user-name">
-                                이름
-                            </div>
-                            <div class="user-email">
-                                이메일
-                            </div>
-                            <div class="user-reply">
-                                질문글
-                            </div>
-                            <div class="user-comment">
-                                댓글
-                            </div>
-                            <div class="user-join-day">
-                                가입일
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check1" class="normal" value="">
-                            </div>
-                            <div class="user-num">
-                                9
-                            </div>
-                            <div class="user-role">
-                                멘티
-                            </div>
-                            <div class="user-name">
-                                김정표
-                            </div>
-                            <div class="user-email">
-                                kimjeongpyo123@google.com
-                            </div>
-                            <div class="user-reply">
-                                0
-                            </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-21
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check1" class="normal" value="">
-                            </div>
-                            <div class="user-num">
-                                8
-                            </div>
-                            <div class="user-role">
-                                멘티
-                            </div>
-                            <div class="user-name">
-                                이순철
-                            </div>
-                            <div class="user-email">
-                                SoonCheul1234@google.com
-                            </div>
-                            <div class="user-reply">
-                                0
-                            </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-20
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check2" class="normal" value="">
-                            </div>
-                            <div class="user-num">
-                                7
-                            </div>
-                            <div class="user-role">
-                                멘티
-                            </div>
-                            <div class="user-name">
-                                윤민우
-                            </div>
-                            <div class="user-email">
-                                minwoo4321@naver.com
-                            </div>
-                            <div class="user-reply">
-                                0
-                            </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-19
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check3" class="normal" value="">
-                            </div>
-                            <div class="user-num">
-                                6
-                            </div>
-                            <div class="user-role">
-                                탈퇴
-                            </div>
-                            <div class="user-name">
-                                임의택
-                            </div>
-                            <div class="user-email">
-                                UiTaek3031@naver.com
-                            </div>
-                            <div class="user-reply">
-                                0
-                            </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-19
-                            </div>
-                        </div>
-
-                        <div class="mentor-list-contents">
-                            <div class="checkbox-zip">
-                                <input type="checkbox" id="check4" class="normal" value="">
-                            </div>
-                            <div class="user-num">
-                                5
-                            </div>
-                            <div class="user-role">
-                                탈퇴
-                            </div>
-                            <div class="user-name">
-                                정지영
-                            </div>
-                            <div class="user-email">
-                                Jiyoung4444@google.com
-                            </div>
-                            <div class="user-reply">
-                                0
-                            </div>
-                            <div class="user-comment">
-                                0
-                            </div>
-                            <div class="user-join-day">
-                                2023-02-18
-                            </div>
-                        </div>
+					<div class="checkbox-group">
+						<div class="mentor-list-header">
+							<div class="checkbox-zip">
+								<input type="checkbox" id="check-all" class="all" value="all">
+							</div>
+							<div class="user-num">회원 번호</div>
+							<div class="user-role">구분</div>
+							<div class="user-name">이름</div>
+							<div class="user-email">이메일</div>
+							<div class="user-reply">질문글</div>
+							<div class="user-comment">댓글</div>
+							<div class="user-join-day">가입일</div>
+						</div>
+						
+						<!-- jstl은 json형태를 인식하지 못한다. 따라서 자바 객체 형태로 보내줘야한다. -->
+						<c:forEach var="mentee" items="${mentees}">
+								<c:if test="${!mentee.resumeExistence}">
+									<div class="mentor-list-contents">
+										<input type="checkbox" id="check1" class="normal" value="">
+										<div class="checkbox-zip"></div>
+										<div class="user-num">${mentee.memberId}</div>
+										<div class="user-role">멘티</div>
+										<div class="user-name">${mentee.memberName}</div>
+										<div class="user-email">${mentee.memberEmail}</div>
+										<div class="user-reply">${mentee.questionCount}</div>
+										<div class="user-comment">${mentee.totalCommentCount}</div>
+										<!-- 가입일은 추후 프론트에서 삭제후 삭제하면 댐 -->
+										<div class="user-join-day">2023-02-21</div>
+									</div>
+								</c:if>
+						</c:forEach>
 
                         <div class="page-button-box">
                             <input class="page-button" type="submit" value="1">
@@ -304,6 +173,8 @@
     </div>
 </body>
     
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+<script>let mentees = `${mentees}`, contextPath = "${pageContext.request.contextPath}"</script>
 <script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 </html>

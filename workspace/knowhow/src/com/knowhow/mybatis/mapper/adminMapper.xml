@@ -2,5 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="admin">
+	<!-- id = 메소드 아이디. resultType은 리턴타입. -->
+	<select id="menteeList" resultType="menteeListDTO">
+		select member_id, resume_existence, member_name, member_email, 
+		question_count, total_comment_count
+		from view_mentee_list;
+	</select>
+	
+	<select id="menteeGetTotal" resultType="long">
+		select count(member_id)
+		from view_mentee_list
+	</select>
+	
 
+	<delete id="menteeListDelete" parameterType="long">
+		delete from
+		tbl_member
+		where member_id = #{memberId}
+	</delete>
+
+	<delete id="answerCommentDelete" parameterType="long">
+		delete from
+		tbl_answer where member_id = #{memberId}
+	</delete>
 </mapper>
