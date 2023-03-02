@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-#header {
-   position: sticky;
-   top: 0;
-    z-index: 1500;
-}
 
 ul, li {
     list-style: none;

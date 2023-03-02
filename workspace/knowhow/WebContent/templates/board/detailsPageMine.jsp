@@ -9,13 +9,12 @@
 <title>글 상세 페이지(내 시점)</title>
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon"
-	href="${pageContext.request.contextPath}/image/favicon.ico">
+	href="${pageContext.request.contextPath}/static/image/favicon.ico">
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/kdh/detailsPageMine.css" />
+	href="${pageContext.request.contextPath}/static/css/board/detailsPageMine.css" />
 </head>
 <body>
-	<header id="header"><jsp:include
-			page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	<div class="container-full">
 		<!-- fotter 제외 부분 -->
 		<div class="question-content">
@@ -26,13 +25,13 @@
 					</div>
 					<div class="question_title">
 						<img
-							src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
+							src="${pageContext.request.contextPath}/static/css/board/image/questionMark.png"
 							style="margin-right: 3%; width: 50px; height: 50px;"> 욱성이는
 						공부 언제하나요?
 						<button type="button" class="button_compose button_modify"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
+								src="${pageContext.request.contextPath}/static/css/board/image/modify.png"
 								style="width: 20px; height: 20px;"></i> <span class="blind">수정하기</span>
 							<em class="questionButton_modify">수정하기</em>
 						</button>
@@ -46,7 +45,7 @@
 				<div class="question-userinfo__left">
 					<span class="thumbnail"
 						style="width: 50px; height: 50px; object-fit: cover;"> <img
-						src="${pageContext.request.contextPath}/image/mentee.png"
+						src="${pageContext.request.contextPath}/static/image/mentee.png"
 						style="width: 50px; height: 50px;">
 					</span>
 				</div>
@@ -61,7 +60,7 @@
 						<button type="button" class="button_compose button_comment"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
+								src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
 								style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 							<em class="questionButton_comment">댓글달기</em>
 						</button>
@@ -70,7 +69,7 @@
 						<button type="button" class="button_compose button_reply"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/reply.png"
+								src="${pageContext.request.contextPath}/static/css/board/image/reply.png"
 								style="width: 20px; height: 20px;"></i> <em
 								class="questionButton_reply">답글달기</em>
 						</button>
@@ -78,7 +77,7 @@
 						<!-- 좋아요 class 이름 button_like으로 쓰세요.-->
 						<label class="button_compose button_like" onclick=""> <i
 							class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/css/kdh/image/hate.png"
+								src="${pageContext.request.contextPath}/static/css/board/image/hate.png"
 								id="like" style="width: 20px; height: 20px;"></i> <em
 							class="questionButton_reply">좋아요</em>
 						</label>
@@ -124,7 +123,7 @@
 									<button type="button" class="button_compose re-replyWrite"
 										onclick="">
 										<i class="icon icon_compose_opinion"> <img
-											src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
+											src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
 											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 										<em class="questionButton_comment">대댓글달기</em>
 									</button>
@@ -233,7 +232,7 @@
 											target="_blank" class="thumbnail_area " onclick="">
 											<div class="thumbnail">
 												<img
-													src="${pageContext.request.contextPath}/image/mentor.png"
+													src="${pageContext.request.contextPath}/static/image/mentor.png"
 													alt="프로필 사진">
 											</div>
 										</a>
@@ -270,7 +269,7 @@
 									<button type="button"
 										class="button_compose button_reply_comment" onclick="">
 										<i class="icon icon_compose_opinion"> <img
-											src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
+											src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
 											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 										<em class="questionButton_comment">댓글달기</em>
 									</button>
@@ -325,7 +324,7 @@
 													<button type="button"
 														class="button_compose reply-re-replyWrite" onclick="">
 														<i class="icon icon_compose_opinion"> <img
-															src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
+															src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
 															style="width: 20px; height: 20px;"></i> <span
 															class="blind">댓글</span> <em
 															class="questionButton_comment">대댓글달기</em>
@@ -422,10 +421,9 @@
 			</div>
 		</div>
 	</div>
-	<footer><jsp:include
-			page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" /></footer>
+	        <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script
-	src="${pageContext.request.contextPath}/js/kdh/detailsPageMine.js"></script>
+	src="${pageContext.request.contextPath}/static/js/board/detailsPageMine.js"></script>
 </html>
