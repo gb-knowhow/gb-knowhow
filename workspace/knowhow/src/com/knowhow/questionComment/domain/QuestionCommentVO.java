@@ -1,29 +1,23 @@
 package com.knowhow.questionComment.domain;
 
-
-
-
-
-
-
 public class QuestionCommentVO {
-	private Long questionCommentId;
+	private Long commentId;
 	private Long memberId;
 	private Long questionId;
-	private String questionCommentContent;
-	private String questionCommentRegDate;
-	private String questionCommentUpdDate;
-	private int questionCommentDepth;
-	private int questionCommentGroup;
+	private String commentContent;
+	private String commentRegDate;
+	private String commentUpdDate;
+	private int commentDepth;
+	private int commentGroup;
 	
 	public QuestionCommentVO() {;}
 
-	public Long getQuestionCommentId() {
-		return questionCommentId;
+	public Long getCommentId() {
+		return commentId;
 	}
 
-	public void setQuestionCommentId(Long questionCommentId) {
-		this.questionCommentId = questionCommentId;
+	public void setCommentId(Long commentId) {
+		this.commentId = commentId;
 	}
 
 	public Long getMemberId() {
@@ -42,67 +36,58 @@ public class QuestionCommentVO {
 		this.questionId = questionId;
 	}
 
-	public String getQuestionCommentContent() {
-		return questionCommentContent;
+	public String getCommentContent() {
+		return commentContent;
 	}
 
-	public void setQuestionCommentContent(String questionCommentContent) {
-		this.questionCommentContent = questionCommentContent;
+	public void setCommentContent(String commentContent) {
+		this.commentContent = commentContent;
 	}
 
-	public String getQuestionCommentRegDate() {
-		return questionCommentRegDate;
+	public String getCommentRegDate() {
+		return commentRegDate;
 	}
 
-	public void setQuestionCommentRegDate(String questionCommentRegDate) {
-		this.questionCommentRegDate = questionCommentRegDate;
+	public void setCommentRegDate(String commentRegDate) {
+		this.commentRegDate = commentRegDate;
 	}
 
-	public String getQuestionCommentUpdDate() {
-		return questionCommentUpdDate;
+	public String getCommentUpdDate() {
+		return commentUpdDate;
 	}
 
-	public void setQuestionCommentUpdDate(String questionCommentUpdDate) {
-		this.questionCommentUpdDate = questionCommentUpdDate;
+	public void setCommentUpdDate(String commentUpdDate) {
+		this.commentUpdDate = commentUpdDate;
 	}
 
-	public int getQuestionCommentDepth() {
-		return questionCommentDepth;
+	public int getCommentDepth() {
+		return commentDepth;
 	}
 
-	public void setQuestionCommentDepth(int questionCommentDepth) {
-		this.questionCommentDepth = questionCommentDepth;
+	public void setCommentDepth(int commentDepth) {
+		this.commentDepth = commentDepth;
 	}
 
-	public int getQuestionCommentGroup() {
-		return questionCommentGroup;
+	public int getCommentGroup() {
+		return commentGroup;
 	}
 
-	public void setQuestionCommentGroup(int questionCommentGroup) {
-		this.questionCommentGroup = questionCommentGroup;
+	public void setCommentGroup(int commentGroup) {
+		this.commentGroup = commentGroup;
 	}
 
 	@Override
 	public String toString() {
-		return "QuestionCommentVO [questionCommentId=" + questionCommentId + ", memberId=" + memberId + ", questionId="
-				+ questionId + ", questionCommentContent=" + questionCommentContent + ", questionCommentRegDate="
-				+ questionCommentRegDate + ", questionCommentUpdDate=" + questionCommentUpdDate
-				+ ", questionCommentDepth=" + questionCommentDepth + ", questionCommentGroup=" + questionCommentGroup
-				+ "]";
+		return "QuestionCommentVO [commentId=" + commentId + ", memberId=" + memberId + ", questionId=" + questionId
+				+ ", commentContent=" + commentContent + ", commentRegDate=" + commentRegDate + ", commentUpdDate="
+				+ commentUpdDate + ", commentDepth=" + commentDepth + ", commentGroup=" + commentGroup + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
-		result = prime * result + ((questionCommentContent == null) ? 0 : questionCommentContent.hashCode());
-		result = prime * result + questionCommentDepth;
-		result = prime * result + questionCommentGroup;
-		result = prime * result + ((questionCommentId == null) ? 0 : questionCommentId.hashCode());
-		result = prime * result + ((questionCommentRegDate == null) ? 0 : questionCommentRegDate.hashCode());
-		result = prime * result + ((questionCommentUpdDate == null) ? 0 : questionCommentUpdDate.hashCode());
-		result = prime * result + ((questionId == null) ? 0 : questionId.hashCode());
+		result = prime * result + ((commentId == null) ? 0 : commentId.hashCode());
 		return result;
 	}
 
@@ -115,42 +100,16 @@ public class QuestionCommentVO {
 		if (getClass() != obj.getClass())
 			return false;
 		QuestionCommentVO other = (QuestionCommentVO) obj;
-		if (memberId == null) {
-			if (other.memberId != null)
+		if (commentId == null) {
+			if (other.commentId != null)
 				return false;
-		} else if (!memberId.equals(other.memberId))
-			return false;
-		if (questionCommentContent == null) {
-			if (other.questionCommentContent != null)
-				return false;
-		} else if (!questionCommentContent.equals(other.questionCommentContent))
-			return false;
-		if (questionCommentDepth != other.questionCommentDepth)
-			return false;
-		if (questionCommentGroup != other.questionCommentGroup)
-			return false;
-		if (questionCommentId == null) {
-			if (other.questionCommentId != null)
-				return false;
-		} else if (!questionCommentId.equals(other.questionCommentId))
-			return false;
-		if (questionCommentRegDate == null) {
-			if (other.questionCommentRegDate != null)
-				return false;
-		} else if (!questionCommentRegDate.equals(other.questionCommentRegDate))
-			return false;
-		if (questionCommentUpdDate == null) {
-			if (other.questionCommentUpdDate != null)
-				return false;
-		} else if (!questionCommentUpdDate.equals(other.questionCommentUpdDate))
-			return false;
-		if (questionId == null) {
-			if (other.questionId != null)
-				return false;
-		} else if (!questionId.equals(other.questionId))
+		} else if (!commentId.equals(other.commentId))
 			return false;
 		return true;
 	}
+
+
+	
 	
 	
 	

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+body {
+    background-color: #f8f9fa;
+}
+.post_area {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.post_side_area {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    margin-top: 57px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.side_left_area {
+    justify-content: flex-end;
+    padding: 0 58px;
+    flex: 1 1 260px;
+    display: flex;
+}
+
+.back_button {
+    width: 20px;
+    height: 20px;
+    padding: 11px;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back_img {
+    background-image: url(https://ifh.cc/g/H40WAv.png);
+    background-repeat: no-repeat;
+    background-size: 16px auto;
+    background-position: 3px 2px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.side_middle_area {
+    flex: 0 0 750px;
+    max-width: 750px;
+}
+
+.side_right_area {
+    padding: 0 58px;
+    flex: 1 1 260px;
+    display: flex;
+}
+
+.like_button {
+    width: 84px;
+    height: 40px;
+    padding: 0 11px;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.heart_img {
+    background-image: url(https://ifh.cc/g/mDbtH9.png);
+    background-repeat: no-repeat;
+    background-size: 14px auto;
+    background-position-y: 12px;
+    width: 16px;
+    height: 25px;
+    display: inline-block;
+    margin-top: -8px;
+    margin-right: 2px;
+}
+
+.like_count {
+    display: inline-block;
+}
+
+/* 게시글 컨텐츠 */
+.post_content_area {
+    flex: 1 1 750px;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.post_container {
+    position: relative;
+    padding: 42px 30px;
+}
+
+.post_header {
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.post_title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.post_info {
+    margin-bottom: 16px;
+    height: 20px;
+}
+
+.post_writer {
+    color: #454545;
+    font-size: 14px;
+}
+
+.post_date,
+.post_dot {
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+.post_content {
+    padding: 16px 0;
+}
+
+.content_text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #454545;
+}
+
+.post_category {
+}
+
+.category_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    color: #495057;
+    font-size: 14px;
+}
+
+.comment {
+    background-color: #f8f9fa;
+}
+
+.write_reply_area {
+    border-top: 1px solid #f1f3f5;
+    background-color: #f8f9fa;
+}
+
+.write_reply_container {
+    position: relative;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 750px;
+    margin: 40px auto;
+}
+
+.write_reply_header,
+.reply_read_header {
+    padding: 24px 36px;
+    border-bottom: none;
+}
+
+.write_reply_box {
+    margin: 0 20px;
+    padding: 16px 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+textarea {
+    overflow: visible;
+    resize: none;
+    border: 0;
+    width: 100%;
+}
+
+.reply_write_button_area {
+    margin: 12px 20px;
+    display: flex;
+}
+
+.reply_write_button_space {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.reply_write_button {
+    padding: 0 12px;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #00c471;
+    font-weight: 700;
+    background-color: #00c471;
+    border-radius: 8px;
+    color: #fff;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.reply_area {
+    background-color: #f8f9fa;
+}
+
+.reply_count_area,
+.reply_count_container {
+    margin: 0 auto;
+    width: 750px;
+    padding: 20px 0 0 0;
+    color: #616568;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reply_count_area {
+    border-top: 1px solid #ced4da;
+}
+
+.reply_read_container {
+    position: relative;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 0 16px;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reply_read_header {
+    border-bottom: 1px solid #e9ecef;
+    position: relative;
+}
+
+.reply_writer {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1b1c1d;
+    margin-bottom: 4px;
+}
+
+.reply_date {
+    font-size: 13px;
+    font-weight: 400;
+    color: #abb0b5;
+    display: inline-block;
+}
+
+.reply_button_area {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.modify_button,
+.remove_button {
+    font-size: 12px;
+    border: 0;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.modify_button {
+    border-right: 1px solid #e9ecef;
+}
+
+.reply_content {
+    padding: 15px 20px;
+}

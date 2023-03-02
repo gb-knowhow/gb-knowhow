@@ -9,25 +9,20 @@ import javax.servlet.http.HttpServletResponse;
 import com.knowhow.Action;
 import com.knowhow.Result;
 import com.knowhow.question.dao.QuestionDAO;
-import com.knowhow.question.domain.QuestionVO;
+import com.knowhow.questionComment.dao.QuestionCommentDAO;
 
-public class QuestionUpdateActionController implements Action {
+public class QuestionDetailActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		QuestionDAO questionDAO = new QuestionDAO();
+		QuestionCommentDAO commentDAO = new QuestionCommentDAO();
 		Result result = new Result();
-		QuestionVO questionVO = new QuestionVO();
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
 		
-		questionVO.setQuestionId(questionId);
-		questionVO.setQuestionTitle(req.getParameter("questionTitle"));
-		questionVO.setQuestionContent(req.getParameter("questionContent"));
-		
-		questionDAO.update(questionVO);
-		
-//		result.setPath(req.getContextPath() + "/questionUpdateAction.question");
-		result.setPath(req.getContextPath() + "/questionDetailAction.question");
+		req.setAttribute("question", questionDAO.selectOne(questionId));
+		req.setAttribute("comments", commentDAO.selectAll(questionId));
+		result.setPath("/html/kdh/detailsPageMine.jsp");
 		
 		return result;
 	}
