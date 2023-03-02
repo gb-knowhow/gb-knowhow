@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>footer</title>
-<link rel="stylesheet" href="header_footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main/include/header_footer.css">
 </head>
 <body>
 	<!-- footer -->
@@ -20,9 +20,9 @@
 			</a>
 			</em>
 			<ul>
-				<li><a href="http://policy.naver.com/rules/service.html">이용약관</a></li>
+				<li><a href="#">이용약관</a></li>
 				<li><a
-					href="https://help.naver.com/support/alias/membership/p.membership/p.membership_26.naver"
+					href="#"
 					target="_blank">고객센터 </a></li>
 			</ul>
 			<em class="copy">Copyright</em> <em class="u_cri">©</em> <a href="#"
