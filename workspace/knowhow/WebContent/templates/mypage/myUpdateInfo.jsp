@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
+<link rel="icon" href="${pageContext.request.contextPath}/static/image/favicon.ico">
 <title>내 정보 업데이트</title>
 
 </head>
 
 <body>
-<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" /></header>
 
 <div class="all_content">
 	<!-- 프로필 영역 전체 -->
@@ -23,11 +23,10 @@
 			<div class="my_personal_inner">
 				<!-- 가장 왼쪽 -->
 				<div class="profile_section">
-
 					<!-- 썸네일 + 수정버튼 -->
 					<div class="profile_group">
 						<span class="thumbnail">
-							<img src="${pageContext.request.contextPath}/image/mentee.png" width="100%" height="100%" />
+							<img src="${pageContext.request.contextPath}/static/image/mentee.png" width="100%" height="100%" />
 						</span>
 					</div>
 
@@ -214,14 +213,14 @@
 		</div>
 	</div>
 </div>
-<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/jyc/myUpdateInfo.js">
+<script src="${pageContext.request.contextPath}/static/js/myPage/myUpdateInfo.js">
 let contextPath = '${pageContext.request.contextPath}'
 </script>
 
 <!-- 마이페이지와 update페이지만 css와 html테그가 살짝 다름 -->
-   <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myUpdateInfo.css"/>
+   <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/myPage/myUpdateInfo.css"/>
 </html>

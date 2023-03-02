@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<header id="header"><jsp:include page="${pageContext.request.contextPath}/html/hhs/include/header.jsp" /></header>
+<header id="header"><jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" /></header>
 
 <div class="all_content">
 	<div class="my_main_content">
@@ -219,7 +219,7 @@
 	
 	</div>
 </div>	
-<jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 </div>
 	
 	
