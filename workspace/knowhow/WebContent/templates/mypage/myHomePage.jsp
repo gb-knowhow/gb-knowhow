@@ -229,5 +229,5 @@
 	
 	
 </body>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/jyc/myHomePage.css"/>
+    <link rel="stylesheet"href="${pageContext.request.contextPath}/static/css/mypage/myUpdateInfo.css" />
 </html>
