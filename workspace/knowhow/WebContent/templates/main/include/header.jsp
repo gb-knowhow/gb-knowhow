@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -185,13 +185,15 @@
 	                       </div>
 	                     </button>
 	                   </div>
+	                     <c:if test="${not empty sessionScope.memberId || not empty cookie.memberIdentification }">
 	                   <!-- 로그아웃 버튼! -->
-	                   <div class="buttonWrap headerButton">
-	                     <button class="listButton logoutButton">
-	                       <div class="logoutButton_img"></div>
-	                     </button>
+	                   		<div class="buttonWrap headerButton">
+	                     		<button class="listButton logoutButton" onclick="location.href = '${pageContext.request.contextPath}/logout.member'">
+	                       		<div class="logoutButton_img"></div>
+	                     	</button>
 	                   </div>
 	                   <!-- // 로그아웃 버튼! -->
+   						</c:if>
 	                 </div>
 	               </div>
 	             </div>
@@ -216,6 +218,10 @@
         </div>
       </div>
    </body>
+   <script>
+   	let contextPath =  "${pageContext.request.contextPath}";
+   	let sessionMemberId = "${sessionScope.memberId}"
+   </script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="${pageContext.request.contextPath}/static/js/main/include/header.js"></script>
 </html>
