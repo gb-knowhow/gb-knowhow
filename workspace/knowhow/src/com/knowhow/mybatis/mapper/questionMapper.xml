@@ -4,8 +4,7 @@
 <mapper namespace="question">
 
  	<select id="selectAll" resultType="questionDTO"> 
- 		select question_id, question_title, question_content, question_regdate, question_upddate, member_name, category_id,
- 		question_count 
+ 		select question_id, question_title, question_content, question_regdate, question_upddate, member_name, category_id
 		from view_question
  	</select>
  	
@@ -15,7 +14,7 @@
 	
 	<select id="selectOne" parameterType="long" resultType="questionDTO">
 		select question_id, question_title, question_content, question_regdate, question_upddate, m.member_name, category_id,
- 		question_count, member_nickname, member_identification
+ 		member_nickname, member_identification
 		from view_question q join tbl_member m
 		where question_id = #{questionId}
 	</select>
