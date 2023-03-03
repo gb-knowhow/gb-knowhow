@@ -56,6 +56,7 @@
                             <div id="login-keep-wrap">
                                 <div id="login-keep">
                                     <input type="checkbox" id="check-login-keep" checked="checked" name="autoLogin">
+                                    <div id="image-checked"></div>
                                     <label for="keep" class="login-keep-text">로그인 상태 유지</label>
                                 </div>
                             </div>
@@ -104,6 +105,7 @@
         </footer>
     </div>
    </form>
+   <% session.getAttribute("memberId"); %>>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js">
 </script>

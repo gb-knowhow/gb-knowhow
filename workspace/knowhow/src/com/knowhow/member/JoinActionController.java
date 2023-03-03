@@ -1,5 +1,6 @@
 package com.knowhow.member;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Enumeration;
 
@@ -24,7 +25,9 @@ public class JoinActionController implements Action {
 		MemberVO memberVO = new MemberVO();
 		ResumeVO resumeVO = new ResumeVO();
 		Result result = new Result();
-		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "static/upload/";
+//		서버에 저장됨
+//		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "static/upload/";
+		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/static/upload/";
 		String element = "";
 		int fileSize = 1024 * 1024 * 5; //5M
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
@@ -43,11 +46,10 @@ public class JoinActionController implements Action {
 		
 		
 		
-		
+		System.out.println("uploadPath는 "+ uploadPath + " 입니다");
 //		파일 업로드 
 			String fileOriginalName = multipartRequest.getOriginalFileName("memberResume");
 			String fileSystemName = multipartRequest.getFilesystemName("memberResume");
-			
 			
 			System.out.println("element 이름은 " + element);
 			System.out.println("fileOriginalName은 " + fileOriginalName);
@@ -56,7 +58,7 @@ public class JoinActionController implements Action {
 			resumeVO.setResumeOriginalName(fileOriginalName);
 			resumeVO.setResumeSystemName(fileSystemName);
 			resumeVO.setMemberId(memberId);
-			
+			System.out.println("ResumeSystemName은 "+ resumeVO.getResumeSystemName());
 		
 		memberDAO.insertResume(resumeVO);
 		System.out.println("Resume 넣음");

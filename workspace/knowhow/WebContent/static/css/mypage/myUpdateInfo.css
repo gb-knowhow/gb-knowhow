@@ -329,7 +329,7 @@ td p{
 
 thead th {
 	width: 129px;
-    padding: 19px 0 0 24px;
+    padding: 10px 0 0 24px;
     background: #fbfbfb;
     border-top: 1px solid #fff;
     color: #2e2e2e;
@@ -339,7 +339,26 @@ thead th {
     letter-spacing: -1px;
 }
 
+.my_info_area{
+	position:relative;
+}
 
+.my_info_area h4{
+	position: relative;
+    height: 20px;
+    margin-top: 48px;
+    padding: 2px 0 6px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 20px;
+    color: #787878;
+}
+
+.my_info_area .text{
+	font-size: 16px;
+    color: #e15604;
+    font-weight: bold;
+}
 
 
 
