@@ -50,7 +50,7 @@ $(function(){
 	$dropdownSearchSection.css("display", "none");
 	$dropdownCategorySection.css("display", "none");
 
-   console.log($(document));
+   /*console.log($(document));*/
 
 });
 
@@ -106,3 +106,31 @@ $dropdownSearchButton.on("click", function(e){
 
 $dropdownSearchSection.slideToggle(500);
 
+
+/*const logoutBtn = $(".logoutButton")
+if(=="null"){ 
+	alert("로그인 필요");
+	}*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

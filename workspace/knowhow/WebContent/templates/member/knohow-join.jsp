@@ -13,7 +13,7 @@
 	<header id="header">
 		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true" />
 	</header>
-	<form action="${pageContext.request.contextPath}/joinAction.member" method="post" enctype="multipart/form-data" >
+	<form action="joinAction.member" method="post" enctype="multipart/form-data" >
     <div class="wrapper">
         <div class="section">
             <div class="content">

@@ -26,7 +26,10 @@ public class LoginActionController implements Action {
 		String path = null;
 		Result result = new Result();
 		System.out.println("autoLogin은 " + autoLogin +" 입니다");
-		if(autoLogin.equals("on")) {
+		
+		if(autoLogin == null) {
+			
+		} else if(autoLogin.equals("on")) {
 			isChecked = true;
 		} else {
 			isChecked = false;
@@ -52,6 +55,8 @@ public class LoginActionController implements Action {
 				System.out.println("12345");
 			}
 			session.setAttribute("memberId", memberId);
+			
+			
 			path = req.getContextPath() + "templates/main/main_content.jsp";
 		}else {
 			path = req.getContextPath() + "/login.member?login=false";

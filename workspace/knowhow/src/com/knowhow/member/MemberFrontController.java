@@ -19,7 +19,7 @@ public class MemberFrontController extends HttpServlet {
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
 		
-		System.out.println(target);
+		System.out.println("지금 들어온 target은 " + target);
 		
 		if (target.equals("join")) {
 			result = new Result();
@@ -41,7 +41,7 @@ public class MemberFrontController extends HttpServlet {
 			result = new CheckNickNameActionController().execute(req, resp);
 			
 		} else if (target.equals("logout")) {
-
+			result = new LogoutController().execute(req, resp);
 		} else if (target.equals("myPage")) {
 			
 		} else if (target.equals("myPageAction")) {
