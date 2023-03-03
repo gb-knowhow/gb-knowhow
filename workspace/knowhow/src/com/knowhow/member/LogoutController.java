@@ -20,12 +20,12 @@ public class LogoutController implements Action {
 		if(req.getHeader("Cookie") != null) {
 			Cookie[] cookies = req.getCookies();
 			for (Cookie cookie : cookies) {
-//				cookie.setMaxAge(0); //초단위
+				cookie.setMaxAge(0); //초단위
 				resp.addCookie(cookie);
 			}
 		}
 			
-		result.setPath(req.getContextPath() + "/login.member");
+		result.setPath(req.getContextPath() + "login.member");
 		result.setRedirect(true);
 		
 		return result;
