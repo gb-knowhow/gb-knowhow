@@ -76,9 +76,9 @@
             <!-- login wrap 끝 -->
             <!-- login under -->
             <ul id="login-wrapper-under">
-                <li class="lists" id="under-list1"><a class="a-in-list" href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR">비밀번호 찾기</a></li>
-                <li class="lists" id="under-list2"><a class="a-in-list" href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR">아이디 찾기</a></li>
-                <li class="lists" id="under-list3"><a class="a-in-list" href="https://nid.naver.com/user2/V2Join?m=agree&lang=ko_KR">회원가입</a></li>
+                <li class="lists" id="under-list1"><a class="a-in-list" href='${pageContext.request.contextPath}/findMyPassword.member'>비밀번호 찾기</a></li>
+                <li class="lists" id="under-list2"><a class="a-in-list" href='${pageContext.request.contextPath}/findMyId.member'>아이디 찾기</a></li>
+                <li class="lists" id="under-list3"><a class="a-in-list" href='${pageContext.request.contextPath}/join.member'>회원가입</a></li>
             </ul>
         </content>
         <div id="img-wrapper">

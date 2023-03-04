@@ -36,7 +36,7 @@ let flag1 = false;
 let flag2 = false;
 let flag3 = false;
 let flag4 = false;
-let flag5 = false;
+/*let flag5 = false;*/
 let flag6 = false;
 let flag7 = false;
 
@@ -97,7 +97,7 @@ inputId.addEventListener("blur", function(){
 });
 
 
-/*---------------------------------------------------------------------*/
+/*---------------------------------수정사항------------------------------------*/
 const $joinHelp = $(".err-id");
 const $joinInputId = $('input[id=id]');
 var value = $joinInputId.val();
@@ -181,6 +181,78 @@ $inputName.on("blur", function(){
     }
 });
 
+const $inputEmail = $("#email");
+const $errEmail = $(".err-email");
+var regExp = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+console.log($inputEmail.val())
+
+$inputEmail.on("blur", function(){$.ajax({
+	url: contextPath + "/checkEmailAction.member",
+	data: {memberEmail: $inputEmail.val()},
+	success: function(result){
+		let message;
+		result = JSON.parse(result);
+		if(result.check){
+			message = "중복된 아이디입니다.";
+			$errEmail.css('color', 'red')
+			$errEmail.css('display', 'block');
+			
+		} else if($inputEmail.val() < 1){
+			$errEmail.css('display', 'block');
+       		$errEmail.css('color', 'red');
+       		message = "필수 입력 사항입니다";
+
+		} else if(!regExp.test($inputEmail.val())){
+			$errEmail.css('display', 'block');
+       		$errEmail.css('color', 'red');
+       		message = "이메일 형식에 맞춰주세요";
+
+		} else{
+			message = "사용 가능한 이메일입니다.";
+			$errEmail.css('display', 'block');
+			$errEmail.css('color', '#2bb673');
+			flag4 = true;
+		}
+		
+			$errEmail.text(message);
+			console.log("checkEamil 들어옴")
+		}
+})
+});
+
+ /*function(){
+    if(!$inputEmail.val()){ 
+        $errEmail.show(); 
+
+  } else if (!regExp.test($inputEmail.val())) { 
+        $errEmail.text("이메일이 유효하지 않습니다.")
+        $inputEmail.focus(); 
+		console.log("이메일 들어왔어욤")
+   } else {
+		$errEmail.hide();
+           }*/
+        
+/*});*/
+
+/*inputEmail.addEventListener("blur", function(){
+    var idInputValue = document.querySelector("#email").value;
+    var regExp1 = '[a-z0-9]+@naver.com';
+    var regExp2 = '[a-z0-9]+@google.com';
+    var regExp3 = '[a-z0-9]+@daum.net';
+    if(idInputValue.length <= 0){
+        errEmail.style.display = "block";
+    }else if(idInputValue.match(regExp1) == null && idInputValue.match(regExp2) == null && idInputValue.match(regExp3) == null){
+        errEmail.style.display = "block";
+        errEmail.innerHTML = '＊이메일 형식을 확인해주세요';
+    }else{
+        errEmail.style.display = "none";
+        inputEmail.style.background = '#93a0ea30';
+        flag4 = true;
+    }
+});*/
+
+
 
 /* 수정사항---------------------------------------------------------------------*/
 
@@ -205,17 +277,7 @@ inputPasswordCheck.addEventListener("blur", function(){
         
     }
 });
-inputNickname.addEventListener("blur", function(){
-    var idInputValue = document.querySelector("#nick-name").value;
-    console.log("들어옴");
-    if(idInputValue.length < 1){
-        errNick.style.display = "block";
-    } else{
-        errNick.style.display = "none";
-        inputNickname.style.background = '#93a0ea30';
-        flag5 = true;
-    }
-});
+
 inputAge.addEventListener("blur", function(){
     var idInputValue = document.querySelector("#age").value;
     console.log("들어옴");
@@ -228,42 +290,17 @@ inputAge.addEventListener("blur", function(){
     }
 });
 
-
-
-inputEmail.addEventListener("blur", function(){
-    var idInputValue = document.querySelector("#email").value;
-    var regExp1 = '[a-z0-9]+@naver.com';
-    var regExp2 = '[a-z0-9]+@google.com';
-    var regExp3 = '[a-z0-9]+@daum.net';
-    if(idInputValue.length <= 0){
-        console.log("11");
-        errEmail.style.display = "block";
-    }else if(idInputValue.match(regExp1) == null && idInputValue.match(regExp2) == null && idInputValue.match(regExp3) == null){
-        errEmail.style.display = "block";
-        console.log("22")
-        errEmail.innerHTML = '＊이메일 형식을 확인해주세요';
-    }else{
-        console.log("33");
-        errEmail.style.display = "none";
-        inputEmail.style.background = '#93a0ea30';
-        flag4 = true;
-    }
-});
-
 inputPassword.addEventListener("blur", function(){
     var passwordInputValue = document.querySelector("#password").value;
     var regExp = /^(?!((?:[A-Za-z]+)|(?:[~!@#$%^&*()_+=]+)|(?:[0-9]+))$)[A-Za-z\d~!@#$%^&*()_+=]{10,}$/;
     if(passwordInputValue.length <= 0){
-        console.log("11");
         errPassword.style.display = "block";
     }else if(passwordInputValue.match(regExp) != null){
-        console.log("22")
         errPassword.style.display = "none";
         inputPassword.style.background = '#93a0ea30';
         flag2 = true;
         
     }else if(passwordInputValue.length >= 1){
-        console.log("33");
         errPassword.style.display = "block";
         errPassword.innerHTML = '＊영문,숫자, 특수문자를 혼합하여 8자리 ~ 20자리 이내로 입력해주세요.';
         errPassword.style.fontSize = '10px';
@@ -276,7 +313,6 @@ inputPasswordCheck.addEventListener("blur", function(){
     var passwordInput = document.querySelector("#password-check").value;
     var regExp = /^(?!((?:[A-Za-z]+)|(?:[~!@#$%^&*()_+=]+)|(?:[0-9]+))$)[A-Za-z\d~!@#$%^&*()_+=]{10,}$/;
     if(flag2 == true && passwordInput.length == passwordInputValue.length){
-        console.log("11");
         errPasswordCheck.style.display = 'block';
         errPasswordCheck.innerHTML = "일치합니다";
         errPasswordCheck.style.color = 'blue';
@@ -292,7 +328,7 @@ inputPasswordCheck.addEventListener("blur", function(){
 
 
 button.addEventListener("click", function(){
-    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true && flag5 == true && flag6 == true && flag7 == true){
+    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true /*&& flag5 == true */&& flag6 == true && flag7 == true){
         alert("회원가입이 완료 되었습니다");
         location.replace(location.href);
         // window.location.href = 'https://www.naver.com';
@@ -320,7 +356,7 @@ label.addEventListener("click",function(){
     var button1 = document.querySelector(".checkbox");
     var icon = document.querySelector(".icon-checkbox");
     
-    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true && flag5 == true && flag6 == true){
+    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true/* && flag5 == true*/ && flag6 == true){
         console.log("sd")
         button1.style.background = 'blue';
         button1.style.borderColor = 'blue';
