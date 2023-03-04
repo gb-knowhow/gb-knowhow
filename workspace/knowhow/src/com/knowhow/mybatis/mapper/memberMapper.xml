@@ -38,4 +38,19 @@
 	<select id="checkEmail" parameterType="string" resultType="long">
 		select member_id from tbl_member where member_email = #{memberEmail}
 	</select>
+	
+	<!-- 아이디 찾기  -->
+	<select id="findMyId" parameterType="map" resultType="string">
+		select member_identification from tbl_member where member_email = #{memberEmail} and member_nickname=#{memberNickname} and member_name = #{memberName}
+	</select>
+	
+	<!-- 비밀번호 찾기 -->
+	<select id="findMyPassword" parameterType="map" resultType="string">
+		select member_password from tbl_member where member_email = #{memberEmail} and member_identification = #{memberIdentification}
+	</select>
+	
+	<!-- 새로운 비밀번호 DB에 업데이트 -->
+	<update id="updatePassword" parameterType="map">
+		update tbl_member set member_password= #{newMemberPassword} where member_identification=#{memberIdentification}
+	</update>
 </mapper>

@@ -2,6 +2,7 @@ package com.knowhow.member.dao;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import org.apache.ibatis.session.SqlSession;
 
@@ -52,5 +53,51 @@ public class MemberDAO {
 			return sqlSession.selectOne("member.login", loginMap);
 		}
 		
+//		아이디 찾기 
+		public String findMyId(String memberNickname, String memberEmail, String memberName) {
+			Map<String, String> findIdMap = new HashMap<String, String>();
+			findIdMap.put("memberNickname", memberNickname);
+			findIdMap.put("memberEmail", memberEmail);
+			findIdMap.put("memberName", memberName);
+			return sqlSession.selectOne("member.findMyId", findIdMap);
+		}
+		
+//		비밀번호 찾기 
+		public String findMyPassword(String memberIdentification, String memberEmail) {
+			Map<String, String> findPasswordMap = new HashMap<String, String>();
+			findPasswordMap.put("memberIdentification", memberIdentification);
+			findPasswordMap.put("memberEmail", memberEmail);
+			return sqlSession.selectOne("member.findMyPassword", findPasswordMap);
+		}
+		
+//		새로운 비밀번호 db에 업데이트
+		public void changePassword(String memberIdentification, String newMemberPassword) {
+			Map<String, String> updateMap = new HashMap<String, String>();
+			updateMap.put("memberIdentification", memberIdentification);
+			updateMap.put("newMemberPassword", newMemberPassword);
+			sqlSession.update("member.updatePassword", updateMap);
+		}
+		
+		
+//		임시 비밀번호 생성 메소드
+	    public String passwordGenerate() {
+	    	int pwdLength = 8;
+		    final char[] passwordTable =  { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
+		                                            'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+		                                            'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+		                                            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 
+		                                            'w', 'x', 'y', 'z', '!', '@', '#', '$', '%', '^', '&', '*',
+		                                            '(', ')', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+	    	
+	        Random random = new Random(System.currentTimeMillis());
+	        int tablelength = passwordTable.length;
+	        StringBuffer buf = new StringBuffer();
+	        
+	        for(int i = 0; i < pwdLength; i++) {
+	            buf.append(passwordTable[random.nextInt(tablelength)]);
+	        }
+	        
+	        return buf.toString();
+	    }
 
 }

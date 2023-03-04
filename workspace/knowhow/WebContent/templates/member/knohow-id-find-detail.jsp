@@ -14,6 +14,7 @@
 <header id="header">
 		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
 	</header>
+<form action="findMyIdAction.member">
     <div class="wrapper">
         <div class="section">
             <div class="content">
@@ -35,7 +36,7 @@
                                                     <div class="name-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="name" class="name">
+                                                            <input type="text" id="name" class="name" name="memberName">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -50,7 +51,7 @@
                                                     <div class="nick-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="nick" class="nick-name">
+                                                            <input type="text" id="nick" class="nick-name" name="memberNickname">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,10 +68,10 @@
                                                     <div class="email-input">
                                                         <div class="input-box">
                                                             <label for=""></label>
-                                                            <input type="text" id="email">
+                                                            <input type="text" id="email" name=memberEmail>
                                                         </div>
                                                     </div>
-                                                    <button class="email-bt">발송</button>
+                                                    <button class="email-bt" type="submit">발송</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,6 +88,7 @@
             </div>
         </div>
     </div>
+ </form>
 </body>
 </html>
 </html>
