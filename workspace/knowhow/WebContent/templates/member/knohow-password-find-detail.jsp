@@ -18,7 +18,7 @@
             <div class="content">
                 <div class="find-by-id">
                     <strong class="">비밀번호 찾기</strong>
-                    <form action="#">
+                    <form action="findMyPasswordAction.member">
                         <div class="form_info">
                             <div class="form-list">
                                 <p class="sub-title">
@@ -35,7 +35,7 @@
                                                         <div class="email-input">
                                                             <div class="input-box">
                                                                 <label for=""></label>
-                                                                <input type="text" id="id">
+                                                                <input type="text" id="id" name="memberIdentification">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -53,10 +53,10 @@
                                                         <div class="email-input">
                                                             <div class="input-box">
                                                                 <label for=""></label>
-                                                                <input type="text" id="email">
+                                                                <input type="text" id="email" name="memberEmail">
                                                             </div>
                                                         </div>
-                                                        <button class="email-bt">발송</button>
+                                                        <button class="email-bt" type="submit">발송</button>
                                                     </div>
                                                 </div>
                                             </div>
