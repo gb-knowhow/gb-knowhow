@@ -20,7 +20,7 @@ public class QuestionListActionController implements Action {
 		
 		req.setAttribute("questions", questionDAO.selectAll());
 		
-		result.setPath("html/kdh/questionList.jsp");
+		result.setPath("templates/board/questionList.jsp");
 		
 		return result;
 	}

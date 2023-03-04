@@ -2,9 +2,6 @@ package com.knowhow.question.domain;
 
 
 
-
-
-
 public class QuestionVO {
 	private Long questionId;
 	private Long memberId;
