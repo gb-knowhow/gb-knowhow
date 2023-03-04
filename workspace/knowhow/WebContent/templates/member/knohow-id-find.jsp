@@ -31,8 +31,8 @@
                     </div>
                 </div>
                 <ul class="find-list">
-                    <li id="list1"><button class="button-item"><span class="icon"><span id="icon1"></span></span><div class="id-text">아이디 찾기</div></button></li>
-                    <li id="list2"><button class="button-item"><span class="icon"><span id="icon2"></span></span><div class="id-text">비밀번호 찾기</div></button></li>
+                    <li id="list1"><button class="button-item" onclick = "location.href='${pageContext.request.contextPath}/findMyId.member'"><span class="icon"><span id="icon1"></span></span><div class="id-text">아이디 찾기</div></button></li>
+                    <li id="list2"><button class="button-item" onclick = "location.href='${pageContext.request.contextPath}/findMyPassword.member'"><span class="icon"><span id="icon2"></span></span><div class="id-text">비밀번호 찾기</div></button></li>
                     <a href=""><div id="text-inside">도움말</div></a>
                     </span></div></button></li>
                 </ul>

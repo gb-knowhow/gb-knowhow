@@ -24,11 +24,18 @@
 		where member_identification = #{memberIdentification} and member_password = #{memberPassword}
 	</select>
 	
+	<!-- 아이디 중복검사 -->
 	<select id="checkId" parameterType="string" resultType="long">
 		select member_id from tbl_member where member_identification = #{memberIdentification}
 	</select>
 	
+	<!-- 닉네임 중복검사 -->
 	<select id="checkNickname" parameterType="string" resultType="long">
 		select member_id from tbl_member where member_identification = #{memberNickname}
+	</select>
+	
+	<!-- 이메일 중복검사 -->
+	<select id="checkEmail" parameterType="string" resultType="long">
+		select member_id from tbl_member where member_email = #{memberEmail}
 	</select>
 </mapper>

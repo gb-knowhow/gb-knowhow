@@ -39,6 +39,11 @@ public class MemberDAO {
 		   return sqlSession.selectOne("member.checkNickname", nickname) != null;
 	   }
 	   
+//	   이메일 중복검사
+	   public boolean checkEmail(String memberEmail) {
+		   return sqlSession.selectOne("member.checkEmail", memberEmail) != null;
+	   }
+	   
 //		로그인
 		public Long login(String memberIdentification, String memberPassword) {
 			Map<String, String> loginMap = new HashMap<String, String>();

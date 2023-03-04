@@ -56,7 +56,7 @@ public class LoginActionController implements Action {
 			}
 			session.setAttribute("memberId", memberId);
 			
-			
+//			메인 경로 수정해주기
 			path = req.getContextPath() + "templates/main/main_content.jsp";
 		}else {
 			path = req.getContextPath() + "/login.member?login=false";

@@ -37,22 +37,29 @@ public class MemberFrontController extends HttpServlet {
 		} else if (target.equals("checkIdAction")) {
 			result = new CheckIdActionController().execute(req, resp);
 			
+		} else if (target.equals("checkEmailAction")) {
+			result = new CheckEmailActionController().execute(req, resp);
+			
 		} else if (target.equals("checkNicknameAction")) {
 			result = new CheckNickNameActionController().execute(req, resp);
 			
 		} else if (target.equals("logout")) {
 			result = new LogoutController().execute(req, resp);
-		} else if (target.equals("myPage")) {
 			
-		} else if (target.equals("myPageAction")) {
-			result = new MyPageActionController().execute(req, resp);
+		} else if (target.equals("findInfo")) {
+			result = new Result();
+			result.setPath("templates/member/knohow-id-find.jsp");
 			
 		} else if (target.equals("findMyId")) {
+			result = new Result();
+			result.setPath("templates/member/knohow-id-find-detail.jsp"); 
 			
 		} else if (target.equals("findMyIdAction")) {
 			result = new FindMyIdActionController().execute(req, resp);
 			
 		} else if (target.equals("findMyPassword")) {
+			result = new Result();
+			result.setPath("templates/member/knohow-password-find-detail.jsp"); 
 			
 		} else if (target.equals("findMyPasswordAction")) {
 			result = new FindMyPasswordActionController().execute(req, resp);

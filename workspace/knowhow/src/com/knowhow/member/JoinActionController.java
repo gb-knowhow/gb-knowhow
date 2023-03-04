@@ -72,7 +72,7 @@ public class JoinActionController implements Action {
 //		memberVO.setMemberEmail(req.getParameter("memberEmail"));
 //		memberVO.setMemberNickname(req.getParameter("memberNickname"));
 //		memberDAO.join(memberVO);
-		result.setPath(req.getContextPath() + "templates/member/login.jsp");
+		result.setPath(req.getContextPath() + "login.member");
 		result.setRedirect(true);
 //		파일 경로 어떻게 받는지? 파일 폴더가 하나가 더필요하네?
 //		memberVO.setMemberProfileFilePath(req.getParameter(""));
