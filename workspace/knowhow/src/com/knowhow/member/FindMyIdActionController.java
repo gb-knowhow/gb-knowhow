@@ -65,7 +65,7 @@ public class FindMyIdActionController implements Action {
 	        
 	      //****************건들지 마세요********************
 	        final String username = "youchanj66@gmail.com";         
-	        final String password = "hoepuhbkfnwtekgp";
+	        final String password = "hzuhlctjpakewrhs";
 	        //*********************************************
 	        
 	        // 메일에 출력할 텍스트
@@ -126,6 +126,7 @@ public class FindMyIdActionController implements Action {
 	        
 		} else {
 			result.setPath("/findMyId.member");
+			result.setRedirect(true);
 		}
 		
 		
