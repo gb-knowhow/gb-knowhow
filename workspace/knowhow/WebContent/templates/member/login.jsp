@@ -105,7 +105,7 @@
         </footer>
     </div>
    </form>
-   <% session.getAttribute("memberId"); %>>
+   <% session.getAttribute("memberId"); %>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js">
 </script>

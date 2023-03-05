@@ -111,6 +111,9 @@ public class FindMyPasswordActionController implements Action {
 	        } catch ( Exception e ) {
 	          e.printStackTrace();
 	        }
+	} else {
+		result.setPath("findMyPassword.member");
+		result.setRedirect(true);
 	}
 		
 		result.setPath("login.member");
