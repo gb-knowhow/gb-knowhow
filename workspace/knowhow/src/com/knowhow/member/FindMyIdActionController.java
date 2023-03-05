@@ -121,11 +121,11 @@ public class FindMyIdActionController implements Action {
 	          e.printStackTrace();
 	        }
 	       
-	        result.setPath("/login.member");
+	        result.setPath("login.member");
 	        result.setRedirect(true);
 	        
 		} else {
-			result.setPath("/findMyId.member");
+			result.setPath("findMyId.member");
 			result.setRedirect(true);
 		}
 		

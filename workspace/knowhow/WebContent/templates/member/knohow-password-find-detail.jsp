@@ -65,7 +65,6 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
                     <span class="inquiry">
                         <input type="checkbox" class="checkbox" id="ck">
                         <label for="ck">
@@ -76,13 +75,14 @@
                         </label>
                     </span>
                     <div class="bt">
-                        <button type="button" class="back-button">취소</button>
-                        <button type="button" class="complete-button">완료</button>
+                        <button type="button" onclick="location.href='${pageContext.request.contextPath}/login.member'" class="back-button">취소</button>
+                        <button type="submit" class="complete-button">완료</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+  </form>
 </body>
 <script src="${pageContext.request.contextPath}/static/js/member/knohow-password-find-detail.js"></script>
 </html>
