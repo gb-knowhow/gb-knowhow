@@ -3,26 +3,159 @@
 
 <mapper namespace="admin">
 	<!-- id = 메소드 아이디. resultType은 리턴타입. -->
-	<select id="menteeList" resultType="menteeListDTO">
-		select member_id, resume_existence, member_name, member_email, 
+	<!-- 멘티 리스트 -->
+	<select id="menteeList" parameterType="map"
+		resultType="memberListDTO">
+		select member_id, resume_existence, member_name, member_email,
 		question_count, total_comment_count
-		from view_mentee_list;
+		from view_member_list
+		where
+		resume_existence = false
+		<if test="menteeKeyword != null">
+			and member_name like concat('%',#{menteeKeyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
 	</select>
-	
+
+	<!-- 멘티 전체 인원 수 -->
 	<select id="menteeGetTotal" resultType="long">
 		select count(member_id)
-		from view_mentee_list
+		from view_member_list
+		where resume_existence =
+		false
 	</select>
-	
 
+	<!-- 멘티 리스트 삭제 -->
 	<delete id="menteeListDelete" parameterType="long">
 		delete from
 		tbl_member
-		where member_id = #{memberId}
+		where resume_existence = false and member_id = #{memberId}
 	</delete>
 
-	<delete id="answerCommentDelete" parameterType="long">
+	<!-- 멘토 리스트 -->
+	<select id="mentorList" resultType="memberListDTO">
+		select member_id,
+		resume_existence, member_name, member_email,
+		question_count,
+		total_comment_count
+		from view_member_list
+		where
+		resume_existence = true
+		<if test="mentorKeyword != null">
+			and member_name like concat('%',#{mentorKeyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 멘토 전체 인원 수 -->
+	<select id="mentorGetTotal" resultType="long">
+		select count(member_id)
+		from view_member_list
+		where resume_existence =
+		true
+	</select>
+
+	<!-- 멘토 리스트 삭제 -->
+	<delete id="mentorListDelete" parameterType="long">
 		delete from
-		tbl_answer where member_id = #{memberId}
+		tbl_member
+		where resume_existence = true and member_id = #{memberId}
 	</delete>
+
+	<!-- 대쉬보드 신규 회원 -->
+	<select id="dashBoardNewMember" parameterType="map"
+		resultType="dashBoardNewMemberDTO">
+		select member_id, resume_existence, member_name,
+		member_age,
+		member_nickname, member_email
+		from tbl_member
+		order by
+		member_id desc
+	</select>
+
+	<!-- 대쉬보드 관리자에게 문의사항 -->
+	<select id="dashBoardAskAdmin" parameterType="map"
+		resultType="dashBoardAskAdminDTO">
+		select ask_admin_id, resume_existence, member_name,
+		ask_admin_title, ask_admin_regdate
+		from view_dashboard_admin_ask
+		order
+		by ask_admin_id desc
+	</select>
+
+	<!-- 대쉬보드 멘티 질문 리스트 -->
+	<select id="dashBoardMenteeQuestion" parameterType="map"
+		resultType="dashBoardMenteeQuestionDTO">
+		select question_id, category_name, question_title,
+		member_name,
+		answer_count, question_regdate
+		from view_mentee_question
+	</select>
+
+	<!-- 대쉬보드 멘토 답변 리스트 -->
+	<select id="dashBoardMentorReply" parameterType="map"
+		resultType="dashBoardMentorReplyDTO">
+		select answer_id, answer_title, member_name, like_count,
+		answer_regdate
+		from view_dashboard_mentor_reply
+	</select>
+
+	<!-- 멘토 답변 목록 -->
+	<select id="mentorReplyList" parameterType="map"
+		resultType="mentorReplyListDTO">
+		select answer_id, category_name, member_name, answer_title,
+		answer_content,
+		comment_count, like_count, answer_regdate, question_id
+		from view_mentor_reply_list
+		where
+		resume_existence = true
+		<if test="mentorReplyKeyword != null">
+			and answer_title like concat('%',#{mentorReplyKeyword},
+			'%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 멘토 답변 총 수 -->
+	<select id="mentorReplyGetTotal" resultType="long">
+		select
+		count(member_name)
+		from view_mentor_reply_list
+	</select>
+
+	<!-- 멘토 답변 목록 삭제 -->
+	<delete id="mentorAnswerListDelete" parameterType="long">
+		delete from
+		tbl_answer
+		where answer_id = #{answerId};
+	</delete>
+
+	<!-- 멘티 질문 목록 -->
+	<select id="menteeQuestionList" parameterType="map"
+		resultType="menteeQuestionListDTO">
+		select question_id, category_name, member_name, question_title,
+		question_content, answer_count, comment_count, question_regdate
+		from view_mentee_question_list
+		where resume_existence = false
+		<if test="menteeQuestionKeyword != null">
+			and question_title like
+			concat('%',#{menteeQuestionKeyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 멘티 질문 총 수 -->
+	<select id="menteeQuestionGetTotal" resultType="long">
+		select
+		count(question_id)
+		from view_mentee_question_list;
+	</select>
+
+	<!-- 멘티 질문 목록 삭제 -->
+	<delete id="menteeQuestionListDelete" parameterType="long">
+		delete from tbl_question
+		where question_id = #{questionId}
+	</delete>
+
+
 </mapper>

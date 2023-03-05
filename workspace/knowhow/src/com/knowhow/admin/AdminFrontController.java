@@ -16,7 +16,7 @@ public class AdminFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
-		
+		System.out.println(target);
 		if(target.equals("adminMentorList")) {
 			
 		} else if(target.equals("adminMentorListAction")){
@@ -48,7 +48,7 @@ public class AdminFrontController extends HttpServlet {
 			result = new AdminResumeDeleteActionController().execute(req, resp);
 			
 		}else if(target.equals("adminQuestionList")){
-			
+//		멘티 질문 목록
 		}else if(target.equals("adminQuestionListAction")){
 			result = new AdminQuestionListActionController().execute(req, resp);
 			
@@ -58,7 +58,7 @@ public class AdminFrontController extends HttpServlet {
 			result = new AdminQuestionDetailActionController().execute(req, resp);
 			
 		}else if(target.equals("adminQuestionDelete")){
-			
+//			멘티 질문 목록 삭제
 		}else if(target.equals("adminQuestionDeleteAction")){
 			result = new AdminQuestionDeleteActionController().execute(req, resp);
 			
@@ -77,20 +77,20 @@ public class AdminFrontController extends HttpServlet {
 		}else if(target.equals("adminQuestionCommentDeleteAction")){
 			result = new AdminQuestionCommentDeleteActionController().execute(req, resp);
 			
-		}else if(target.equals("adminAnswerList")){
+		}else if(target.equals("adminMentorAnswerList")){
 			
-		}else if(target.equals("adminAnswerListAction")){
-			result = new AdminAnswerListActionController().execute(req, resp);
+		}else if(target.equals("adminMentorAnswerListAction")){
+			result = new AdminMentorAnswerListActionController().execute(req, resp);
 			
-		}else if(target.equals("adminAnswerDetail")){
+		}else if(target.equals("adminMentorAnswerDetail")){
 			
-		}else if(target.equals("adminAnswerDetailAction")){
-			result = new AdminAnswerDetailActionController().execute(req, resp);
+		}else if(target.equals("adminMentorAnswerDetailAction")){
+			result = new AdminMentorAnswerDetailActionController().execute(req, resp);
 			
-		}else if(target.equals("adminAnswerDelete")){
-			
-		}else if(target.equals("adminAnswerDeleteAction")){
-			result = new AdminAnswerDeleteActionController().execute(req, resp);
+		}else if(target.equals("adminMentorAnswerDelete")){
+//			멘토 답변 글 삭제
+		}else if(target.equals("adminMentorAnswerDeleteAction")){
+			result = new AdminMentorAnswerDeleteActionController().execute(req, resp);
 			
 		}else if(target.equals("adminAnswerCommentList")){
 			
@@ -127,6 +127,11 @@ public class AdminFrontController extends HttpServlet {
 		} else if(target.equals("adminBannerDetailAction")){
 			result = new AdminBannerDetailActionController().execute(req, resp);
 			
+		} else if(target.equals("adminDashBoard")) {
+			
+		} else if(target.equals("adminDashBoardAction")) {
+			result = new AdminDashBoardActionController().execute(req, resp);
+			
 		} else if(target.equals("adminBannerAdd")){
 			
 		} else if(target.equals("adminBannerAddAction")){
@@ -135,7 +140,6 @@ public class AdminFrontController extends HttpServlet {
 		}else {
 			System.out.println(target);
 		}
-		
 		
 		if(result != null) {
 			if(result.isRedirect()) {
@@ -149,7 +153,6 @@ public class AdminFrontController extends HttpServlet {
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(req, resp);
 	}
 }

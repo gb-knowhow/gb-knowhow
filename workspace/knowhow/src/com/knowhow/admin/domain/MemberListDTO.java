@@ -1,6 +1,6 @@
 package com.knowhow.admin.domain;
 
-public class MenteeListDTO {
+public class MemberListDTO {
 	private Long memberId;
 	private String memberName;
 	private Boolean resumeExistence;
@@ -64,11 +64,31 @@ public class MenteeListDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MenteeListDTO other = (MenteeListDTO) obj;
+		MemberListDTO other = (MemberListDTO) obj;
+		if (memberEmail == null) {
+			if (other.memberEmail != null)
+				return false;
+		} else if (!memberEmail.equals(other.memberEmail))
+			return false;
 		if (memberId == null) {
 			if (other.memberId != null)
 				return false;
-		}
+		} else if (!memberId.equals(other.memberId))
+			return false;
+		if (memberName == null) {
+			if (other.memberName != null)
+				return false;
+		} else if (!memberName.equals(other.memberName))
+			return false;
+		if (questionCount != other.questionCount)
+			return false;
+		if (resumeExistence == null) {
+			if (other.resumeExistence != null)
+				return false;
+		} else if (!resumeExistence.equals(other.resumeExistence))
+			return false;
+		if (totalCommentCount != other.totalCommentCount)
+			return false;
 		return true;
 	}
 	
