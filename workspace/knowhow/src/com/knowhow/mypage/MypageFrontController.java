@@ -21,6 +21,10 @@ public class MypageFrontController extends HttpServlet {
 		if(target.equals("myHomePage")) {
 			System.out.println("FrontController");
 			result = new MypageActionController().execute(req, resp);
+			
+		}else if(target.equals("myQuestion")) {
+			System.out.println("FrontController");
+			result = new MyQuestionActionController().execute(req, resp);
 		}
 		
 		

@@ -21,6 +21,10 @@
 		<typeAlias type="com.knowhow.question.domain.QuestionVO" alias="questionVO"/>
 		<typeAlias type="com.knowhow.question.domain.QuestionDTO" alias="questionDTO"/>
 		<typeAlias type="com.knowhow.questionComment.domain.QuestionCommentVO" alias="questionCommentVO"/>
+		<typeAlias type="com.knowhow.mypage.domain.CountBoardsDTO" alias="countBoardsDTO"/>
+		<typeAlias type="com.knowhow.mypage.domain.CountLikedDTO" alias="countLikedDTO"/>
+		<typeAlias type="com.knowhow.mypage.domain.CountCommentDTO" alias="countCommentDTO"/>
+		<typeAlias type="com.knowhow.mypage.domain.CountLikeDTO" alias="countLikeDTO"/>
 	</typeAliases>
 	
 		
