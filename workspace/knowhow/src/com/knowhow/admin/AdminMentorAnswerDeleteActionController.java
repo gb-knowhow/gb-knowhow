@@ -13,7 +13,7 @@ import com.knowhow.Action;
 import com.knowhow.Result;
 import com.knowhow.admin.dao.AdminDAO;
 
-public class AdminMenteeDeleteActionController implements Action {
+public class AdminMentorAnswerDeleteActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -23,20 +23,14 @@ public class AdminMenteeDeleteActionController implements Action {
 		PrintWriter out = resp.getWriter();
 		JSONObject json = new JSONObject();
 
-		 String[] arrayParam = req.getParameterValues("menteeId");
+		 String[] arrayParam = req.getParameterValues("answerId");
 	        for (int i = 0; i < arrayParam.length; i++) {
-	            adminDAO.menteeListDelete(Long.valueOf(arrayParam[i]));
+	            adminDAO.mentorAnswerListDelete(Long.valueOf(arrayParam[i]));
 	        }
 	        
-	     result.setPath("/adminMenteeListAction.admin");
+	     result.setPath("/adminMentorAnswerListAction.admin");
 		
 		return result;
 	}
+
 }
-
-
-
-
-
-
-

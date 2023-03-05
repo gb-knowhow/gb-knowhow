@@ -103,34 +103,9 @@ function modal(id) {
         });
 }
 
-$('.modal1').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal1');
-});
-$('.modal2').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal2');
-});
-$('.modal3').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal3');
-});
-$('.modal4').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal4');
-});
-$('.modal5').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal5');
-});
-$('.modal6').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal6');
-});
-$('.modal7').on('click', function() {
-    // 모달창 띄우기
-    modal('my_modal7');
-});
+function openModal(modalNum){
+	 modal('my_modal'+modalNum);
+}
 
 
 function loadFile(input) {
@@ -156,7 +131,7 @@ function loadFile(input) {
 
 
 /*멘티 삭제 js 넣기*/
-$('.member-delete-button').on("click", function() {
+$('.mentee-delete-button').on("click", function() {
 	if($("input:checkbox[id='check1']:checked").length==0) {
 		alert("삭제할 항목을 선택해 주세요");
 		return;
@@ -185,3 +160,62 @@ $('.member-delete-button').on("click", function() {
 });
 
 
+
+
+
+/*멘토 삭제 js 넣기*/
+$('.member-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		
+		let mentorId = $(this).parent().children(".user-num").text();
+		
+		txt+="&"+"mentorId=" + mentorId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminMentorDeleteAction.admin?"+txt;
+
+});
+
+/*멘토 답변 삭제 js 넣기*/
+$('.mentor-answer-delete-button').on("click", function() {
+	if($("input:checkbox[id='check4']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check4']:checked").each(function(i,e){
+		console.log($(this));
+		let answerId = $(this).parent().parent().children(".answer-num").text();
+		txt+="&"+"answerId=" + answerId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminMentorAnswerDeleteAction.admin?"+txt;
+
+});
+
+/*멘티 질문 목록 삭제 js*/
+$('.mentee-question-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		console.log($(this));
+		let questionId = $(this).parent().parent().children(".ask-num").text();
+		txt+="&"+"questionId=" + questionId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminQuestionDeleteAction.admin?"+txt;
+});

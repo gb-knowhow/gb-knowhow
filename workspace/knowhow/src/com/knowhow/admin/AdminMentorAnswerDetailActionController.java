@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.knowhow.Action;
 import com.knowhow.Result;
 
-public class AdminAnswerListActionController implements Action {
+public class AdminMentorAnswerDetailActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

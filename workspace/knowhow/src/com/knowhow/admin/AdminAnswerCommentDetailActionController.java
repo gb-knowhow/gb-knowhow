@@ -13,7 +13,7 @@ public class AdminAnswerCommentDetailActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
