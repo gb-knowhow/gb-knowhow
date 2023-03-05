@@ -37,33 +37,14 @@
 		from tbl_question q left join tbl_question_like ql 
 		on q.question_id = ql.question_id 
 		where ql.member_id = #{memberId}
-	</select>
-	
-	<!-- 총 좋아요 한 글 수 -->
-	<select id="countLikesAll" parameterType="long" resultType="long">
-		select count(distinct like_id)+count(distinct answer_like_id) like_count_all
-		from view_like_count group by member_id 
-		having member_id = #{memberId}
-	</select>
-	
-	<!-- 좋아요 한 질문 수 -->
-	<select id="countLikesQuestion" parameterType="long" resultType="long">
-		select count(like_id) like_count_question from tbl_question_like group by member_id 
-		having member_id = #{member_id}
-	</select>
-	
-	<!-- 좋아요 한 답변 수 -->
-	<select id="countLikesAnswer" parameterType="long" resultType="long">
-		select count(answer_like_id) like_count_answer from tbl_answer_like group by member_id 
-		having member_id = #{member_id}
-	</select>
+	</select>	
 	
 	<!-- 내가 쓴 댓글 in 질문 -->
 	<select id="myCommentsInQuestion" parameterType="long" resultType="questionCommentVO">
 		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, 
 		comment_group, member_id, question_id 
 		from tbl_question_comment 
-		where member_id = #{member_id}
+		where member_id = #{memberId}
 	</select>
 	
 	<!-- 내가 쓴 댓글 in 답변 -->
@@ -71,7 +52,7 @@
 		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, 
 		comment_group, member_id, question_id 
 		from tbl_question_comment 
-		where member_id = #{member_id}
+		where member_id = #{memberId}
 	</select>
 	
 	<!-- 내 질문이 받은 좋아요 수 -->
@@ -80,7 +61,7 @@
 		from tbl_question q left join tbl_question_like ql  
 		on q.question_id = ql.question_id 
 		group by q.question_id 
-		having member_id = #{member_id}
+		having member_id = #{memberId}
 	</select>
 	
 	<!-- 내 답변이 받은 좋아요 수 -->
@@ -88,14 +69,32 @@
 		select count(answer_like_id) answer_liked 
 		from tbl_answer a left join tbl_answer_like al 
 		on a.answer_id = al.answer_id 
-		group by answer_id 
-		having member_id = #{member_id}
+		group by a.answer_id 
+		having a.member_id = #{memberId}
 	</select>
 	
+	<!-- 내가 받은 추천 수 각각 + 총 -->
+	<select id="countLikedIGot" parameterType="long" resultType="countLikedDTO">
+		select member_id, count_question_liked, count_answer_liked, count_total_liked 
+		from view_count_liked_all where member_id = #{memberId}
+	</select>
 	
+	<!-- 내가 쓴 질문, 답변, 문의 개수 -->
+	<select id="countMyBoards" parameterType="long" resultType="countBoardsDTO">
+		select count_question, count_answer, count_ask_admin 
+		from view_count_boards where member_id = #{memberId}
+	</select>
 	
+	<!-- 내가 쓴 댓글 개수 -->
+	<select id="countMyComments" parameterType="long" resultType="countCommentDTO">
+		select member_id, count_question_comment, count_answer_comment, 
+		count_total_comments from view_count_comment where member_id = #{memberId}
+	</select>
 	
-	
-	
+	<!-- 내가 좋아요 한 질문, 답변 개수 -->
+	<select id="countBoardsILiked" parameterType="long" resultType="countLikeDTO">
+		select member_id, count_question_like, count_answer_like, 
+		count_total_like from view_like_count where member_id = #{memberId}
+	</select>
 	
 </mapper>
