@@ -3,13 +3,14 @@
 
 <mapper namespace="question">
 
- 	<select id="selectAll" resultType="questionDTO"> 
+ 	<select id="selectAll" parameterType="map" resultType="questionDTO"> 
  		select question_id, question_title, question_content, question_regdate, question_upddate, member_name, category_id
 		from view_question order by question_id desc
+		limit #{startRow}, #{rowCount}
  	</select>
  	
  	<select id="getTotal" resultType="long">
-		select count(qusetion_id) from tbl_qusetion
+		select count(question_id) from tbl_question
 	</select>
 	
 	<select id="selectOne" parameterType="long" resultType="questionDTO">

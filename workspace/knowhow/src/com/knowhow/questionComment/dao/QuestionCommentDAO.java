@@ -24,6 +24,9 @@ public class QuestionCommentDAO {
 		   sqlSession.insert("questionComment.insert",commentVO);
 	   }
 	   
-	   
+//	   질문 삭제
+	   public void delete(Long commentId) {
+		   sqlSession.delete("questionComment.delete", commentId);
+	   }
 	   
 }

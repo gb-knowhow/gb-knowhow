@@ -70,7 +70,7 @@ $(function() {
 });
 
 /* 답글의 댓글달기를 누르면 댓글 다는 창과 목록이 나온다. */
-$(function() {
+/*$(function() {
     $('.button_reply_comment').click(function() {
         let status = $('#questionCommentList2').css('display');
       if (status == 'block') {
@@ -80,6 +80,23 @@ $(function() {
           $('#questionCommentList2').show();
       }
     })
+});*/
+
+const $answerComment = $(".questionButton_comment");
+
+$answerComment.each((i, answer) => {
+	$(answer).on("click", function(e) {
+		console.log($(this));
+		
+		let status = $('#questionCommentList2').css('display');
+		
+		if (status == 'block') {
+			$('#questionCommentList2').hide();
+			$('#questionCommentList4').hide();
+	  } else {
+	      $(answer).show();
+	  }
+	});
 });
 
 
@@ -135,3 +152,71 @@ $(function () {
 		}
 	});
 });
+
+
+/*댓글 ajax*/
+const $questionId = $("input[name='questionId']"); 
+const $button = $(".button_register");
+const $deleteBtn = $("._reportBtn");
+
+const questionDetailService = (function(){
+	function questionCommentWrite(questionId, replyContent) {
+		$.ajax({
+			url: contextPath + "/questionCommentWriteAction.questionComment",
+			data: {questionId: questionId, replyContent: replyContent},
+			success: function() {
+				location.reload();
+			},
+			error: function(a, b, c) {
+				console.log(a);
+				console.log(b);
+				console.log(c);
+			}
+		});
+	}
+	
+	function questionCommentDelete(commentId) {
+		$.ajax({
+			url: contextPath + "/questionCommentDeleteAction.questionComment",
+			data: {commentId: commentId},
+			success: function() {
+				location.reload();
+			}
+		});
+	}
+	
+	return {questionCommentWrite: questionCommentWrite, questionCommentDelete: questionCommentDelete}
+})();
+
+$button.each((i, button) => {
+	$(button).on("click", function(e) {
+		let questionId = $questionId.val();
+		let replyContent = $(".placeholder").val();
+		questionDetailService.questionCommentWrite(questionId, replyContent);
+	});	
+});
+
+$deleteBtn.each((i, button) => {
+	$(button).on("click", function(e) {
+		let commentId = $(button).parents().siblings(".question-commentList-nickname").children().first().text();
+		
+		questionDetailService.questionCommentDelete(commentId);
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

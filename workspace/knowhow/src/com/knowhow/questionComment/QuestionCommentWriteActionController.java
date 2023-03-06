@@ -23,22 +23,15 @@ public class QuestionCommentWriteActionController implements Action {
 		QuestionCommentVO questionCommVO = new QuestionCommentVO();
 //		System.out.println(Long.valueOf(req.getParameter("questionId")));
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
-		System.out.println(questionId);
 //		Long memberId = (Long)req.getSession().getAttribute("memberId");
 		Result result = new Result();
 		
-		
 //		questionCommVO.setMemberId((Long)req.getSession().getAttribute("memberId"));
-		questionCommVO.setCommentContent(req.getParameter("commentContent"));
+		questionCommVO.setCommentContent(req.getParameter("replyContent"));
 		questionCommVO.setMemberId(1L);
 		questionCommVO.setQuestionId(questionId);
 		 
-		System.out.println(questionCommVO);
-		
 		commentDAO.insert(questionCommVO);
-		result.setPath(req.getContextPath() + "/questionDetailAction.question");
-		
-		return result;
+		return null;
 	}
-
 }
