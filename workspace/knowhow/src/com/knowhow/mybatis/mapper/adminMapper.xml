@@ -65,7 +65,7 @@
 	<!-- 대쉬보드 신규 회원 -->
 	<select id="dashBoardNewMember" parameterType="map"
 		resultType="dashBoardNewMemberDTO">
-		select member_id, resume_existence, member_name,
+		select member_id, resume_existence, member_nickname,
 		member_age,
 		member_nickname, member_email
 		from tbl_member
@@ -76,7 +76,7 @@
 	<!-- 대쉬보드 관리자에게 문의사항 -->
 	<select id="dashBoardAskAdmin" parameterType="map"
 		resultType="dashBoardAskAdminDTO">
-		select ask_admin_id, resume_existence, member_name,
+		select ask_admin_id, resume_existence, member_nickname,
 		ask_admin_title, ask_admin_regdate
 		from view_dashboard_admin_ask
 		order
@@ -87,15 +87,17 @@
 	<select id="dashBoardMenteeQuestion" parameterType="map"
 		resultType="dashBoardMenteeQuestionDTO">
 		select question_id, category_name, question_title,
-		member_name,
+		member_nickname,
 		answer_count, question_regdate
-		from view_mentee_question
+		from
+		view_mentee_question
 	</select>
 
 	<!-- 대쉬보드 멘토 답변 리스트 -->
 	<select id="dashBoardMentorReply" parameterType="map"
 		resultType="dashBoardMentorReplyDTO">
-		select answer_id, answer_title, member_name, like_count,
+		select answer_id, answer_title, member_nickname,
+		like_count,
 		answer_regdate
 		from view_dashboard_mentor_reply
 	</select>
@@ -103,7 +105,7 @@
 	<!-- 멘토 답변 목록 -->
 	<select id="mentorReplyList" parameterType="map"
 		resultType="mentorReplyListDTO">
-		select answer_id, category_name, member_name, answer_title,
+		select answer_id, category_name, member_nickname, answer_title,
 		answer_content,
 		comment_count, like_count, answer_regdate, question_id
 		from view_mentor_reply_list
@@ -119,7 +121,7 @@
 	<!-- 멘토 답변 총 수 -->
 	<select id="mentorReplyGetTotal" resultType="long">
 		select
-		count(member_name)
+		count(member_nickname)
 		from view_mentor_reply_list
 	</select>
 
@@ -127,15 +129,16 @@
 	<delete id="mentorAnswerListDelete" parameterType="long">
 		delete from
 		tbl_answer
-		where answer_id = #{answerId};
+		where answer_id = #{answerId}
 	</delete>
 
 	<!-- 멘티 질문 목록 -->
 	<select id="menteeQuestionList" parameterType="map"
 		resultType="menteeQuestionListDTO">
-		select question_id, category_name, member_name, question_title,
+		select question_id, category_name, member_nickname, question_title,
 		question_content, answer_count, comment_count, question_regdate
-		from view_mentee_question_list
+		from
+		view_mentee_question_list
 		where resume_existence = false
 		<if test="menteeQuestionKeyword != null">
 			and question_title like
@@ -148,13 +151,70 @@
 	<select id="menteeQuestionGetTotal" resultType="long">
 		select
 		count(question_id)
-		from view_mentee_question_list;
+		from view_mentee_question_list
 	</select>
 
 	<!-- 멘티 질문 목록 삭제 -->
 	<delete id="menteeQuestionListDelete" parameterType="long">
-		delete from tbl_question
+		delete from
+		tbl_question
 		where question_id = #{questionId}
+	</delete>
+
+	<!-- 질문의 댓글 목록 -->
+	<select id="questionCommentList" parameterType="map"
+		resultType="questionCommentListDTO">
+		select comment_id, question_id, category_name, resume_existence,
+		member_nickname, comment_content, comment_regdate
+		from
+		view_question_comment_list
+		<if test="commentContentKeyword != null">
+			where comment_content like
+			concat('%',#{commentContentKeyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 질문 댓글 총 수 -->
+	<select id="questionCommentGetTotal" resultType="long">
+		select
+		count(comment_id)
+		from view_question_comment_list
+	</select>
+
+	<!-- 질문의 댓글 목록 삭제 -->
+	<delete id="questionCommentListDelete" parameterType="long">
+		delete from
+		tbl_question_comment
+		where comment_id = #{commentId}
+	</delete>
+
+	<!-- 답글의 댓글 목록 -->
+	<select id="answerCommentList" parameterType="map"
+		resultType="AnswerCommentListDTO">
+		select answer_comment_id, answer_id, category_name, resume_existence,
+		member_nickname,
+		answer_comment_content, answer_comment_regdate
+		from view_answer_comment_list
+		<if test="answerCommentContentKeyword != null">
+			where answer_comment_content like
+			concat('%',#{answerCommentContentKeyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 답글 댓글 총 수 -->
+	<select id="answerCommentGetTotal" resultType="long">
+		select
+		count(answer_comment_id)
+		from view_answer_comment_list
+	</select>
+
+	<!-- 답글의 댓글 목록 삭제 -->
+	<delete id="answerCommentListDelete" parameterType="long">
+		delete from
+		tbl_answer_comment
+		where answer_comment_id = #{answerCommentId}
 	</delete>
 
 

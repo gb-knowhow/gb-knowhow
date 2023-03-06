@@ -12,7 +12,7 @@
 <link rel="shortcut icon" type="image/x-icon"
 	href="./images/logo-favicon.ico" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/lut/mentor-answer-manager.css">
+	href="${pageContext.request.contextPath}/static/css/admin/mentor-answer-manager.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
@@ -172,7 +172,7 @@
 								</div>
 								<div class="answer-num">${reply.answerId}</div>
 								<div class="specialization">${reply.categoryName}</div>
-								<div class="user-nick-name">${reply.memberName}</div>
+								<div class="user-nick-name">${reply.memberNickname}</div>
 								<div class="answer-title">${reply.answerTitle}</div>
 								<div class="answer-contents">${reply.answerContent}</div>
 								<div class="answer-reply-count">${reply.commentCount}</div>
@@ -187,7 +187,7 @@
 								</div>
 								<div id="my_modal${reply.answerId}" class="my_modal">
 									<a class="modal_close_btn">✖</a>
-									<div class="comment-writer">작성자: ${reply.memberName}</div>
+									<div class="comment-writer">작성자: ${reply.memberNickname}</div>
 									<div class="comment-title">제목: ${reply.answerTitle}</div>
 									<div class="comment-detail">${reply.answerContent}</div>
 								</div>
@@ -241,5 +241,5 @@
 	let mentorReplys = `${mentorReplys}`; 
 	let contextPath = "${pageContext.request.contextPath}";
 </script>
-<script src="${pageContext.request.contextPath}/js/lut/know-how.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 </html>

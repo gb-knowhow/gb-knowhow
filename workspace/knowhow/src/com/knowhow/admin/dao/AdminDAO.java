@@ -5,12 +5,14 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.knowhow.admin.domain.AnswerCommentListDTO;
 import com.knowhow.admin.domain.DashBoardAskAdminDTO;
 import com.knowhow.admin.domain.DashBoardMenteeQuestionDTO;
 import com.knowhow.admin.domain.DashBoardMentorReplyDTO;
 import com.knowhow.admin.domain.MemberListDTO;
 import com.knowhow.admin.domain.MenteeQuestionListDTO;
 import com.knowhow.admin.domain.MentorReplyListDTO;
+import com.knowhow.admin.domain.QuestionCommentListDTO;
 import com.knowhow.mybatis.config.MyBatisConfig;
 
 
@@ -100,9 +102,34 @@ public class AdminDAO {
 		sqlSession.selectOne("admin.menteeQuestionListDelete", questionId);
 	}
 	
-//	답글의 댓글 상세보기
-//	public String answerCommentDetail(String CommentDetail) {
-//		return sqlSession.selectOne("admin.commentDetail",);
-//	}
+//	질문글 댓글 목록
+	public List<QuestionCommentListDTO> questionCommentList(Map<String, Object> questionCommentListMap) {
+		return sqlSession.selectList("admin.questionCommentList", questionCommentListMap);
+	}
+	
+//	질문글 댓글 총 수
+	public Long questionCommentGetTotal() {
+		return sqlSession.selectOne("admin.questionCommentGetTotal");
+	}
+	
+//	질문글 댓글 목록 삭제
+	public void questionCommentListDelete(Long commentId) {
+		sqlSession.selectOne("admin.questionCommentListDelete", commentId);
+	}
+	
+//	답변글 댓글 목록
+	public List<AnswerCommentListDTO> answerCommentList(Map<String, Object> answerCommentListMap) {
+		return sqlSession.selectList("admin.answerCommentList", answerCommentListMap);
+	}
+	
+//	답변글 댓글 총 수
+	public Long answerCommentGetTotal() {
+		return sqlSession.selectOne("admin.answerCommentGetTotal");
+	}
+	
+//	답변글 댓글 목록 삭제
+	public void answerCommentListDelete(Long answerCommentId) {
+		sqlSession.selectOne("admin.answerCommentListDelete", answerCommentId);
+	}
 	
 }

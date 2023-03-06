@@ -103,6 +103,7 @@ function modal(id) {
         });
 }
 
+/*모달창 세부사항 보기*/
 function openModal(modalNum){
 	 modal('my_modal'+modalNum);
 }
@@ -218,4 +219,59 @@ $('.mentee-question-delete-button').on("click", function() {
 	});
 		txt=txt.replace("&", "");
 		location.href = contextPath + "/adminQuestionDeleteAction.admin?"+txt;
+});
+
+
+/*질문의 댓글 목록 삭제 js*/
+$('.comment-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		console.log($(this));
+		let commentId = $(this).parent().parent().children(".ask-reply-num").text();
+		txt+="&"+"commentId=" + commentId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminQuestionCommentDeleteAction.admin?"+txt;
+});
+
+/*답글의 댓글 목록 삭제 js*/
+$('.answer-comment-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		console.log($(this));
+		let answerCommentId = $(this).parent().parent().children(".answer-reply-num").text();
+		txt+="&"+"answerCommentId=" + answerCommentId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/adminAnswerCommentDeleteAction.admin?"+txt;
+});
+
+/*이력서 목록 삭제 js*/
+$('.resume-delete-button').on("click", function() {
+	if($("input:checkbox[id='check1']:checked").length==0) {
+		alert("삭제할 항목을 선택해 주세요");
+		return;
+	}
+	var txt = '';
+	
+	$("input:checkbox[id='check1']:checked").each(function(i,e){
+		console.log($(this));
+		let resumeId = $(this).parent().parent().children(".resume-num").text();
+		txt+="&"+"resumeId=" + resumeId ;
+		
+	});
+		txt=txt.replace("&", "");
+		location.href = contextPath + "/resumeListDeleteAction.resume?"+txt;
 });

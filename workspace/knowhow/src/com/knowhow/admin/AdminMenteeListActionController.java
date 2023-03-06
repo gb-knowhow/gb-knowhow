@@ -72,7 +72,7 @@ public class AdminMenteeListActionController implements Action {
 		req.setAttribute("prev", prev);
 		req.setAttribute("next", next);
 		req.setAttribute("menteeKeyword", menteeKeyword);
-		result.setPath("html/lut/user-mentee-manager.jsp");
+		result.setPath("templates/admin/user-mentee-manager.jsp");
 		return result;
 	}
 }
