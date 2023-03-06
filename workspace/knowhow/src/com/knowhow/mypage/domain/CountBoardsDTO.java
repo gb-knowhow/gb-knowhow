@@ -40,11 +40,13 @@ public class CountBoardsDTO {
 		this.countAskAdmin = countAskAdmin;
 	}
 
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + (int) (memberId ^ (memberId >>> 32));
+		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
 		return result;
 	}
 
@@ -57,10 +59,20 @@ public class CountBoardsDTO {
 		if (getClass() != obj.getClass())
 			return false;
 		CountBoardsDTO other = (CountBoardsDTO) obj;
-		if (memberId != other.memberId)
+		if (memberId == null) {
+			if (other.memberId != null)
+				return false;
+		} else if (!memberId.equals(other.memberId))
 			return false;
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "CountBoardsDTO [memberId=" + memberId + ", countQuestion=" + countQuestion + ", countAnswer="
+				+ countAnswer + ", countAskAdmin=" + countAskAdmin + "]";
+	}
+
+	
 	
 }

@@ -13,10 +13,11 @@ import org.json.JSONObject;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.member.domain.MemberVO;
 import com.knowhow.mypage.dao.MypageDAO;
 import com.knowhow.mypage.domain.MyQuestionDTO;
 
-public class MyQuestionActionController implements Action {
+public class UpdateFormActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -27,16 +28,10 @@ public class MyQuestionActionController implements Action {
 		Long memberId = Long.valueOf(req.getParameter("memberId"));
 		MypageDAO mypageDAO = new MypageDAO(); 
 		JSONArray questionJSONs = new JSONArray();
-		List<MyQuestionDTO> questionList = null;
-		
-		questionList = mypageDAO.selectMyQuestions(memberId);
-		questionList.stream().map(question -> new JSONObject(question)).forEach(questionJSONs::put);
-		
-		out.print(questionJSONs);
-		out.close();
+		JSONObject memberObject = new JSONObject();
+		MemberVO memberVO = null;
 
 		return null;
-		
 	}
 
 }

@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.knowhow.member.domain.ResumeVO;
 import com.knowhow.mybatis.config.MyBatisConfig;
 import com.knowhow.resume.domain.ResumeListDTO;
 
@@ -29,5 +30,20 @@ public class ResumeDAO {
 //		이력서 목록 삭제
 		public void resumeListDelete(Long resumeId) {
 			sqlSession.selectOne("resume.resumeListDelete", resumeId);
+		}
+		
+		// 이력서 생성
+		public void insertResume(ResumeVO resumeVO) {
+			sqlSession.insert("resume.insertResume", resumeVO);
+		}
+		
+//		이력서 삭제
+		public void deleteResume(Long memberId) {
+			sqlSession.delete("resume.deleteResume", memberId);
+		}
+		
+//		이력서 조회
+		public ResumeVO selectResume(Long memberId) {
+			return sqlSession.selectOne("resume.selectResume", memberId);
 		}
 }

@@ -24,7 +24,15 @@
 				
 					<div class="profile_group">
 						<span class="thumbnail">
-							<img src="${pageContext.request.contextPath}/image/mentor.png" width="100%" height="100%" />
+						<c:choose>
+							<c:when test="${myInfo.resumeExistence eq false }">
+								<img src="${pageContext.request.contextPath}/image/mentee.png" width="100%" height="100%" />
+							</c:when>
+							<c:otherwise>
+								<img src="${pageContext.request.contextPath}/image/mentor.png" width="100%" height="100%" />
+							</c:otherwise>
+						 </c:choose>
+							
 						</span>
 					</div>
 				
@@ -86,13 +94,18 @@
 		<div class="left_nav">
 		<ul>
 			<li>
-				<a href="javascript:clolo();" id="myQuestionButton">나의 질문</a>
+				<a href="javascript:gotoList('q');" id="myQuestionButton">나의 질문</a>
 				<span class="num">(${countMyBoards.countQuestion})</span>
 			</li>
-			<li>
-				<a href="#">나의 답변</a>
-				<span class="num">(${countMyBoards.countAnswer})</span>
-			</li>
+			<c:choose>
+				<c:when test="${myInfo.resumeExistence eq false }">
+					<li>
+						<a href="javascript:gotoList('a');" id="myAnswerButton">나의 답변</a>
+						<span class="num">(${countMyBoards.countAnswer})</span>
+					</li>
+				</c:when>
+			</c:choose>
+	
 			<li>
 				<a href="#">나의 댓글</a>
 				<span class="num">(${countMyComments.countTotalComments})</span>
@@ -106,7 +119,7 @@
 				<span class="num">(${countMyBoards.countAskAdmin})</span>
 			</li>
 			<li>
-				<a href="#">프로필 수정 및 설정</a>
+				<a href="javascript:gotoList('u');">프로필 수정 및 설정</a>
 			</li>
 			
 		</ul>
@@ -121,13 +134,11 @@
 			<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 	</div>
 </body>
-
-
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 	<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
 	<script>
 		let contextPath="${pageContext.request.contextPath}";
 	</script>
 	<script src="${pageContext.request.contextPath}/static/js/mypage/myQuestions.js"></script>
-	
+<%-- 	<script src="${pageContext.request.contextPath}/static/js/mypage/myUpdateInfo.js"></script> --%>
 </html>

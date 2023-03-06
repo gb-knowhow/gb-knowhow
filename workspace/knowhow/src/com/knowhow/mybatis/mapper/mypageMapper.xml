@@ -5,21 +5,40 @@
 	<!-- 내 정보 -->
 	<select id="selectMyInfo" parameterType="long" resultType="memberVO" >
 		select member_id, member_identification, member_password, member_name, member_age, member_email, 
-		member_job, member_nickname, member_profile_system_name, member_profile_original_name, 
-		member_profile_file_path, resume_existence 
+		member_job, member_nickname, resume_existence 
 		from tbl_member where member_id = #{memberId}
 	</select>
 	
 	<!-- 내 질문글 -->
-	<select id="selectMyQuestion" parameterType="long" resultType="questionVO">
-		select member_id, question_id, question_title, question_content, question_regdate, question_upddate 
-		from tbl_question where member_id = #{memberId}
+	<select id="selectMyQuestions" parameterType="long" resultType="myQuestionDTO">
+		select q.question_id question_id, question_title, 
+		question_content, date_format(question_regdate, '%Y-%m-%d') question_regdate, date_format(question_upddate, '%Y-%m-%d') question_upddate, 
+		q.member_id member_id, q.category_id category_id, 
+		category_name, count(answer_id) count_answer 
+		from tbl_question q join tbl_category c on q.category_id=c.category_id join tbl_answer a on a.question_id=q.question_id group by q.question_id 
+		having member_id = #{memberId}
 	</select>
 	
 	<!-- 내 답변글 -->
-	<select id="selectMyAnswer" parameterType="long" resultType="answerVO">
-		select member_id, answer_id, answer_title, answer_content, answer_regdate, answer_upddate, question_id 
-		from tbl_answer where member_id = #{memberId}
+	<select id="selectMyAnswers" parameterType="long" resultType="myAnswerDTO">
+		select a.answer_id answer_id, answer_title, answer_content, 
+		date_format(answer_regdate, '%Y-%m-%d') answer_regdate, 
+		date_format(answer_upddate, '%Y-%m-%d') answer_upddate, 
+		a.member_id member_id, q.question_id question_id, 
+		category_name, count(al.answer_like_id) count_answer_like 
+		from tbl_answer a join tbl_question q  on a.question_id=q.question_id 
+		join tbl_category c on q.category_id=c.category_id 
+		join tbl_answer_like al on al.answer_id = a.answer_id group by a.answer_id 
+		having a.member_id= #{memberId}
+<!-- 		order by answer_id desc 
+		limit #{startRow}, #{rowCount} -->
+	</select>
+	
+	<select id="isNextAnswer" parameterType="map" resultType="answerVO">
+		select answer_id 
+		from tbl_answer 
+		where answer_id = #{answerId} 
+		limit #{nextStartRow}, #{rowCount}
 	</select>
 	
 	<!-- 내가 좋아요 한 답변 -->
@@ -96,5 +115,17 @@
 		select member_id, count_question_like, count_answer_like, 
 		count_total_like from view_like_count where member_id = #{memberId}
 	</select>
+	
+	<!-- 질문의 카테고리 가져오기 -->
+	<select id="getCategory" parameterType="long" resultType="string">
+		select category_name from tbl_category where category_id = #{categoryId}
+	</select>
+	
+	<!-- 회원정보 수정 -->
+	<update id="updateMyInfo" parameterType="memberVO">
+		UPDATE tbl_member
+		SET  member_password=#{memberPassword}, member_name=#{memberName}, member_age=#{memberAge}, member_email=#{memberEmail}, member_nickname=#{memberNickname}
+		WHERE member_id= #{memberId}
+	</update>
 	
 </mapper>
