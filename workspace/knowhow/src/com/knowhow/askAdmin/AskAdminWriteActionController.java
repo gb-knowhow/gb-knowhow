@@ -8,13 +8,27 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.askAdmin.dao.AskAdminDAO;
+import com.knowhow.askAdmin.domain.AskAdminVO;
 
 public class AskAdminWriteActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		AskAdminVO askAdminVO = new AskAdminVO();
+		AskAdminDAO askAdminDAO = new AskAdminDAO();
+		Result result = new Result();
+		
+		askAdminVO.setAskAdminTitle(req.getParameter("askAdminTitle"));
+		askAdminVO.setAskAdminContent(req.getParameter("askAdminContent"));
+		askAdminVO.setMemberId(1L);
+		
+		askAdminDAO.insert(askAdminVO);
+		
+		result.setPath(req.getContextPath() + "/askAdmin/askAdminListAction.askAdmin");
+		result.setRedirect(true);
+		
+		return result;
 	}
 
 }

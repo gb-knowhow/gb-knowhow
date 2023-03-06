@@ -14,7 +14,7 @@
   </head>
   <body>
   <header id="header">
-		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true"/>
+		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" />
 	</header>
     <div class="input_help_ask_home_end">
       <div class="input_help_content_full">
@@ -31,7 +31,7 @@
               </div>
             </div>
             <!-- form action style = display 부분-->
-            <form action style="display: block">
+            <form action="${pageContext.request.contextPath}/askAdmin/askAdminWriteAction.askAdmin" name="writeForm" method="get" style="display: block">
               <div>
                 <div style="line-height: 1.8" class="div-border">
                   <span>
@@ -58,7 +58,7 @@
                     <dd>
                       <div class="InquiryInput_input_box">
                         <span class="InquiryInput_id_text">
-                          로그인 한 아이디 나오게 하기
+                          ${memberIdentification}
                         </span>
                       </div>
                     </dd>
@@ -68,11 +68,11 @@
                   <dl>
                     <dt class="InquiryInput_essential">
                       <em class="blind">필수 입력 사항</em>
-                      <label for="mocustomerEmail">이메일</label>
+                      <label for="mocustomerEmail">제목</label>
                     </dt>
                     <dd>
                       <div class="InquiryInput_input_box">
-                        <input id="mocustomerEmail"  type="text" class="InquiryInput_input_text check_select" />
+                        <input id="mocustomerEmail" name="askAdminTitle" type="text" class="InquiryInput_input_text check_select" />
                         <div class="arr"></div>
                       </div>
                     </dd>
@@ -85,7 +85,7 @@
                       <label for="moText2CA">질문 사항</label>
                     </dt>
                     <dd>
-                      <textarea id="moText2CA"  class="textarea" maxlength="1000"></textarea>
+                      <textarea id="moText2CA" name="askAdminContent" class="textarea" maxlength="1000"></textarea>
                       <div class="err2"></div>
                       <span class="InquiryInput_text_count">
                         <span id="count">0</span>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="CommonBtn_common_btn_wrap">
                   <div class="CommonBtn_common_btn_box">
-                    <button type="button" class="CommonBtn_common_btn CommonBtn_on button1">
+                    <button type="submit" class="CommonBtn_common_btn CommonBtn_on button1">
                       질문하기
                     </button>
                   </div>
@@ -132,7 +132,7 @@
         <!-- helpContent-full-div -->
       </div>
     </div>
-    <jsp:include page="${pageContext.request.contextPath}/html/hhs/include/footer.jsp" />
+    <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />
 </body>
 <script src="${pageContext.request.contextPath}/static/js/notice/inquiry.js"></script>
 </html>

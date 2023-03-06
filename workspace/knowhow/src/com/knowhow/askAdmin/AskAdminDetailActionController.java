@@ -8,13 +8,20 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.askAdmin.dao.AskAdminDAO;
 
 public class AskAdminDetailActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		/* Long askAdminId = Long.valueOf(req.getParameter("askAdminId")); */
+		Result result = new Result();
+		AskAdminDAO askAdminDAO = new AskAdminDAO();
+		req.setAttribute("askAdmin", askAdminDAO.select(Long.valueOf(req.getParameter("askAdminId"))));
+		req.setAttribute("askAdminAnswer", askAdminDAO.selectAnswer(Long.valueOf(req.getParameter("askAdminId"))));
+		
+		result.setPath("/templates/notice/inquiry-detail.jsp");
+		return result;
 	}
 
 }

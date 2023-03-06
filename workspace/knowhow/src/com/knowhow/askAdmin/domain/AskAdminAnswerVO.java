@@ -1,4 +1,4 @@
-package com.knowhow.askAdminAnswer.domain;
+package com.knowhow.askAdmin.domain;
 
 public class AskAdminAnswerVO {
 	private Long askAdminAnswerId;
