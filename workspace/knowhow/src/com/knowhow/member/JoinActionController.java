@@ -31,7 +31,7 @@ public class JoinActionController implements Action {
 //		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "static/upload/";
 		
 //		실제 경로는 다르기때문에 본인의 경로에 따라 수정하면됨
-		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/static/upload/";
+		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/static/upload/resume/";
 		int fileSize = 1024 * 1024 * 5; //5M
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
@@ -46,7 +46,7 @@ public class JoinActionController implements Action {
 		System.out.println("비밀번호는 " + multipartRequest.getParameter("memberPassword"));
 		
 		
-		memberVO.setMemberIdentification(multipartRequest.getParameter("memberPassword"));
+		memberVO.setMemberPassword(multipartRequest.getParameter("memberPassword"));
 		memberVO.setMemberIdentification(multipartRequest.getParameter("memberIdentification"));
 		memberVO.setMemberName(multipartRequest.getParameter("memberName"));
 		memberVO.setMemberAge(Integer.valueOf(multipartRequest.getParameter("memberAge")));
@@ -59,8 +59,9 @@ public class JoinActionController implements Action {
 		
 		
 		System.out.println("uploadPath는 "+ uploadPath + " 입니다");
+		String fileOriginalName = multipartRequest.getOriginalFileName("memberResume");
 //		파일 업로드 
-			String fileOriginalName = multipartRequest.getOriginalFileName("memberResume");
+		if(fileOriginalName != null) {
 			String fileSystemName = multipartRequest.getFilesystemName("memberResume");
 			
 			System.out.println("fileOriginalName은 " + fileOriginalName);
@@ -70,9 +71,11 @@ public class JoinActionController implements Action {
 			resumeVO.setResumeSystemName(fileSystemName);
 			resumeVO.setMemberId(memberId);
 			System.out.println("ResumeSystemName은 "+ resumeVO.getResumeSystemName());
-		
-		memberDAO.insertResume(resumeVO);
-		System.out.println("Resume 넣음");
+			
+			memberDAO.insertResume(resumeVO);
+			System.out.println("Resume 넣음");
+			
+		}
 		
 		
 //		memberVO.setMemberIdentification(req.getParameter("memberIdentification"));
