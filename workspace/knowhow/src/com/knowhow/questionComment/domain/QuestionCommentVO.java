@@ -8,7 +8,7 @@ public class QuestionCommentVO {
 	private String commentRegDate;
 	private String commentUpdDate;
 	private int commentDepth;
-	private int commentGroup;
+	private Long commentGroup;
 	
 	public QuestionCommentVO() {;}
 
@@ -68,11 +68,13 @@ public class QuestionCommentVO {
 		this.commentDepth = commentDepth;
 	}
 
-	public int getCommentGroup() {
+	
+
+	public Long getCommentGroup() {
 		return commentGroup;
 	}
 
-	public void setCommentGroup(int commentGroup) {
+	public void setCommentGroup(Long commentGroup) {
 		this.commentGroup = commentGroup;
 	}
 

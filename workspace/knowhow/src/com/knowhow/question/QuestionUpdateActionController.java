@@ -28,7 +28,6 @@ public class QuestionUpdateActionController implements Action {
 		
 //		result.setPath(req.getContextPath() + "/questionUpdateAction.question");
 		result.setPath(req.getContextPath() + "/questionDetailAction.question");
-		
 		return result;
 	}
 

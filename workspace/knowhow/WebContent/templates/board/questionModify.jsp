@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<!-- form action style = display 부분-->
-			<form action style="display: block">
+			<form action="${pageContext.request.contextPath}/questionUpdateAction.question?questionId=${question.questionId}" style="display: block">
 				<div>
 					<div style="line-height: 1.8">
 						<span
@@ -56,7 +56,7 @@
 							</dt>
 							<dd>
 								<div class="InquiryInput_input_box">
-									<span class="InquiryInput_id_text"> 로그인 한 아이디 나오게 하기 </span>
+									<span class="InquiryInput_id_text">${question.memberIdentification}</span>
 								</div>
 							</dd>
 						</dl>
@@ -64,13 +64,13 @@
 					<div class="InquiryInput_field_box">
 						<dl>
 							<dt class="InquiryInput_essential">
-								<em class="blind">필수 입력 사항</em> <label for="questionTitle">질문
-									제목</label>
+								<em class="blind">필수 입력 사항</em> <label for="questionTitle"></label>
 							</dt>
 							<dd>
 								<div class="InquiryInput_input_box">
-									<input id="questionTitle" type="text"
-										class="InquiryInput_input_text check_select" />
+									<input type="hidden" name="questionId" value="${question.questionId}">
+									<input id="questionTitle" type="text" name="questionTitle"
+										class="InquiryInput_input_text check_select" value="${question.questionTitle}"/>
 									<div class="arr"></div>
 								</div>
 							</dd>
@@ -83,7 +83,7 @@
 									사항</label>
 							</dt>
 							<dd>
-								<textarea id="moText2CA" class="textarea" maxlength="1000"></textarea>
+								<textarea id="moText2CA" class="textarea" name="questionContent" maxlength="1000">${question.questionContent}</textarea>
 								<div class="err2"></div>
 								<span class="InquiryInput_text_count"> <span
 									id="modifyCounter">0</span> 자 입력 / 최대 1000자
@@ -114,7 +114,7 @@
 					</div>
 					<div class="CommonBtn_common_btn_wrap">
 						<div class="CommonBtn_common_btn_box">
-							<button type="button"
+							<button type="submit"
 								class="CommonBtn_common_btn CommonBtn_on button1">수정하기</button>
 						</div>
 					</div>

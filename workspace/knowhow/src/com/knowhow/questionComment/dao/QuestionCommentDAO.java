@@ -14,11 +14,15 @@ public class QuestionCommentDAO {
 	      sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	   }
 	   
-//	   질문 
+//	   질문 댓글 목록
 	   public List<QuestionCommentVO> selectAll(Long questionId){
 		   return sqlSession.selectList("questionComment.selectAll",questionId);
 	   }
 	   
+//	   질문 댓글 
+	   public void insert(QuestionCommentVO commentVO) {
+		   sqlSession.insert("questionComment.insert",commentVO);
+	   }
 	   
 	   
 	   

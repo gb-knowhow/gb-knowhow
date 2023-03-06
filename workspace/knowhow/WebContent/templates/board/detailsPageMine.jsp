@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,34 +26,41 @@
 					</div>
 					<div class="question_title">
 						<img
-							src="${pageContext.request.contextPath}/static/css/board/image/questionMark.png"
-							style="margin-right: 3%; width: 50px; height: 50px;"> 욱성이는
-						공부 언제하나요?
-						<button type="button" class="button_compose button_modify"
+							src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
+							style="margin-right: 3%; width: 50px; height: 50px;"> 
+							${question.questionTitle}
+						<a href="javascript:location.href='/questionUpdate.question?questionId=${question.questionId}'" id="updatebutton"style="text-decoration: none" class="button_compose button_modify"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/static/css/board/image/modify.png"
+								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
 								style="width: 20px; height: 20px;"></i> <span class="blind">수정하기</span>
 							<em class="questionButton_modify">수정하기</em>
-						</button>
+						</a>
+						<a href="javascript:location.href='/questionDeleteAction.question?questionId=${question.questionId}'" id="deletebutton" style="text-decoration: none" class="button_compose button_modify"
+							onclick="">
+							<i class="icon icon_compose_opinion"> <img
+								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
+								style="width: 20px; height: 20px;"></i> <span class="blind">삭제하기</span>
+							<em class="questionButton_modify">삭제하기</em>
+						</a>
 					</div>
 					<!-- 질문 내용 -->
 					<div class="question_content">
-						질문 그대로 <br>궁금합니다.
+						${question.questionContent}
 					</div>
 				</div>
 				<div></div>
 				<div class="question-userinfo__left">
 					<span class="thumbnail"
 						style="width: 50px; height: 50px; object-fit: cover;"> <img
-						src="${pageContext.request.contextPath}/static/image/mentee.png"
+						src="${pageContext.request.contextPath}/image/mentee.png"
 						style="width: 50px; height: 50px;">
 					</span>
 				</div>
 				<div class="question-userinfo">
 					<span class="question-userinfo__info"> <!-- 작성자 닉네임 적기 --> <span
-						style="padding-right: 10px;">주먹왕 김정표</span> <span class="blind">
-							작성일 </span> 업로드 시간 적기
+						style="padding-right: 10px;">${question.memberNickname}</span> <span class="blind">
+							작성일 </span> ${question.questionUpdDate}
 					</span>
 
 					<div class="question-userinfo__right" role="listbox">
@@ -60,40 +68,40 @@
 						<button type="button" class="button_compose button_comment"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
+								src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
 								style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 							<em class="questionButton_comment">댓글달기</em>
 						</button>
 
 						<!-- 답글달기 class 이름 button_reply로 쓰세요.-->
-						<button type="button" class="button_compose button_reply"
+						<a href="${pageContext.request.contextPath}/answerWrite.answer?questionId=${question.questionId}" type="button" class="button_compose button_reply"
 							onclick="">
 							<i class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/static/css/board/image/reply.png"
+								src="${pageContext.request.contextPath}/css/kdh/image/reply.png"
 								style="width: 20px; height: 20px;"></i> <em
 								class="questionButton_reply">답글달기</em>
-						</button>
+						</a>
 
 						<!-- 좋아요 class 이름 button_like으로 쓰세요.-->
 						<label class="button_compose button_like" onclick=""> <i
 							class="icon icon_compose_opinion"> <img
-								src="${pageContext.request.contextPath}/static/css/board/image/hate.png"
+								src="${pageContext.request.contextPath}/css/kdh/image/hate.png"
 								id="like" style="width: 20px; height: 20px;"></i> <em
 							class="questionButton_reply">좋아요</em>
 						</label>
 					</div>
 				</div>
 				<!-- 본글의 댓글 c-opinion _commentListArea-->
-				<div class="c-opinion _commentListArea" id="questionCommentList"
-					style="display: none;">
+				<div class="c-opinion _commentListArea" id="questionCommentList" style="display: none;">
+				<form action="${pageContext.request.contextPath}/questionCommentWriteAction.comment?questionId=${question.questionId}">
+					<input type="hidden" name="questionId" value="${question.questionId}">
 					<h2 class="blind">댓글영역</h2>
 					<div class="question-comment">
 						<fieldset>
 							<legend>댓글 입력</legend>
 							<div class="question-comment-form">
-								<textarea class="question-comment-textarea placeholder"
-									id="wr_1" maxlength="500" title="댓글입력"
-									placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
+								<textarea class="question-comment-textarea placeholder" id="wr_1" maxlength="500" title="댓글입력"
+									placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."name="commentContent" value="${comment.commentContent}"></textarea>
 							</div>
 							<div class="question-comment-upload">
 								<div class="question-comment-count">
@@ -106,33 +114,14 @@
 							</div>
 						</fieldset>
 					</div>
+				</form>
 					<!-- 본문의 댓글 목록들 -->
 					<div class="question-commentList">
 						<div class="replyItem">
-							<p class="question-commentList-nickname">
-								<!-- 댓글 작성자 닉네임 -->
-								<strong>시그니엘 김욱성</strong>
-							</p>
-							<div class="question-commentList-text">
-								<p>함 뜨던가</p>
-							</div>
-							<!-- 본문의 댓글 등록날짜 -->
 							<div class="reply-align">
 								<p class="question-commentList-date">댓글 등록날짜</p>
 								<span class="re-reply-img">
-									<button type="button" class="button_compose re-replyWrite"
-										onclick="">
-										<i class="icon icon_compose_opinion"> <img
-											src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
-											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
-										<em class="questionButton_comment">대댓글달기</em>
-									</button>
 								</span>
-							</div>
-							<div class="button_more">
-								<a href="javascript:void(0);" class="_reportBtn"
-									data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8B%98%EC%9D%98+%EC%9E%A5%EB%A5%B4%EB%B6%88%EB%AC%B8+%EB%85%B8%EB%9E%98%EC%8B%A4%EB%A0%A5%EC%97%90+%EC%99%84%EC%A0%84%EA%B9%9C%EC%A7%9D+%EB%86%80%EB%9E%AC%EB%8B%A4+%EA%B9%80%ED%98%B8%EC%A4%91%EB%8B%98%EC%9D%80+%EB%AA%85%EB%B6%88%ED%97%88%EC%A0%84+%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4">
-									수정 </a>
 							</div>
 						</div>
 						<!-- 복붙 -->
@@ -158,43 +147,25 @@
 									</div>
 								</fieldset>
 							</div>
-							<!-- 본문의 대댓글 목록들 -->
-							<div class="question-commentList">
-								<div class="replyItem">
-									<p class="question-commentList-nickname">
-										<!-- 대댓글 작성자 닉네임 -->
-										<strong>집에 가고 싶은 순철</strong>
-									</p>
-									<div class="question-commentList-text">
-										<p>대댓글 내용 : 집 가고 싶다.</p>
-									</div>
-									<!-- 본문의 대댓글 등록날짜 -->
-									<p class="question-commentList-date">대댓글 등록날짜</p>
-									<div class="button_more">
-										<a href="javascript:void(0);" class="_reportBtn"> 신고 </a>
-									</div>
-								</div>
-							</div>
 						</div>
-
+						<c:forEach var="comment" items="${comments}">
 						<div class="replyItem">
 							<p class="question-commentList-nickname">
-								<strong>자바의 신 윤민우</strong>
+								<strong>${comment.commentId}닉네임 들어가야할곳 지금은 commentId!</strong>
 							</p>
 							<div class="question-commentList-text">
-								<p>댓글내용 : 백엔드는 내가 다할게</p>
+								<p>${comment.commentContent}</p>
 							</div>
 							<p class="question-commentList-date">작성 날짜</p>
 							<div class="button_more">
-								<a href="javascript:void(0);" class="_reportBtn"> 신고 </a>
+								<a href="javascript:void(0);" class="_reportBtn"> 삭제 </a>
 							</div>
 						</div>
+						</c:forEach>
 						<!-- 본문의 댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
 					</div>
 					<!-- 본문의 댓글의 페이지 목록 -->
-
 					<div class="paginator paginatorNumber">
-
 						<a href="javascript:void(0);" class="paginator__prev _pagingBtn"
 							data-page="10"> <i class="icon_paginator_prev"></i> <span
 							class="paginator__text">이전</span>
@@ -209,6 +180,7 @@
 			</div>
 		</div>
 		<!-- ANswerArea하기 -->
+		<c:forEach var="answer" items="${answer}">
 		<div id="answerArea" class="answer-content">
 			<div class="answer-content-inner">
 				<div class="answerListFull">
@@ -220,10 +192,10 @@
 										<!-- name_area는 원래 a href이다. 아이디를 클릭하면 그 아이디를 가진 사람의 정보를 볼 수 있는 페이지로 넘어가는듯. -->
 										<div class="name_area" onclick="">
 											<!-- 답글 단 사람 아이디 -->
-											<strong class="name">14페이지의 전설 김세윤</strong>
+											<strong class="name">${answer.answerTitle}</strong>
 											<div class="answerLikeArea">
 												<div class="likeCount">
-													<span class="like">받은 좋아요 수 ""</span>
+													<span class="like">닉네임 : ${answer.memberNickname}</span>
 												</div>
 											</div>
 										</div>
@@ -232,7 +204,7 @@
 											target="_blank" class="thumbnail_area " onclick="">
 											<div class="thumbnail">
 												<img
-													src="${pageContext.request.contextPath}/static/image/mentor.png"
+													src="${pageContext.request.contextPath}/image/mentor.png"
 													alt="프로필 사진">
 											</div>
 										</a>
@@ -249,7 +221,7 @@
 										<div class="answer-context">
 											<div class="answer-textFull">
 												<div class="answerOnlytext">
-													<p class="answerTextPtag">제발 좀 하자 욱성아</p>
+													<p class="answerTextPtag">${answer.answerContent}</p>
 												</div>
 											</div>
 										</div>
@@ -261,7 +233,7 @@
 										<p class="answer-guideline-content">위 답변은 답변작성자가 경험과 지식을
 											바탕으로 작성한 내용입니다.</p>
 									</div>
-									<p class="answer-date">작성 날짜</p>
+									<p class="answer-date"></p>
 
 								</div>
 								<div class="reply-comment-click">
@@ -269,7 +241,7 @@
 									<button type="button"
 										class="button_compose button_reply_comment" onclick="">
 										<i class="icon icon_compose_opinion"> <img
-											src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
+											src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
 											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
 										<em class="questionButton_comment">댓글달기</em>
 									</button>
@@ -281,6 +253,9 @@
 											style="width: 20px; height: 20px;"></i> <em
 										class="questionButton_reply">좋아요</em>
 									</label>
+									<a href="javascript:location.href='/answerDeleteAction.answer?answerId=${answer.answerId}&questionId=${question.questionId}'" class="button_compose button_like2">
+										 <em class="questionButton_reply">답글삭제</em>
+									</a>
 								</div>
 
 							</div>
@@ -310,91 +285,20 @@
 
 									<!-- 본문의 댓글 목록들 -->
 									<div class="question-commentList">
-										<div class="replyItem">
-											<p class="question-commentList-nickname">
-												<strong>자바보단 로아 강민구</strong>
-											</p>
-											<div class="question-commentList-text">
-												<p>댓글 내용 : 게임하고 싶다</p>
-											</div>
-											<!-- 본문의 댓글 등록날짜 -->
-											<div class="reply-align">
-												<p class="question-commentList-date">댓글 등록날짜</p>
-												<span class="re-reply-img">
-													<button type="button"
-														class="button_compose reply-re-replyWrite" onclick="">
-														<i class="icon icon_compose_opinion"> <img
-															src="${pageContext.request.contextPath}/static/css/board/image/comment.png"
-															style="width: 20px; height: 20px;"></i> <span
-															class="blind">댓글</span> <em
-															class="questionButton_comment">대댓글달기</em>
-													</button>
-												</span>
-											</div>
-											<div class="button_more">
-												<a href="javascript:void(0);" class="_reportBtn"
-													data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8B%98%EC%9D%98+%EC%9E%A5%EB%A5%B4%EB%B6%88%EB%AC%B8+%EB%85%B8%EB%9E%98%EC%8B%A4%EB%A0%A5%EC%97%90+%EC%99%84%EC%A0%84%EA%B9%9C%EC%A7%9D+%EB%86%80%EB%9E%AC%EB%8B%A4+%EA%B9%80%ED%98%B8%EC%A4%91%EB%8B%98%EC%9D%80+%EB%AA%85%EB%B6%88%ED%97%88%EC%A0%84+%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4">
-													신고 </a>
-											</div>
-										</div>
-										<!-- 답글의 대댓글 복붙 -->
-										<div class="c-opinion _commentListArea re-replySet"
-											id="questionCommentList4" style="display: none;">
-											<h2 class="blind">답글의 대댓글영역</h2>
-											<div class="question-comment">
-												<fieldset>
-													<legend>답글의 대댓글 입력</legend>
-													<div class="question-comment-form">
-														<textarea class="question-comment-textarea placeholder"
-															id="wr_reply_re_reply" maxlength="200" title="댓글입력"
-															placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
-													</div>
-													<div class="question-comment-upload">
-														<div class="question-comment-count">
-															<span class="blind">현재 입력한 글자수</span> <span
-																id="counter-reply-re-reply"
-																class="question-comment-count__num">0</span> / <span
-																class="blind">전체 입력 가능한 글자수</span> <span
-																class="question-comment-count__total">200</span>
-														</div>
-														<button type="submit" class="button_register">등록</button>
-													</div>
-												</fieldset>
-											</div>
-											<!-- 답글의 댓글 목록들 -->
-											<div class="question-commentList">
-												<div class="replyItem">
-													<p class="question-commentList-nickname">
-														<strong>대댓글 작성자 닉네임</strong>
-													</p>
-													<div class="question-commentList-text">
-														<p>댓글 내용</p>
-													</div>
-													<!-- 답글의 댓글 등록날짜 -->
-													<p class="question-commentList-date">댓글 등록날짜</p>
-													<div class="button_more">
-														<a href="javascript:void(0);" class="_reportBtn"> 신고 </a>
-													</div>
-												</div>
-
-												<!-- 본문의 대댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
-											</div>
-										</div>
-
+									<c:forEach var="answercommets" items="${answercommets}">
 										<div class="replyItem">
 											<p class="question-commentList-nickname">
 												<strong>댓글 작성자 닉네임</strong>
 											</p>
 											<div class="question-commentList-text">
-												<p>댓글내용</p>
+												<p>${answercommets.answerCommentContent}</p>
 											</div>
 											<p class="question-commentList-date">작성 날짜</p>
 											<div class="button_more">
-												<a href="javascript:void(0);" class="_reportBtn"
-													data-report-contents="%EA%B9%80%ED%98%B8%EC%A4%91+%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9E%AC%EC%83%81%EC%97%90%EB%B9%9B%EB%82%98%EB%8A%94%EA%B5%AD%EB%B3%B4%EA%B8%89%ED%85%8C%EB%84%88%EB%85%B8%EB%9E%98%EC%99%80%EC%98%88%EB%8A%A5%EA%B0%90%EB%8F%84%EB%A7%8C%EC%A0%90%EC%9D%B4%EC%8B%9C%EB%84%A4%EC%9A%94">
-													신고 </a>
+												<a href="javascript:void(0);" class="_reportBtn">신고</a>
 											</div>
 										</div>
+										</c:forEach>
 										<!-- 본문의 댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
 									</div>
 									<!-- 본문의 댓글의 페이지 목록 -->
@@ -420,6 +324,7 @@
 				</div>
 			</div>
 		</div>
+		</c:forEach>
 	</div>
 	        <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
 </body>

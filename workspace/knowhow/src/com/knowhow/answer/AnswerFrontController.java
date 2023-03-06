@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Result;
+import com.knowhow.question.QuestionWriteActionController;
 
 public class AnswerFrontController extends HttpServlet {
 	@Override
@@ -23,6 +24,8 @@ public class AnswerFrontController extends HttpServlet {
 			result = new AnswerListController().execute(req, resp);
 			
 		}else if(target.equals("answerWrite")){
+			System.out.println("들어옴 앤");
+			result = new AnswerWriteController().execute(req, resp);
 			
 		}else if(target.equals("answerWriteAction")){
 			result = new AnswerWriteActionController().execute(req, resp);

@@ -26,7 +26,7 @@ public class QuestionFrontController extends HttpServlet{
 			
 		} else if(target.equals("questionWrite")){
 			result = new Result();
-			result.setPath("/html/kdh/questionWrite.jsp");
+			result.setPath("/templates/board/questionWrite.jsp");
 			
 		} else if(target.equals("questionWriteAction")){
 			System.out.println("들어왔다이");

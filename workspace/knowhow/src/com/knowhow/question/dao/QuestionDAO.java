@@ -42,6 +42,10 @@ public class QuestionDAO {
 		   sqlSession.insert("question.insert",questionVO);
 	   }
 	   
+//	   질문 삭제
+	   public void delete(Long answerId) {
+		   sqlSession.delete("question.delete",answerId);
+	   }
 	   
 	   
 }

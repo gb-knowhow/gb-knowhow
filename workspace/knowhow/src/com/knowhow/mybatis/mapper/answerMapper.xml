@@ -3,4 +3,22 @@
 
 <mapper namespace="answer">
 
+	<select id="selectOne" parameterType="long" resultType="answerDTO">
+			SELECT answer_id, answer_title, answer_content, answer_regdate, answer_upddate, a.member_id, question_id,
+			member_nickname, member_name
+			FROM tbl_answer a  join tbl_member m
+			where question_id = #{questionId} 
+		</select>
+		
+		<insert id="insert" parameterType="answerVO">
+			INSERT INTO tbl_answer
+			(answer_title, answer_content, member_id, question_id)
+			VALUES(#{answerTitle}, #{answerContent}, #{memberId}, #{questionId})
+		</insert>
+		
+		<delete id="delete" parameterType="long">
+			DELETE FROM tbl_answer
+			WHERE answer_id = #{answerId}
+		</delete>
+	
 </mapper>

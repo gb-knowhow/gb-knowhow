@@ -8,13 +8,25 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.answer.dao.AnswerDAO;
+import com.knowhow.answerComment.dao.AnswerCommentDAO;
+import com.knowhow.question.dao.QuestionDAO;
+import com.knowhow.questionComment.dao.QuestionCommentDAO;
 
 public class AnswerDeleteActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		AnswerDAO answerDAO = new AnswerDAO();
+		Result result = new Result();
+		
+		Long answerId = Long.parseLong(req.getParameter("answerId"));
+		
+		answerDAO.delete(answerId);
+		result.setPath(req.getContextPath() + "/questionDetailAction.question");
+		
+		
+		return result;
 	}
 
 }
