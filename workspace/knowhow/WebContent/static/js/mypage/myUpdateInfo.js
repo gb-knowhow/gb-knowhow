@@ -22,37 +22,6 @@ $('input').keydown(function() {
 });
 
 
-
-
-
-
-
-/* 망한코드 */
-/*const $files = $("input[type=file]");
-const $imgDiv = $('label[for=profile_upload] div.image')
-const $closeSpan = $('.close');
-
-$files.on("click", function(e){
-	let file = $(this).eq();
-	$(this).css('display', 'none');
-	console.log($(this))
-	console.log(e)
-	let reader = new FileReader();
-    reader.onload = function (e) {
-        let result = this.target;
-		console.log(this)
-		console.log(result)
-        if (result.includes('image')) {
-            $imgDiv.css('backgroundImage', `url('${result}')`);
-            closeSpan.style.display = "inline-block";
-            imgDiv.style.width = "50%";
-        } else {
-            imgDiv.style.backgroundImage = `url('https://ssl.pstatic.net/static/kin/09renewal/btn_upload_profilephoto2.gif')`;
-		}
-	}()
-})*/
-
-
 /* 프로필 사진 썸네일 */
 const profile = document.querySelectorAll('input[type=file]')[0];
 const profileDiv = document.querySelector('label[for=profile_upload] div.image');
@@ -100,7 +69,7 @@ resumeClose.addEventListener('click', function (e) {
     e.preventDefault();
     profileInput.value = "";
     resumeClose.style.display="none";
-    resumeDiv.style.backgroundImage =  `url('../../css/jyc/image/resume.png')`;
+    resumeDiv.style.backgroundImage =  `url('../../css/mypage/image/resume.png')`;
     resumeDiv.style.width = "20%";
     resumeDiv.style.display = "block";
 });
@@ -118,7 +87,7 @@ resume.addEventListener('change', function (e) {
             resumeClose.style.display = "inline-block"
             resumeDiv.style.width = "50%";
         } else {
-            resumeDiv.style.backgroundImage = `url('../../css/jyc/image/resume.png')`;
+            resumeDiv.style.backgroundImage = `url('../../css/jyc/mypage/resume.png')`;
         }
     };
 });
@@ -267,6 +236,7 @@ $("input").keyup(function(){
 	if(checkAll[0] == true && checkAll[1] == true && checkAll[2] == true && checkAll[3] == true && checkAll[4] == true){
    	 	$saveButton.prop("disabled", false)
     	$saveButton.css("backgroundColor", "#388C57")
+		$saveButton.attr("type", "submit")
 	} else{
 		$saveButton.prop("disabled", true)
     	$saveButton.css("backgroundColor", "#DDDDDD")

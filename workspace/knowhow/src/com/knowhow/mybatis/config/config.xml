@@ -36,6 +36,8 @@
       <typeAlias type="com.knowhow.mypage.domain.CountLikedDTO" alias="countLikedDTO"/>
       <typeAlias type="com.knowhow.mypage.domain.CountCommentDTO" alias="countCommentDTO"/>
       <typeAlias type="com.knowhow.mypage.domain.CountLikeDTO" alias="countLikeDTO"/>
+   		<typeAlias type="com.knowhow.mypage.domain.MyQuestionDTO" alias="myQuestionDTO"/>
+		<typeAlias type="com.knowhow.mypage.domain.MyAnswerDTO" alias="myAnswerDTO"/>
    </typeAliases>
    
       

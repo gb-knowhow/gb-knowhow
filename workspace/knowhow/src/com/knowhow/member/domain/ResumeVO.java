@@ -5,7 +5,6 @@ public class ResumeVO {
 	private Long memberId;
 	private String resumeOriginalName;
 	private String resumeSystemName;
-	private String resumePathName;
 	
 	public ResumeVO() {;}
 
@@ -41,19 +40,10 @@ public class ResumeVO {
 		this.resumeSystemName = resumeSystemName;
 	}
 
-	public String getResumePathName() {
-		return resumePathName;
-	}
-
-	public void setResumePathName(String resumePathName) {
-		this.resumePathName = resumePathName;
-	}
-
 	@Override
 	public String toString() {
 		return "ResumeVO [resumeId=" + resumeId + ", memberId=" + memberId + ", resumeOriginalName="
-				+ resumeOriginalName + ", resumeSystemName=" + resumeSystemName + ", resumePathName=" + resumePathName
-				+ "]";
+				+ resumeOriginalName + ", resumeSystemName=" + resumeSystemName + "]";
 	}
 
 	@Override
@@ -63,7 +53,6 @@ public class ResumeVO {
 		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
 		result = prime * result + ((resumeId == null) ? 0 : resumeId.hashCode());
 		result = prime * result + ((resumeOriginalName == null) ? 0 : resumeOriginalName.hashCode());
-		result = prime * result + ((resumePathName == null) ? 0 : resumePathName.hashCode());
 		result = prime * result + ((resumeSystemName == null) ? 0 : resumeSystemName.hashCode());
 		return result;
 	}
@@ -91,11 +80,6 @@ public class ResumeVO {
 			if (other.resumeOriginalName != null)
 				return false;
 		} else if (!resumeOriginalName.equals(other.resumeOriginalName))
-			return false;
-		if (resumePathName == null) {
-			if (other.resumePathName != null)
-				return false;
-		} else if (!resumePathName.equals(other.resumePathName))
 			return false;
 		if (resumeSystemName == null) {
 			if (other.resumeSystemName != null)

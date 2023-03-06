@@ -28,4 +28,21 @@
 		from view_resume_list
 	</select>
 
+	<!-- 이력서 삭제 -->
+	<delete id="deleteResume" parameterType="long">
+		delete from tbl_resume where member_id = #{memberId}
+	</delete>
+	
+	<!-- 이력서 등록 -->
+	<insert id="insertResume" parameterType="resumeVO">
+		insert into tbl_resume(resume_system_name, resume_original_name, member_id) 
+		values(#{resumeSystemName}, #{resumeOriginalName}, #{memberId})
+	</insert>
+	
+	<!-- 이력서 조회 -->
+	<select id="selectResume" parameterType="long" resultType="resumeVO">
+		select resume_id, resume_system_name, resume_original_name, member_id
+		from tbl_resume where member_id = #{memberId}
+	</select>
+	
 </mapper>

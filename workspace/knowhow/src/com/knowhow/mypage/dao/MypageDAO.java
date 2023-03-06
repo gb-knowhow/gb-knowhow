@@ -1,15 +1,19 @@
 package com.knowhow.mypage.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.knowhow.answer.domain.AnswerVO;
 import com.knowhow.member.domain.MemberVO;
 import com.knowhow.mybatis.config.MyBatisConfig;
 import com.knowhow.mypage.domain.CountBoardsDTO;
 import com.knowhow.mypage.domain.CountCommentDTO;
 import com.knowhow.mypage.domain.CountLikeDTO;
 import com.knowhow.mypage.domain.CountLikedDTO;
+import com.knowhow.mypage.domain.MyAnswerDTO;
+import com.knowhow.mypage.domain.MyQuestionDTO;
 import com.knowhow.question.domain.QuestionVO;
 
 public class MypageDAO {
@@ -50,13 +54,28 @@ public class MypageDAO {
 	}
 	
 //	내가 쓴 질문
-	public List<QuestionVO> selectMyQuestion(Long memberId) {
+	public List<MyQuestionDTO> selectMyQuestions(Long memberId) {
 		System.out.println("DAO");
-		return sqlSession.selectList("mypage.selectMyQuestion", memberId);
+		return sqlSession.selectList("mypage.selectMyQuestions", memberId);
 	}
 	
+//	내가 쓴 답변
+	public List<MyAnswerDTO> selectMyAnswers(Long memberId) {
+		System.out.println("DAO");
+		return sqlSession.selectList("mypage.selectMyAnswers", memberId);
+	}
 	
+// 질문의 카테고리
+	public String getCategory(Long categoryId) {
+		System.out.println("DAO");
+		return sqlSession.selectOne("mypage.getCategory", categoryId);
+	}
 	
+// 내정보 수정
+	public String updateMyInfo(MemberVO memberVO) {
+		System.out.println("DAO");
+		return sqlSession.selectOne("mypage.updateMyInfo", memberVO);
+	}
 	
 	
 }
