@@ -12,7 +12,7 @@
 <link rel="shortcut icon" type="image/x-icon"
 	href="./images/logo-favicon.ico" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/lut/dash-board-manager.css">
+	href="${pageContext.request.contextPath}/static/css/admin/dash-board-manager.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
@@ -179,7 +179,7 @@
 								<div class="qna-num">${ask.askAdminId}</div>
 								<div class="user-role"><c:out
 											value="${ask.resumeExistence == false ? '멘티' : '멘토'}" /></div>
-								<div class="qna-writer">${ask.memberName}</div>
+								<div class="qna-writer">${ask.memberNickname}</div>
 								<div class="qna-title">${ask.askAdminTitle}</div>
 								<div class="qna-write-day">${ask.askAdminRegdate}</div>
 							</div>
@@ -210,7 +210,7 @@
 									<div class="ask-num">${question.questionId}</div>
 									<div class="specialization">${question.categoryName}</div>
 									<div class="ask-title">${question.questionTitle}</div>
-									<div class="writer">${question.memberName}</div>
+									<div class="writer">${question.memberNickname}</div>
 									<div class="answer">${question.answerCount}</div>
 									<div class="ask-write-day">${question.questionRegdate}</div>
 								</div>
@@ -240,7 +240,7 @@
 								<div class="mentor-list-contents">
 									<div class="answer-num">${reply.answerId}</div>
 									<div class="answer-title">${reply.answerTitle}</div>
-									<div class="writer">${reply.memberName}</div>
+									<div class="writer">${reply.memberNickname}</div>
 									<div class="like-count">${reply.likeCount}</div>
 									<div class="answer-write-day">${reply.answerRegdate}</div>
 								</div>
@@ -255,7 +255,7 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script
 	src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/lut/know-how.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 <script>
 	let newmembers = `${newmember}`, contextPath = "${pageContext.request.contextPath}"
 </script>

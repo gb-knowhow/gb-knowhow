@@ -1,0 +1,45 @@
+건드린 파일 WebContent에 knowhow-join
+config.xml
+member 패키지
+kjp 로그인 js만듦
+로그인 jsp
+로그인 컨트롤러 생성
+
+-------------------------------------------------
+가상요소 이벤트 질문
+
+
+action질문?
+어떻게 target이 action이 되는거지?
+
+
+login.jsp 에 71번째 줄 form이 왜 있는지?
+
+186번째줄
+join button type을 submit으로 바꾸기
+
+join에 form넣기
+join에 이름 태그 넣기
+
+memberDTO만듦
+ServletEception: 서블릿 실행이 예외를 발생시켰습니다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

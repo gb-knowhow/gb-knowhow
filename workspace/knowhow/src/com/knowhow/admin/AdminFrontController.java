@@ -16,7 +16,6 @@ public class AdminFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
-		System.out.println(target);
 		if(target.equals("adminMentorList")) {
 			
 		} else if(target.equals("adminMentorListAction")){
@@ -40,12 +39,10 @@ public class AdminFrontController extends HttpServlet {
 		}else if(target.equals("adminResumeList")){
 			
 		}else if(target.equals("adminResumeListAction")){
-			result = new AdminResumeListActionController().execute(req, resp);
 			
 		}else if(target.equals("adminResumeDelete")){
 			
 		}else if(target.equals("adminResumeDeleteAction")){
-			result = new AdminResumeDeleteActionController().execute(req, resp);
 			
 		}else if(target.equals("adminQuestionList")){
 //		멘티 질문 목록
@@ -63,7 +60,7 @@ public class AdminFrontController extends HttpServlet {
 			result = new AdminQuestionDeleteActionController().execute(req, resp);
 			
 		}else if(target.equals("adminQuestionCommentList")){
-			
+//			질문글 댓글 목록
 		}else if(target.equals("adminQuestionCommentListAction")){
 			result = new AdminQuestionCommentListActionController().execute(req, resp);
 			
@@ -71,7 +68,7 @@ public class AdminFrontController extends HttpServlet {
 			
 		}else if(target.equals("adminQuestionCommentDetailAction")){
 			result = new AdminQuestionCommentDetailActionController().execute(req, resp);
-			
+//			질문긋 댓글 삭제
 		}else if(target.equals("adminQuestionCommentDelete")){
 			
 		}else if(target.equals("adminQuestionCommentDeleteAction")){
@@ -93,12 +90,12 @@ public class AdminFrontController extends HttpServlet {
 			result = new AdminMentorAnswerDeleteActionController().execute(req, resp);
 			
 		}else if(target.equals("adminAnswerCommentList")){
-			
+//			답글의 댓글 목록
 		}else if(target.equals("adminAnswerCommentListAction")){
 			result = new AdminAnswerCommentListActionController().execute(req, resp);
 			
 		} else if(target.equals("adminAnswerCommentDelete")){
-			
+//			답글의 댓글 지우기
 		} else if(target.equals("adminAnswerCommentDeleteAction")){
 			result = new AdminAnswerCommentDeleteActionController().execute(req, resp);
 			

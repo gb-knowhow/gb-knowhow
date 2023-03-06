@@ -123,6 +123,14 @@
   </servlet-mapping>
   
   
+      <servlet>
+  	<servlet-name>resume</servlet-name>
+  	<servlet-class>com.knowhow.resume.ResumeFrontController</servlet-class>
+  </servlet>
+    <servlet-mapping>
+  	<servlet-name>resume</servlet-name>
+  	<url-pattern>*.resume</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>

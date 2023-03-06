@@ -29,7 +29,7 @@ public class AdminDashBoardActionController implements Action {
 		req.setAttribute("mentorreply", adminDAO.dashBoardMentorReply(mentorReplyMap));
 		req.setAttribute("newmember", adminDAO.dashBoardNewMember(newMemberMap));
 		req.setAttribute("askadmin", adminDAO.dashBoardAskAdmin(askAdminMap));
-		result.setPath("html/lut/dash-board-manager.jsp");
+		result.setPath("templates/admin/dash-board-manager.jsp");
 		return result;
 	}
 

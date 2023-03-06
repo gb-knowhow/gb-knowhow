@@ -12,7 +12,7 @@
 <link rel="shortcut icon" type="image/x-icon"
 	href="./images/logo-favicon.ico" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/lut/mentee-ask-manager.css">
+	href="${pageContext.request.contextPath}/static/css/admin/mentee-ask-manager.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
@@ -171,7 +171,7 @@
 								</div>
 								<div class="ask-num">${question.questionId}</div>
 								<div class="specialization">${question.categoryName}</div>
-								<div class="user-nick-name">${question.memberName}</div>
+								<div class="user-nick-name">${question.memberNickname}</div>
 								<div class="ask-title">${question.questionTitle}</div>
 								<div class="ask-contents">${question.questioncontent}</div>
 								<div class="answer-count">${question.answerCount}</div>
@@ -185,7 +185,7 @@
 								</div>
 								<div id="my_modal${question.questionId}" class="my_modal">
 									<a class="modal_close_btn">✖</a>
-									<div class="comment-writer">작성자: ${question.memberName}</div>
+									<div class="comment-writer">작성자: ${question.memberNickname}</div>
 									<div class="comment-title">제목: ${question.questionTitle}</div>
 									<div class="comment-detail">${question.questioncontent}</div>
 								</div>
@@ -238,5 +238,5 @@
 	let menteeQuestions = `${menteeQuestions}`; 
 	let contextPath = "${pageContext.request.contextPath}";
 </script>
-<script src="${pageContext.request.contextPath}/js/lut/know-how.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 </html>

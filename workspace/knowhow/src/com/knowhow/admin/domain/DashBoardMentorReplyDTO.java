@@ -3,7 +3,7 @@ package com.knowhow.admin.domain;
 public class DashBoardMentorReplyDTO {
     private long answerId;
 	private String answerTitle;
-	private String memberName;
+	private String memberNickname;
 	private int likeCount;
 	private String answerRegdate;
 	
@@ -25,12 +25,12 @@ public class DashBoardMentorReplyDTO {
 		this.answerTitle = answerTitle;
 	}
 
-	public String getMemberName() {
-		return memberName;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public int getLikeCount() {
@@ -57,7 +57,7 @@ public class DashBoardMentorReplyDTO {
 		result = prime * result + ((answerRegdate == null) ? 0 : answerRegdate.hashCode());
 		result = prime * result + ((answerTitle == null) ? 0 : answerTitle.hashCode());
 		result = prime * result + likeCount;
-		result = prime * result + ((memberName == null) ? 0 : memberName.hashCode());
+		result = prime * result + ((memberNickname == null) ? 0 : memberNickname.hashCode());
 		return result;
 	}
 
@@ -84,13 +84,13 @@ public class DashBoardMentorReplyDTO {
 			return false;
 		if (likeCount != other.likeCount)
 			return false;
-		if (memberName == null) {
-			if (other.memberName != null)
+		if (memberNickname == null) {
+			if (other.memberNickname != null)
 				return false;
-		} else if (!memberName.equals(other.memberName))
+		} else if (!memberNickname.equals(other.memberNickname))
 			return false;
 		return true;
 	}
-	
+
 	
 }

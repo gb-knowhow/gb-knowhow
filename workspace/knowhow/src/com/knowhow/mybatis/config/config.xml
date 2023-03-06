@@ -2,75 +2,63 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true"/>
-	</settings>
-	
-	<typeAliases>
-		<typeAlias type="com.knowhow.member.domain.MemberVO" alias="memberVO"/>
-		<typeAlias type="com.knowhow.member.domain.ResumeVO" alias="resumeVO"/>
-		<typeAlias type="com.knowhow.admin.domain.BannerVO" alias="bannerVO"/>
-		<typeAlias type="com.knowhow.admin.domain.MemberListDTO" alias="memberListDTO"/>
-   		<typeAlias type="com.knowhow.admin.domain.DashBoardMenteeQuestionDTO" alias="dashBoardMenteeQuestionDTO"/>
-  		<typeAlias type="com.knowhow.admin.domain.DashBoardMentorReplyDTO" alias="dashBoardMentorReplyDTO"/>
-   		<typeAlias type="com.knowhow.admin.domain.DashBoardNewMemberDTO" alias="dashBoardNewMemberDTO"/>
-   		<typeAlias type="com.knowhow.admin.domain.DashBoardAskAdminDTO" alias="dashBoardAskAdminDTO"/>
-   		<typeAlias type="com.knowhow.admin.domain.MentorReplyListDTO" alias="mentorReplyListDTO"/>
-   		<typeAlias type="com.knowhow.admin.domain.MenteeQuestionListDTO" alias="menteeQuestionListDTO"/>
-		<typeAlias type="com.knowhow.answer.domain.AnswerLikeVO" alias="answerLikeVO"/>
-		<typeAlias type="com.knowhow.answer.domain.AnswerVO" alias="answerVO"/>
-		<typeAlias type="com.knowhow.answer.domain.AnswerDTO" alias="answerDTO"/>
-		<typeAlias type="com.knowhow.answerComment.domain.AnswerCommentVO" alias="answerCommentVO"/>
-		<typeAlias type="com.knowhow.askAdmin.domain.AskAdminVO" alias="askAdminVO"/>
-		<typeAlias type="com.knowhow.askAdminAnswer.domain.AskAdminAnswerVO" alias="askAdminAnswerVO"/>
-		<typeAlias type="com.knowhow.question.domain.CategoryVO" alias="categoryVO"/>
-		<typeAlias type="com.knowhow.question.domain.QuestionLikeVO" alias="questionLikeVO"/>
-		<typeAlias type="com.knowhow.question.domain.QuestionVO" alias="questionVO"/>
-		<typeAlias type="com.knowhow.question.domain.QuestionDTO" alias="questionDTO"/>
-		<typeAlias type="com.knowhow.questionComment.domain.QuestionCommentVO" alias="questionCommentVO"/>
-		<typeAlias type="com.knowhow.mypage.domain.CountBoardsDTO" alias="countBoardsDTO"/>
-		<typeAlias type="com.knowhow.mypage.domain.CountLikedDTO" alias="countLikedDTO"/>
-		<typeAlias type="com.knowhow.mypage.domain.CountCommentDTO" alias="countCommentDTO"/>
-		<typeAlias type="com.knowhow.mypage.domain.CountLikeDTO" alias="countLikeDTO"/>
-		
-	</typeAliases>
-	
-		
-	<environments default="mysql">
-		<environment id="mysql">
-			<transactionManager type="JDBC"/>
-			<dataSource type="POOLED">
-				<property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-				<property name="url" value="jdbc:mysql://localhost:3306/knowhow"/>
-				<property name="username" value="root"/>
-				<property name="password" value="1234"/>
-			</dataSource>
-		</environment>
-	</environments>
-	
-	<mappers>
-		<mapper resource="com/knowhow/mybatis/mapper/memberMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/adminMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/answerCommentMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/answerMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/askAdminMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/questionCommentMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/questionMapper.xml"/>
-		<mapper resource="com/knowhow/mybatis/mapper/mypageMapper.xml"/>
-	</mappers>
+   <settings>
+      <setting name="mapUnderscoreToCamelCase" value="true"/>
+   </settings>
+   
+   <typeAliases>
+      <typeAlias type="com.knowhow.member.domain.MemberVO" alias="memberVO"/>
+      <typeAlias type="com.knowhow.member.domain.ResumeVO" alias="resumeVO"/>
+      <typeAlias type="com.knowhow.admin.domain.MemberListDTO" alias="memberListDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.DashBoardMenteeQuestionDTO" alias="dashBoardMenteeQuestionDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.DashBoardMentorReplyDTO" alias="dashBoardMentorReplyDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.DashBoardNewMemberDTO" alias="dashBoardNewMemberDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.DashBoardAskAdminDTO" alias="dashBoardAskAdminDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.MentorReplyListDTO" alias="mentorReplyListDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.MenteeQuestionListDTO" alias="menteeQuestionListDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.QuestionCommentListDTO" alias="questionCommentListDTO"/>
+	<typeAlias type="com.knowhow.admin.domain.AnswerCommentListDTO" alias="answerCommentListDTO"/>
+	<typeAlias type="com.knowhow.resume.domain.ResumeListDTO" alias="resumeListDTO"/>
+      <typeAlias type="com.knowhow.answer.domain.AnswerLikeVO" alias="answerLikeVO"/>
+      <typeAlias type="com.knowhow.answer.domain.AnswerVO" alias="answerVO"/>
+      <typeAlias type="com.knowhow.answer.domain.AnswerDTO" alias="answerDTO"/>
+      <typeAlias type="com.knowhow.answerComment.domain.AnswerCommentVO" alias="answerCommentVO"/>
+      <typeAlias type="com.knowhow.askAdmin.domain.AskAdminVO" alias="askAdminVO"/>
+      <typeAlias type="com.knowhow.askAdminAnswer.domain.AskAdminAnswerVO" alias="askAdminAnswerVO"/>
+      <typeAlias type="com.knowhow.question.domain.CategoryVO" alias="categoryVO"/>
+      <typeAlias type="com.knowhow.question.domain.QuestionLikeVO" alias="questionLikeVO"/>
+      <typeAlias type="com.knowhow.question.domain.QuestionVO" alias="questionVO"/>
+      <typeAlias type="com.knowhow.question.domain.QuestionDTO" alias="questionDTO"/>
+      <typeAlias type="com.knowhow.questionComment.domain.QuestionCommentVO" alias="questionCommentVO"/>
+      <typeAlias type="com.knowhow.mypage.domain.CountBoardsDTO" alias="countBoardsDTO"/>
+      <typeAlias type="com.knowhow.mypage.domain.CountLikedDTO" alias="countLikedDTO"/>
+      <typeAlias type="com.knowhow.mypage.domain.CountCommentDTO" alias="countCommentDTO"/>
+      <typeAlias type="com.knowhow.mypage.domain.CountLikeDTO" alias="countLikeDTO"/>
+   </typeAliases>
+   
+      
+   <environments default="mysql">
+      <environment id="mysql">
+         <transactionManager type="JDBC"/>
+         <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/knowhow"/>
+            <property name="username" value="root"/>
+            <property name="password" value="1234"/>
+         </dataSource>
+      </environment>
+   </environments>
+   
+   <mappers>
+      <mapper resource="com/knowhow/mybatis/mapper/memberMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/adminMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/answerCommentMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/answerMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/askAdminMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/questionCommentMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/questionMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/mypageMapper.xml"/>
+      <mapper resource="com/knowhow/mybatis/mapper/resumeMapper.xml"/>
+   </mappers>
 </configuration>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

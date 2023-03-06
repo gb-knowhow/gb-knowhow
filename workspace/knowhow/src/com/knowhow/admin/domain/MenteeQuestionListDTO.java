@@ -3,13 +3,13 @@ package com.knowhow.admin.domain;
 public class MenteeQuestionListDTO {
 	private Long questionId;  
 	private String categoryName;
-	private String memberName;  
+	private String memberNickname;  
 	private String questionTitle;
 	private String questioncontent;
 	private int answerCount;  
 	private int commentCount;
 	private String questionRegdate;
-	
+
 	public MenteeQuestionListDTO() {;}
 
 	public Long getQuestionId() {
@@ -28,12 +28,12 @@ public class MenteeQuestionListDTO {
 		this.categoryName = categoryName;
 	}
 
-	public String getMemberName() {
-		return memberName;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public String getQuestionTitle() {
@@ -83,7 +83,7 @@ public class MenteeQuestionListDTO {
 		result = prime * result + answerCount;
 		result = prime * result + ((categoryName == null) ? 0 : categoryName.hashCode());
 		result = prime * result + commentCount;
-		result = prime * result + ((memberName == null) ? 0 : memberName.hashCode());
+		result = prime * result + ((memberNickname == null) ? 0 : memberNickname.hashCode());
 		result = prime * result + ((questionId == null) ? 0 : questionId.hashCode());
 		result = prime * result + ((questionRegdate == null) ? 0 : questionRegdate.hashCode());
 		result = prime * result + ((questionTitle == null) ? 0 : questionTitle.hashCode());
@@ -109,10 +109,10 @@ public class MenteeQuestionListDTO {
 			return false;
 		if (commentCount != other.commentCount)
 			return false;
-		if (memberName == null) {
-			if (other.memberName != null)
+		if (memberNickname == null) {
+			if (other.memberNickname != null)
 				return false;
-		} else if (!memberName.equals(other.memberName))
+		} else if (!memberNickname.equals(other.memberNickname))
 			return false;
 		if (questionId == null) {
 			if (other.questionId != null)
@@ -136,6 +136,6 @@ public class MenteeQuestionListDTO {
 			return false;
 		return true;
 	}
-	
-	
+
+
 }

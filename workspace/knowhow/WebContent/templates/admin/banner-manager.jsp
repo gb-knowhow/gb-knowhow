@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>know-how</title>
-<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/templates/admin/images/logo-favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="./images/logo-favicon.ico" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin/banner-manager.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
     <div class="wrap">
         <div id="menu-side" class="container">
             <div id="top-box" class="menu-box">
-                <img id="knowhow-logo" alt="know-how" src="${pageContext.request.contextPath}/templates/admin/images/know-how-title.png">
+                <img id="knowhow-logo" alt="know-how" src="./images/know-how-title.png">
             </div>
             <div id="middle-box" class="menu-box">
                 <div id="wrap-middle-box">
@@ -24,7 +24,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-site-shortcut-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="home" src="${pageContext.request.contextPath}/templates/admin/images/home-icon.png">
+                                    <img class="side-icons" alt="home" src="./images/home-icon.png">
                                 </div>
                                 사이트 바로가기
                             </div>
@@ -33,7 +33,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="dash-board" src="${pageContext.request.contextPath}/templates/admin/images/dashBoard-icon.png">
+                                    <img class="side-icons" alt="dash-board" src="./images/dashBoard-icon.png">
                                 </div>
                                 대시보드
                             </div>
@@ -41,7 +41,7 @@
                     
                         <button type="button" class="collapsible" onclick="collapse(this);">
                             <div class="icon-gap">
-                                <img class="side-icons" alt="user" src="${pageContext.request.contextPath}/templates/admin/images/user-icon.png">
+                                <img class="side-icons" alt="user" src="./images/user-icon.png">
                             </div>
                             회원관리
                         </button>
@@ -53,7 +53,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/resume.png">
+                                    <img class="side-icons" alt="resume" src="./images/resume.png">
                                 </div>
                                 이력서 관리
                             </div>
@@ -61,7 +61,7 @@
 
                         <button type="button" class="collapsible" onclick="collapse(this);">
                             <div class="icon-gap">
-                                <img class="side-icons" alt="ask-answer" src="${pageContext.request.contextPath}/templates/admin/images/ask-answer-icon2.png">
+                                <img class="side-icons" alt="ask-answer" src="./images/ask-answer-icon2.png">
                             </div>
                             질문 답변 관리
                         </button>
@@ -75,7 +75,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/ask-board-icon.png">
+                                    <img class="side-icons" alt="resume" src="./images/ask-board-icon.png">
                                 </div>
                                 문의 게시판 관리
                             </div>
@@ -84,7 +84,7 @@
                         <span class="mouseOnEffect">
                             <div id="middle-box-dashBoard-bar" class="side-bar">
                                 <div class="icon-gap">
-                                    <img class="side-icons" alt="resume" src="${pageContext.request.contextPath}/templates/admin/images/banner-icon.png">
+                                    <img class="side-icons" alt="resume" src="./images/banner-icon.png">
                                 </div>
                                 배너 관리
                             </div>
@@ -101,7 +101,7 @@
                 배너 관리 
                 </div>
                 <h1 id="clock" style="color:black;">clock</h1>
-                <img  class="admin-profile" src="${pageContext.request.contextPath}/templates/admin/images/profile-image.png"> 
+                <img  class="admin-profile" src="https://whatsondisneyplus.com/wp-content/uploads/2021/09/bart-.png"> 
                 <p class="admin-name">관리자</p>
                 <p class="name-logout-space">ㅣ</p>
                 <button class="admin-logout" type="submit" value="">LOGOUT</button>
@@ -128,32 +128,32 @@
                         </div>
                         <div class="detail">
                             <button class="detail-button modal7" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
                         <div id="my_modal7" class="my_modal" >
                             <a class="modal_close_btn">✖</a>
                             <div class="comment-writer">배너명: 합격면접</div>
+                            <div class="comment-title">코드: {{$메인배너1}}</div>
                             <div class="container">
                                 <div class="image-upload" id="image-upload">
                         
-                                    <div class="image-show" id="image-show">
-                                      <img src="${pageContext.request.contextPath}/templates/admin/images/banner1.png" class="image-box" />
-                                    </div>
+                                    <div class="image-show" id="image-show"></div>
                                     <form method="post" enctype="multipart/form-data">
-                                        <input id="file" name="chooseFile" type="file" accept="image/*" onchange="loadFile(this)" />
+                                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
                                     </form>
-                                    
-
                                     
                                     <div class="fileContainer">
                                         <div class="button">
-                                            <label for="file">
+                                            <label for="chooseFile">
                                             </label>
                                         </div>
                                         <div class="fileInput">
                                             <p>FILE NAME: </p>
-                                            <p id="fileName">banner1.png</p>
+                                            <p id="fileName"></p>
+                                        </div>
+                                        <div class="buttonContainer">
+                                            <div class="submitButton" id="submitButton">업로드</div>
                                         </div>
                                     </div>
                                 </div>
@@ -161,10 +161,10 @@
                             </div>
                             <div class="qna-manage">
                                 <input class="qna-submit-btn" type="submit" value="수정하기">
-                                <input class="qna-delete-btn" type="submit" value="삭제하기">
+                                <input class="qna-submit-btn" type="submit" value="삭제하기">
                             </div>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner1.png">
+                        <img  class="banner" src="./images/banner1.png">
                     </div>
 
                     <div class="right-contents">
@@ -179,10 +179,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner2.png">
+                        <img  class="banner" src="./images/banner2.png">
                     </div>
                     <div class="right-contents">
                         <p class="banner-num">배너3</p>
@@ -196,10 +196,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner3.png">
+                        <img  class="banner" src="./images/banner3.png">
                          
                     </div>
                     <div class="right-contents">
@@ -214,10 +214,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner4.png">
+                        <img  class="banner" src="./images/banner4.png">
                     </div>
                     <div class="right-contents margin-off">
                         <p class="banner-num">배너5</p>
@@ -231,10 +231,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner5.png">
+                        <img  class="banner" src="./images/banner5.png">
                     </div>
                     <div class="right-contents">
                         <p class="banner-num">배너6</p>
@@ -248,10 +248,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner6.png">
+                        <img  class="banner" src="./images/banner6.png">
                     </div>
                     <div class="right-contents">
                         <p class="banner-num">배너7</p>
@@ -265,10 +265,10 @@
                         </div> 
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner7.png">
+                        <img  class="banner" src="./images/banner7.png">
                     </div>
                     <div class="right-contents">
                         <p class="banner-num">배너8</p>
@@ -282,10 +282,10 @@
                         </div>   
                         <div class="detail">
                             <button class="detail-button" type="submit">
-                                <img class="detail-icon" src="${pageContext.request.contextPath}/templates/admin/images/detail-icon.png">
+                                <img class="detail-icon" src="./images/detail-icon.png">
                             </button>
                         </div>
-                        <img  class="banner" src="${pageContext.request.contextPath}/templates/admin/images/banner8.png">
+                        <img  class="banner" src="./images/banner8.png">
                     </div>
                     
                 </div>

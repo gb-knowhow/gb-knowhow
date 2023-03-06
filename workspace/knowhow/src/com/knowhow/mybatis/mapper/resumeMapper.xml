@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="resume">
+	<!-- 이력서 목록 -->
+	<select id="resumeList" parameterType="map" resultType="resumeListDTO">
+		select resume_id, member_name, member_job, member_id, resume_existence, resume_original_name, 
+		resume_system_name, member_email 
+		from view_resume_list 
+		<if test="resumeNameKeyword != null">
+			where resume_original_name like 
+			concat('%',#{resumeNameKeyword}, '%') 
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<!-- 이력서 목록 삭제 -->
+	<delete id="resumeListDelete" parameterType="long">
+		delete from
+		tbl_resume
+		where resume_id = #{resumeId}
+	</delete>
+
+	<!-- 이력서 총 수 -->
+	<select id="resumeListGetTotal" resultType="long">
+		select
+		count(resume_id)
+		from view_resume_list
+	</select>
+
+</mapper>
