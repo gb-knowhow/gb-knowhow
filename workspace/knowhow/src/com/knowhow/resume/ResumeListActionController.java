@@ -1,4 +1,4 @@
-package com.knowhow.admin;
+package com.knowhow.resume;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -10,33 +10,31 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
-import com.knowhow.admin.dao.AdminDAO;
+import com.knowhow.resume.dao.ResumeDAO;
 
-public class AdminMentorListActionController implements Action {
+public class ResumeListActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		resp.setCharacterEncoding("UTF-8");
-		AdminDAO adminDAO = new AdminDAO();
+		ResumeDAO resumeDAO = new ResumeDAO();
 		Result result = new Result();
-
 
 		Map<String, Object> pageMap = new HashMap<String, Object>();
 		Map<String, Object> searchMap = new HashMap<String, Object>();
 
-		String mentorKeyword = req.getParameter("mentorKeyword");
+		String resumeNameKeyword = req.getParameter("resumeNameKeyword");
 		String temp = req.getParameter("page"); 
 
 		int page = temp == null || temp.equals("null") ? 1 : Integer.parseInt(temp);
-		//
 
-		searchMap.put("mentorKeyword", mentorKeyword);
+		searchMap.put("resumeNameKeyword", resumeNameKeyword);
 		
-		Long total = adminDAO.mentorGetTotal();
+//		전체 질문
+		Long total = resumeDAO.resumeListGetTotal();
 		//			      한 페이지에 출력되는 게시글의 개수
 		int rowCount = 5;
 		//	      한 페이지에서 나오는 페이지 버튼의 개수
-		
 		
 		int pageCount = 5;
 		int startRow = (page - 1) * rowCount;
@@ -51,26 +49,17 @@ public class AdminMentorListActionController implements Action {
 		next = endPage != realEndPage;
 		pageMap.put("rowCount", rowCount);
 		pageMap.put("startRow", startRow);
-		pageMap.put("mentorKeyword", mentorKeyword);
-
-		//	      화면 단에 JSON형식으로 줘야하니까 빈 jsonObject(json객체(화면이 이해하려면 key값 value값 형태인 json 형식으로 줘야한다.))에 넣는다.
-		//		adminDAO.menteeList().stream().map(mentee -> new JSONObject(mentee)).forEach(jsons::put);
-
-		//		JSON으로 보내는 것은 자바스크립트에서 사용할 때이다.
-
-		//	      json형식인 jsons를 String으로 만들어서 태그 안에서 사용할 수 있게 해준다. items로 한다.
-		
-		req.setAttribute("mentors", adminDAO.mentorList(pageMap));
-		req.setAttribute("mentorTotal", adminDAO.mentorGetTotal());
+		pageMap.put("resumeNameKeyword", resumeNameKeyword);
+		req.setAttribute("resumeLists", resumeDAO.resumeList(pageMap));
+		req.setAttribute("resumeListGetTotal", resumeDAO.resumeListGetTotal());
 		req.setAttribute("total", total);
 		req.setAttribute("startPage", startPage);
 		req.setAttribute("endPage", endPage);
 		req.setAttribute("page", page);
 		req.setAttribute("prev", prev);
 		req.setAttribute("next", next);
-		req.setAttribute("mentorKeyword", mentorKeyword);
-		result.setPath("templates/admin/user-mentor-manager.jsp");
+		req.setAttribute("resumeNameKeyword", resumeNameKeyword);
+		result.setPath("templates/admin/resume-manager.jsp");
 		return result;
 	}
-
 }

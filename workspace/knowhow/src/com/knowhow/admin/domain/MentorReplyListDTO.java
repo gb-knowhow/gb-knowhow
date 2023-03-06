@@ -3,7 +3,7 @@ package com.knowhow.admin.domain;
 public class MentorReplyListDTO {
 	private Long answerId;
 	private String categoryName;
-	private String memberName;
+	private String memberNickname;
 	private String answerTitle;
 	private String answerContent;
 	private int commentCount;
@@ -29,20 +29,20 @@ public class MentorReplyListDTO {
 		this.categoryName = categoryName;
 	}
 
-	public String getMemberName() {
-		return memberName;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public String getAnswerTitle() {
 		return answerTitle;
 	}
 
-	public void setAnswerTitle(String answerTItle) {
-		this.answerTitle = answerTItle;
+	public void setAnswerTitle(String answerTitle) {
+		this.answerTitle = answerTitle;
 	}
 
 	public String getAnswerContent() {
@@ -96,7 +96,7 @@ public class MentorReplyListDTO {
 		result = prime * result + ((categoryName == null) ? 0 : categoryName.hashCode());
 		result = prime * result + commentCount;
 		result = prime * result + likeCount;
-		result = prime * result + ((memberName == null) ? 0 : memberName.hashCode());
+		result = prime * result + ((memberNickname == null) ? 0 : memberNickname.hashCode());
 		result = prime * result + ((questionId == null) ? 0 : questionId.hashCode());
 		return result;
 	}
@@ -139,10 +139,10 @@ public class MentorReplyListDTO {
 			return false;
 		if (likeCount != other.likeCount)
 			return false;
-		if (memberName == null) {
-			if (other.memberName != null)
+		if (memberNickname == null) {
+			if (other.memberNickname != null)
 				return false;
-		} else if (!memberName.equals(other.memberName))
+		} else if (!memberNickname.equals(other.memberNickname))
 			return false;
 		if (questionId == null) {
 			if (other.questionId != null)
@@ -151,7 +151,5 @@ public class MentorReplyListDTO {
 			return false;
 		return true;
 	}
-
-	
 	
 }

@@ -61,7 +61,7 @@ public class AdminQuestionListActionController implements Action {
 		req.setAttribute("prev", prev);
 		req.setAttribute("next", next);
 		req.setAttribute("menteeQuestionKeyword", menteeQuestionKeyword);
-		result.setPath("html/lut/mentee-ask-manager.jsp");
+		result.setPath("templates/admin/mentee-ask-manager.jsp");
 		return result;
 	}
 

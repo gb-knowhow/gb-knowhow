@@ -3,7 +3,7 @@ package com.knowhow.admin.domain;
 public class DashBoardAskAdminDTO {
 	private Long askAdminId;
 	private boolean resumeExistence;
-	private String memberName;
+	private String memberNickname;
 	private String askAdminTitle;
 	private String askAdminRegdate;
 	
@@ -25,12 +25,12 @@ public class DashBoardAskAdminDTO {
 		this.resumeExistence = resumeExistence;
 	}
 
-	public String getMemberName() {
-		return memberName;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public String getAskAdminTitle() {
@@ -56,7 +56,7 @@ public class DashBoardAskAdminDTO {
 		result = prime * result + ((askAdminId == null) ? 0 : askAdminId.hashCode());
 		result = prime * result + ((askAdminRegdate == null) ? 0 : askAdminRegdate.hashCode());
 		result = prime * result + ((askAdminTitle == null) ? 0 : askAdminTitle.hashCode());
-		result = prime * result + ((memberName == null) ? 0 : memberName.hashCode());
+		result = prime * result + ((memberNickname == null) ? 0 : memberNickname.hashCode());
 		result = prime * result + (resumeExistence ? 1231 : 1237);
 		return result;
 	}
@@ -85,16 +85,14 @@ public class DashBoardAskAdminDTO {
 				return false;
 		} else if (!askAdminTitle.equals(other.askAdminTitle))
 			return false;
-		if (memberName == null) {
-			if (other.memberName != null)
+		if (memberNickname == null) {
+			if (other.memberNickname != null)
 				return false;
-		} else if (!memberName.equals(other.memberName))
+		} else if (!memberNickname.equals(other.memberNickname))
 			return false;
 		if (resumeExistence != other.resumeExistence)
 			return false;
 		return true;
 	}
-	
-	
 	
 }

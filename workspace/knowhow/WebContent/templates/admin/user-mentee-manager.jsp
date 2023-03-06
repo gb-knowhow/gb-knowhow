@@ -11,7 +11,7 @@
 <link rel="shortcut icon" type="image/x-icon"
 	href="./images/logo-favicon.ico" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/lut/user-mentee-manager.css">
+	href="${pageContext.request.contextPath}/static/css/admin/user-mentee-manager.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
@@ -222,6 +222,6 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script
 	src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/lut/know-how.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/know-how.js"></script>
 <script>let mentees = `${mentees}`, contextPath = "${pageContext.request.contextPath}"</script>
 </html>

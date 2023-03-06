@@ -63,7 +63,7 @@ public class AdminMentorAnswerListActionController implements Action {
 		req.setAttribute("prev", prev);
 		req.setAttribute("next", next);
 		req.setAttribute("mentorReplyKeyword", mentorReplyKeyword);
-		result.setPath("html/lut/mentor-answer-manager.jsp");
+		result.setPath("templates/admin/mentor-answer-manager.jsp");
 		return result;
 	}
 

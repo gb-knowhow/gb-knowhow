@@ -4,7 +4,7 @@ public class DashBoardMenteeQuestionDTO {
 	private String categoryName;
 	private Long questionId;
 	private String questionTitle;
-	private String memberName;
+	private String memberNickname;
 	private int answerCount;
 	private String questionRegdate;
 	
@@ -34,12 +34,12 @@ public class DashBoardMenteeQuestionDTO {
 		this.questionTitle = questionTitle;
 	}
 
-	public String getMemberName() {
-		return memberName;
+	public String getMemberNickname() {
+		return memberNickname;
 	}
 
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
 	}
 
 	public int getAnswerCount() {
@@ -64,7 +64,7 @@ public class DashBoardMenteeQuestionDTO {
 		int result = 1;
 		result = prime * result + answerCount;
 		result = prime * result + ((categoryName == null) ? 0 : categoryName.hashCode());
-		result = prime * result + ((memberName == null) ? 0 : memberName.hashCode());
+		result = prime * result + ((memberNickname == null) ? 0 : memberNickname.hashCode());
 		result = prime * result + ((questionId == null) ? 0 : questionId.hashCode());
 		result = prime * result + ((questionRegdate == null) ? 0 : questionRegdate.hashCode());
 		result = prime * result + ((questionTitle == null) ? 0 : questionTitle.hashCode());
@@ -87,10 +87,10 @@ public class DashBoardMenteeQuestionDTO {
 				return false;
 		} else if (!categoryName.equals(other.categoryName))
 			return false;
-		if (memberName == null) {
-			if (other.memberName != null)
+		if (memberNickname == null) {
+			if (other.memberNickname != null)
 				return false;
-		} else if (!memberName.equals(other.memberName))
+		} else if (!memberNickname.equals(other.memberNickname))
 			return false;
 		if (questionId == null) {
 			if (other.questionId != null)
@@ -109,5 +109,5 @@ public class DashBoardMenteeQuestionDTO {
 			return false;
 		return true;
 	}
-	
+
 }
