@@ -1,8 +1,8 @@
 package com.knowhow.member;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Enumeration;
+import java.util.Base64;
+import java.util.Base64.Encoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -25,16 +25,29 @@ public class JoinActionController implements Action {
 		MemberVO memberVO = new MemberVO();
 		ResumeVO resumeVO = new ResumeVO();
 		Result result = new Result();
+		Encoder encoder = Base64.getEncoder();
+		String memberPassword = null;
 //		서버에 저장됨
 //		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "static/upload/";
+		
+//		실제 경로는 다르기때문에 본인의 경로에 따라 수정하면됨
 		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/static/upload/";
-		String element = "";
 		int fileSize = 1024 * 1024 * 5; //5M
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
+//		memberPassword = multipartRequest.getParameter("memberPassword");
+//		byte[] passwordBytes = memberPassword.getBytes();
+//		byte[] encodedPassowrd = encoder.encode(passwordBytes);
+//		
+//		
+//		비밀번호 암호화
+//		memberVO.setMemberPassword(new String(encodedPassowrd));
 		
+		System.out.println("비밀번호는 " + multipartRequest.getParameter("memberPassword"));
+		
+		
+		memberVO.setMemberIdentification(multipartRequest.getParameter("memberPassword"));
 		memberVO.setMemberIdentification(multipartRequest.getParameter("memberIdentification"));
-		memberVO.setMemberPassword(multipartRequest.getParameter("memberPassword"));
 		memberVO.setMemberName(multipartRequest.getParameter("memberName"));
 		memberVO.setMemberAge(Integer.valueOf(multipartRequest.getParameter("memberAge")));
 		memberVO.setMemberEmail(multipartRequest.getParameter("memberEmail"));
@@ -42,7 +55,6 @@ public class JoinActionController implements Action {
 		memberDAO.join(memberVO);
 //		맴버 아이디 가져오기
 		Long memberId = memberDAO.getMemberId((multipartRequest.getParameter("memberIdentification")));
-		System.out.println(memberId);
 		
 		
 		
@@ -51,7 +63,6 @@ public class JoinActionController implements Action {
 			String fileOriginalName = multipartRequest.getOriginalFileName("memberResume");
 			String fileSystemName = multipartRequest.getFilesystemName("memberResume");
 			
-			System.out.println("element 이름은 " + element);
 			System.out.println("fileOriginalName은 " + fileOriginalName);
 			System.out.println("fileSystemName은 " + fileSystemName);
 			System.out.println("joinActionController에서 맴버아이디는 " + memberId);
