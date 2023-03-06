@@ -185,7 +185,6 @@ const $inputEmail = $("#email");
 const $errEmail = $(".err-email");
 var regExp = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
-console.log($inputEmail.val())
 
 $inputEmail.on("blur", function(){$.ajax({
 	url: contextPath + "/checkEmailAction.member",

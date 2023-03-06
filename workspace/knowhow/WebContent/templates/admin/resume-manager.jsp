@@ -168,7 +168,7 @@
 								</div>
 								<div class="resume-num">${resume.resumeId}</div>
 								<div class="mentor-name">${resume.memberName}</div>
-								<div class="mentor-job">${resume.memberJob}</div>
+								<div class="mentor-job">드롭</div>
 								<div class="resume-file">${resume.resumeOriginalName}</div>
 								<div class="register-date">${resume.memberEmail}</div>
 								<div class="download">
