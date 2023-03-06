@@ -210,7 +210,7 @@
 		          <a href="#">이용방법</a>
 		        </div>
 		        <div class="navi_menu navi_ask">
-		          <a href="#">문의게시판</a>
+		          <a href="javascript:location.href='${pageContext.request.contextPath}/askAdmin/askAdminListAction.askAdmin'">문의게시판</a>
 		        </div>
 		      </div>
 		    </div>

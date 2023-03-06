@@ -2,5 +2,37 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="askAdmin">
-
+	<select id="selectAll" parameterType="map" resultType="askAdminDTO">
+		select ask_admin_id, ask_admin_title, ask_admin_regdate, ask_admin_upddate,
+		ask_admin_content, ask_admin_answer_status, member_name, member_nickname
+		from view_ask_admin order by ask_admin_id desc 
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="getTotal" resultType="long">
+		select count(ask_admin_id) from tbl_ask_admin
+	</select>
+	
+	<insert id="insert" parameterType="askAdminVO">
+		insert into tbl_ask_admin(ask_admin_title, ask_admin_content, member_id)
+		values(#{askAdminTitle}, #{askAdminContent}, #{memberId})
+	</insert>
+	
+	<!-- <select id="selectIdentification" parameterType="long" resultType="String">
+		select memberIdentification from tbl_member where member_id = #{memberId}
+	</select> -->
+	
+	<select id="select" parameterType="long" resultType="askAdminDTO">
+		select ask_admin_id, ask_admin_title, ask_admin_regdate, ask_admin_upddate,
+		ask_admin_content, ask_admin_answer_status, member_id, member_name, member_nickname
+		from view_ask_admin
+		where ask_admin_id = #{askAdminId}
+	</select>
+	
+	<select id="selectAnswer" parameterType="long" resultType="askAdminAnswerDTO">
+		select ask_admin_answer_id, ask_admin_answer_content, ask_admin_answer_regdate,
+		ask_admin_answer_upddate, ask_admin_id, member_name, member_nickname
+		from view_ask_admin_answer
+		where ask_admin_id = #{askAdminId}
+	</select>
 </mapper>

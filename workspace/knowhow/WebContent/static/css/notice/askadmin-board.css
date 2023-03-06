@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+#header {
+   position: sticky;
+   top: 0;
+    z-index: 1500;
+}
 
 ul, li {
     list-style: none;
@@ -59,7 +64,10 @@ em {
 .section_headings__step1 {
     margin-top: 19px;
     height: 40px;
+    position: relative;
 }
+
+
 
 .section_headings_title {
     position: absolute;
@@ -131,20 +139,27 @@ em {
 .ranking_section .ranking_list {
     box-sizing: border-box;
     width: 50%;
-    height: 308px;
+    height: 100%;
     padding-right: 20px;
     margin: 0 auto;
 }
+
+
 
 .ranking_section .ranking_item {
     position: relative;
     margin-top: 14px;
     padding: 4px 4px 16px 18px;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #badfc7;
     background: 0;
     font-size: 12px;
     line-height: 1.6;
     letter-spacing: -0.5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;  
 }
 
 .ranking_section .ranking_item {
@@ -156,40 +171,52 @@ em {
     font-size: 12px;
     line-height: 1.6;
     letter-spacing: -0.5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.ranking_section .ranking_item .ranking_title_wrap {
+    display: flex;
+    width: 100%;
 }
 
 .ranking_section .ranking_item .no {
-    position: absolute;
-    top: 3px;
-    left: 1px;
-    width: 7px;
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     font-family: Helvetica;
     font-weight: bold;
     color: #388C57;
+    display: block;
+    margin: 5px 10px 5px 5px;
 }
 
 .ranking_section .ranking_item .ranking_title {
     display: block;
+    width: 100%;
+    white-space: nowrap;
     overflow: hidden;
-    margin-bottom: 4px;
     font-weight: bold;
     font-size: 14px;
     color: #000;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    margin: 5px 5px 5px 0;
 }
 
 .ranking_section .ranking_item .text {
     display: block;
+    white-space: nowrap;
     overflow: hidden;
     position: relative;
     margin: 0 0 4px -18px;
     color: #555;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    width: 95%;
 }
+
+
 
 .ranking_section .ranking_item .recommend_num {
     color: #5885ce;
@@ -242,3 +269,32 @@ em {
     text-decoration: none !important;
     vertical-align: top;
 }
+
+.paging-move-icon{
+	width: 20px;
+    margin-top: 12%;
+}
+
+.askAdminBtn{
+	position: absolute;
+	right:0;
+	top:10px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width: 100px;
+	height:35px;
+	border: 1px solid #00bd39;
+	background-color:#00c73c;
+	color: #fff;
+}
+
+.askAdminBtn:hover{
+	background-color:#00bd39;
+}
+
+.stats_ranking_area {
+	position: relative;	
+}
+
+

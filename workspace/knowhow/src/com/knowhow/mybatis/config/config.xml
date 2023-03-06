@@ -24,7 +24,9 @@
       <typeAlias type="com.knowhow.answer.domain.AnswerDTO" alias="answerDTO"/>
       <typeAlias type="com.knowhow.answerComment.domain.AnswerCommentVO" alias="answerCommentVO"/>
       <typeAlias type="com.knowhow.askAdmin.domain.AskAdminVO" alias="askAdminVO"/>
-      <typeAlias type="com.knowhow.askAdminAnswer.domain.AskAdminAnswerVO" alias="askAdminAnswerVO"/>
+      <typeAlias type="com.knowhow.askAdmin.domain.AskAdminDTO" alias="askAdminDTO"/>
+      <typeAlias type="com.knowhow.askAdmin.domain.AskAdminAnswerVO" alias="askAdminAnswerVO"/>
+      <typeAlias type="com.knowhow.askAdmin.domain.AskAdminAnswerDTO" alias="askAdminAnswerDTO"/>
       <typeAlias type="com.knowhow.question.domain.CategoryVO" alias="categoryVO"/>
       <typeAlias type="com.knowhow.question.domain.QuestionLikeVO" alias="questionLikeVO"/>
       <typeAlias type="com.knowhow.question.domain.QuestionVO" alias="questionVO"/>

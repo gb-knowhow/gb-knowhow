@@ -56,7 +56,6 @@ input {
 }
 
 a:-webkit-any-link {
-	color: -webkit-link;
 	cursor: pointer;
 	text-decoration: none;
 }
