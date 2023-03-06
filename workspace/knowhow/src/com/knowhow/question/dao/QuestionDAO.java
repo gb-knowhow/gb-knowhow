@@ -18,8 +18,8 @@ public class QuestionDAO {
 	   
 	   
 //	   게시글 전체 목록
-	   public List<QuestionDTO> selectAll(){
-		   return sqlSession.selectList("question.selectAll");
+	   public List<QuestionDTO> selectAll(Map<String, Object> pageMap){
+		   return sqlSession.selectList("question.selectAll", pageMap);
 	   }
 	   
 //	   게시글 전체 갯수

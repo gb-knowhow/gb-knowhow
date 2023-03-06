@@ -19,9 +19,9 @@
             <!-- 좋아요 많은 답글 헤딩 -->
             <div class="section_headings section_headings__step1">
               <h1 class="section_headings_title">질문 목록</h1>
-              <div class="side _ranking_base_date" id="rankingDate">20일 06시 기준</div>
+              <!-- <div class="side _ranking_base_date" id="rankingDate">20일 06시 기준</div>
               <div class="date_base_sort" id="latest">최신순</div>
-              <div class="ranking_base_sort" id="popular">인기순</div>
+              <div class="ranking_base_sort" id="popular">최신순</div> -->
             </div>
             <!-- //좋아요 많은 답글 헤딩 -->
             <!-- // 좋아요 많은 답글 본문 -->
@@ -31,20 +31,45 @@
                 <ul class="ranking_list" id="ranking_list">
                 	<c:forEach var="question" items="${questions}">
 	                	<li class="ranking_item _item_1">
-			        	    <span class="no">${question.questionId}</span>
+			        	    <span class="no" style="display: none;">${question.questionId}</span>
 			            	<a href="javascript:location.href='${pageContext.request.contextPath}/questionDetailAction.question?questionId=${question.questionId}'" class="ranking_title"><c:out value="${question.questionTitle}"/></a>
-			                <a href="javascript:void(0) class="text">${question.questionContent}</a>                    
-				          	<span class="recommend_num"> </span><span class="reply_num"></span>
+			                <a href="javascript:void(0)" class="text">${question.questionContent}</a>                    
+			                <a href="javascript:void(0)" class="text1">${question.questionRegDate}</a>                    
 						</li>
 					</c:forEach>
                 </ul>
               </div>
               <!-- //랭킹 -->
               <!-- 페이징 -->
-              <div class="paginate" id="rankingPaging">
+              
+              <section id="content-wrap">
+                <ul></ul>
+                <div id="paging-wrap">
+                	<c:if test="${prev}">
+	                    <a href="javascript:location.href='/questionListAction.question?page=${startPage - 1}'" class="paging paging-move"><img src="${pageContext.request.contextPath}/static/images/prev.png" width="15px"></a>
+                	</c:if>
+                    <c:forEach var="i" begin="${startPage}" end="${endPage}">
+                    	<c:choose>
+                    		<c:when test="${i eq page}">
+			                    <a href="javascript:void(0)" class="paging paging-checked"><c:out value="${i}"/></a>
+                    		</c:when>
+                    		<c:otherwise>
+			                    <a href="javascript:location.href='/questionListAction.question?page=${i}'" class="paging"><c:out value="${i}"/></a>
+                    		</c:otherwise>
+                    	</c:choose>
+                    </c:forEach>
+                    <c:if test="${next}">
+                    	<a href="javascript:location.href='/questionListAction.question?page=${endPage + 1}'" class="paging paging-move"><img src="${pageContext.request.contextPath}/static/images/next.png" width="15px"></a>
+                    </c:if>
+                    <div></div>
+                </div>
+            </section>
+              
+              
+              <!-- <div class="paginate" id="rankingPaging">
                 <a href="#" class="on" title="선택됨">1</a>
                 <a href="#">2</a>
-              </div>
+              </div> -->
             </div>
             <!-- // 좋아요 많은 답글 본문 -->
           </div>

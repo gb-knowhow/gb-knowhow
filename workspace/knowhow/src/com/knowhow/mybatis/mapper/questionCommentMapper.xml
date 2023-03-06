@@ -3,9 +3,9 @@
 
 <mapper namespace="questionComment">
 	<select id="selectAll" parameterType="long" resultType="questionCommentVO">
-		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, comment_group, member_id, question_id
-		from tbl_question_comment
-		where question_id = #{questionId}
+		select comment_id, comment_content, comment_depth, comment_regdate, comment_upddate, comment_group, c.member_id, member_nickname, question_id
+		from tbl_question_comment c join tbl_member m
+		where question_id = #{questionId} order by comment_id desc
 	</select>
 	
 	<insert id="insert" parameterType="questionCommentVO">
@@ -14,4 +14,8 @@
 		values(#{commentContent}, #{memberId}, #{questionId})
 	</insert>
 	
+	<delete id="delete" parameterType="long">
+		delete from tbl_question_comment
+		where comment_id = #{commentId}
+	</delete>
 </mapper>

@@ -25,12 +25,12 @@ public class QuestionCommentFrontController extends HttpServlet{
 		} else if(target.equals("questionCommentWrite")){
 			
 		} else if(target.equals("questionCommentWriteAction")){
-			result = new QuestionCommentWriteActionController().execute(req, resp);
+			new QuestionCommentWriteActionController().execute(req, resp);
 			
 		} else if(target.equals("questionCommentDelete")){
 			
 		} else if(target.equals("questionCommentDeleteAction")){
-			result = new QuestionCommentDeleteActionController().execute(req, resp);
+			new QuestionCommentDeleteActionController().execute(req, resp);
 			
 		} else if(target.equals("questionCommentUpdate")){
 			

@@ -1025,3 +1025,11 @@ button .text, button .icon {
 	cursor: pointer;
 	padding-left:18px;
 }
+
+a#updatebutton {
+    right: 60px;
+}
+
+.answerListFull {
+    margin-bottom: 40px;
+}

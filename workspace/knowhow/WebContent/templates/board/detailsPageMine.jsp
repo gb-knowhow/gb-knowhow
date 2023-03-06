@@ -25,22 +25,20 @@
 						<span class="blind">질문</span>
 					</div>
 					<div class="question_title">
-						<img
-							src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png"
-							style="margin-right: 3%; width: 50px; height: 50px;"> 
+						<img src="${pageContext.request.contextPath}/css/kdh/image/questionMark.png" style="margin-right: 3%; width: 50px; height: 50px;"> 
 							${question.questionTitle}
 						<a href="javascript:location.href='/questionUpdate.question?questionId=${question.questionId}'" id="updatebutton"style="text-decoration: none" class="button_compose button_modify"
 							onclick="">
-							<i class="icon icon_compose_opinion"> <img
+							<%-- <i class="icon icon_compose_opinion"> <img
 								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
-								style="width: 20px; height: 20px;"></i> <span class="blind">수정하기</span>
+								style="width: 20px; height: 20px;"></i> --%> <span class="blind">수정하기</span>
 							<em class="questionButton_modify">수정하기</em>
 						</a>
 						<a href="javascript:location.href='/questionDeleteAction.question?questionId=${question.questionId}'" id="deletebutton" style="text-decoration: none" class="button_compose button_modify"
 							onclick="">
-							<i class="icon icon_compose_opinion"> <img
+							<%-- <i class="icon icon_compose_opinion"> <img
 								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
-								style="width: 20px; height: 20px;"></i> <span class="blind">삭제하기</span>
+								style="width: 20px; height: 20px;"></i> --%> <span class="blind">삭제하기</span>
 							<em class="questionButton_modify">삭제하기</em>
 						</a>
 					</div>
@@ -92,8 +90,7 @@
 					</div>
 				</div>
 				<!-- 본글의 댓글 c-opinion _commentListArea-->
-				<div class="c-opinion _commentListArea" id="questionCommentList" style="display: none;">
-				<form action="${pageContext.request.contextPath}/questionCommentWriteAction.comment?questionId=${question.questionId}">
+				<div class="c-opinion _commentListArea" id="questionCommentList" style="display: block;">
 					<input type="hidden" name="questionId" value="${question.questionId}">
 					<h2 class="blind">댓글영역</h2>
 					<div class="question-comment">
@@ -101,7 +98,7 @@
 							<legend>댓글 입력</legend>
 							<div class="question-comment-form">
 								<textarea class="question-comment-textarea placeholder" id="wr_1" maxlength="500" title="댓글입력"
-									placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."name="commentContent" value="${comment.commentContent}"></textarea>
+									placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."name="replyContent"></textarea>
 							</div>
 							<div class="question-comment-upload">
 								<div class="question-comment-count">
@@ -114,12 +111,10 @@
 							</div>
 						</fieldset>
 					</div>
-				</form>
 					<!-- 본문의 댓글 목록들 -->
 					<div class="question-commentList">
 						<div class="replyItem">
 							<div class="reply-align">
-								<p class="question-commentList-date">댓글 등록날짜</p>
 								<span class="re-reply-img">
 								</span>
 							</div>
@@ -151,14 +146,14 @@
 						<c:forEach var="comment" items="${comments}">
 						<div class="replyItem">
 							<p class="question-commentList-nickname">
-								<strong>${comment.commentId}닉네임 들어가야할곳 지금은 commentId!</strong>
+								<strong>${comment.commentId}</strong>
 							</p>
 							<div class="question-commentList-text">
 								<p>${comment.commentContent}</p>
 							</div>
 							<p class="question-commentList-date">작성 날짜</p>
 							<div class="button_more">
-								<a href="javascript:void(0);" class="_reportBtn"> 삭제 </a>
+								<a href="javascript:void(0);" class="_reportBtn">삭제</a>
 							</div>
 						</div>
 						</c:forEach>
@@ -239,7 +234,7 @@
 								<div class="reply-comment-click">
 									<!-- class이름 button_reply_comment로 쓰세요. -->
 									<button type="button"
-										class="button_compose button_reply_comment" onclick="">
+										class="button_compose button_reply_comment" onclick="openContent(${answer.answerId})">
 										<i class="icon icon_compose_opinion"> <img
 											src="${pageContext.request.contextPath}/css/kdh/image/comment.png"
 											style="width: 20px; height: 20px;"></i> <span class="blind">댓글</span>
@@ -261,7 +256,7 @@
 							</div>
 							<div class="reply-Comment">
 								<div class="c-opinion _commentListArea"
-									id="questionCommentList2" style="display: none;">
+									id="questionCommentList${answer.answerId}" style="display: none;">
 									<h2 class="blind">댓글영역</h2>
 									<div class="question-comment">
 										<fieldset>
@@ -329,6 +324,9 @@
 	        <jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" flush="true"/>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+	let contextPath = "${pageContext.request.contextPath}";
+</script>
 <script
 	src="${pageContext.request.contextPath}/static/js/board/detailsPageMine.js"></script>
 </html>
