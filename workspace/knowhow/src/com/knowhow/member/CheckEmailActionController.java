@@ -23,7 +23,7 @@ public class CheckEmailActionController implements Action {
 		JSONObject json = new JSONObject();
 		try {
 			json.put("checkEmail", memberDAO.checkEmail(req.getParameter("memberEmail")));
-			System.out.println(memberDAO.checkNickname(req.getParameter("memberEmail")));
+			System.out.println(memberDAO.checkEmail(req.getParameter("memberEmail")));
 			out.print(json.toString());
 		} catch (JSONException e) {
 			e.printStackTrace();

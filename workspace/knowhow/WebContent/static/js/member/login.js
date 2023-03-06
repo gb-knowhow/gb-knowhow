@@ -15,6 +15,10 @@ $keepLoginLabel.on("click", function(){
 
 })
 
-
-    
-    
+function send(){
+		/*비밀번호 암호화*/
+	    location.replace(location.href);
+		$("input[name='memberPassword']").val(btoa($("input[name='memberPassword']").val()));
+		document.loginForm.submit();
+		}
+		

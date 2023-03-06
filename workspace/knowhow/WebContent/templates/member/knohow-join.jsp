@@ -13,7 +13,7 @@
 	<header id="header">
 		<jsp:include page="${pageContext.request.contextPath}/templates/main/include/header.jsp" flush="true" />
 	</header>
-	<form action="joinAction.member" method="post" enctype="multipart/form-data" >
+	<form action="${pageContext.request.contextPath}/joinAction.member" method="post" enctype="multipart/form-data" name="joinForm">
     <div class="wrapper">
         <div class="section">
             <div class="content">
@@ -201,8 +201,8 @@
                             </label>
                         </span>
                         <div class="bt">
-                            <button type="button" class="back-button">취소</button>
-                            <button type="submit" class="complete-button" >완료</button>
+                            <button type="button" class="back-button" onclick = " location.href= '${pageContext.request.contextPath}/login.member'">취소</button>
+                            <button type="button" class="complete-button" onclick = "send()" >완료</button>
                         </div>
                     </div>
                     

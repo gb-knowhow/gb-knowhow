@@ -382,6 +382,12 @@ label {
     color: red;
     display: none;
 }
+.err-name{
+    font-size: 12px;
+    color: red;
+    display: none;
+    margin-top: -24px;
+}
 .err-age{
     font-size: 12px;
     color: red;

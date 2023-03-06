@@ -40,11 +40,11 @@ let flag4 = false;
 let flag6 = false;
 let flag7 = false;
 
+$("#password")
 
 // 비밀번호 1
 changePassword1.addEventListener("click",function(){
-    var password = document.querySelector('#password').value;
-
+    let password = document.querySelector('#password').value;
     if(password.length > 1){
         inputPassword.type = 'text';
         changePassword1.style.display = 'none'; 
@@ -53,10 +53,8 @@ changePassword1.addEventListener("click",function(){
 });
 
 
-
 changePassword3.addEventListener("click",function(){
-    var password = document.querySelector('#password').value;
-    
+    let password = document.querySelector('#password').value;
     if(password.length > 1){
         inputPassword.type = 'password';
         changePassword1.style.display = 'block'; 
@@ -66,7 +64,7 @@ changePassword3.addEventListener("click",function(){
 
 // 비밀번호 2
 changePassword2.addEventListener("click",function(){
-    var password = document.querySelector('#password-check').value;
+    let password = document.querySelector('#password-check').value;
 
     if(password.length > 1){
         inputPasswordCheck.type = 'text';
@@ -76,7 +74,7 @@ changePassword2.addEventListener("click",function(){
 });
 
 changePassword4.addEventListener("click",function(){
-    var password = document.querySelector('#password-check').value;
+    let password = document.querySelector('#password-check').value;
     
     if(password.length > 1){
         inputPasswordCheck.type = 'password';
@@ -116,7 +114,7 @@ $joinInputId.on("blur",function(){$.ajax({
 			$joinHelp.css('color', 'red')
 			$joinHelp.css('display', 'block');
 			
-		}else if($joinInputId.val() < 1){
+		}else if($joinInputId.val().length < 1){
 			$joinHelp.css('display', 'block');
        		$joinHelp.css('color', 'red');
        		message = "필수 입력 사항입니다";
@@ -148,7 +146,7 @@ $joinInputNickname.on("blur",function(){$.ajax({
 			$errorNickname.css('color', 'red')
 			$errorNickname.css('display', 'block');
 			
-		}else if($joinInputId.val() < 1){
+		}else if($joinInputId.val().length < 1){
 			$errorNickname.css('display', 'block');
        		$errorNickname.css('color', 'red');
        		message = "필수 입력 사항입니다";
@@ -195,12 +193,12 @@ $inputEmail.on("blur", function(){$.ajax({
 	success: function(result){
 		let message;
 		result = JSON.parse(result);
-		if(result.check){
-			message = "중복된 아이디입니다.";
+		if(result.checkEmail){
+			message = "중복된 이메일입니다.";
 			$errEmail.css('color', 'red')
 			$errEmail.css('display', 'block');
 			
-		} else if($inputEmail.val() < 1){
+		} else if($inputEmail.val().length < 1){
 			$errEmail.css('display', 'block');
        		$errEmail.css('color', 'red');
        		message = "필수 입력 사항입니다";
@@ -222,6 +220,40 @@ $inputEmail.on("blur", function(){$.ajax({
 		}
 })
 });
+
+
+
+function send(){
+		/*비밀번호 암호화*/
+    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true /*&& flag5 == true */&& flag6 == true && flag7 == true){
+	    alert("회원가입이 완료 되었습니다");
+	    location.replace(location.href);
+		$("input[name='memberPassword']").val(btoa($("input[name='memberPassword']").val()));
+		$("#password-check").val(btoa($("#password-check").val()));
+	
+		document.joinForm.submit();
+    // window.location.href = 'https://www.naver.com';
+    }else if(flag1 == false){
+        alert("아이디를 입력해주세요")
+    }else if(flag2 == false){
+        alert("비밀번호를 입력해주세요")
+    }else if(flag3 == false){
+        alert("비밀번호 확인란을 입력해주세요")
+    }else if(flag4 == false){
+        alert("이메일을 입력해주세요")
+    }else if(flag5 == false){
+        alert("닉네임을 입력해주세요")
+    }else if(flag6 == false){
+        alert("나이를 입력해주세요")
+    }else if(flag7 == false){
+        alert("이용약관을 입력해주세요")
+    }
+		
+	/*$("input[name='memberPassword']").val(btoa($("input[name='memberPassword']").val()));
+	$("#password-check").val(btoa($("#password-check").val()));
+	
+	document.joinForm.submit();*/
+}
 
  /*function(){
     if(!$inputEmail.val()){ 
@@ -257,12 +289,19 @@ $inputEmail.on("blur", function(){$.ajax({
 
 
 /* 수정사항---------------------------------------------------------------------*/
+// 이름엔 한글과 영어만 가능하게
+ $("#name").on("keyup", function() {
+    $(this).val($(this).val().replace(/[^(ㄱ-힣a-zA-Z)]/gi, ''));
+ });
 
+// 나이엔 숫자만 가능하게
+$("#age").on("keyup", function() {
+    $(this).val($(this).val().replace(/[^0-9]/g,""));
+ });
 
 
 inputPassword.addEventListener("blur", function(){
     var idInputValue = document.querySelector("#password").value;
-    console.log("");
     if(idInputValue.length < 1){
         errPassword.style.display = "block";
     } else{
@@ -327,30 +366,6 @@ inputPasswordCheck.addEventListener("blur", function(){
         errPasswordCheck.style.color = 'red';
     }
 });
-
-
-button.addEventListener("click", function(){
-    if(flag1 == true && flag2 == true && flag3 == true && flag4 == true /*&& flag5 == true */&& flag6 == true && flag7 == true){
-        alert("회원가입이 완료 되었습니다");
-        location.replace(location.href);
-        // window.location.href = 'https://www.naver.com';
-    }else if(flag1 == false){
-        alert("아이디를 입력해주세요")
-    }else if(flag2 == false){
-        alert("비밀번호를 입력해주세요")
-    }else if(flag3 == false){
-        alert("비밀번호 확인란을 입력해주세요")
-    }else if(flag4 == false){
-        alert("이메일을 입력해주세요")
-    }else if(flag5 == false){
-        alert("닉네임을 입력해주세요")
-    }else if(flag6 == false){
-        alert("나이를 입력해주세요")
-    }else if(flag7 == false){
-        alert("이용약관을 입력해주세요")
-    }
-});
-
 
 
 

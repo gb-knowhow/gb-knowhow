@@ -11,7 +11,7 @@
     <title>노하우 : 로그인</title>
 </head>
 <body>
-<form action="loginAction.member">
+<form action="loginAction.member" name="loginForm">
     <div id="wrap">
         <!-- 헤더 -->
       <header>
@@ -62,14 +62,13 @@
                             </div>
                             <!-- login-keep-wrap 끝 -->
                             <div class="login-btn-wrapper">
-                                <button type="" id="login-btn">
+                                <button type="" id="login-btn" onclick="send()">
                                     <span id="btn-text">로그인</span>
                                 </button>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <form action="" id="login-form">
 
                 </form>
             </div>
@@ -81,11 +80,11 @@
                 <li class="lists" id="under-list3"><a class="a-in-list" href='${pageContext.request.contextPath}/join.member'>회원가입</a></li>
             </ul>
         </content>
-        <div id="img-wrapper">
+<!--         <div id="img-wrapper">
             <img id="image" src="https://ssl.pstatic.net/melona/libs/1378/1378592/64373f585914b1080d81_20230127152242027.jpg" alt="">
-        </div>
+        </div> -->
         <!-- 푸터 -->
-        <footer>
+        <!-- <footer>
             <div id="footer-inner">
                 <ul id="footer-link">
                     <li class="footer-item"><a href=""><span class="text" id="under-list5">이용약관</span></a></li>
@@ -102,7 +101,8 @@
                     <span id="text">All Rights Reserved.</span>
                 </div>
             </div>
-        </footer>
+        </footer> -->
+        
     </div>
    </form>
    <% session.getAttribute("memberId"); %>

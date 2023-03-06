@@ -10,7 +10,13 @@
 		<typeAlias type="com.knowhow.member.domain.MemberVO" alias="memberVO"/>
 		<typeAlias type="com.knowhow.member.domain.ResumeVO" alias="resumeVO"/>
 		<typeAlias type="com.knowhow.admin.domain.BannerVO" alias="bannerVO"/>
-		<typeAlias type="com.knowhow.admin.domain.MenteeListDTO" alias="menteeListDTO"/>
+		<typeAlias type="com.knowhow.admin.domain.MemberListDTO" alias="memberListDTO"/>
+   		<typeAlias type="com.knowhow.admin.domain.DashBoardMenteeQuestionDTO" alias="dashBoardMenteeQuestionDTO"/>
+  		<typeAlias type="com.knowhow.admin.domain.DashBoardMentorReplyDTO" alias="dashBoardMentorReplyDTO"/>
+   		<typeAlias type="com.knowhow.admin.domain.DashBoardNewMemberDTO" alias="dashBoardNewMemberDTO"/>
+   		<typeAlias type="com.knowhow.admin.domain.DashBoardAskAdminDTO" alias="dashBoardAskAdminDTO"/>
+   		<typeAlias type="com.knowhow.admin.domain.MentorReplyListDTO" alias="mentorReplyListDTO"/>
+   		<typeAlias type="com.knowhow.admin.domain.MenteeQuestionListDTO" alias="menteeQuestionListDTO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerLikeVO" alias="answerLikeVO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerVO" alias="answerVO"/>
 		<typeAlias type="com.knowhow.answerComment.domain.AnswerCommentVO" alias="answerCommentVO"/>

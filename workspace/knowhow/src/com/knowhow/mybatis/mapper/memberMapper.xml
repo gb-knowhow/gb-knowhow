@@ -31,7 +31,7 @@
 	
 	<!-- 닉네임 중복검사 -->
 	<select id="checkNickname" parameterType="string" resultType="long">
-		select member_id from tbl_member where member_identification = #{memberNickname}
+		select member_id from tbl_member where member_nickname = #{memberNickname}
 	</select>
 	
 	<!-- 이메일 중복검사 -->

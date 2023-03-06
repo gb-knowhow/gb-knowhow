@@ -36,17 +36,19 @@ public class FindMyPasswordActionController implements Action {
 		Encoder encoder = Base64.getEncoder();
 		
 		
+		
 		memberIdentification = req.getParameter("memberIdentification");
 		memberEmail = req.getParameter("memberEmail");
 		
 		String oldMemberPassword = memberDAO.findMyPassword(memberIdentification , memberEmail);
-//		암호화된 비밀번호를 가져와서
-//		다시 decode하기
-//		
+		
 		if(oldMemberPassword != null) {
 			newMemberPassword = memberDAO.passwordGenerate();
+			String encodedPassword = new String(newMemberPassword.getBytes());
 			
-			memberDAO.changePassword(memberIdentification, newMemberPassword);
+			
+			
+			memberDAO.changePassword(memberIdentification, encodedPassword);
 			
 	        // 메일 인코딩
 	        final String bodyEncoding = "UTF-8"; //콘텐츠 인코딩
@@ -63,7 +65,7 @@ public class FindMyPasswordActionController implements Action {
 	        
 	      //****************건들지 마세요********************
 	        final String username = "youchanj66@gmail.com";         
-	        final String password = "hoepuhbkfnwtekgp";
+	        final String password = "ipegzbxvfafwqowi";
 	        //*********************************************
 	        
 	        // 메일에 출력할 텍스트
