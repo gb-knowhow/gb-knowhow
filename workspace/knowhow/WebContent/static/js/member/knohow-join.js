@@ -52,6 +52,8 @@ changePassword1.addEventListener("click",function(){
     }
 });
 
+
+
 changePassword3.addEventListener("click",function(){
     var password = document.querySelector('#password').value;
     

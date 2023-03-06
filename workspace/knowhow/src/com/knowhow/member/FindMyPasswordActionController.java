@@ -1,8 +1,10 @@
 package com.knowhow.member;
 
 import java.io.IOException;
+import java.util.Base64;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Base64.Encoder;
 
 import javax.mail.Authenticator;
 import javax.mail.Message;
@@ -31,13 +33,16 @@ public class FindMyPasswordActionController implements Action {
 		Result result = new Result();
 		String memberEmail= null, memberIdentification = null, newMemberPassword = null;
 		MemberDAO memberDAO = new MemberDAO();
+		Encoder encoder = Base64.getEncoder();
 		
 		
 		memberIdentification = req.getParameter("memberIdentification");
 		memberEmail = req.getParameter("memberEmail");
 		
 		String oldMemberPassword = memberDAO.findMyPassword(memberIdentification , memberEmail);
-		
+//		암호화된 비밀번호를 가져와서
+//		다시 decode하기
+//		
 		if(oldMemberPassword != null) {
 			newMemberPassword = memberDAO.passwordGenerate();
 			
