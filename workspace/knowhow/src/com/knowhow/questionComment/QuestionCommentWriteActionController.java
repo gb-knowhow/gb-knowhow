@@ -8,13 +8,37 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Action;
 import com.knowhow.Result;
+import com.knowhow.answer.dao.AnswerDAO;
+import com.knowhow.answer.domain.AnswerVO;
+import com.knowhow.question.dao.QuestionDAO;
+import com.knowhow.question.domain.QuestionVO;
+import com.knowhow.questionComment.dao.QuestionCommentDAO;
+import com.knowhow.questionComment.domain.QuestionCommentVO;
 
 public class QuestionCommentWriteActionController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		QuestionCommentDAO commentDAO = new QuestionCommentDAO();
+		QuestionCommentVO questionCommVO = new QuestionCommentVO();
+//		System.out.println(Long.valueOf(req.getParameter("questionId")));
+		Long questionId = Long.parseLong(req.getParameter("questionId"));
+		System.out.println(questionId);
+//		Long memberId = (Long)req.getSession().getAttribute("memberId");
+		Result result = new Result();
+		
+		
+//		questionCommVO.setMemberId((Long)req.getSession().getAttribute("memberId"));
+		questionCommVO.setCommentContent(req.getParameter("commentContent"));
+		questionCommVO.setMemberId(1L);
+		questionCommVO.setQuestionId(questionId);
+		 
+		System.out.println(questionCommVO);
+		
+		commentDAO.insert(questionCommVO);
+		result.setPath(req.getContextPath() + "/questionDetailAction.question");
+		
+		return result;
 	}
 
 }

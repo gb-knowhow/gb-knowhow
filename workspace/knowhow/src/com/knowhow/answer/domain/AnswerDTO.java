@@ -2,15 +2,16 @@ package com.knowhow.answer.domain;
 
 
 
-public class AnswerVO {
+public class AnswerDTO {
 	private Long answerId;
 	private Long memberId;
 	private String answerTitle;
 	private String answerContent;
 	private String answerRegDate;
 	private String answerUpdDate;
+	private String memberNickname;
+	private String memberName;
 	private Long questionId;
-	
 	
 	public Long getAnswerId() {
 		return answerId;
@@ -48,17 +49,30 @@ public class AnswerVO {
 	public void setAnswerUpdDate(String answerUpdDate) {
 		this.answerUpdDate = answerUpdDate;
 	}
+	public String getMemberNickname() {
+		return memberNickname;
+	}
+	public void setMemberNickname(String memberNickname) {
+		this.memberNickname = memberNickname;
+	}
+	public String getMemberName() {
+		return memberName;
+	}
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
 	public Long getQuestionId() {
 		return questionId;
 	}
-	public void setQuestionId(Long qusetionId) {
-		this.questionId = qusetionId;
+	public void setQuestionId(Long questionId) {
+		this.questionId = questionId;
 	}
 	@Override
 	public String toString() {
-		return "AnswerVO [answerId=" + answerId + ", memberId=" + memberId + ", answerTitle=" + answerTitle
+		return "AnswerDTO [answerId=" + answerId + ", memberId=" + memberId + ", answerTitle=" + answerTitle
 				+ ", answerContent=" + answerContent + ", answerRegDate=" + answerRegDate + ", answerUpdDate="
-				+ answerUpdDate + ", qusetionId=" + questionId + "]";
+				+ answerUpdDate + ", memberNickname=" + memberNickname + ", memberName=" + memberName + ", questionId="
+				+ questionId + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -75,7 +89,7 @@ public class AnswerVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AnswerVO other = (AnswerVO) obj;
+		AnswerDTO other = (AnswerDTO) obj;
 		if (answerId == null) {
 			if (other.answerId != null)
 				return false;
@@ -83,7 +97,6 @@ public class AnswerVO {
 			return false;
 		return true;
 	}
-	
 	
 	
 	

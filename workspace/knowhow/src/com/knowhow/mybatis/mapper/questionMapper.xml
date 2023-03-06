@@ -5,7 +5,7 @@
 
  	<select id="selectAll" resultType="questionDTO"> 
  		select question_id, question_title, question_content, question_regdate, question_upddate, member_name, category_id
-		from view_question
+		from view_question order by question_id desc
  	</select>
  	
  	<select id="getTotal" resultType="long">
@@ -25,7 +25,7 @@
 		where question_id = #{questionId}
 	</update>
 	
-	<delete id="delete">
+	<delete id="delete" parameterType="long">
 		DELETE FROM tbl_question
 		WHERE question_id= #{questuionId}
 	</delete>
@@ -35,7 +35,6 @@
 		(question_title, question_content, member_id, category_id)
 		values(#{questionTitle}, #{questionContent},#{memberId}, #{categoryId})
 	</insert>
-	
 	
 	
 	

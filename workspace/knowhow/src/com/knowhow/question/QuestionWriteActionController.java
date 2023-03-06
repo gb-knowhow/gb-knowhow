@@ -18,22 +18,17 @@ public class QuestionWriteActionController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		QuestionDAO questionDAO = new QuestionDAO();
 		QuestionVO questionVO = new QuestionVO();
-//		Long memberId = Long.parseLong(req.getParameter("memberId"));
+		
+//		로그인된 세션의 아이디
+		Long memberId = (Long)req.getSession().getAttribute("memberId");
+		
 		Result result = new Result();
 		System.out.println(req.getParameter("questionTitle"));
 		System.out.println(req.getParameter("questionContent"));
-//		Long memberId = memberDAO.login(memberIdentification, memberPassword);
+
 		
 		
-//	      if(memberId != null) {
-//	         HttpSession session = req.getSession();
-//	         session.setAttribute("memberId", memberId);
-//	         result.setPath(req.getContextPath() + "/main.jsp");
-//	         result.setRedirect(true);
-//	      }
-		
-		
-//	      questionVO.setQuestionId((Long)req.getSession().getAttribute("memberId"));
+//		questionVO.setMemberId((Long)req.getSession().getAttribute("memberId"));
 		questionVO.setQuestionTitle(req.getParameter("questionTitle")); // || ""
 		questionVO.setQuestionContent(req.getParameter("questionContent"));
 		questionVO.setMemberId(1L);

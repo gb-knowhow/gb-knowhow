@@ -204,7 +204,7 @@
 		    <div class="navi_wrap" style="width: 100%">
 		      <div class="navi_container">
 		        <div class="navi_menu navi_knowhow">
-		          <a href="#"> 노하우 </a>
+		          <a href="${pageContext.request.contextPath}/questionWrite.question?memberId=${member.memberId}"> 질문하기 </a>
 		        </div>
 		        <div class="navi_menu navi_howto">
 		          <a href="#">이용방법</a>

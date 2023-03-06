@@ -3,4 +3,12 @@
 
 <mapper namespace="answerComment">
 
+	<select id="selectAllcomment" parameterType="long" resultType="answerCommentVO">
+		SELECT answer_comment_id, answer_comment_content, answer_comment_depth, answer_comment_regdate, answer_comment_upddate, answer_comment_group,
+		 member_id, answer_id , question_id
+		FROM tbl_answer_comment
+		where question_id = #{questionId}
+	</select>
+	
+
 </mapper>

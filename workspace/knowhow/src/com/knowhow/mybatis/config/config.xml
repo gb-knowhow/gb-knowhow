@@ -19,6 +19,7 @@
    		<typeAlias type="com.knowhow.admin.domain.MenteeQuestionListDTO" alias="menteeQuestionListDTO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerLikeVO" alias="answerLikeVO"/>
 		<typeAlias type="com.knowhow.answer.domain.AnswerVO" alias="answerVO"/>
+		<typeAlias type="com.knowhow.answer.domain.AnswerDTO" alias="answerDTO"/>
 		<typeAlias type="com.knowhow.answerComment.domain.AnswerCommentVO" alias="answerCommentVO"/>
 		<typeAlias type="com.knowhow.askAdmin.domain.AskAdminVO" alias="askAdminVO"/>
 		<typeAlias type="com.knowhow.askAdminAnswer.domain.AskAdminAnswerVO" alias="askAdminAnswerVO"/>
@@ -31,6 +32,7 @@
 		<typeAlias type="com.knowhow.mypage.domain.CountLikedDTO" alias="countLikedDTO"/>
 		<typeAlias type="com.knowhow.mypage.domain.CountCommentDTO" alias="countCommentDTO"/>
 		<typeAlias type="com.knowhow.mypage.domain.CountLikeDTO" alias="countLikeDTO"/>
+		
 	</typeAliases>
 	
 		
