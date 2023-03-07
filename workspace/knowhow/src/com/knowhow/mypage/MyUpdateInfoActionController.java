@@ -3,6 +3,7 @@ package com.knowhow.mypage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Enumeration;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -33,6 +34,7 @@ public class MyUpdateInfoActionController implements Action {
 //		Long memberId = Long.valueOf(multipartRequest.getParameter("memberId"));
 		Long memberId = 1L;
 		
+		
 		memberVO.setMemberId(memberId);
 		memberVO.setMemberAge(Integer.valueOf(multipartRequest.getParameter("memberAge")));
 		memberVO.setMemberEmail(multipartRequest.getParameter("memberEmail"));
@@ -40,15 +42,12 @@ public class MyUpdateInfoActionController implements Action {
 		memberVO.setMemberNickname(multipartRequest.getParameter("memberNickname"));
 		memberVO.setMemberPassword(multipartRequest.getParameter("newPassword"));
 		
-		resumeVO = resumeDAO.selectResume(memberId);
-		if(resumeVO != null) {
-			File file = new File(uploadPath + resumeVO.getResumeSystemName());
-			System.out.println(file.getAbsolutePath());
-			System.out.println("들어옴");
-			file.delete();
-		}
-		
-		
+		resumeDAO.selectResume(memberId).stream().map(resume -> new File(uploadPath+resume.getResumeSystemName())).forEach(resume -> {
+			if(resume.exists()) {
+				resume.delete();
+			}
+		});;
+	
 		mypageDAO.updateMyInfo(memberVO);
 		resumeDAO.deleteResume(memberId);
 		
@@ -71,7 +70,7 @@ public class MyUpdateInfoActionController implements Action {
 		result.setPath("/myHomePage.mypage");
 		result.setRedirect(true);
 		
-		return null;
+		return result;
 	}
 
 }

@@ -206,7 +206,7 @@ function showAnswerList(answers){
 function showUpdateContent(myInfo){
 	
 	let text = `<div class="content">
-			<form action="/updateInfo.mypage" method="POST" id="form_tag" enctype="multipart/form-data">
+			<form action="${contextPath}/updateInfo.mypage" method="POST" id="form_tag" enctype="multipart/form-data">
 				<fieldset>
 					<table class="my_info_tbl">
 						<tbody>
@@ -223,7 +223,7 @@ function showUpdateContent(myInfo){
 							        		<div class="image"></div>
 							        		<span class="close" style="display:none">X</span>
 							        </label>
-							        <input type="file" id="profile_upload" style="display: none" />
+							        <input type="file" id="profile_upload" name="profile" style="display: none" />
 								</td>
 							</tr>
 							
@@ -234,7 +234,7 @@ function showUpdateContent(myInfo){
 							        		<div class="image"></div>
 							        		<span class="close" style="display:none">X</span>
 							        </label>
-							        <input type="file" id="resume_upload" style="display: none" />
+							        <input type="file" id="resume_upload"  name="resume" style="display: none" />
 								</td>
 							</tr>
 
