@@ -38,8 +38,8 @@ public class JoinActionController implements Action {
 //		memberPassword = multipartRequest.getParameter("memberPassword");
 //		byte[] passwordBytes = memberPassword.getBytes();
 //		byte[] encodedPassowrd = encoder.encode(passwordBytes);
-//		
-//		
+		
+		
 //		비밀번호 암호화
 //		memberVO.setMemberPassword(new String(encodedPassowrd));
 		

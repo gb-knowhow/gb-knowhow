@@ -24,6 +24,11 @@
 		where member_identification = #{memberIdentification} and member_password = #{memberPassword}
 	</select>
 	
+	<select id="getFileSystemName" parameterType="long" resultType="string">
+		select member_system_name from tbl_member
+		where member_id = #{memberId}
+	</select>
+	
 	<!-- 아이디 중복검사 -->
 	<select id="checkId" parameterType="string" resultType="long">
 		select member_id from tbl_member where member_identification = #{memberIdentification}
@@ -45,8 +50,8 @@
 	</select>
 	
 	<!-- 비밀번호 찾기 -->
-	<select id="findMyPassword" parameterType="map" resultType="string">
-		select member_password from tbl_member where member_email = #{memberEmail} and member_identification = #{memberIdentification}
+	<select id="findMyPassword" parameterType="map" resultType="long">
+		select member_id from tbl_member where member_email = #{memberEmail} and member_identification = #{memberIdentification}
 	</select>
 	
 	<!-- 새로운 비밀번호 DB에 업데이트 -->
