@@ -18,9 +18,8 @@ public class MemberFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
-		
+		System.out.println(req.getServletContext().getContextPath());
 		System.out.println("지금 들어온 target은 " + target);
-		
 		if (target.equals("join")) {
 			result = new Result();
 			result.setPath("templates/member/knohow-join.jsp");

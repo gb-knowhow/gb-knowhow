@@ -28,10 +28,11 @@ public class JoinActionController implements Action {
 		Encoder encoder = Base64.getEncoder();
 		String memberPassword = null;
 //		서버에 저장됨
-//		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "static/upload/";
+		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/resume/";
+		System.out.println("uploadPath는 " + uploadPath);
 		
 //		실제 경로는 다르기때문에 본인의 경로에 따라 수정하면됨
-		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/upload/resume/";
+//		String uploadPath = "C:/gb_0900/git/workspace/knowhow/workspace/knowhow/WebContent/upload/resume/";
 		int fileSize = 1024 * 1024 * 5; //5M
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
