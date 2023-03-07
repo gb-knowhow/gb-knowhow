@@ -83,6 +83,7 @@ $(function() {
 });*/
 
 const $answerComment = $(".questionButton_comment");
+const $questionCommentList2 = $("#questionCommentList2");
 
 $answerComment.each((i, answer) => {
 	$(answer).on("click", function(e) {
@@ -92,9 +93,8 @@ $answerComment.each((i, answer) => {
 		
 		if (status == 'block') {
 			$('#questionCommentList2').hide();
-			$('#questionCommentList4').hide();
 	  } else {
-	      $(answer).show();
+	      $(questionCommentList2).show();
 	  }
 	});
 });
@@ -158,6 +158,8 @@ $(function () {
 const $questionId = $("input[name='questionId']"); 
 const $button = $(".button_register");
 const $deleteBtn = $("._reportBtn");
+/*답글 달기 ajax*/
+const $answer = $(".questionButton_answer");
 
 const questionDetailService = (function(){
 	function questionCommentWrite(questionId, replyContent) {
@@ -185,6 +187,7 @@ const questionDetailService = (function(){
 		});
 	}
 	
+	
 	return {questionCommentWrite: questionCommentWrite, questionCommentDelete: questionCommentDelete}
 })();
 
@@ -203,6 +206,8 @@ $deleteBtn.each((i, button) => {
 		questionDetailService.questionCommentDelete(commentId);
 	});
 });
+
+
 
 
 

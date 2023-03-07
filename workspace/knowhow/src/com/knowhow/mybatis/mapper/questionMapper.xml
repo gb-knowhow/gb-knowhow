@@ -15,9 +15,10 @@
 	
 	<select id="selectOne" parameterType="long" resultType="questionDTO">
 		select question_id, question_title, question_content, question_regdate, question_upddate, m.member_name, category_id,
- 		member_nickname, member_identification
+ 		member_nickname
 		from view_question q join tbl_member m
-		where question_id = #{questionId}
+		on q.member_id = m.member_id
+		where question_id = #{questionId} 
 	</select>
 	
 	<update id="update" parameterType="questionDTO">

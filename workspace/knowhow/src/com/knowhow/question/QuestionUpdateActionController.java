@@ -26,8 +26,8 @@ public class QuestionUpdateActionController implements Action {
 		
 		questionDAO.update(questionVO);
 		
-//		result.setPath(req.getContextPath() + "/questionUpdateAction.question");
-		result.setPath(req.getContextPath() + "/questionDetailAction.question");
+		result.setPath(req.getContextPath() + "/questionListAction.question");
+		result.setRedirect(true);
 		return result;
 	}
 

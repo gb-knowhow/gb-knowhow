@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<!-- form action style = display 부분-->
-			<form action="${pageContext.request.contextPath}/questionWriteAction.question?questionId=${question.memberId}" style="display: block" name="">
+			<form action="${pageContext.request.contextPath}/questionWriteAction.question" style="display: block" name="">
 				<div>
 					<div style="line-height: 1.8">
 						<span

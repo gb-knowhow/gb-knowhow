@@ -77,7 +77,7 @@
 							<i class="icon icon_compose_opinion"> <img
 								src="${pageContext.request.contextPath}/css/kdh/image/reply.png"
 								style="width: 20px; height: 20px;"></i> <em
-								class="questionButton_reply">답글달기</em>
+								class="questionButton_reply questionButton_answer">답글달기</em>
 						</a>
 
 						<!-- 좋아요 class 이름 button_like으로 쓰세요.-->
@@ -254,9 +254,10 @@
 								</div>
 
 							</div>
+							<!--  -->
 							<div class="reply-Comment">
 								<div class="c-opinion _commentListArea"
-									id="questionCommentList${answer.answerId}" style="display: none;">
+									id="questionCommentList2" style="display: none;">
 									<h2 class="blind">댓글영역</h2>
 									<div class="question-comment">
 										<fieldset>
@@ -278,12 +279,11 @@
 										</fieldset>
 									</div>
 
-									<!-- 본문의 댓글 목록들 -->
 									<div class="question-commentList">
 									<c:forEach var="answercommets" items="${answercommets}">
 										<div class="replyItem">
 											<p class="question-commentList-nickname">
-												<strong>댓글 작성자 닉네임</strong>
+												<strong>댓글 작성자 닉네임1</strong>
 											</p>
 											<div class="question-commentList-text">
 												<p>${answercommets.answerCommentContent}</p>
@@ -293,7 +293,7 @@
 												<a href="javascript:void(0);" class="_reportBtn">신고</a>
 											</div>
 										</div>
-										</c:forEach>
+									</c:forEach>
 										<!-- 본문의 댓글이 늘어날 때마다 replyItem들이 늘어난다. -->
 									</div>
 									<!-- 본문의 댓글의 페이지 목록 -->

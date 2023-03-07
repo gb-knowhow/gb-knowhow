@@ -1,6 +1,8 @@
 package com.knowhow.question;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +28,11 @@ public class QuestionDetailActionController implements Action {
 		AnswerDAO answerDAO = new AnswerDAO();
 		Result result = new Result();
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
+//		Long memberId = (Long)req.getSession().getAttribute("memberId");
+//		System.out.println(memberId);
 //		Long commentId = Long.parseLong(req.getParameter("commentId"));
+		
+		
 		
 		req.setAttribute("question", questionDAO.selectOne(questionId));
 		req.setAttribute("answer", answerDAO.selectOne(questionId));
