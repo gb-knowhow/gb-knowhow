@@ -29,6 +29,7 @@ public class AnswerWriteController implements Action {
 		result = new Result();
 		result.setPath("/templates/board/answerWrite.jsp");
 		
+		
 		return result;
 	}
 

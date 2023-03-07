@@ -36,7 +36,9 @@ public class QuestionWriteActionController implements Action {
 		
 		
 		questionDAO.insert(questionVO);
+		
 		result.setPath(req.getContextPath() + "/questionListAction.question");
+		result.setRedirect(true);
 		
 		
 		return result;

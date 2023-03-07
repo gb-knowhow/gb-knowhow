@@ -1,6 +1,8 @@
 package com.knowhow.question;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +20,6 @@ public class QuestionUpdateController implements Action {
 		Result result = new Result();
 		QuestionDAO questionDAO = new QuestionDAO();
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
-		
 		
 		
 		req.setAttribute("question",questionDAO.selectOne(questionId));

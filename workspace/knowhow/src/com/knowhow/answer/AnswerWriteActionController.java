@@ -24,20 +24,26 @@ public class AnswerWriteActionController implements Action {
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
 //		Long memberId = (Long)req.getSession().getAttribute("memberId");
 		Result result = new Result();
-		
-		
+		String answerTitle = req.getParameter("answerTitle");
+		String answerContent = req.getParameter("answerContent");
 //		questionVO.setMemberId((Long)req.getSession().getAttribute("memberId"));
-		answerVO.setAnswerTitle(req.getParameter("answerTitle"));
-		answerVO.setAnswerContent(req.getParameter("answerContent"));
+		
+		
+		
+		answerVO.setAnswerTitle(answerTitle);
+		answerVO.setAnswerContent(answerContent);
 		answerVO.setMemberId(1L);
 		answerVO.setQuestionId(questionId);
 		 
 		System.out.println(answerVO);
 		
+		req.setAttribute("answerTitle",answerTitle);
+		req.setAttribute("answerContent",answerContent);
+		req.setAttribute("questionId",questionId);
 		
 		answerDAO.insert(answerVO);
 		result.setPath(req.getContextPath() + "/questionDetailAction.question");
-		
+//		result.setPath("/templates/board/detailsPageMine.jsp");
 		
 		return result;
 	}
