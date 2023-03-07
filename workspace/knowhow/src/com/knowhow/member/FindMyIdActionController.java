@@ -65,7 +65,7 @@ public class FindMyIdActionController implements Action {
 	        
 	      //****************건들지 마세요********************
 	        final String username = "youchanj66@gmail.com";         
-	        final String password = "bzvyovgdziadspuy";
+	        final String password = "iagytmuxuvdyyudd";
 	        //*********************************************
 	        
 	        // 메일에 출력할 텍스트

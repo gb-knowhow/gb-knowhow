@@ -23,8 +23,9 @@
 		select member_id from tbl_member 
 		where member_identification = #{memberIdentification} and member_password = #{memberPassword}
 	</select>
+	
 	<!-- 시스템 네임 들고오기 -->
-	<select id="getFileSystemName" parameterType="long" resultType="string">
+	<select id="getProfileSystemName" parameterType="long" resultType="string">
 		select member_system_name from tbl_member
 		where member_id = #{memberId}
 	</select>
@@ -32,6 +33,12 @@
 	<!-- resumeExistence 가져오기 -->
 	<select id="getResumeExistence" parameterType="long" resultType= "boolean">
 		select resume_existence from tbl_member m join tbl_resume r on m.member_id = r.member_id where m.member_id = #{memberId};
+	</select>
+	
+	
+	<!-- memberId로 memberIdentification 가져오기 -->
+	<select id="getMemberIdentification" parameterType="long" resultType= "string">
+		select member_identification from tbl_member where member_id = #{memberId}
 	</select>
 	
 	<!-- 아이디 중복검사 -->
