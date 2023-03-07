@@ -43,7 +43,7 @@ public class ResumeDAO {
 		}
 		
 //		이력서 조회
-		public ResumeVO selectResume(Long memberId) {
-			return sqlSession.selectOne("resume.selectResume", memberId);
+		public List<ResumeVO> selectResume(Long memberId) {
+			return sqlSession.selectList("resume.selectResume", memberId);
 		}
 }

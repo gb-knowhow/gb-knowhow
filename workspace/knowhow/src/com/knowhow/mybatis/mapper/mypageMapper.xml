@@ -128,4 +128,27 @@
 		WHERE member_id= #{memberId}
 	</update>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </mapper>
