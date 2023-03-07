@@ -184,17 +184,18 @@
 							</tr>
 
 
-							<tr>
+<!-- 							<tr>
 								<th>새로운 비밀번호</th>
 								<td>
                                     <input type="password" id="password_input" placeholder="영어, 숫자, 특수문자 중 2가지 이상 10~20자">
                                     <p class="help_password" style="color:coral"></p>
 								</td>
-							</tr>
+							</tr> -->
+							
 							<tr>
-								<th>비밀번호 확인</th>
+								<th>비밀번호</th>
 								<td>
-                                    <input type="password" id="password_check" placeholder="비밀번호 재입력">
+                                    <input type="password" id="password_check" placeholder="비밀번호">
                                     <p class="help_password_confirm"></p>
 								</td>
 							</tr>
@@ -205,7 +206,7 @@
 
 				
 					<div class="button">
-						<button class="save" disabled="disabled">저장</button>
+						<button class="save">저장</button>
 						<button class="cancel">취소</button>
 					</div>
 				</fieldset>

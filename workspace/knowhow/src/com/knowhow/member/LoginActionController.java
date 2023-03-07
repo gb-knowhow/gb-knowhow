@@ -24,6 +24,8 @@ public class LoginActionController implements Action {
 		String memberPassword = req.getParameter("memberPassword");
 		Long memberId = memberDAO.login(memberIdentification, memberPassword);
 		String memberSystemName = memberDAO.getProfileSystemName(memberId);
+		boolean resumeExistence = memberDAO.getResumeExistence(memberId);
+		
 		String path = null;
 		Result result = new Result();
 		System.out.println("autoLogin은 " + autoLogin +" 입니다");
@@ -56,8 +58,10 @@ public class LoginActionController implements Action {
 			}
 			session.setAttribute("memberId", memberId);
 			session.setAttribute("memberSystemName", memberSystemName);
+			session.setAttribute("resumeExistence", resumeExistence);
 			
 			System.out.println("세션에 저장된 memberSystemName은 " + session.getAttribute(memberSystemName));
+			System.out.println("세션에 저장된 resumeExistence은 " + session.getAttribute(String.valueOf(resumeExistence)));
 			
 //			메인 경로 수정해주기
 			path = req.getContextPath() + "templates/main/main_content.jsp";
