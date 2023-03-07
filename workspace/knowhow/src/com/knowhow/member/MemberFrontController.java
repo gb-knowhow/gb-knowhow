@@ -64,10 +64,10 @@ public class MemberFrontController extends HttpServlet {
 		} else if (target.equals("findMyPasswordAction")) {
 			result = new FindMyPasswordActionController().execute(req, resp);
 			
-		} else if (target.equals("updateInfo")) {
+		} else if (target.equals("changePassword")) {
 			
-		} else if (target.equals("updateInfoAction")) {
-			result = new UpdateInfoActionController().execute(req, resp);
+		} else if (target.equals("changePasswordAction")) {
+			result = new ChangePasswordActionController().execute(req, resp);
 			
 		} else {
 			System.out.println(target);
