@@ -40,6 +40,9 @@ public class MemberFrontController extends HttpServlet {
 		} else if (target.equals("checkNicknameAction")) {
 			result = new CheckNickNameActionController().execute(req, resp);
 			
+		} else if (target.equals("checkEmailAction")) {
+			result = new CheckEmailActionController().execute(req, resp);
+			
 		} else if (target.equals("logout")) {
 			result = new LogoutController().execute(req, resp);
 			

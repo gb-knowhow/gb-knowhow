@@ -39,7 +39,7 @@ public class LoginActionController implements Action {
 			memberIdentification = String.valueOf(req.getAttribute("memberIdentification"));
 			memberPassword = String.valueOf(req.getAttribute("memberPassword"));
 			memberId = memberDAO.login(memberIdentification, memberPassword);
-		}
+		} 
 		
 		System.out.println("isChecked 지금" + isChecked);
 		System.out.println("맴버 아이디" + memberId);
@@ -58,7 +58,9 @@ public class LoginActionController implements Action {
 			
 //			메인 경로 수정해주기
 			path = req.getContextPath() + "templates/main/main_content.jsp";
-		}else {
+		}
+		
+		else {
 			path = req.getContextPath() + "/login.member?login=false";
 		}
 		result.setPath(path);

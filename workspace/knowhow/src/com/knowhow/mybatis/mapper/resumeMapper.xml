@@ -4,7 +4,7 @@
 <mapper namespace="resume">
 	<!-- 이력서 목록 -->
 	<select id="resumeList" parameterType="map" resultType="resumeListDTO">
-		select resume_id, member_name, member_job, member_id, resume_existence, resume_original_name, 
+		select resume_id, member_name, member_id, resume_existence, resume_original_name, 
 		resume_system_name, member_email 
 		from view_resume_list 
 		<if test="resumeNameKeyword != null">

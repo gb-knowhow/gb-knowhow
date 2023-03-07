@@ -1,0 +1,9 @@
+diff a/workspace/knowhow/src/com/knowhow/mybatis/mapper/resumeMapper.xml b/workspace/knowhow/src/com/knowhow/mybatis/mapper/resumeMapper.xml	(rejected hunks)
+@@ -30,6 +30,7 @@
+ 
+ 	<!-- 이력서 삭제 -->
+ 	<delete id="deleteResume" parameterType="long">
++		delete from tbl_resume where member_id = #{memberId}
+ 	</delete>
+ 	
+ 	<!-- 이력서 등록 -->

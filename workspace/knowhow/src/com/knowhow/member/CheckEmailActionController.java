@@ -21,6 +21,7 @@ public class CheckEmailActionController implements Action {
 		PrintWriter out = resp.getWriter();
 		MemberDAO memberDAO = new MemberDAO();
 		JSONObject json = new JSONObject();
+		System.out.println("지금 들어온 Email은 " + req.getParameter("memberEmail"));
 		try {
 			json.put("checkEmail", memberDAO.checkEmail(req.getParameter("memberEmail")));
 			System.out.println(memberDAO.checkEmail(req.getParameter("memberEmail")));

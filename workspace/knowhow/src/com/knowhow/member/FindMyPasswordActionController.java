@@ -44,7 +44,7 @@ public class FindMyPasswordActionController implements Action {
 		
 		if(oldMemberPassword != null) {
 			newMemberPassword = memberDAO.passwordGenerate();
-			String encodedPassword = new String(newMemberPassword.getBytes());
+			String encodedPassword = new String(encoder.encode(newMemberPassword.getBytes()));
 			
 			
 			
@@ -65,7 +65,7 @@ public class FindMyPasswordActionController implements Action {
 	        
 	      //****************건들지 마세요********************
 	        final String username = "youchanj66@gmail.com";         
-	        final String password = "ipegzbxvfafwqowi";
+	        final String password = "bzvyovgdziadspuy";
 	        //*********************************************
 	        
 	        // 메일에 출력할 텍스트
