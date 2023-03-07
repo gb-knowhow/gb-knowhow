@@ -6,6 +6,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 
 import com.knowhow.answer.domain.AnswerVO;
+import com.knowhow.answerComment.domain.AnswerCommentVO;
 import com.knowhow.member.domain.MemberVO;
 import com.knowhow.mybatis.config.MyBatisConfig;
 import com.knowhow.mypage.domain.CountBoardsDTO;
@@ -15,6 +16,7 @@ import com.knowhow.mypage.domain.CountLikedDTO;
 import com.knowhow.mypage.domain.MyAnswerDTO;
 import com.knowhow.mypage.domain.MyQuestionDTO;
 import com.knowhow.question.domain.QuestionVO;
+import com.knowhow.questionComment.domain.QuestionCommentVO;
 
 public class MypageDAO {
 	public SqlSession sqlSession;
@@ -77,6 +79,29 @@ public class MypageDAO {
 		return sqlSession.selectOne("mypage.updateMyInfo", memberVO);
 	}
 	
+// 내가 좋아요 한 질문
+	public List<MyQuestionDTO> selectMylikeQuestion(Long memberId) {
+		System.out.println("DAO");
+		return sqlSession.selectList("mypage.selectMylikeQuestion", memberId);
+	}
+	
+// 내가 좋아요 한 답변
+	public List<MyAnswerDTO> selectMylikeAnswer(Long memberId) {
+		System.out.println("DAO");
+		return sqlSession.selectList("mypage.selectMylikeAnswer", memberId);
+	}
+	
+//	내가 쓴 댓글 in 질문
+	public List<QuestionCommentVO> myCommentsInQuestion(Long memberId) {
+		System.out.println("DAO");
+		return sqlSession.selectList("mypage.myCommentsInQuestion", memberId);
+	}
+	
+//	내가 쓴 댓글 in 답변
+	public List<AnswerCommentVO> myCommentsInAnswer(Long memberId) {
+		System.out.println("DAO");
+		return sqlSession.selectList("mypage.myCommentsInAnswer", memberId);
+	}
 	
 	
 	

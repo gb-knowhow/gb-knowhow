@@ -246,3 +246,30 @@ $passwordCheck.keyup(function(e){
 	}
 })*/
 
+//--------------------------------------------------------------
+
+function openup(event){
+	event.preventDefault();
+	$("#new-password").toggle();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

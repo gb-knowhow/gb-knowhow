@@ -28,7 +28,9 @@
 		category_name, count(al.answer_like_id) count_answer_like 
 		from tbl_answer a join tbl_question q  on a.question_id=q.question_id 
 		join tbl_category c on q.category_id=c.category_id 
-		join tbl_answer_like al on al.answer_id = a.answer_id group by a.answer_id 
+		join tbl_answer_like al 
+		on al.answer_id = a.answer_id 
+		group by a.answer_id 
 		having a.member_id= #{memberId}
 <!-- 		order by answer_id desc 
 		limit #{startRow}, #{rowCount} -->
@@ -42,20 +44,26 @@
 	</select>
 	
 	<!-- 내가 좋아요 한 답변 -->
-	<select id="selectMylikeAnswer" parameterType="long" resultType="answerVO">
-		select  al.member_id member_id, a.member_id writer, a.answer_id, answer_title, answer_content, 
-		answer_regdate, answer_upddate, question_id 
-		from tbl_answer a left join tbl_answer_like al on a.answer_id = al.answer_id 
-		where al.member_id = #{memberId}
+	<select id="selectMylikeAnswer" parameterType="long" resultType="myAnswerDTO">
+		select a.answer_id answer_id, answer_title, answer_content, 
+		answer_regdate, 
+		answer_upddate, 
+		al.member_id member_id, 
+		category_name, count_answer_like 
+		from view_myAnswer a join tbl_answer_like al 
+		on a.answer_id=al.answer_id 
+		where al.member_id= #{memberId}
 	</select>
 	
 	<!-- 내가 좋아요 한 질문 -->
-	<select id="selectMylikeQuestion" parameterType="long" resultType="questionVO">
-		select  ql.member_id member_id, q.member_id writer, q.question_id, 
-		question_title, question_content, question_regdate, question_upddate 
-		from tbl_question q left join tbl_question_like ql 
-		on q.question_id = ql.question_id 
-		where ql.member_id = #{memberId}
+	<select id="selectMylikeQuestion" parameterType="long" resultType="myQuestionDTO">
+		select q.question_id question_id, question_title, 
+		question_content,question_regdate, question_upddate, 
+		ql.member_id member_id, category_id, 
+		category_name,count_answer 
+		from view_myQuestion q join tbl_question_like ql 
+		on q.question_id=ql.question_id 
+		where ql.member_id=#{memberId}
 	</select>	
 	
 	<!-- 내가 쓴 댓글 in 질문 -->

@@ -107,15 +107,19 @@
 			</c:choose>
 	
 			<li>
-				<a href="#">나의 댓글</a>
+				<a href="javascript:gotoList('c')">나의 댓글</a>
 				<span class="num">(${countMyComments.countTotalComments})</span>
 			</li>
 			<li>
-				<a href="#">좋아요</a>
+				<a href="javascript:gotoList('ql');">내가 좋아요한 질문</a>
 				<span class="num">(${countBoardsILiked.countTotalLike})</span>
 			</li>
 			<li>
-				<a href="#">나의 문의사항</a>
+				<a href="javascript:gotoList('al');">내가 좋아요한 답변</a>
+				<span class="num">(${countBoardsILiked.countTotalLike})</span>
+			</li>
+			<li>
+				<a href="javascript:gotoList('aa');">나의 문의사항</a>
 				<span class="num">(${countMyBoards.countAskAdmin})</span>
 			</li>
 			<li>
@@ -128,7 +132,8 @@
 	<section>
 		<div id="list-here"> 
 		
-		</div>	
+		</div>
+		<div id="list-here-2"></div>	
 	</section>
 	</div>	
 			<jsp:include page="${pageContext.request.contextPath}/templates/main/include/footer.jsp" />

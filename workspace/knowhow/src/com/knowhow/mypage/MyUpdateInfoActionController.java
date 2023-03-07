@@ -55,11 +55,11 @@ public class MyUpdateInfoActionController implements Action {
 		
 		while(fileNames.hasMoreElements()) {
 			String fileName = fileNames.nextElement();
+			System.out.println(fileName);
 			String fileOriginalName = multipartRequest.getOriginalFileName(fileName);
 			String fileSystemName = multipartRequest.getFilesystemName(fileName);
 			
 			if(fileOriginalName == null) {continue;}
-			
 			resumeVO.setResumeOriginalName(fileOriginalName);
 			resumeVO.setResumeSystemName(fileSystemName);
 			resumeVO.setMemberId(memberId);

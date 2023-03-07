@@ -1,6 +1,5 @@
 package com.knowhow.mypage;
 
-import java.io.Console;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -37,6 +36,18 @@ public class MypageFrontController extends HttpServlet {
 		}else if(target.equals("updateInfo")) {
 			System.out.println("FrontController");
 			result = new MyUpdateInfoActionController().execute(req, resp);
+			
+		}else if(target.equals("myLikeQuestion")) {
+			System.out.println("FrontController");
+			result = new MyLikeQuestionActionController().execute(req, resp);
+			
+		}else if(target.equals("myLikeAnswer")) {
+			System.out.println("FrontController");
+			result = new MyLikeAnswerActionController().execute(req, resp);
+			
+		}else if(target.equals("myComment")) {
+			System.out.println("FrontController");
+			result = new MyCommentActionController().execute(req, resp);
 			
 		}
 
