@@ -34,14 +34,13 @@ profileClose.addEventListener('click', function (e) {
     e.preventDefault();
     profileInput.value = "";
     profileClose.style.display="none";
-    profileDiv.style.backgroundImage =  `url('../../css/jyc/image/attach.png')`;
-    profileDiv.style.width = "20%";
+    profileDiv.style.backgroundImage = `url('${contextPath}/static/image/Info_default_profile.png')`;
+    profileDiv.style.width = "8%";
     profileDiv.style.display = "block";
 });
 
 
 profile.addEventListener('change', function (e) {
-    this.style.display = 'none';
     let reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
 
@@ -52,7 +51,7 @@ profile.addEventListener('change', function (e) {
             profileClose.style.display = "inline-block"
             profileDiv.style.width = "50%";
         } else {
-            profileDiv.style.backgroundImage = `url('../../css/jyc/image/attach.png')`;
+            profileDiv.style.backgroundImage = `url('${contextPath}/static/image/Info_default_profile.png')`;
         }
     };
 });
@@ -69,8 +68,8 @@ resumeClose.addEventListener('click', function (e) {
     e.preventDefault();
     profileInput.value = "";
     resumeClose.style.display="none";
-    resumeDiv.style.backgroundImage =  `url('../../css/mypage/image/resume.png')`;
-    resumeDiv.style.width = "20%";
+    resumeDiv.style.backgroundImage = `url('${contextPath}/static/image/Info_default_resume.png')`;
+    resumeDiv.style.width = "8%";
     resumeDiv.style.display = "block";
 });
 
@@ -85,9 +84,14 @@ resume.addEventListener('change', function (e) {
         if (result.includes('image')) {
             resumeDiv.style.backgroundImage = `url('${result}')`;
             resumeClose.style.display = "inline-block"
-            resumeDiv.style.width = "50%";
-        } else {
-            resumeDiv.style.backgroundImage = `url('../../css/jyc/mypage/resume.png')`;
+            resumeDiv.style.width = "8%";
+			console.log("왜 안들어옴")
+        } else if(result.includes('pdf')){
+			resumeDiv.style.backgroundImage = `url('${contextPath}/static/image/resume_check.png')`;
+            resumeClose.style.display = "inline-block"
+            /*profileDiv.style.width = "50%";*/
+		} else {
+            resumeDiv.style.backgroundImage = `url('${contextPath}/static/image/Info_default_resume.png')`;
         }
     };
 });
@@ -172,16 +176,17 @@ $email.keyup(function(){
 
 /* --------------------------------------------------------- */
 
-const $passwordInput = $("#password_input");
+
 const $passwordCheck = $("#password_check");
+/*const $passwordInput = $("#password_input");
 const $helpPassword = $(".help_password");
 const $helpPasswordConfirm = $(".help_password_confirm")
-const $saveButton = $(".button .save")
+const $saveButton = $(".button .save")*/
 /* 인풋테그에 값이 있으면 순서대로 true로 변경 */
-let checkAll = [false, false, false, false, false];
+/*let checkAll = [false, false, false, false, false];*/
 
 /* 비밀번호 입력값 체크 */
-$passwordInput.keyup(function(e){
+/*$passwordInput.keyup(function(e){
     $value = $passwordInput.val();
     let number = $value.search(/[0-9]/g);
     let english = $value.search(/[a-z]/ig);
@@ -202,9 +207,9 @@ $passwordInput.keyup(function(e){
    
    
 
-})
+})*/
 /* 새로운 비밀번호 확인 인풋테그 감지해서 값 비교 */
-$passwordInput.keyup(function(e){
+/*$passwordInput.keyup(function(e){
     if($passwordInput.val() == $passwordCheck.val()){
         checkAll[4] = true;
         $helpPasswordConfirm.text("")
@@ -212,17 +217,15 @@ $passwordInput.keyup(function(e){
         $helpPasswordConfirm.text("비밀번호가 다릅니다")
         checkAll[4] = false;
     }
-})
+})*/
 
 
 /* 비밀번호 확인 인풋테그 감지해서 값 비교 */
 $passwordCheck.keyup(function(e){
-    if($passwordInput.val() == $passwordCheck.val()){
-        checkAll[4] = true;
+    if($passwordCheck.val()){
         $helpPasswordConfirm.text("")
     } else{
         $helpPasswordConfirm.text("비밀번호가 다릅니다")
-        checkAll[4] = false;
     }
 })
 
@@ -232,7 +235,7 @@ $passwordCheck.keyup(function(e){
 // --------------------------------------------------------
 
 /* 모든 인풋태그에 입력을 감지해서 checkAll의 모든 값들이 true일때 버튼색 변경 */
-$("input").keyup(function(){
+/*$("input").keyup(function(){
 	if(checkAll[0] == true && checkAll[1] == true && checkAll[2] == true && checkAll[3] == true && checkAll[4] == true){
    	 	$saveButton.prop("disabled", false)
     	$saveButton.css("backgroundColor", "#388C57")
@@ -241,5 +244,5 @@ $("input").keyup(function(){
 		$saveButton.prop("disabled", true)
     	$saveButton.css("backgroundColor", "#DDDDDD")
 	}
-})
+})*/
 
