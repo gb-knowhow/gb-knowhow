@@ -60,14 +60,14 @@ public class FindMyPasswordActionController implements Action {
 	        
 	      //****************건들지 마세요********************
 	        final String username = "youchanj66@gmail.com";         
-	        final String password = "bzvyovgdziadspuy";
+	        final String password = "iagytmuxuvdyyudd";
 	        //*********************************************
 	        
 	        // 메일에 출력할 텍스트
 	        String html = null;
 	        StringBuffer sb = new StringBuffer();
 	        sb.append("<h3>Knowhow</h3>\n");
-	        sb.append("비밀번호 변경을 위해선 아래 경로에 들어가주세요 \n" + "localhost:8090/changePasswordAction.member?memberId=" + memberId);    
+	        sb.append("비밀번호 변경을 위해선 아래 경로에 들어가주세요 \n" + "localhost:8090/" + "changePassword.member?memberId=" + memberId);  
 	        html = sb.toString();
 	        
 	        // 메일 옵션 설정

@@ -55,12 +55,17 @@ public class MemberDAO {
 		
 //		프로필 path가져오기
 		public String getProfileSystemName(Long memberId) {
-			 return sqlSession.selectOne("member.getFileSystemName", memberId);
+			 return sqlSession.selectOne("member.getProfileSystemName", memberId);
 		}
 		
 //		resume existence가져오기
 		public Boolean getResumeExistence(Long memberId) {
 			return sqlSession.selectOne("member.getResumeExistence", memberId);
+		}
+		
+//		맴버의 아이디 가져오기
+		public String getMemberIdentification(Long memberId) {
+			return sqlSession.selectOne("member.getMemberIdentification", memberId);
 		}
 		
 //		아이디 찾기 

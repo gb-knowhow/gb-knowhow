@@ -65,6 +65,8 @@ public class MemberFrontController extends HttpServlet {
 			result = new FindMyPasswordActionController().execute(req, resp);
 			
 		} else if (target.equals("changePassword")) {
+			result = new Result();
+			result.setPath("templates/member/findPasswordDetail.jsp");
 			
 		} else if (target.equals("changePasswordAction")) {
 			result = new ChangePasswordActionController().execute(req, resp);
