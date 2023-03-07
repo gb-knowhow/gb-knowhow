@@ -53,6 +53,11 @@ public class MemberDAO {
 			return sqlSession.selectOne("member.login", loginMap);
 		}
 		
+//		프로필 path가져오기
+		public String getProfileSystemName(Long memberId) {
+			 return sqlSession.selectOne("member.getFileSystemName", memberId);
+		}
+		
 //		아이디 찾기 
 		public String findMyId(String memberNickname, String memberEmail, String memberName) {
 			Map<String, String> findIdMap = new HashMap<String, String>();
@@ -63,7 +68,7 @@ public class MemberDAO {
 		}
 		
 //		비밀번호 찾기 
-		public String findMyPassword(String memberIdentification, String memberEmail) {
+		public Long findMyPassword(String memberIdentification, String memberEmail) {
 			Map<String, String> findPasswordMap = new HashMap<String, String>();
 			findPasswordMap.put("memberIdentification", memberIdentification);
 			findPasswordMap.put("memberEmail", memberEmail);

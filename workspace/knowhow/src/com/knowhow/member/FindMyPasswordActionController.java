@@ -31,7 +31,8 @@ public class FindMyPasswordActionController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
-		String memberEmail= null, memberIdentification = null, newMemberPassword = null;
+		String memberEmail= null, memberIdentification = null;
+		Long memberId = 0L;
 		MemberDAO memberDAO = new MemberDAO();
 		Encoder encoder = Base64.getEncoder();
 		
@@ -40,15 +41,9 @@ public class FindMyPasswordActionController implements Action {
 		memberIdentification = req.getParameter("memberIdentification");
 		memberEmail = req.getParameter("memberEmail");
 		
-		String oldMemberPassword = memberDAO.findMyPassword(memberIdentification , memberEmail);
+		memberId = memberDAO.findMyPassword(memberIdentification , memberEmail);
 		
-		if(oldMemberPassword != null) {
-			newMemberPassword = memberDAO.passwordGenerate();
-			String encodedPassword = new String(encoder.encode(newMemberPassword.getBytes()));
-			
-			
-			
-			memberDAO.changePassword(memberIdentification, encodedPassword);
+		if(memberId != null) {
 			
 	        // 메일 인코딩
 	        final String bodyEncoding = "UTF-8"; //콘텐츠 인코딩
@@ -72,7 +67,7 @@ public class FindMyPasswordActionController implements Action {
 	        String html = null;
 	        StringBuffer sb = new StringBuffer();
 	        sb.append("<h3>Knowhow</h3>\n");
-	        sb.append("새로운 비밀번호는 " + newMemberPassword + "입니다");    
+	        sb.append("비밀번호 변경을 위해선 아래 경로에 들어가주세요 \n" + "localhost:8090/changePasswordAction.member?memberId=" + memberId);    
 	        html = sb.toString();
 	        
 	        // 메일 옵션 설정

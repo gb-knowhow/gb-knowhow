@@ -23,6 +23,7 @@ public class LoginActionController implements Action {
 		String memberIdentification = req.getParameter("memberIdentification");
 		String memberPassword = req.getParameter("memberPassword");
 		Long memberId = memberDAO.login(memberIdentification, memberPassword);
+		String memberSystemName = memberDAO.getProfileSystemName(memberId);
 		String path = null;
 		Result result = new Result();
 		System.out.println("autoLogin은 " + autoLogin +" 입니다");
@@ -52,9 +53,11 @@ public class LoginActionController implements Action {
 				resp.addCookie(memberIdentificationCookie);
 				resp.addCookie(memberPasswordCookie);
 				resp.addCookie(memberChecked);
-				System.out.println("12345");
 			}
 			session.setAttribute("memberId", memberId);
+			session.setAttribute("memberSystemName", memberSystemName);
+			
+			System.out.println("세션에 저장된 memberSystemName은 " + session.getAttribute(memberSystemName));
 			
 //			메인 경로 수정해주기
 			path = req.getContextPath() + "templates/main/main_content.jsp";
