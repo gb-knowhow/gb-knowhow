@@ -156,7 +156,7 @@ $(function () {
 
 /*댓글 ajax*/
 const $questionId = $("input[name='questionId']"); 
-const $button = $(".button_register");
+const $button = $(".button_register1");
 const $deleteBtn = $("._reportBtn");
 /*답글 달기 ajax*/
 const $answer = $(".questionButton_answer");

@@ -34,7 +34,7 @@
 								style="width: 20px; height: 20px;"></i> --%> <span class="blind">수정하기</span>
 							<em class="questionButton_modify">수정하기</em>
 						</a>
-						<a href="javascript:location.href='/questionDeleteAction.question?questionId=${question.questionId}'" id="deletebutton" style="text-decoration: none" class="button_compose button_modify"
+						<a href="javascript:location.replace='/questionDeleteAction.question?questionId=${question.questionId}'" id="deletebutton" style="text-decoration: none" class="button_compose button_modify"
 							onclick="">
 							<%-- <i class="icon icon_compose_opinion"> <img
 								src="${pageContext.request.contextPath}/css/kdh/image/modify.png"
@@ -107,7 +107,7 @@
 										class="blind">전체 입력 가능한 글자수</span> <span
 										class="question-comment-count__total">500</span>
 								</div>
-								<button type="submit" class="button_register">등록</button>
+								<button type="submit" class="button_register button_register1">등록</button>
 							</div>
 						</fieldset>
 					</div>
@@ -120,29 +120,6 @@
 							</div>
 						</div>
 						<!-- 복붙 -->
-						<div class="c-opinion _commentListArea re-replySet"
-							id="questionCommentList3" style="display: none;">
-							<h2 class="blind">대댓글영역</h2>
-							<div class="question-comment">
-								<fieldset>
-									<legend>대댓글 입력</legend>
-									<div class="question-comment-form">
-										<textarea class="question-comment-textarea placeholder"
-											id="wr_re_reply" maxlength="200" title="대댓글입력"
-											placeholder="개인정보를 공유 및 요청하거나, 명예 훼손, 무단 광고, 불법 정보 유포시 모니터링 후 삭제될 수 있으며, 이에 대한 민형사상 책임은 게시자에게 있습니다."></textarea>
-									</div>
-									<div class="question-comment-upload">
-										<div class="question-comment-count">
-											<span class="blind">현재 입력한 글자수</span> <span
-												id="counter-reply" class="question-comment-count__num">0</span>
-											/ <span class="blind">전체 입력 가능한 글자수</span> <span
-												class="question-comment-count__total">200</span>
-										</div>
-										<button type="submit" class="button_register">등록</button>
-									</div>
-								</fieldset>
-							</div>
-						</div>
 						<c:forEach var="comment" items="${comments}">
 						<div class="replyItem">
 							<p class="question-commentList-nickname">
@@ -248,7 +225,7 @@
 											style="width: 20px; height: 20px;"></i> <em
 										class="questionButton_reply">좋아요</em>
 									</label>
-									<a href="javascript:location.href='/answerDeleteAction.answer?answerId=${answer.answerId}&questionId=${question.questionId}'" class="button_compose button_like2">
+									<a href="javascript:location.replace='/answerDeleteAction.answer?answerId=${answer.answerId}&questionId=${question.questionId}'" class="button_compose button_like2">
 										 <em class="questionButton_reply">답글삭제</em>
 									</a>
 								</div>

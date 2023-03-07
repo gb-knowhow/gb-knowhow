@@ -39,7 +39,10 @@ public class QuestionDetailActionController implements Action {
 		req.setAttribute("comments", commentDAO.selectAll(questionId));
 		req.setAttribute("answercommets", answerCommentDAO.selectAll(questionId));
 		
-		
+		System.out.println(questionDAO.selectOne(questionId));
+		System.out.println(answerDAO.selectOne(questionId));
+		System.out.println(commentDAO.selectAll(questionId));
+		System.out.println(answerCommentDAO.selectAll(questionId));
 		
 		result.setPath("/templates/board/detailsPageMine.jsp");
 		
