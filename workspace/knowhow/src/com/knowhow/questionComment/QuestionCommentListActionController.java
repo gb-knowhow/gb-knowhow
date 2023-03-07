@@ -19,6 +19,9 @@ public class QuestionCommentListActionController implements Action {
 		Long questionId = Long.parseLong(req.getParameter("questionId"));
 		
 		req.setAttribute("comments",commentDAO.selectAll(questionId));
+		
+		System.out.println(commentDAO.selectAll(questionId));
+		
 		result.setPath("/templates/board/detailsPageMine.jsp");
 		
 		

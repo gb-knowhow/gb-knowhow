@@ -7,6 +7,7 @@
 			SELECT answer_id, answer_title, answer_content, answer_regdate, answer_upddate, a.member_id, question_id,
 			member_nickname, member_name
 			FROM tbl_answer a  join tbl_member m
+			on a.member_id = m.member_id
 			where question_id = #{questionId} 
 		</select>
 		
