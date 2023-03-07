@@ -60,9 +60,7 @@ public class LoginActionController implements Action {
 			path = req.getContextPath() + "templates/main/main_content.jsp";
 		}
 		
-		if (memberId == 1L) {
-			path = req.getContextPath() + "templates/admin/mentor-answer-manager.jsp";
-		}else {
+		else {
 			path = req.getContextPath() + "/login.member?login=false";
 		}
 		result.setPath(path);
