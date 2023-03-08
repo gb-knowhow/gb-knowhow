@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/findPasswordDetail.css">
 </head>
 <body>

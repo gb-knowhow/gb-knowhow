@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" sizes="114x114" type="image/x-icon" href="">
+    <link rel="icon" href="${pageContext.request.contextPath}/image/favicon.ico">
     <link rel="stylesheet" href="naver-find-id.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/member/knohow-id-find.css"/>
     <title>찾기 : 네이버</title>
