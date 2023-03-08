@@ -179,7 +179,30 @@
 	                     <!-- //section for search dropdown -->
 	                   </div>
 	                   <c:choose>
-	                   	<c:when test="${not empty sessionScope.memberId || not empty cookie.memberIdentification}">
+	                   	<c:when test="${sessionScope.memberId eq 1}">
+	                   	<div class="buttonWrap headerButton">
+	                     		<button class="listButton ">
+	                       			<div class="icon_wrapper">
+	                         		<div class="userThumbnail" onclick="location.href = '${pageContext.request.contextPath}/myHomePage.mypage'"></div>
+	                       		</div>
+	                     		</button>
+	                   	</div>
+	                   		
+	                   		<div class="buttonWrap headerButton">
+	                     			<button class="listButton adminButton" onclick="location.href = '${pageContext.request.contextPath}/adminDashBoardAction.admin'">
+	                       				<div class="adminButton_img"></div>
+	                     			</button>
+	                   		</div>
+	                   		
+	                   		<div class="buttonWrap headerButton">
+	                     		<button class="listButton logoutButton" onclick="location.href = '${pageContext.request.contextPath}/logout.member'">
+	                       			<div class="logoutButton_img"></div>
+	                     		</button>
+	                   		</div>
+	                   			
+	                   		</c:when>
+	                   		
+	                   		<c:when test="${not empty sessionScope.memberId || not empty cookie.memberIdentification}">
 	                   		<div class="buttonWrap headerButton">
 	                     		<button class="listButton ">
 	                       			<div class="icon_wrapper">
@@ -187,20 +210,12 @@
 	                       		</div>
 	                     		</button>
 	                   		</div>
-	                   	
-	                   		<c:if test="${sessionScope.memberId eq 2 || cookie.memberIdentification eq 2}">
-	                   			<div class="buttonWrap headerButton">
-	                     		<button class="listButton adminButton" onclick="location.href = '${pageContext.request.contextPath}/adminDashBoardAction.admin'">
-	                       			<div class="adminButton_img"></div>
-	                     		</button>
-	                   			</div>
-	                   		</c:if>
 	                   		
-	                   	<div class="buttonWrap headerButton">
+	                   		<div class="buttonWrap headerButton">
 	                     		<button class="listButton logoutButton" onclick="location.href = '${pageContext.request.contextPath}/logout.member'">
 	                       			<div class="logoutButton_img"></div>
 	                     		</button>
-	                   </div>
+	                   		</div>
 	                   	</c:when>
 	                   	
 	                   	<c:otherwise>
