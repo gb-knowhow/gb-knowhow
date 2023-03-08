@@ -706,6 +706,21 @@ a {
     padding: 4px;
 }
 
+.adminButton_img{
+	background-image: url(https://cdn-icons-png.flaticon.com/512/8956/8956191.png);
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	width: 20px;
+	height: 21px;
+}
+
+.adminButton {
+	width: 31.99px;
+    height: 31.99px;
+    padding: 4px;
+}
+
 /* 
     아래부터 반응형!
  */

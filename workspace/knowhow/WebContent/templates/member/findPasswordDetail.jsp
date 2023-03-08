@@ -32,7 +32,7 @@
 						
 						<div class="button_area">
 							<button type="button" onclick = "send()" class="btn" id="confirm">확인</button>
-							<button type="button"  class="" id="cancel">취소</button>
+							<button type="button"  onclick = " location.href= '${pageContext.request.contextPath}/login.member'" id="cancel">취소</button>
 						</div>
 					</form>
 				</div>
