@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.knowhow.Result;
 
+// ㅋㅋ 민구 왔다감 ㅋㅋ
 public class MainFrontController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
